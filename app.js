@@ -22,7 +22,60 @@ async function showAnswers(score){if(!answers)answers=await loadJSON('answers.js
 function getLatestRuns(condition){const latest=new Map();for(const r of [...resultData.runs].sort((a,b)=>Date.parse(a.created_at)-Date.parse(b.created_at))){if(r.condition===condition)latest.set(r.model_id+'|'+r.sample_id,r);}return [...latest.values()];}
 function renderResults(){const condition=$('#result-condition').value;const runs=getLatestRuns(condition);$('#results-note').textContent=runs.length?`当前条件已记录 ${runs.length} 个模型 × 样例结果。下表仅统计本题集，每个组合展示最新 attempt。`:'本题集尚未运行模型。结果区已准备好：接入真实结果后，这里会显示逐题选择、正确率、耗时和输入声道处理方式。';
 $('#model-table').innerHTML=`<div class="table-wrap"><table><thead><tr><th>模型</th><th>状态</th><th>已运行样例</th><th>有效答题 / 正确数</th><th>准确率</th><th>输入说明</th></tr></thead><tbody>${resultData.models.map(m=>{const rs=runs.filter(r=>r.model_id===m.id),valid=rs.flatMap(r=>r.questions).filter(q=>q.prediction!==null),n=valid.length,c=valid.filter(q=>q.correct).length;return `<tr><td>${esc(m.name)}<small>${esc(m.kind)}</small></td><td><span class="pill">${rs.length?'已记录 '+rs.length+' 条':'未运行'}</span></td><td>${rs.length} / 10</td><td>${n?`${n} 题 / ${c} 正确`:'—'}</td><td>${n?Math.round(c/n*100)+'%':'—'}</td><td>${rs.length?esc([...new Set(rs.map(r=>r.channel_handling))].join(' / ')):'待核验'}</td></tr>`;}).join('')}</tbody></table></div>`;
-if(!$('#result-model').options.length){$('#result-model').innerHTML=resultData.models.map(m=>`<option value="${esc(m.id)}">${esc(m.name)}</option>`).join('');$('#result-sample').innerHTML=data.samples.map(s=>`<option value="${s.id}">${s.id}</option>`).join('');$('#result-model').onchange=renderQuestionResults;$('#result-sample').onchange=renderQuestionResults;}renderQuestionResults();}
-function renderQuestionResults(){const r=getLatestRuns($('#result-condition').value).find(r=>r.model_id===$('#result-model').value&&r.sample_id===$('#result-sample').value);if(!r){$('#question-results').innerHTML='<div class="empty"><strong>等待第一条 smoke test 结果</strong><p>这里将显示五道题的模型选择、参考答案、判定与运行信息。</p></div>';return;}$('#question-results').innerHTML=`<p class="fineprint">${esc(r.created_at)} · ${esc(r.status)} · ${r.latency_seconds??'—'} 秒 · ${esc(r.channel_handling)}</p><div class="table-wrap"><table><thead><tr><th>题目</th><th>模型选择</th><th>参考答案</th><th>判定</th></tr></thead><tbody>${r.questions.map(q=>`<tr><td>${esc(q.id)}</td><td>${esc(q.prediction??'无法解析')}</td><td>${esc(q.gold)}</td><td>${q.prediction===null?'未评分':q.correct?'正确':'错误'}</td></tr>`).join('')}</tbody></table></div>${r.error_message?`<p class="fineprint">${esc(r.error_message)}</p>`:''}`;}
+initBoard();renderBoard();}
+function initBoard(){
+    if($('#board-model').options.length)return;
+    $('#board-model').innerHTML=resultData.models.map(m=>`<option value="${esc(m.id)}">${esc(m.name)}</option>`).join('');
+    const first=resultData.models.find(m=>resultData.runs.some(r=>r.model_id===m.id&&r.status==='completed'));
+    if(first)$('#board-model').value=first.id;
+    $('#board-sample').innerHTML+=data.samples.map(s=>`<option value="${esc(s.id)}">${esc(s.id)} · ${esc(meta.samples.find(m=>m.id===s.id)?.title)}</option>`).join('');
+    $('#board-type').innerHTML+=Object.entries(types).map(([id,name])=>`<option value="${id}">${name}</option>`).join('');
+    for(const id of ['model','sample','type','filter'])$('#board-'+id).onchange=renderBoard;
+    $('#board-reset').onclick=()=>{for(const id of ['sample','type','filter'])$('#board-'+id).value='all';renderBoard();};
+}
+function boardRows(model){
+    const runs={};
+    for(const c of ['spatial','colocated'])runs[c]=new Map(getLatestRuns(c).filter(r=>r.model_id===model).map(r=>[r.sample_id,r]));
+    return data.samples.flatMap(s=>s.questions.map(q=>{
+        const row={sample:s,question:q};
+        for(const c of ['spatial','colocated']){
+            const run=runs[c].get(s.id),answer=run?.questions.find(a=>a.id===q.id);
+            const valid=run?.status==='completed'&&['A','B','C','D'].includes(answer?.prediction)&&typeof answer?.correct==='boolean';
+            row[c]={run,answer,valid,correct:valid?answer.correct:null};
+        }
+        row.gold=row.spatial.answer?.gold??row.colocated.answer?.gold??null;
+        return row;
+    }));
+}
+function score(rows,c){const valid=rows.filter(r=>r[c].valid),correct=valid.filter(r=>r[c].correct).length;return {valid:valid.length,correct,accuracy:valid.length?Math.round(correct/valid.length*100)+'%':'—'};}
+function outcome(cell){return !cell.run?'未运行':cell.run.status==='failed'?'运行失败':!cell.valid?'无法解析':cell.correct?'正确':'错误';}
+function resultCell(cell){const state=cell.valid?(cell.correct?'right':'wrong'):'missing';return `<span class="answer-badge ${state}"><span>${cell.valid?(cell.correct?'✓':'✕'):'—'}</span> ${cell.valid?esc(cell.answer.prediction)+' · ':''}${outcome(cell)}</span>`;}
+function optionText(q,letter){return ['A','B','C','D'].includes(letter)?q.options['ABCD'.indexOf(letter)]:'未提供';}
+function renderBoard(){
+    const rows=boardRows($('#board-model').value),total=rows.length;
+    $('#board-summary').innerHTML=[['spatial','空间版','不同方位'],['colocated','同位置对照版','同一正前方']].map(([c,label,sub])=>{
+        const s=score(rows,c);return `<div class="score-card ${c}"><div class="score-card-top"><h3>${label}</h3><span>${sub}</span></div><strong>${s.accuracy}</strong><p>答对 <b>${s.correct}</b> / ${s.valid} 道有效答案</p><div class="coverage"><span style="width:${total?s.valid/total*100:0}%"></span></div><small>答题覆盖 ${s.valid} / ${total} · 未评分 ${total-s.valid}</small></div>`;
+    }).join('');
+    const paired=[['两版都答对',r=>r.spatial.correct===true&&r.colocated.correct===true,'right'],['两版都答错',r=>r.spatial.correct===false&&r.colocated.correct===false,'wrong'],['仅空间版答对',r=>r.spatial.correct===true&&r.colocated.correct===false,''],['仅对照版答对',r=>r.spatial.correct===false&&r.colocated.correct===true,''],['存在未评分',r=>!r.spatial.valid||!r.colocated.valid,'missing']];
+    $('#paired-summary').innerHTML=paired.map(([label,match,cls])=>`<div class="pair-stat ${cls}"><strong>${rows.filter(match).length}</strong><span>${label}</span></div>`).join('');
+    $('#type-summary').innerHTML=`<div class="table-wrap"><table><caption class="sr-only">各题型的两版正确数和有效答题数</caption><thead><tr><th scope="col">题型</th><th scope="col">空间版 · 正确 / 有效</th><th scope="col">同位置版 · 正确 / 有效</th><th scope="col">每版题数</th></tr></thead><tbody>${Object.entries(types).map(([id,name])=>{const subset=rows.filter(r=>r.question.type===id),a=score(subset,'spatial'),b=score(subset,'colocated');return `<tr><th scope="row">${name}</th><td>${a.correct} / ${a.valid} · ${a.accuracy}</td><td>${b.correct} / ${b.valid} · ${b.accuracy}</td><td>${subset.length}</td></tr>`;}).join('')}</tbody></table></div>`;
+    const sampleFilter=$('#board-sample').value,typeFilter=$('#board-type').value,filter=$('#board-filter').value;
+    const visible=rows.filter(r=>{
+        if(sampleFilter!=='all'&&r.sample.id!==sampleFilter)return false;
+        if(typeFilter!=='all'&&r.question.type!==typeFilter)return false;
+        const a=r.spatial.correct,b=r.colocated.correct;
+        return filter==='all'||filter==='wrong'&&(a===false||b===false)||filter==='different'&&a!==null&&b!==null&&a!==b||filter==='both-correct'&&a===true&&b===true||filter==='both-wrong'&&a===false&&b===false||filter==='missing'&&(a===null||b===null);
+    });
+    $('#board-count').textContent=`显示 ${visible.length} / ${total} 题 · 上方汇总始终统计完整题集`;
+    if(!visible.length){$('#question-board').innerHTML='<div class="empty"><strong>没有符合筛选条件的题目</strong><p>可切换筛选，或点击“重置筛选”。</p></div>';return;}
+    $('#question-board').innerHTML=data.samples.map(s=>{
+        const group=visible.filter(r=>r.sample.id===s.id);if(!group.length)return '';
+        const all=rows.filter(r=>r.sample.id===s.id),a=score(all,'spatial'),b=score(all,'colocated');
+        return `<section class="board-group"><div class="board-group-heading"><a href="#listen/${s.id}">${s.id} · ${esc(meta.samples.find(m=>m.id===s.id)?.title)} ↗</a><span>空间 ${a.correct}/${a.valid} · 对照 ${b.correct}/${b.valid}</span></div><div class="board-columns" aria-hidden="true"><span>题目 / 参考答案</span><span>空间版</span><span>同位置对照版</span></div>${group.map(r=>{
+            const q=r.question,different=r.spatial.valid&&r.colocated.valid&&r.spatial.correct!==r.colocated.correct;
+            return `<details class="board-question ${different?'different':''}"><summary><span class="board-question-label"><b>${esc(q.id)}</b><span class="question-kind">${types[q.type]}</span><small>参考答案 ${esc(r.gold??'—')}${different?' · 两版对错不同':''}</small><span class="question-preview">${esc(q.question)}</span></span><span class="board-result"><span class="mobile-condition">空间版</span>${resultCell(r.spatial)}</span><span class="board-result"><span class="mobile-condition">同位置版</span>${resultCell(r.colocated)}</span></summary><div class="board-detail"><p>${esc(q.question)}</p><ol class="board-options" type="A">${q.options.map((o,i)=>`<li class="${'ABCD'[i]===r.gold?'gold-option':''}">${esc(o)}${'ABCD'[i]===r.gold?' <b>← 参考答案</b>':''}</li>`).join('')}</ol><div class="choice-details">${[['spatial','空间版'],['colocated','同位置对照版']].map(([c,label])=>{const cell=r[c];return `<div><h4>${label} ${resultCell(cell)}</h4><p>${cell.valid?esc(optionText(q,cell.answer.prediction)):'本题没有可评分的选择。'}</p>${cell.run?`<small>本段 5 题合计耗时 ${cell.run.latency_seconds==null?'未知':Number(cell.run.latency_seconds).toFixed(2)+' 秒'}<br>${esc(cell.run.created_at)}<br>输入：${esc(cell.run.channel_handling)}</small>`:''}</div>`;}).join('')}</div><a href="#listen/${s.id}">试听本样例并查看答案证据 ↗</a></div></details>`;
+        }).join('')}</section>`;
+    }).join('');
+}
 async function init(){try{[data,meta,resultData]=await Promise.all([loadJSON('questions.json'),loadJSON('provenance.json'),loadJSON('results.json')]);$('#result-condition').onchange=renderResults;window.addEventListener('hashchange',route);route();}catch(e){$('#sample-content').innerHTML=`<div class="error">页面数据未能载入。请刷新重试。<br><small>${esc(e.message)}</small></div>`;}}
 init();
