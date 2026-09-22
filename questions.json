@@ -1,0 +1,716 @@
+{
+  "version": "spatial-context-v1",
+  "instructions": "听完整音频后为每题选择 A/B/C/D。会议组与晚餐组是两条来源对话；不要求知道人名。两种音频条件共用题目，不把同一题的两种条件当成独立样本。",
+  "samples": [
+    {
+      "id": "SC001",
+      "duration_seconds": 60,
+      "sample_rate": 48000,
+      "channels": 2,
+      "context_labels": {
+        "A": "会议组",
+        "B": "晚餐组"
+      },
+      "audio": {
+        "spatial": "audio/SC001_spatial.wav",
+        "colocated": "audio/SC001_colocated.wav"
+      },
+      "questions": [
+        {
+          "id": "SC001-Q1",
+          "type": "time_localization",
+          "question": "会议组中，“The issue is we're not a hundred percent sure what type of car we would like to provide the employees.”这句话从本段音频的哪个时间区间开始？",
+          "options": [
+            "15–30 秒（不含 30）",
+            "0–15 秒（不含 15）",
+            "30–45 秒（不含 45）",
+            "45–60 秒"
+          ]
+        },
+        {
+          "id": "SC001-Q2",
+          "type": "speaker_content",
+          "question": "会议组中，说出“Give our employees the opportunity to drive to work.”的同一个人，还说过下面哪句话？",
+          "options": [
+            "We're gonna start with our top tier first",
+            "No, no, no I I thought the company yeah I thought the company started calling it upper management not not top tier 'cause it's it's kind of uh degrading you know.",
+            "yeah who who gets the cars and who",
+            "the family if you're giving somebody uh"
+          ]
+        },
+        {
+          "id": "SC001-Q3",
+          "type": "content_context_A",
+          "question": "会议组对给员工配车的方案，哪项描述符合这段讨论？",
+          "options": [
+            "决定只发交通补贴，不再提供车辆",
+            "想尽量提供同一种车，但具体车型仍待讨论",
+            "员工必须先自行买车，公司再全额报销",
+            "已经决定全员配备同款电动卡车"
+          ]
+        },
+        {
+          "id": "SC001-Q4",
+          "type": "content_context_B",
+          "question": "晚餐组中，有人被问想喝什么时，明确选择了什么？",
+          "options": [
+            "水",
+            "咖啡",
+            "柠檬汁",
+            "百事可乐"
+          ]
+        },
+        {
+          "id": "SC001-Q5",
+          "type": "speaker_counts",
+          "question": "在这 60 秒内，会议组与晚餐组分别有多少位不同的人说过话？简短的口头回应也计入，纯笑声或噪声不计。",
+          "options": [
+            "会议组 7 人；晚餐组 5 人",
+            "会议组 5 人；晚餐组 4 人",
+            "会议组 6 人；晚餐组 3 人",
+            "会议组 6 人；晚餐组 4 人"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SC002",
+      "duration_seconds": 60,
+      "sample_rate": 48000,
+      "channels": 2,
+      "context_labels": {
+        "A": "会议组",
+        "B": "晚餐组"
+      },
+      "audio": {
+        "spatial": "audio/SC002_spatial.wav",
+        "colocated": "audio/SC002_colocated.wav"
+      },
+      "questions": [
+        {
+          "id": "SC002-Q1",
+          "type": "time_localization",
+          "question": "会议组中，“I think that we should be promoting carpooling, we should be promoting you know other ways of getting to work”这句话从本段音频的哪个时间区间开始？",
+          "options": [
+            "45–60 秒",
+            "0–15 秒（不含 15）",
+            "30–45 秒（不含 45）",
+            "15–30 秒（不含 30）"
+          ]
+        },
+        {
+          "id": "SC002-Q2",
+          "type": "speaker_content",
+          "question": "会议组中，说出“unless they're electric because that's not environmentally friendly at all.”的同一个人，还说过下面哪句话？",
+          "options": [
+            "I think that we should be promoting carpooling, we should be promoting you know other ways of getting to work",
+            "I mean, I I think it would be really nice to give everyone a truck.",
+            "Yeah a supercar would definitely bring them to work faster.",
+            "Yeah I think the bottom one there is also very interesting, the coupe"
+          ]
+        },
+        {
+          "id": "SC002-Q3",
+          "type": "content_context_A",
+          "question": "会议组里，坚持车辆应为电动车的那位，还提出了哪种通勤办法？",
+          "options": [
+            "统一给员工购买摩托车",
+            "所有人都改为步行",
+            "鼓励拼车",
+            "要求员工搬到公司附近"
+          ]
+        },
+        {
+          "id": "SC002-Q4",
+          "type": "content_context_B",
+          "question": "晚餐组谈到的场地，前面那一部分有多少个地块（lots）？",
+          "options": [
+            "60 个",
+            "12 个",
+            "35 个",
+            "24 个"
+          ]
+        },
+        {
+          "id": "SC002-Q5",
+          "type": "speaker_counts",
+          "question": "在这 60 秒内，会议组与晚餐组分别有多少位不同的人说过话？简短的口头回应也计入，纯笑声或噪声不计。",
+          "options": [
+            "会议组 6 人；晚餐组 3 人",
+            "会议组 6 人；晚餐组 4 人",
+            "会议组 7 人；晚餐组 5 人",
+            "会议组 5 人；晚餐组 4 人"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SC003",
+      "duration_seconds": 60,
+      "sample_rate": 48000,
+      "channels": 2,
+      "context_labels": {
+        "A": "会议组",
+        "B": "晚餐组"
+      },
+      "audio": {
+        "spatial": "audio/SC003_spatial.wav",
+        "colocated": "audio/SC003_colocated.wav"
+      },
+      "questions": [
+        {
+          "id": "SC003-Q1",
+          "type": "time_localization",
+          "question": "会议组中，“Think I think a limousine might be very uh good and helpful in this situation.”这句话从本段音频的哪个时间区间开始？",
+          "options": [
+            "0–15 秒（不含 15）",
+            "30–45 秒（不含 45）",
+            "45–60 秒",
+            "15–30 秒（不含 30）"
+          ]
+        },
+        {
+          "id": "SC003-Q2",
+          "type": "speaker_content",
+          "question": "会议组中，说出“So we are going to be as well pay for gas for any of other kind of endeavors they might be doing on the weekends as well.”的同一个人，还说过下面哪句话？",
+          "options": [
+            "Well if it's gonna be electric we don't really need to worry about gas.",
+            "Maybe we should have smaller cars though.",
+            "What if we just paid for a certain amount of gas?",
+            "Yeah, I think a certain amount of gas which would be enough calculated for them to get to work."
+          ]
+        },
+        {
+          "id": "SC003-Q3",
+          "type": "content_context_A",
+          "question": "会议组讨论公司承担油费时，提出了什么限制办法？",
+          "options": [
+            "让每位员工无论距离都每天领取一整箱油",
+            "只给周末出游报销油费",
+            "按通勤需要计算并支付一定额度",
+            "无条件支付员工所有私人出行的油费"
+          ]
+        },
+        {
+          "id": "SC003-Q4",
+          "type": "content_context_B",
+          "question": "晚餐组中，讲述去法国风格餐馆经历的那位说，结账时最初看到大约多少钱？",
+          "options": [
+            "24 美元",
+            "14 美元",
+            "54 美元",
+            "34 美元"
+          ]
+        },
+        {
+          "id": "SC003-Q5",
+          "type": "speaker_counts",
+          "question": "在这 60 秒内，会议组与晚餐组分别有多少位不同的人说过话？简短的口头回应也计入，纯笑声或噪声不计。",
+          "options": [
+            "会议组 8 人；晚餐组 5 人",
+            "会议组 7 人；晚餐组 3 人",
+            "会议组 6 人；晚餐组 4 人",
+            "会议组 7 人；晚餐组 4 人"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SC004",
+      "duration_seconds": 60,
+      "sample_rate": 48000,
+      "channels": 2,
+      "context_labels": {
+        "A": "会议组",
+        "B": "晚餐组"
+      },
+      "audio": {
+        "spatial": "audio/SC004_spatial.wav",
+        "colocated": "audio/SC004_colocated.wav"
+      },
+      "questions": [
+        {
+          "id": "SC004-Q1",
+          "type": "time_localization",
+          "question": "会议组中，“I think that I should've got in some sort of a message.”这句话从本段音频的哪个时间区间开始？",
+          "options": [
+            "30–45 秒（不含 45）",
+            "15–30 秒（不含 30）",
+            "45–60 秒",
+            "0–15 秒（不含 15）"
+          ]
+        },
+        {
+          "id": "SC004-Q2",
+          "type": "speaker_content",
+          "question": "会议组中，说出“I actually am one of the people that received my package seven days late”的同一个人，还说过下面哪句话？",
+          "options": [
+            "I'm sorry for the delay but we there's a shortage of drivers, there's a shortage of",
+            "Is that seven days after the five days, or seven days total?",
+            "We have guaranteed that they will receive deliveries within five days and that is not been happening.",
+            "I think that I should've got in some sort of a message."
+          ]
+        },
+        {
+          "id": "SC004-Q3",
+          "type": "content_context_A",
+          "question": "会议组中，收到迟到包裹的人怎样解释“晚了七天”？",
+          "options": [
+            "在承诺的五天之后又晚了七天",
+            "从承诺的五天改成七个工作日，且按时收到",
+            "比承诺日期提前了七天",
+            "从下单到收到总共只用了七天"
+          ]
+        },
+        {
+          "id": "SC004-Q4",
+          "type": "content_context_B",
+          "question": "晚餐组怎样描述建房者与社区经营者的关系？",
+          "options": [
+            "建房方属于她，订购所用的制造方也由她拥有",
+            "建房方完全无关，是由市政府随机指派的",
+            "社区没有建房方，所有住户只能自建",
+            "建房方是受邀吃饭的四人合伙拥有的"
+          ]
+        },
+        {
+          "id": "SC004-Q5",
+          "type": "speaker_counts",
+          "question": "在这 60 秒内，会议组与晚餐组分别有多少位不同的人说过话？简短的口头回应也计入，纯笑声或噪声不计。",
+          "options": [
+            "会议组 6 人；晚餐组 4 人",
+            "会议组 8 人；晚餐组 5 人",
+            "会议组 7 人；晚餐组 3 人",
+            "会议组 7 人；晚餐组 4 人"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SC005",
+      "duration_seconds": 60,
+      "sample_rate": 48000,
+      "channels": 2,
+      "context_labels": {
+        "A": "会议组",
+        "B": "晚餐组"
+      },
+      "audio": {
+        "spatial": "audio/SC005_spatial.wav",
+        "colocated": "audio/SC005_colocated.wav"
+      },
+      "questions": [
+        {
+          "id": "SC005-Q1",
+          "type": "time_localization",
+          "question": "会议组中，“we have say fifty people, and we need a hundred.”这句话从本段音频的哪个时间区间开始？",
+          "options": [
+            "15–30 秒（不含 30）",
+            "30–45 秒（不含 45）",
+            "45–60 秒",
+            "0–15 秒（不含 15）"
+          ]
+        },
+        {
+          "id": "SC005-Q2",
+          "type": "speaker_content",
+          "question": "会议组中，说出“We've had drones crashing into high buildings in the city.”的同一个人，还说过下面哪句话？",
+          "options": [
+            "We've had drones dropping ah fragile packages and and breaking them. So until that's um a hundred percent",
+            "the challenge with with the drones is that I think the technology is not yet there for people that live in certain buildings and",
+            "No but the drone would be taking his job because he is a delivery man.",
+            "Can we get those new drones that deliver things that are smaller in size?"
+          ]
+        },
+        {
+          "id": "SC005-Q3",
+          "type": "content_context_A",
+          "question": "会议组为什么暂时不采用无人机配送这条路线？",
+          "options": [
+            "已有撞楼和摔坏易碎包裹的问题，可靠性尚不足",
+            "顾客已经全部改为自行提货",
+            "所有配送员都已转职为无人机工程师",
+            "无人机只能在地下仓库里飞行"
+          ]
+        },
+        {
+          "id": "SC005-Q4",
+          "type": "content_context_B",
+          "question": "晚餐组讨论 Oklahoma 的营地时，水费和电费分别怎么处理？",
+          "options": [
+            "水电均由市政府全额承担",
+            "使用井水，水包含在内；电费另付",
+            "水费另付；电费包含在内",
+            "水电都按固定比例包含在内"
+          ]
+        },
+        {
+          "id": "SC005-Q5",
+          "type": "speaker_counts",
+          "question": "在这 60 秒内，会议组与晚餐组分别有多少位不同的人说过话？简短的口头回应也计入，纯笑声或噪声不计。",
+          "options": [
+            "会议组 6 人；晚餐组 4 人",
+            "会议组 7 人；晚餐组 4 人",
+            "会议组 7 人；晚餐组 3 人",
+            "会议组 8 人；晚餐组 5 人"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SC006",
+      "duration_seconds": 60,
+      "sample_rate": 48000,
+      "channels": 2,
+      "context_labels": {
+        "A": "会议组",
+        "B": "晚餐组"
+      },
+      "audio": {
+        "spatial": "audio/SC006_spatial.wav",
+        "colocated": "audio/SC006_colocated.wav"
+      },
+      "questions": [
+        {
+          "id": "SC006-Q1",
+          "type": "time_localization",
+          "question": "会议组中，“um top to bottom, and we just need someone to sort through to get them to the drivers.”这句话从本段音频的哪个时间区间开始？",
+          "options": [
+            "0–15 秒（不含 15）",
+            "45–60 秒",
+            "15–30 秒（不含 30）",
+            "30–45 秒（不含 45）"
+          ]
+        },
+        {
+          "id": "SC006-Q2",
+          "type": "speaker_content",
+          "question": "会议组中，说出“We getting our packages. We We don't have enough people to sort. So we're not getting it to the drivers in timely fashion.”的同一个人，还说过下面哪句话？",
+          "options": [
+            "OK so we should start putting out campaigns to uh hire people.",
+            "um top to bottom, and we just need someone to sort through to get them to the drivers.",
+            "Yeah. I think the job seeking websites are usually better for like these types of jobs. I don't think a lot of people are",
+            "Mm-hmm. Definitely, I think our main problem is shortage of workers."
+          ]
+        },
+        {
+          "id": "SC006-Q3",
+          "type": "content_context_A",
+          "question": "会议组明确指出的配送流程瓶颈是什么？",
+          "options": [
+            "仓库中没有任何待配送包裹",
+            "司机全部拒绝使用公司的车辆",
+            "缺少分拣人员，包裹没能及时交给司机",
+            "顾客只接受无人机送货"
+          ]
+        },
+        {
+          "id": "SC006-Q4",
+          "type": "content_context_B",
+          "question": "晚餐组所说的便宜薯片，一整袋多少钱，在哪里买的？",
+          "options": [
+            "1.25 美元，在 Walmart",
+            "1.25 美元，在 dollar store",
+            "3.50 美元，在 No Frills",
+            "3.50 美元，在 dollar store"
+          ]
+        },
+        {
+          "id": "SC006-Q5",
+          "type": "speaker_counts",
+          "question": "在这 60 秒内，会议组与晚餐组分别有多少位不同的人说过话？简短的口头回应也计入，纯笑声或噪声不计。",
+          "options": [
+            "会议组 6 人；晚餐组 4 人",
+            "会议组 8 人；晚餐组 5 人",
+            "会议组 7 人；晚餐组 3 人",
+            "会议组 7 人；晚餐组 4 人"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SC007",
+      "duration_seconds": 60,
+      "sample_rate": 48000,
+      "channels": 2,
+      "context_labels": {
+        "A": "会议组",
+        "B": "晚餐组"
+      },
+      "audio": {
+        "spatial": "audio/SC007_spatial.wav",
+        "colocated": "audio/SC007_colocated.wav"
+      },
+      "questions": [
+        {
+          "id": "SC007-Q1",
+          "type": "time_localization",
+          "question": "会议组中，“Maybe we should have a jacuzzi in each room.”这句话从本段音频的哪个时间区间开始？",
+          "options": [
+            "45–60 秒",
+            "15–30 秒（不含 30）",
+            "30–45 秒（不含 45）",
+            "0–15 秒（不含 15）"
+          ]
+        },
+        {
+          "id": "SC007-Q2",
+          "type": "speaker_content",
+          "question": "会议组中，说出“I think it's seems yeah we are not building a hostel.”的同一个人，还说过下面哪句话？",
+          "options": [
+            "Or maybe we can get like certain floors or we could have a jacuzzi in each room per floor.",
+            "Maybe we should have a jacuzzi in each room.",
+            "few hundred rooms that we gonna actually when we renovate, we're cutting down the rooms so that we can uh have bigger rooms.",
+            "I'll be incharge of the food and beverage."
+          ]
+        },
+        {
+          "id": "SC007-Q3",
+          "type": "content_context_A",
+          "question": "会议组为什么提出装修时减少酒店客房数量？",
+          "options": [
+            "把酒店全部改成无客房的餐厅",
+            "把每间房做得更大，接近套房",
+            "避免给客人提供任何私人空间",
+            "把所有客房换成随机分配的多人床位"
+          ]
+        },
+        {
+          "id": "SC007-Q4",
+          "type": "content_context_B",
+          "question": "晚餐组中，有人提出用什么办法简化记账？",
+          "options": [
+            "把所有银行卡剪掉，只用现金",
+            "用免费的 QuickBooks，直接导入银行账单",
+            "完全停止记录任何支出",
+            "每年只清点一次现金余额"
+          ]
+        },
+        {
+          "id": "SC007-Q5",
+          "type": "speaker_counts",
+          "question": "在这 60 秒内，会议组与晚餐组分别有多少位不同的人说过话？简短的口头回应也计入，纯笑声或噪声不计。",
+          "options": [
+            "会议组 9 人；晚餐组 5 人",
+            "会议组 8 人；晚餐组 4 人",
+            "会议组 7 人；晚餐组 4 人",
+            "会议组 8 人；晚餐组 3 人"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SC008",
+      "duration_seconds": 60,
+      "sample_rate": 48000,
+      "channels": 2,
+      "context_labels": {
+        "A": "会议组",
+        "B": "晚餐组"
+      },
+      "audio": {
+        "spatial": "audio/SC008_spatial.wav",
+        "colocated": "audio/SC008_colocated.wav"
+      },
+      "questions": [
+        {
+          "id": "SC008-Q1",
+          "type": "time_localization",
+          "question": "会议组中，“so um now we have to get somebody into uh redesign the outdoor and indoor pools.”这句话从本段音频的哪个时间区间开始？",
+          "options": [
+            "45–60 秒",
+            "15–30 秒（不含 30）",
+            "0–15 秒（不含 15）",
+            "30–45 秒（不含 45）"
+          ]
+        },
+        {
+          "id": "SC008-Q2",
+          "type": "speaker_content",
+          "question": "会议组中，说出“so um now we have to get somebody into uh redesign the outdoor and indoor pools.”的同一个人，还说过下面哪句话？",
+          "options": [
+            "I've got contacts to a contracting companies I can speak to them, see what they think about the uh pool.",
+            "Yeah but the thing is but then we are excluding families.",
+            "children's playroom or something, just in case, yes.",
+            "I don't know I feel like maybe there should be more of like a classy adult hotel"
+          ]
+        },
+        {
+          "id": "SC008-Q3",
+          "type": "content_context_A",
+          "question": "会议组讨论酒店以成年人为主要客群时，哪项顾虑被明确提出？",
+          "options": [
+            "这样必须取消所有游泳池",
+            "这样就不能再提供瑜伽课程",
+            "这样会把家庭客群排除在外",
+            "这样就只能接受团体预订"
+          ]
+        },
+        {
+          "id": "SC008-Q4",
+          "type": "content_context_B",
+          "question": "晚餐组中，为什么有人觉得省钱行为与整体消费不太一致？",
+          "options": [
+            "为了省两美元，直接取消了一次三百美元的晚餐",
+            "每天的所有消费都严格控制在两美元以内",
+            "省下两美元之后，又可能花三百美元吃晚餐",
+            "三百美元的美甲每次都能用两美元优惠券全额抵扣"
+          ]
+        },
+        {
+          "id": "SC008-Q5",
+          "type": "speaker_counts",
+          "question": "在这 60 秒内，会议组与晚餐组分别有多少位不同的人说过话？简短的口头回应也计入，纯笑声或噪声不计。",
+          "options": [
+            "会议组 8 人；晚餐组 4 人",
+            "会议组 8 人；晚餐组 3 人",
+            "会议组 9 人；晚餐组 5 人",
+            "会议组 7 人；晚餐组 4 人"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SC009",
+      "duration_seconds": 60,
+      "sample_rate": 48000,
+      "channels": 2,
+      "context_labels": {
+        "A": "会议组",
+        "B": "晚餐组"
+      },
+      "audio": {
+        "spatial": "audio/SC009_spatial.wav",
+        "colocated": "audio/SC009_colocated.wav"
+      },
+      "questions": [
+        {
+          "id": "SC009-Q1",
+          "type": "time_localization",
+          "question": "会议组中，“Are the ticket prices gonna go up?”这句话从本段音频的哪个时间区间开始？",
+          "options": [
+            "15–30 秒（不含 30）",
+            "45–60 秒",
+            "0–15 秒（不含 15）",
+            "30–45 秒（不含 45）"
+          ]
+        },
+        {
+          "id": "SC009-Q2",
+          "type": "speaker_content",
+          "question": "会议组中，说出“We We need a better screen system for to for people to figure out which train they need to go on to.”的同一个人，还说过下面哪句话？",
+          "options": [
+            "Oh, so having so having an app?",
+            "Great, screen system. I'm thinking flat screen TV's?",
+            "guidance yeah, user friendly guidance.",
+            "like smaller screens with the different places and you just click the city you wanna go to, and then it'll just tell you which platform."
+          ]
+        },
+        {
+          "id": "SC009-Q3",
+          "type": "content_context_A",
+          "question": "会议组提出的新屏幕查询方式，核心操作是什么？",
+          "options": [
+            "只显示车站餐厅的菜单",
+            "必须先买票才能知道目的地",
+            "点击想去的城市，系统告诉你对应站台",
+            "只播放所有列车的广告视频"
+          ]
+        },
+        {
+          "id": "SC009-Q4",
+          "type": "content_context_B",
+          "question": "晚餐组中，那对伴侣说他们在哪个平台、哪一年认识？",
+          "options": [
+            "Hot or Not，2007 年",
+            "Tinder，2017 年",
+            "Hot or Not，2017 年",
+            "Tinder，2007 年"
+          ]
+        },
+        {
+          "id": "SC009-Q5",
+          "type": "speaker_counts",
+          "question": "在这 60 秒内，会议组与晚餐组分别有多少位不同的人说过话？简短的口头回应也计入，纯笑声或噪声不计。",
+          "options": [
+            "会议组 9 人；晚餐组 5 人",
+            "会议组 7 人；晚餐组 4 人",
+            "会议组 8 人；晚餐组 4 人",
+            "会议组 8 人；晚餐组 3 人"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SC010",
+      "duration_seconds": 60,
+      "sample_rate": 48000,
+      "channels": 2,
+      "context_labels": {
+        "A": "会议组",
+        "B": "晚餐组"
+      },
+      "audio": {
+        "spatial": "audio/SC010_spatial.wav",
+        "colocated": "audio/SC010_colocated.wav"
+      },
+      "questions": [
+        {
+          "id": "SC010-Q1",
+          "type": "time_localization",
+          "question": "会议组中，“What about the rotating parking uh Ferris wheel thing, where your car goes in, it goes up and you can park like stacks of cars?”这句话从本段音频的哪个时间区间开始？",
+          "options": [
+            "15–30 秒（不含 30）",
+            "0–15 秒（不含 15）",
+            "45–60 秒",
+            "30–45 秒（不含 45）"
+          ]
+        },
+        {
+          "id": "SC010-Q2",
+          "type": "speaker_content",
+          "question": "会议组中，说出“What about the rotating parking uh Ferris wheel thing, where your car goes in, it goes up and you can park like stacks of cars?”的同一个人，还说过下面哪句话？",
+          "options": [
+            "Yeah, I was thinking we've a piano just sitting in the waiting area.",
+            "Um I think we should have like a few different parking levels and also may be make it like friendly for people that",
+            "we can get fountains and make it a very nice lobby.",
+            "Maybe there could be like a a bike box."
+          ]
+        },
+        {
+          "id": "SC010-Q3",
+          "type": "content_context_A",
+          "question": "会议组提出旋转式、类似摩天轮的停车设施，希望解决什么问题？",
+          "options": [
+            "把车辆竖向叠放，以节省停车空间",
+            "取消所有地下停车位，改建餐厅",
+            "让旅客坐在汽车里直接跨越站台",
+            "让汽车沿铁轨行驶来代替火车"
+          ]
+        },
+        {
+          "id": "SC010-Q4",
+          "type": "content_context_B",
+          "question": "晚餐组中，怎样判断正在烤的派接近做好了？",
+          "options": [
+            "必须先放进冰箱，直到结冰",
+            "表面完全冷却，而且变成白色",
+            "开始冒泡，而且变成金黄色",
+            "只要有人坐下吃饭，就算做好"
+          ]
+        },
+        {
+          "id": "SC010-Q5",
+          "type": "speaker_counts",
+          "question": "在这 60 秒内，会议组与晚餐组分别有多少位不同的人说过话？简短的口头回应也计入，纯笑声或噪声不计。",
+          "options": [
+            "会议组 9 人；晚餐组 5 人",
+            "会议组 8 人；晚餐组 3 人",
+            "会议组 7 人；晚餐组 4 人",
+            "会议组 8 人；晚餐组 4 人"
+          ]
+        }
+      ]
+    }
+  ]
+}

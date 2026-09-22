@@ -1,0 +1,103 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Context Room private result import format",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "benchmark",
+    "run_id",
+    "model_id",
+    "sample_id",
+    "condition",
+    "status",
+    "created_at",
+    "audio_sha256",
+    "channel_handling",
+    "predictions"
+  ],
+  "properties": {
+    "benchmark": {
+      "const": "spatial-context-v1"
+    },
+    "run_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "model_id": {
+      "enum": [
+        "FireRedTeam/FireRedAudio",
+        "PleasedPenguin/A2R-30B-A3B",
+        "Qwen/Qwen3-Omni-30B-A3B-Instruct",
+        "google/gemini-3.8-flash",
+        "gpt-live-1",
+        "kyutai/moshiko-pytorch-bf16",
+        "meta/muse-voice-transcribe-1.0",
+        "moonshotai/Kimi-Audio-7B-Instruct"
+      ]
+    },
+    "sample_id": {
+      "enum": [
+        "SC001",
+        "SC002",
+        "SC003",
+        "SC004",
+        "SC005",
+        "SC006",
+        "SC007",
+        "SC008",
+        "SC009",
+        "SC010"
+      ]
+    },
+    "condition": {
+      "enum": [
+        "spatial",
+        "colocated"
+      ]
+    },
+    "status": {
+      "enum": [
+        "completed",
+        "failed"
+      ]
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "audio_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "channel_handling": {
+      "enum": [
+        "stereo_preserved",
+        "downmixed_mono",
+        "unknown",
+        "transcript_only"
+      ]
+    },
+    "latency_seconds": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0
+    },
+    "predictions": {
+      "type": "object",
+      "propertyNames": {
+        "pattern": "^SC00[1-9]-Q[1-5]$|^SC010-Q[1-5]$"
+      },
+      "additionalProperties": {
+        "enum": [
+          "A",
+          "B",
+          "C",
+          "D",
+          null
+        ]
+      }
+    }
+  }
+}

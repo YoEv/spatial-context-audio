@@ -1,0 +1,549 @@
+{
+  "version": "spatial-context-v1",
+  "samples": [
+    {
+      "id": "SC001",
+      "title": "公司通勤",
+      "room": {
+        "dimensions_m": [
+          6,
+          5,
+          3
+        ],
+        "listener_xyz_m": [
+          3,
+          2,
+          1.5
+        ],
+        "facing": "+y",
+        "source_xyz_m": {
+          "A": [
+            1.5858,
+            3.4142,
+            1.5
+          ],
+          "B": [
+            4.4142,
+            3.4142,
+            1.5
+          ]
+        },
+        "azimuth_deg": {
+          "A": 45,
+          "B": -45
+        },
+        "distance_m": 2,
+        "reflection_model": "none; HRTF direct sound only; original recorded room acoustics remain"
+      },
+      "sources": {
+        "A": {
+          "dataset": "NOTSOFAR",
+          "session": "MTG_30927",
+          "offset": 10,
+          "source_sha256": "b65b98d26f2071f3ea4c524f8e16e7e0cbbd79eaeb73c8e387de6b5410f7c339"
+        },
+        "B": {
+          "dataset": "CHiME-6",
+          "session": "S02",
+          "offset": 845,
+          "source_sha256": "3bd67706b776054fdf6caa92f2b9b29f307d757b2dd4d599c004b4a3af10df26"
+        }
+      },
+      "audio_sha256": {
+        "spatial": "9f7055491c69ad272f6f91262d2f75ef4ba835eea9adfa33e7488814d8bce600",
+        "colocated": "b9c4b9fbfc6cb304a470e57b3b191a40dacb2bf95f67064d956f5662ef397a7f"
+      }
+    },
+    {
+      "id": "SC002",
+      "title": "车辆与环保",
+      "room": {
+        "dimensions_m": [
+          6,
+          5,
+          3
+        ],
+        "listener_xyz_m": [
+          3,
+          2,
+          1.5
+        ],
+        "facing": "+y",
+        "source_xyz_m": {
+          "A": [
+            4.7321,
+            3.0,
+            1.5
+          ],
+          "B": [
+            1.2679,
+            3.0,
+            1.5
+          ]
+        },
+        "azimuth_deg": {
+          "A": -60,
+          "B": 60
+        },
+        "distance_m": 2,
+        "reflection_model": "none; HRTF direct sound only; original recorded room acoustics remain"
+      },
+      "sources": {
+        "A": {
+          "dataset": "NOTSOFAR",
+          "session": "MTG_30927",
+          "offset": 105,
+          "source_sha256": "b65b98d26f2071f3ea4c524f8e16e7e0cbbd79eaeb73c8e387de6b5410f7c339"
+        },
+        "B": {
+          "dataset": "CHiME-6",
+          "session": "S02",
+          "offset": 1000,
+          "source_sha256": "3bd67706b776054fdf6caa92f2b9b29f307d757b2dd4d599c004b4a3af10df26"
+        }
+      },
+      "audio_sha256": {
+        "spatial": "3cf566ee5ec9d726f63bca166c2ecbd0a5071e0d5c754a88ca9e9c30181bb922",
+        "colocated": "4cd00ab393db2c026af3bc44e6e8c20a6d7c72141aa91c536dcd8c0def139060"
+      }
+    },
+    {
+      "id": "SC003",
+      "title": "用车与报销",
+      "room": {
+        "dimensions_m": [
+          6,
+          5,
+          3
+        ],
+        "listener_xyz_m": [
+          3,
+          2,
+          1.5
+        ],
+        "facing": "+y",
+        "source_xyz_m": {
+          "A": [
+            2.0,
+            3.7321,
+            1.5
+          ],
+          "B": [
+            4.0,
+            3.7321,
+            1.5
+          ]
+        },
+        "azimuth_deg": {
+          "A": 30,
+          "B": -30
+        },
+        "distance_m": 2,
+        "reflection_model": "none; HRTF direct sound only; original recorded room acoustics remain"
+      },
+      "sources": {
+        "A": {
+          "dataset": "NOTSOFAR",
+          "session": "MTG_30927",
+          "offset": 200,
+          "source_sha256": "b65b98d26f2071f3ea4c524f8e16e7e0cbbd79eaeb73c8e387de6b5410f7c339"
+        },
+        "B": {
+          "dataset": "CHiME-6",
+          "session": "S02",
+          "offset": 1150,
+          "source_sha256": "3bd67706b776054fdf6caa92f2b9b29f307d757b2dd4d599c004b4a3af10df26"
+        }
+      },
+      "audio_sha256": {
+        "spatial": "0270e3bf978eb97f03438c36ebfb662c76a15cf85ae5acf9f5897f052b838c21",
+        "colocated": "21a08c31a1214f1cbd2911121f9bc9389a5832045ad5400af6bffdaef225552d"
+      }
+    },
+    {
+      "id": "SC004",
+      "title": "配送延迟",
+      "room": {
+        "dimensions_m": [
+          6,
+          5,
+          3
+        ],
+        "listener_xyz_m": [
+          3,
+          2,
+          1.5
+        ],
+        "facing": "+y",
+        "source_xyz_m": {
+          "A": [
+            4.4142,
+            3.4142,
+            1.5
+          ],
+          "B": [
+            1.5858,
+            3.4142,
+            1.5
+          ]
+        },
+        "azimuth_deg": {
+          "A": -45,
+          "B": 45
+        },
+        "distance_m": 2,
+        "reflection_model": "none; HRTF direct sound only; original recorded room acoustics remain"
+      },
+      "sources": {
+        "A": {
+          "dataset": "NOTSOFAR",
+          "session": "MTG_30928",
+          "offset": 10,
+          "source_sha256": "7bebfa84c3331a7ab5a6af9ba4337c742e8549070996b911b5dfe81fbf73d3e3"
+        },
+        "B": {
+          "dataset": "CHiME-6",
+          "session": "S02",
+          "offset": 1300,
+          "source_sha256": "3bd67706b776054fdf6caa92f2b9b29f307d757b2dd4d599c004b4a3af10df26"
+        }
+      },
+      "audio_sha256": {
+        "spatial": "601343f805e44d28089027e2c03e5c5bc513734905e1b56e56197991a88fe799",
+        "colocated": "d55c21c0b19e33071436539a1b8f2343f9325b998eba53ab8d2caedc0bc8d62d"
+      }
+    },
+    {
+      "id": "SC005",
+      "title": "无人机配送",
+      "room": {
+        "dimensions_m": [
+          6,
+          5,
+          3
+        ],
+        "listener_xyz_m": [
+          3,
+          2,
+          1.5
+        ],
+        "facing": "+y",
+        "source_xyz_m": {
+          "A": [
+            1.2679,
+            3.0,
+            1.5
+          ],
+          "B": [
+            4.7321,
+            3.0,
+            1.5
+          ]
+        },
+        "azimuth_deg": {
+          "A": 60,
+          "B": -60
+        },
+        "distance_m": 2,
+        "reflection_model": "none; HRTF direct sound only; original recorded room acoustics remain"
+      },
+      "sources": {
+        "A": {
+          "dataset": "NOTSOFAR",
+          "session": "MTG_30928",
+          "offset": 175,
+          "source_sha256": "7bebfa84c3331a7ab5a6af9ba4337c742e8549070996b911b5dfe81fbf73d3e3"
+        },
+        "B": {
+          "dataset": "CHiME-6",
+          "session": "S02",
+          "offset": 1450,
+          "source_sha256": "3bd67706b776054fdf6caa92f2b9b29f307d757b2dd4d599c004b4a3af10df26"
+        }
+      },
+      "audio_sha256": {
+        "spatial": "3f01126c410da5dfde329811325d8de65ed85787e80ef4167cef782c1cf7c53f",
+        "colocated": "775d0262e11db0ff49d8708f7a7852190d67e428a554cb8ca618773343c51a6a"
+      }
+    },
+    {
+      "id": "SC006",
+      "title": "分拣与招聘",
+      "room": {
+        "dimensions_m": [
+          6,
+          5,
+          3
+        ],
+        "listener_xyz_m": [
+          3,
+          2,
+          1.5
+        ],
+        "facing": "+y",
+        "source_xyz_m": {
+          "A": [
+            4.0,
+            3.7321,
+            1.5
+          ],
+          "B": [
+            2.0,
+            3.7321,
+            1.5
+          ]
+        },
+        "azimuth_deg": {
+          "A": -30,
+          "B": 30
+        },
+        "distance_m": 2,
+        "reflection_model": "none; HRTF direct sound only; original recorded room acoustics remain"
+      },
+      "sources": {
+        "A": {
+          "dataset": "NOTSOFAR",
+          "session": "MTG_30928",
+          "offset": 350,
+          "source_sha256": "7bebfa84c3331a7ab5a6af9ba4337c742e8549070996b911b5dfe81fbf73d3e3"
+        },
+        "B": {
+          "dataset": "CHiME-6",
+          "session": "S02",
+          "offset": 1700,
+          "source_sha256": "3bd67706b776054fdf6caa92f2b9b29f307d757b2dd4d599c004b4a3af10df26"
+        }
+      },
+      "audio_sha256": {
+        "spatial": "9eaff05f186d0c2d22098b45f8102fc4e18cd274b5087af58a4d84f344517198",
+        "colocated": "422ed37bea249ce020bc6bca9c2d2e207f07c8831aa209f154683624cb826bab"
+      }
+    },
+    {
+      "id": "SC007",
+      "title": "酒店客房",
+      "room": {
+        "dimensions_m": [
+          6,
+          5,
+          3
+        ],
+        "listener_xyz_m": [
+          3,
+          2,
+          1.5
+        ],
+        "facing": "+y",
+        "source_xyz_m": {
+          "A": [
+            1.5858,
+            3.4142,
+            1.5
+          ],
+          "B": [
+            4.4142,
+            3.4142,
+            1.5
+          ]
+        },
+        "azimuth_deg": {
+          "A": 45,
+          "B": -45
+        },
+        "distance_m": 2,
+        "reflection_model": "none; HRTF direct sound only; original recorded room acoustics remain"
+      },
+      "sources": {
+        "A": {
+          "dataset": "NOTSOFAR",
+          "session": "MTG_30999",
+          "offset": 100,
+          "source_sha256": "3349a72141dbe4e59c00f96eadfeac714b0c9a31537c73a76b74c36377f3b5e5"
+        },
+        "B": {
+          "dataset": "CHiME-6",
+          "session": "S02",
+          "offset": 1900,
+          "source_sha256": "3bd67706b776054fdf6caa92f2b9b29f307d757b2dd4d599c004b4a3af10df26"
+        }
+      },
+      "audio_sha256": {
+        "spatial": "11ff98c1a4e48d1a2ac755c7301e036b05e25330850328a37ebd20a2b5cc6e21",
+        "colocated": "ea0bff84c51565ce8391a624d0e275ad2a0935b20104a5bd709d7e3364399e64"
+      }
+    },
+    {
+      "id": "SC008",
+      "title": "酒店客群",
+      "room": {
+        "dimensions_m": [
+          6,
+          5,
+          3
+        ],
+        "listener_xyz_m": [
+          3,
+          2,
+          1.5
+        ],
+        "facing": "+y",
+        "source_xyz_m": {
+          "A": [
+            4.7321,
+            3.0,
+            1.5
+          ],
+          "B": [
+            1.2679,
+            3.0,
+            1.5
+          ]
+        },
+        "azimuth_deg": {
+          "A": -60,
+          "B": 60
+        },
+        "distance_m": 2,
+        "reflection_model": "none; HRTF direct sound only; original recorded room acoustics remain"
+      },
+      "sources": {
+        "A": {
+          "dataset": "NOTSOFAR",
+          "session": "MTG_30999",
+          "offset": 260,
+          "source_sha256": "3349a72141dbe4e59c00f96eadfeac714b0c9a31537c73a76b74c36377f3b5e5"
+        },
+        "B": {
+          "dataset": "CHiME-6",
+          "session": "S02",
+          "offset": 2100,
+          "source_sha256": "3bd67706b776054fdf6caa92f2b9b29f307d757b2dd4d599c004b4a3af10df26"
+        }
+      },
+      "audio_sha256": {
+        "spatial": "28710971569b763679789ac6d3ab550a2f85e0628566fe8fece62e12cd831a28",
+        "colocated": "29f330960dd6b28988be8bc0841cc2e2ba7f01a809f9dc928000111c55d6b9c0"
+      }
+    },
+    {
+      "id": "SC009",
+      "title": "站台导引",
+      "room": {
+        "dimensions_m": [
+          6,
+          5,
+          3
+        ],
+        "listener_xyz_m": [
+          3,
+          2,
+          1.5
+        ],
+        "facing": "+y",
+        "source_xyz_m": {
+          "A": [
+            2.0,
+            3.7321,
+            1.5
+          ],
+          "B": [
+            4.0,
+            3.7321,
+            1.5
+          ]
+        },
+        "azimuth_deg": {
+          "A": 30,
+          "B": -30
+        },
+        "distance_m": 2,
+        "reflection_model": "none; HRTF direct sound only; original recorded room acoustics remain"
+      },
+      "sources": {
+        "A": {
+          "dataset": "NOTSOFAR",
+          "session": "MTG_31007",
+          "offset": 140,
+          "source_sha256": "b19cac431691ef4ee29e9e6a8c3c4a9de4c501fcd84f183f562078660e21cc4f"
+        },
+        "B": {
+          "dataset": "CHiME-6",
+          "session": "S02",
+          "offset": 2300,
+          "source_sha256": "3bd67706b776054fdf6caa92f2b9b29f307d757b2dd4d599c004b4a3af10df26"
+        }
+      },
+      "audio_sha256": {
+        "spatial": "bcd34130dfbfa2ef81a24b5cbbc8527e641abfb673f4af2aadb943f5194e25d7",
+        "colocated": "078d369a6144936f1f6207053d1b9956aca14e86ea04a1237831dc33c2318cee"
+      }
+    },
+    {
+      "id": "SC010",
+      "title": "停车与候车",
+      "room": {
+        "dimensions_m": [
+          6,
+          5,
+          3
+        ],
+        "listener_xyz_m": [
+          3,
+          2,
+          1.5
+        ],
+        "facing": "+y",
+        "source_xyz_m": {
+          "A": [
+            4.4142,
+            3.4142,
+            1.5
+          ],
+          "B": [
+            1.5858,
+            3.4142,
+            1.5
+          ]
+        },
+        "azimuth_deg": {
+          "A": -45,
+          "B": 45
+        },
+        "distance_m": 2,
+        "reflection_model": "none; HRTF direct sound only; original recorded room acoustics remain"
+      },
+      "sources": {
+        "A": {
+          "dataset": "NOTSOFAR",
+          "session": "MTG_31007",
+          "offset": 285,
+          "source_sha256": "b19cac431691ef4ee29e9e6a8c3c4a9de4c501fcd84f183f562078660e21cc4f"
+        },
+        "B": {
+          "dataset": "CHiME-6",
+          "session": "S02",
+          "offset": 2500,
+          "source_sha256": "3bd67706b776054fdf6caa92f2b9b29f307d757b2dd4d599c004b4a3af10df26"
+        }
+      },
+      "audio_sha256": {
+        "spatial": "d24560edd7823b0acc5affd26f1723e28ec35b5be94da690491bb1f97df360e2",
+        "colocated": "c30d0f47dcc553081198ad9bbaa3c57496b5531623de96c046f13c7f1d4f63b7"
+      }
+    }
+  ],
+  "hrtf": {
+    "name": "MIT KEMAR normal pinna",
+    "authors": [
+      "Bill Gardner",
+      "Keith Martin"
+    ],
+    "copyright": "MIT Media Laboratory, 1994",
+    "sha256": "2768ac841213a7ae11d1ea7fd0f25a69b39216102dc5dd913ea6ba0f0dc57e28"
+  },
+  "validation": {
+    "signal_checks": "pass",
+    "annotation_checks": "pass",
+    "human_listening_review": "pending"
+  }
+}

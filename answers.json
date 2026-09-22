@@ -1,0 +1,1917 @@
+{
+  "version": "spatial-context-v1",
+  "samples": [
+    {
+      "id": "SC001",
+      "answers": [
+        {
+          "id": "SC001-Q1",
+          "answer": "B",
+          "answer_index": 1,
+          "evidence": [
+            {
+              "row_id": "A004",
+              "start": 5.7,
+              "end": 11.19,
+              "speaker": "Lilly",
+              "clean_text": "The issue is we're not a hundred percent sure what type of car we would like to provide the employees."
+            }
+          ]
+        },
+        {
+          "id": "SC001-Q2",
+          "answer": "A",
+          "answer_index": 0,
+          "evidence": [
+            {
+              "row_id": "A003",
+              "start": 2.4,
+              "end": 5.11,
+              "speaker": "Lilly",
+              "clean_text": "Give our employees the opportunity to drive to work."
+            },
+            {
+              "row_id": "A011",
+              "start": 20.11,
+              "end": 22.45,
+              "speaker": "Lilly",
+              "clean_text": "We're gonna start with our top tier first"
+            },
+            {
+              "row_id": "A025",
+              "start": 35.24,
+              "end": 43.08,
+              "speaker": "Jerry",
+              "clean_text": "No, no, no I I thought the company yeah I thought the company started calling it upper management not not top tier 'cause it's it's kind of uh degrading you know."
+            },
+            {
+              "row_id": "A045",
+              "start": 56.8,
+              "end": 59.85,
+              "speaker": "Serena",
+              "clean_text": "the family if you're giving somebody uh"
+            },
+            {
+              "row_id": "A008",
+              "start": 18.02,
+              "end": 20.37,
+              "speaker": "Jerry",
+              "clean_text": "yeah who who gets the cars and who"
+            }
+          ]
+        },
+        {
+          "id": "SC001-Q3",
+          "answer": "B",
+          "answer_index": 1,
+          "evidence": [
+            {
+              "row_id": "A004",
+              "start": 5.7,
+              "end": 11.19,
+              "speaker": "Lilly",
+              "clean_text": "The issue is we're not a hundred percent sure what type of car we would like to provide the employees."
+            },
+            {
+              "row_id": "A035",
+              "start": 43.7,
+              "end": 46.48,
+              "speaker": "Lilly",
+              "clean_text": "OK. So we wanna give everybody the same car."
+            }
+          ]
+        },
+        {
+          "id": "SC001-Q4",
+          "answer": "A",
+          "answer_index": 0,
+          "evidence": [
+            {
+              "row_id": "B013",
+              "start": 21.14,
+              "end": 26.92,
+              "speaker": "P05",
+              "clean_text": "Thanks. Oh there's the Pepsi. I was wondering where you put it. Do you want something to drink?"
+            },
+            {
+              "row_id": "B015",
+              "start": 27.18,
+              "end": 28.98,
+              "speaker": "P08",
+              "clean_text": "Uh, yeah, I think just water."
+            }
+          ]
+        },
+        {
+          "id": "SC001-Q5",
+          "answer": "D",
+          "answer_index": 3,
+          "evidence": [
+            {
+              "row_id": "A033",
+              "start": 42.83,
+              "end": 43.52,
+              "speaker": "Bert",
+              "clean_text": "Yes."
+            },
+            {
+              "row_id": "A025",
+              "start": 35.24,
+              "end": 43.08,
+              "speaker": "Jerry",
+              "clean_text": "No, no, no I I thought the company yeah I thought the company started calling it upper management not not top tier 'cause it's it's kind of uh degrading you know."
+            },
+            {
+              "row_id": "A004",
+              "start": 5.7,
+              "end": 11.19,
+              "speaker": "Lilly",
+              "clean_text": "The issue is we're not a hundred percent sure what type of car we would like to provide the employees."
+            },
+            {
+              "row_id": "A031",
+              "start": 41.85,
+              "end": 42.59,
+              "speaker": "Olivia",
+              "clean_text": "Mm-hmm."
+            },
+            {
+              "row_id": "A045",
+              "start": 56.8,
+              "end": 59.85,
+              "speaker": "Serena",
+              "clean_text": "the family if you're giving somebody uh"
+            },
+            {
+              "row_id": "A030",
+              "start": 41.71,
+              "end": 42.71,
+              "speaker": "Sofia",
+              "clean_text": "It's more inclusive."
+            },
+            {
+              "row_id": "B013",
+              "start": 21.14,
+              "end": 26.92,
+              "speaker": "P05",
+              "clean_text": "Thanks. Oh there's the Pepsi. I was wondering where you put it. Do you want something to drink?"
+            },
+            {
+              "row_id": "B011",
+              "start": 19.41,
+              "end": 25.73,
+              "speaker": "P06",
+              "clean_text": "Okay."
+            },
+            {
+              "row_id": "B017",
+              "start": 30.05,
+              "end": 36.07,
+              "speaker": "P07",
+              "clean_text": "Hey, 'ly? What's the name of the, um, what's the name of the park where your sister lives?"
+            },
+            {
+              "row_id": "B024",
+              "start": 42.4,
+              "end": 49.7,
+              "speaker": "P08",
+              "clean_text": "Um. It's like a county road, I thought. Oh, maybe not. Um, no, I don't."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SC002",
+      "answers": [
+        {
+          "id": "SC002-Q1",
+          "answer": "D",
+          "answer_index": 3,
+          "evidence": [
+            {
+              "row_id": "A032",
+              "start": 21.61,
+              "end": 27.77,
+              "speaker": "Sofia",
+              "clean_text": "I think that we should be promoting carpooling, we should be promoting you know other ways of getting to work"
+            }
+          ]
+        },
+        {
+          "id": "SC002-Q2",
+          "answer": "A",
+          "answer_index": 0,
+          "evidence": [
+            {
+              "row_id": "A027",
+              "start": 17.65,
+              "end": 21.51,
+              "speaker": "Sofia",
+              "clean_text": "unless they're electric because that's not environmentally friendly at all."
+            },
+            {
+              "row_id": "A032",
+              "start": 21.61,
+              "end": 27.77,
+              "speaker": "Sofia",
+              "clean_text": "I think that we should be promoting carpooling, we should be promoting you know other ways of getting to work"
+            },
+            {
+              "row_id": "A012",
+              "start": 8.02,
+              "end": 11.38,
+              "speaker": "Jerry",
+              "clean_text": "I mean, I I think it would be really nice to give everyone a truck."
+            },
+            {
+              "row_id": "A042",
+              "start": 34.82,
+              "end": 37.81,
+              "speaker": "Lilly",
+              "clean_text": "Yeah a supercar would definitely bring them to work faster."
+            },
+            {
+              "row_id": "A037",
+              "start": 28.28,
+              "end": 32.57,
+              "speaker": "Olivia",
+              "clean_text": "Yeah I think the bottom one there is also very interesting, the coupe"
+            }
+          ]
+        },
+        {
+          "id": "SC002-Q3",
+          "answer": "C",
+          "answer_index": 2,
+          "evidence": [
+            {
+              "row_id": "A019",
+              "start": 11.61,
+              "end": 17.32,
+              "speaker": "Sofia",
+              "clean_text": "I don't think so. I think that we should yeah. I don't think that we should be providing cars"
+            },
+            {
+              "row_id": "A027",
+              "start": 17.65,
+              "end": 21.51,
+              "speaker": "Sofia",
+              "clean_text": "unless they're electric because that's not environmentally friendly at all."
+            },
+            {
+              "row_id": "A032",
+              "start": 21.61,
+              "end": 27.77,
+              "speaker": "Sofia",
+              "clean_text": "I think that we should be promoting carpooling, we should be promoting you know other ways of getting to work"
+            }
+          ]
+        },
+        {
+          "id": "SC002-Q4",
+          "answer": "D",
+          "answer_index": 3,
+          "evidence": [
+            {
+              "row_id": "B021",
+              "start": 34.21,
+              "end": 52.97,
+              "speaker": "P06",
+              "clean_text": "So, so right now the space is divided into, this is my, my gift to you, so the space is divided into a forty sixty or, or a thirty five sixty five, thirty five is the front, the front portion of it, and the front portion of it, it's twenty four lots."
+            }
+          ]
+        },
+        {
+          "id": "SC002-Q5",
+          "answer": "B",
+          "answer_index": 1,
+          "evidence": [
+            {
+              "row_id": "A009",
+              "start": 5.89,
+              "end": 9.52,
+              "speaker": "Bert",
+              "clean_text": "or the micros that's a loss you're waiting to happen if those things get into a crash."
+            },
+            {
+              "row_id": "A058",
+              "start": 50.38,
+              "end": 53.9,
+              "speaker": "Jerry",
+              "clean_text": "So So it's upper management or it's or it's uh"
+            },
+            {
+              "row_id": "A049",
+              "start": 40.47,
+              "end": 44.12,
+              "speaker": "Lilly",
+              "clean_text": "I think the priority is a place that live outside a certain radius."
+            },
+            {
+              "row_id": "A037",
+              "start": 28.28,
+              "end": 32.57,
+              "speaker": "Olivia",
+              "clean_text": "Yeah I think the bottom one there is also very interesting, the coupe"
+            },
+            {
+              "row_id": "A032",
+              "start": 21.61,
+              "end": 27.77,
+              "speaker": "Sofia",
+              "clean_text": "I think that we should be promoting carpooling, we should be promoting you know other ways of getting to work"
+            },
+            {
+              "row_id": "A023",
+              "start": 12.89,
+              "end": 14.72,
+              "speaker": "Sophie",
+              "clean_text": "I think Sofia has an idea."
+            },
+            {
+              "row_id": "B022",
+              "start": 36.12,
+              "end": 41.12,
+              "speaker": "P05",
+              "clean_text": "Huh. I didn't even think about that. That's something he might be interested in."
+            },
+            {
+              "row_id": "B021",
+              "start": 34.21,
+              "end": 52.97,
+              "speaker": "P06",
+              "clean_text": "So, so right now the space is divided into, this is my, my gift to you, so the space is divided into a forty sixty or, or a thirty five sixty five, thirty five is the front, the front portion of it, and the front portion of it, it's twenty four lots."
+            },
+            {
+              "row_id": "B017",
+              "start": 23.03,
+              "end": 27.79,
+              "speaker": "P07",
+              "clean_text": "Mm. But it's not occupied, right? It's just developing?"
+            },
+            {
+              "row_id": "B023",
+              "start": 40.9,
+              "end": 56.36,
+              "speaker": "P08",
+              "clean_text": "Yeah. He's, uh, he's looking at another one in Oregon right now, um, and, the, oh, I think what you were asking when you were coming up the stairs was whether or not, like, the deal is gonna go through, and it is."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SC003",
+      "answers": [
+        {
+          "id": "SC003-Q1",
+          "answer": "B",
+          "answer_index": 1,
+          "evidence": [
+            {
+              "row_id": "A041",
+              "start": 40.62,
+              "end": 45.27,
+              "speaker": "Sophie",
+              "clean_text": "Think I think a limousine might be very uh good and helpful in this situation."
+            }
+          ]
+        },
+        {
+          "id": "SC003-Q2",
+          "answer": "D",
+          "answer_index": 3,
+          "evidence": [
+            {
+              "row_id": "A009",
+              "start": 6.97,
+              "end": 12.53,
+              "speaker": "Sofia",
+              "clean_text": "So we are going to be as well pay for gas for any of other kind of endeavors they might be doing on the weekends as well."
+            },
+            {
+              "row_id": "A017",
+              "start": 16.33,
+              "end": 21.09,
+              "speaker": "Sofia",
+              "clean_text": "Yeah, I think a certain amount of gas which would be enough calculated for them to get to work."
+            },
+            {
+              "row_id": "A012",
+              "start": 12.48,
+              "end": 14.7,
+              "speaker": "Bert",
+              "clean_text": "What if we just paid for a certain amount of gas?"
+            },
+            {
+              "row_id": "A027",
+              "start": 23.63,
+              "end": 26.31,
+              "speaker": "Sophie",
+              "clean_text": "Well if it's gonna be electric we don't really need to worry about gas."
+            },
+            {
+              "row_id": "A024",
+              "start": 21.76,
+              "end": 23.93,
+              "speaker": "Olivia",
+              "clean_text": "Maybe we should have smaller cars though."
+            }
+          ]
+        },
+        {
+          "id": "SC003-Q3",
+          "answer": "C",
+          "answer_index": 2,
+          "evidence": [
+            {
+              "row_id": "A012",
+              "start": 12.48,
+              "end": 14.7,
+              "speaker": "Bert",
+              "clean_text": "What if we just paid for a certain amount of gas?"
+            },
+            {
+              "row_id": "A017",
+              "start": 16.33,
+              "end": 21.09,
+              "speaker": "Sofia",
+              "clean_text": "Yeah, I think a certain amount of gas which would be enough calculated for them to get to work."
+            }
+          ]
+        },
+        {
+          "id": "SC003-Q4",
+          "answer": "D",
+          "answer_index": 3,
+          "evidence": [
+            {
+              "row_id": "B004",
+              "start": 4.06,
+              "end": 20.66,
+              "speaker": "P08",
+              "clean_text": "One time we went to this, like, French place, and, uh, we got, I don't know, we both got, like, those, what are they called? Like, I forget the, what the brand is, it doesn't matter, but the, like the cane sugar sodas."
+            },
+            {
+              "row_id": "B011",
+              "start": 21.4,
+              "end": 32.1,
+              "speaker": "P08",
+              "clean_text": "And, uh, and we got, like, eggs benny, and something else, and, and we, we rang it up and it was, like, thirty four bucks, and I was like, \"Okay.\""
+            }
+          ]
+        },
+        {
+          "id": "SC003-Q5",
+          "answer": "D",
+          "answer_index": 3,
+          "evidence": [
+            {
+              "row_id": "A029",
+              "start": 25.16,
+              "end": 29.22,
+              "speaker": "Bert",
+              "clean_text": "Fine. No, but we make it large we're not gonna be like super conservative at it but like"
+            },
+            {
+              "row_id": "A052",
+              "start": 51.71,
+              "end": 57.04,
+              "speaker": "Jerry",
+              "clean_text": "It will It would be nice to have like a carpool system. So we could we could do the limousines OK?"
+            },
+            {
+              "row_id": "A038",
+              "start": 36.47,
+              "end": 40.5,
+              "speaker": "Lilly",
+              "clean_text": "So in terms of type of vehicle you guys brought up"
+            },
+            {
+              "row_id": "A021",
+              "start": 18.73,
+              "end": 21.11,
+              "speaker": "Olivia",
+              "clean_text": "Well, if we're worried about the gas"
+            },
+            {
+              "row_id": "A035",
+              "start": 28.95,
+              "end": 36.34,
+              "speaker": "Serena",
+              "clean_text": "But it's gonna be a it's gonna be um hybrid cars, right? Electric cars so so helpfully it won't be a lot of gas."
+            },
+            {
+              "row_id": "A009",
+              "start": 6.97,
+              "end": 12.53,
+              "speaker": "Sofia",
+              "clean_text": "So we are going to be as well pay for gas for any of other kind of endeavors they might be doing on the weekends as well."
+            },
+            {
+              "row_id": "A041",
+              "start": 40.62,
+              "end": 45.27,
+              "speaker": "Sophie",
+              "clean_text": "Think I think a limousine might be very uh good and helpful in this situation."
+            },
+            {
+              "row_id": "B018",
+              "start": 42.96,
+              "end": 49.78,
+              "speaker": "P05",
+              "clean_text": "Oh. That's true. Not like our couple one."
+            },
+            {
+              "row_id": "B007",
+              "start": 9.69,
+              "end": 25.73,
+              "speaker": "P06",
+              "clean_text": "Haley and me, her sister, her sister's husband, brother, brother's wife, mom, dad, yeah. So we're doing the the Me- yeah. Yeah they should you're right, they should record that one."
+            },
+            {
+              "row_id": "B009",
+              "start": 18.69,
+              "end": 29.43,
+              "speaker": "P07",
+              "clean_text": "It's like a petri dish of social experiment. You guys are recording it.? How long is it again? Twelve days? Ten? Wow."
+            },
+            {
+              "row_id": "B004",
+              "start": 4.06,
+              "end": 20.66,
+              "speaker": "P08",
+              "clean_text": "One time we went to this, like, French place, and, uh, we got, I don't know, we both got, like, those, what are they called? Like, I forget the, what the brand is, it doesn't matter, but the, like the cane sugar sodas."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SC004",
+      "answers": [
+        {
+          "id": "SC004-Q1",
+          "answer": "A",
+          "answer_index": 0,
+          "evidence": [
+            {
+              "row_id": "A028",
+              "start": 43.43,
+              "end": 46.42,
+              "speaker": "Sophie",
+              "clean_text": "I think that I should've got in some sort of a message."
+            }
+          ]
+        },
+        {
+          "id": "SC004-Q2",
+          "answer": "D",
+          "answer_index": 3,
+          "evidence": [
+            {
+              "row_id": "A006",
+              "start": 16.07,
+              "end": 20.86,
+              "speaker": "Sophie",
+              "clean_text": "I actually am one of the people that received my package seven days late"
+            },
+            {
+              "row_id": "A028",
+              "start": 43.43,
+              "end": 46.42,
+              "speaker": "Sophie",
+              "clean_text": "I think that I should've got in some sort of a message."
+            },
+            {
+              "row_id": "A004",
+              "start": 7.8,
+              "end": 13.65,
+              "speaker": "Olivia",
+              "clean_text": "We have guaranteed that they will receive deliveries within five days and that is not been happening."
+            },
+            {
+              "row_id": "A012",
+              "start": 22.74,
+              "end": 25.54,
+              "speaker": "Bert",
+              "clean_text": "Is that seven days after the five days, or seven days total?"
+            },
+            {
+              "row_id": "A038",
+              "start": 48.3,
+              "end": 54.86,
+              "speaker": "Serena",
+              "clean_text": "I'm sorry for the delay but we there's a shortage of drivers, there's a shortage of"
+            }
+          ]
+        },
+        {
+          "id": "SC004-Q3",
+          "answer": "A",
+          "answer_index": 0,
+          "evidence": [
+            {
+              "row_id": "A006",
+              "start": 16.07,
+              "end": 20.86,
+              "speaker": "Sophie",
+              "clean_text": "I actually am one of the people that received my package seven days late"
+            },
+            {
+              "row_id": "A012",
+              "start": 22.74,
+              "end": 25.54,
+              "speaker": "Bert",
+              "clean_text": "Is that seven days after the five days, or seven days total?"
+            },
+            {
+              "row_id": "A014",
+              "start": 25.5,
+              "end": 27.06,
+              "speaker": "Sophie",
+              "clean_text": "After the five days."
+            }
+          ]
+        },
+        {
+          "id": "SC004-Q4",
+          "answer": "A",
+          "answer_index": 0,
+          "evidence": [
+            {
+              "row_id": "B009",
+              "start": 15.74,
+              "end": 20.5,
+              "speaker": "P07",
+              "clean_text": "Like, uh, like, wh- what is the relationship between the home builder and, and this community?"
+            },
+            {
+              "row_id": "B011",
+              "start": 19.05,
+              "end": 26.79,
+              "speaker": "P06",
+              "clean_text": "She's her, it's her builder. Her builder building and our, we were ordering it from a fabricator who she owned."
+            }
+          ]
+        },
+        {
+          "id": "SC004-Q5",
+          "answer": "D",
+          "answer_index": 3,
+          "evidence": [
+            {
+              "row_id": "A012",
+              "start": 22.74,
+              "end": 25.54,
+              "speaker": "Bert",
+              "clean_text": "Is that seven days after the five days, or seven days total?"
+            },
+            {
+              "row_id": "A037",
+              "start": 46.99,
+              "end": 48.62,
+              "speaker": "Jerry",
+              "clean_text": "As a delivery driver"
+            },
+            {
+              "row_id": "A011",
+              "start": 22.06,
+              "end": 23.09,
+              "speaker": "Lilly",
+              "clean_text": "Seven days."
+            },
+            {
+              "row_id": "A004",
+              "start": 7.8,
+              "end": 13.65,
+              "speaker": "Olivia",
+              "clean_text": "We have guaranteed that they will receive deliveries within five days and that is not been happening."
+            },
+            {
+              "row_id": "A026",
+              "start": 36.44,
+              "end": 43.59,
+              "speaker": "Serena",
+              "clean_text": "there's just been a huge demand for deliveries at the moment and we are just overwhelmed."
+            },
+            {
+              "row_id": "A010",
+              "start": 21.65,
+              "end": 24.01,
+              "speaker": "Sofia",
+              "clean_text": "This is five business days."
+            },
+            {
+              "row_id": "A006",
+              "start": 16.07,
+              "end": 20.86,
+              "speaker": "Sophie",
+              "clean_text": "I actually am one of the people that received my package seven days late"
+            },
+            {
+              "row_id": "B005",
+              "start": 9.4,
+              "end": 18.76,
+              "speaker": "P05",
+              "clean_text": "Yeah, we were right before signing it. I don't know if you heard that, yeah, I think you heard that they're dissolving the tiny house comp- , yeah, we just found out a couple of days ago."
+            },
+            {
+              "row_id": "B019",
+              "start": 34.04,
+              "end": 44.69,
+              "speaker": "P06",
+              "clean_text": "We, we, just coincidentally, they both went, uh, hand in hand, okay, so it was just a coincidence. We could have done it separately. Mind you, we could always, so"
+            },
+            {
+              "row_id": "B022",
+              "start": 44.62,
+              "end": 53.26,
+              "speaker": "P07",
+              "clean_text": "That's brilliant for her, actually, that's a great business model, cuz then she's essentially like a real estate developer, but, but, but that she gets, she gets the lot rent forever."
+            },
+            {
+              "row_id": "B010",
+              "start": 18.52,
+              "end": 22.16,
+              "speaker": "P08",
+              "clean_text": "Which is good for you guys, cuz you weren't expecting this, right?"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SC005",
+      "answers": [
+        {
+          "id": "SC005-Q1",
+          "answer": "C",
+          "answer_index": 2,
+          "evidence": [
+            {
+              "row_id": "A051",
+              "start": 52.36,
+              "end": 54.7,
+              "speaker": "Bert",
+              "clean_text": "we have say fifty people, and we need a hundred."
+            }
+          ]
+        },
+        {
+          "id": "SC005-Q2",
+          "answer": "A",
+          "answer_index": 0,
+          "evidence": [
+            {
+              "row_id": "A025",
+              "start": 24.07,
+              "end": 26.81,
+              "speaker": "Serena",
+              "clean_text": "We've had drones crashing into high buildings in the city."
+            },
+            {
+              "row_id": "A030",
+              "start": 27.39,
+              "end": 34.61,
+              "speaker": "Serena",
+              "clean_text": "We've had drones dropping ah fragile packages and and breaking them. So until that's um a hundred percent"
+            },
+            {
+              "row_id": "A010",
+              "start": 4.44,
+              "end": 8.1,
+              "speaker": "Bert",
+              "clean_text": "Can we get those new drones that deliver things that are smaller in size?"
+            },
+            {
+              "row_id": "A016",
+              "start": 11.04,
+              "end": 18.61,
+              "speaker": "Olivia",
+              "clean_text": "the challenge with with the drones is that I think the technology is not yet there for people that live in certain buildings and"
+            },
+            {
+              "row_id": "A046",
+              "start": 48.81,
+              "end": 53.1,
+              "speaker": "Lilly",
+              "clean_text": "No but the drone would be taking his job because he is a delivery man."
+            }
+          ]
+        },
+        {
+          "id": "SC005-Q3",
+          "answer": "A",
+          "answer_index": 0,
+          "evidence": [
+            {
+              "row_id": "A025",
+              "start": 24.07,
+              "end": 26.81,
+              "speaker": "Serena",
+              "clean_text": "We've had drones crashing into high buildings in the city."
+            },
+            {
+              "row_id": "A030",
+              "start": 27.39,
+              "end": 34.61,
+              "speaker": "Serena",
+              "clean_text": "We've had drones dropping ah fragile packages and and breaking them. So until that's um a hundred percent"
+            },
+            {
+              "row_id": "A037",
+              "start": 34.71,
+              "end": 37.25,
+              "speaker": "Serena",
+              "clean_text": "fall proof we are not gonna go that route."
+            }
+          ]
+        },
+        {
+          "id": "SC005-Q4",
+          "answer": "B",
+          "answer_index": 1,
+          "evidence": [
+            {
+              "row_id": "B026",
+              "start": 35.64,
+              "end": 42.26,
+              "speaker": "P07",
+              "clean_text": "Um, my, my park in Oklahoma, ha- , we charged three ten for a, for a waterfront site, but that's waterfront, that's kinda different."
+            },
+            {
+              "row_id": "B032",
+              "start": 44.46,
+              "end": 50.48,
+              "speaker": "P07",
+              "clean_text": "Utilities included. That's because, that's because we were on a well, so, so water doesn't cost us anything, so we just include it."
+            },
+            {
+              "row_id": "B035",
+              "start": 50.21,
+              "end": 51.45,
+              "speaker": "P06",
+              "clean_text": "What about electricity?"
+            },
+            {
+              "row_id": "B037",
+              "start": 51.2,
+              "end": 54.78,
+              "speaker": "P07",
+              "clean_text": "Um, no, they s- pay separate for that. Yep. You know."
+            }
+          ]
+        },
+        {
+          "id": "SC005-Q5",
+          "answer": "B",
+          "answer_index": 1,
+          "evidence": [
+            {
+              "row_id": "A010",
+              "start": 4.44,
+              "end": 8.1,
+              "speaker": "Bert",
+              "clean_text": "Can we get those new drones that deliver things that are smaller in size?"
+            },
+            {
+              "row_id": "A038",
+              "start": 36.98,
+              "end": 43.02,
+              "speaker": "Jerry",
+              "clean_text": "Yeah. I think Yeah, I also think that Yeah it's not worth taking people's jobs when"
+            },
+            {
+              "row_id": "A046",
+              "start": 48.81,
+              "end": 53.1,
+              "speaker": "Lilly",
+              "clean_text": "No but the drone would be taking his job because he is a delivery man."
+            },
+            {
+              "row_id": "A016",
+              "start": 11.04,
+              "end": 18.61,
+              "speaker": "Olivia",
+              "clean_text": "the challenge with with the drones is that I think the technology is not yet there for people that live in certain buildings and"
+            },
+            {
+              "row_id": "A030",
+              "start": 27.39,
+              "end": 34.61,
+              "speaker": "Serena",
+              "clean_text": "We've had drones dropping ah fragile packages and and breaking them. So until that's um a hundred percent"
+            },
+            {
+              "row_id": "A018",
+              "start": 18.72,
+              "end": 21.49,
+              "speaker": "Sofia",
+              "clean_text": "and the weight of the the delivery as well."
+            },
+            {
+              "row_id": "A039",
+              "start": 37.05,
+              "end": 37.97,
+              "speaker": "Sophie",
+              "clean_text": "Makes sense."
+            },
+            {
+              "row_id": "B029",
+              "start": 41.18,
+              "end": 49.42,
+              "speaker": "P05",
+              "clean_text": "Hmm. I've heard White Rock's really pretty, too. So might also go to White Rock. What was the place you mentioned? You said you guys might take a three hour drive"
+            },
+            {
+              "row_id": "B030",
+              "start": 41.51,
+              "end": 47.79,
+              "speaker": "P06",
+              "clean_text": "Okay. And then, the- but utility is on top of that, right? So the you don't, utility's included? So wh-"
+            },
+            {
+              "row_id": "B015",
+              "start": 17.9,
+              "end": 35.22,
+              "speaker": "P07",
+              "clean_text": "Maybe would be in the low two hundreds, like, r- , I'm talking, like, B F E Arkansas, you know, like, not, not even near a big city. Um, you know, if you're close to a big city, you're probably in the high three hundreds range, um, or e- even a moderate sized town that has an employment base, probably moderate to high three hundreds"
+            },
+            {
+              "row_id": "B005",
+              "start": 4.5,
+              "end": 9.5,
+              "speaker": "P08",
+              "clean_text": "Oh. Just recreational activities."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SC006",
+      "answers": [
+        {
+          "id": "SC006-Q1",
+          "answer": "C",
+          "answer_index": 2,
+          "evidence": [
+            {
+              "row_id": "A022",
+              "start": 25.85,
+              "end": 30.17,
+              "speaker": "Serena",
+              "clean_text": "um top to bottom, and we just need someone to sort through to get them to the drivers."
+            }
+          ]
+        },
+        {
+          "id": "SC006-Q2",
+          "answer": "B",
+          "answer_index": 1,
+          "evidence": [
+            {
+              "row_id": "A012",
+              "start": 13.94,
+              "end": 20.86,
+              "speaker": "Serena",
+              "clean_text": "We getting our packages. We We don't have enough people to sort. So we're not getting it to the drivers in timely fashion."
+            },
+            {
+              "row_id": "A022",
+              "start": 25.85,
+              "end": 30.17,
+              "speaker": "Serena",
+              "clean_text": "um top to bottom, and we just need someone to sort through to get them to the drivers."
+            },
+            {
+              "row_id": "A028",
+              "start": 31.95,
+              "end": 34.91,
+              "speaker": "Sophie",
+              "clean_text": "OK so we should start putting out campaigns to uh hire people."
+            },
+            {
+              "row_id": "A030",
+              "start": 35.14,
+              "end": 38.25,
+              "speaker": "Sofia",
+              "clean_text": "Mm-hmm. Definitely, I think our main problem is shortage of workers."
+            },
+            {
+              "row_id": "A037",
+              "start": 45.1,
+              "end": 51.67,
+              "speaker": "Jerry",
+              "clean_text": "Yeah. I think the job seeking websites are usually better for like these types of jobs. I don't think a lot of people are"
+            }
+          ]
+        },
+        {
+          "id": "SC006-Q3",
+          "answer": "C",
+          "answer_index": 2,
+          "evidence": [
+            {
+              "row_id": "A009",
+              "start": 6.98,
+              "end": 13.57,
+              "speaker": "Serena",
+              "clean_text": "It is It is It's the It's the sorting It's the sorting getting it to the drivers that's where it always it always starts from the bottom."
+            },
+            {
+              "row_id": "A012",
+              "start": 13.94,
+              "end": 20.86,
+              "speaker": "Serena",
+              "clean_text": "We getting our packages. We We don't have enough people to sort. So we're not getting it to the drivers in timely fashion."
+            },
+            {
+              "row_id": "A017",
+              "start": 20.45,
+              "end": 22.68,
+              "speaker": "Bert",
+              "clean_text": "So that's where the bottleneck is the sorting. OK."
+            }
+          ]
+        },
+        {
+          "id": "SC006-Q4",
+          "answer": "B",
+          "answer_index": 1,
+          "evidence": [
+            {
+              "row_id": "B013",
+              "start": 22.18,
+              "end": 28.8,
+              "speaker": "P05",
+              "clean_text": "And these are so cheap. Dollar twenty five for the whole bag. I know, that's normally like an small bag of chips."
+            },
+            {
+              "row_id": "B018",
+              "start": 30.4,
+              "end": 39.7,
+              "speaker": "P05",
+              "clean_text": "Probably means they're gonna give us cancer. These are from the dollar store. Abhi's like, first few days here, he went there and he's like, \"These chips are awesome.\""
+            },
+            {
+              "row_id": "B022",
+              "start": 39.84,
+              "end": 53.62,
+              "speaker": "P05",
+              "clean_text": "And now when we go to like Walmart or No Frills or wherever and I see a big bag of chips I'm like, \"Three fifty, screw that, I'm going back to the dollar store to get our dollar twenty five bag of good chips.\" What do you need?"
+            }
+          ]
+        },
+        {
+          "id": "SC006-Q5",
+          "answer": "D",
+          "answer_index": 3,
+          "evidence": [
+            {
+              "row_id": "A017",
+              "start": 20.45,
+              "end": 22.68,
+              "speaker": "Bert",
+              "clean_text": "So that's where the bottleneck is the sorting. OK."
+            },
+            {
+              "row_id": "A037",
+              "start": 45.1,
+              "end": 51.67,
+              "speaker": "Jerry",
+              "clean_text": "Yeah. I think the job seeking websites are usually better for like these types of jobs. I don't think a lot of people are"
+            },
+            {
+              "row_id": "A025",
+              "start": 30.48,
+              "end": 32.08,
+              "speaker": "Lilly",
+              "clean_text": "OK that's the first step then."
+            },
+            {
+              "row_id": "A033",
+              "start": 35.63,
+              "end": 42.34,
+              "speaker": "Olivia",
+              "clean_text": "Well, I think I think in the in social media will be a best start one, I think there is that's one of them, I would think also"
+            },
+            {
+              "row_id": "A012",
+              "start": 13.94,
+              "end": 20.86,
+              "speaker": "Serena",
+              "clean_text": "We getting our packages. We We don't have enough people to sort. So we're not getting it to the drivers in timely fashion."
+            },
+            {
+              "row_id": "A030",
+              "start": 35.14,
+              "end": 38.25,
+              "speaker": "Sofia",
+              "clean_text": "Mm-hmm. Definitely, I think our main problem is shortage of workers."
+            },
+            {
+              "row_id": "A007",
+              "start": 3.38,
+              "end": 6.79,
+              "speaker": "Sophie",
+              "clean_text": "Yeah, is the issue with the delivering or is it the"
+            },
+            {
+              "row_id": "B022",
+              "start": 39.84,
+              "end": 53.62,
+              "speaker": "P05",
+              "clean_text": "And now when we go to like Walmart or No Frills or wherever and I see a big bag of chips I'm like, \"Three fifty, screw that, I'm going back to the dollar store to get our dollar twenty five bag of good chips.\" What do you need?"
+            },
+            {
+              "row_id": "B006",
+              "start": 7.75,
+              "end": 10.79,
+              "speaker": "P06",
+              "clean_text": "Hi, the odd man out."
+            },
+            {
+              "row_id": "B008",
+              "start": 12.34,
+              "end": 13.26,
+              "speaker": "P07",
+              "clean_text": "Yes, please."
+            },
+            {
+              "row_id": "B017",
+              "start": 29.32,
+              "end": 31.58,
+              "speaker": "P08",
+              "clean_text": "Yeah. Where do you get those?"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SC007",
+      "answers": [
+        {
+          "id": "SC007-Q1",
+          "answer": "D",
+          "answer_index": 3,
+          "evidence": [
+            {
+              "row_id": "A013",
+              "start": 9.28,
+              "end": 11.39,
+              "speaker": "Walter",
+              "clean_text": "Maybe we should have a jacuzzi in each room."
+            }
+          ]
+        },
+        {
+          "id": "SC007-Q2",
+          "answer": "B",
+          "answer_index": 1,
+          "evidence": [
+            {
+              "row_id": "A002",
+              "start": 0.27,
+              "end": 3.54,
+              "speaker": "Walter",
+              "clean_text": "I think it's seems yeah we are not building a hostel."
+            },
+            {
+              "row_id": "A013",
+              "start": 9.28,
+              "end": 11.39,
+              "speaker": "Walter",
+              "clean_text": "Maybe we should have a jacuzzi in each room."
+            },
+            {
+              "row_id": "A018",
+              "start": 15.15,
+              "end": 19.17,
+              "speaker": "Eric",
+              "clean_text": "Or maybe we can get like certain floors or we could have a jacuzzi in each room per floor."
+            },
+            {
+              "row_id": "A030",
+              "start": 28.05,
+              "end": 34.4,
+              "speaker": "Serena",
+              "clean_text": "few hundred rooms that we gonna actually when we renovate, we're cutting down the rooms so that we can uh have bigger rooms."
+            },
+            {
+              "row_id": "A052",
+              "start": 57.25,
+              "end": 59.57,
+              "speaker": "Carly",
+              "clean_text": "I'll be incharge of the food and beverage."
+            }
+          ]
+        },
+        {
+          "id": "SC007-Q3",
+          "answer": "B",
+          "answer_index": 1,
+          "evidence": [
+            {
+              "row_id": "A030",
+              "start": 28.05,
+              "end": 34.4,
+              "speaker": "Serena",
+              "clean_text": "few hundred rooms that we gonna actually when we renovate, we're cutting down the rooms so that we can uh have bigger rooms."
+            },
+            {
+              "row_id": "A034",
+              "start": 34.61,
+              "end": 36.54,
+              "speaker": "Serena",
+              "clean_text": "So, each room is kind of a suite."
+            }
+          ]
+        },
+        {
+          "id": "SC007-Q4",
+          "answer": "B",
+          "answer_index": 1,
+          "evidence": [
+            {
+              "row_id": "B013",
+              "start": 19.12,
+              "end": 28.54,
+              "speaker": "P07",
+              "clean_text": "But you can get, you can, you can get free, free Quickbooks, but you can get free Quickbooks and upload straight from your bank statement, and not have to do this any more. Hmm."
+            }
+          ]
+        },
+        {
+          "id": "SC007-Q5",
+          "answer": "B",
+          "answer_index": 1,
+          "evidence": [
+            {
+              "row_id": "A016",
+              "start": 12.41,
+              "end": 13.21,
+              "speaker": "Bert",
+              "clean_text": "Mmm yes."
+            },
+            {
+              "row_id": "A052",
+              "start": 57.25,
+              "end": 59.57,
+              "speaker": "Carly",
+              "clean_text": "I'll be incharge of the food and beverage."
+            },
+            {
+              "row_id": "A018",
+              "start": 15.15,
+              "end": 19.17,
+              "speaker": "Eric",
+              "clean_text": "Or maybe we can get like certain floors or we could have a jacuzzi in each room per floor."
+            },
+            {
+              "row_id": "A020",
+              "start": 17.49,
+              "end": 20.61,
+              "speaker": "Olivia",
+              "clean_text": "Ooh yeah high-end rooms."
+            },
+            {
+              "row_id": "A030",
+              "start": 28.05,
+              "end": 34.4,
+              "speaker": "Serena",
+              "clean_text": "few hundred rooms that we gonna actually when we renovate, we're cutting down the rooms so that we can uh have bigger rooms."
+            },
+            {
+              "row_id": "A023",
+              "start": 19.96,
+              "end": 21.33,
+              "speaker": "Sofia",
+              "clean_text": "I agree yeah."
+            },
+            {
+              "row_id": "A012",
+              "start": 9.27,
+              "end": 10.45,
+              "speaker": "Sophie",
+              "clean_text": "Yeah, hundred percent."
+            },
+            {
+              "row_id": "A002",
+              "start": 0.27,
+              "end": 3.54,
+              "speaker": "Walter",
+              "clean_text": "I think it's seems yeah we are not building a hostel."
+            },
+            {
+              "row_id": "B016",
+              "start": 28.46,
+              "end": 35.17,
+              "speaker": "P05",
+              "clean_text": "And what about when you use cash? What about when you use cash? And we have like four different cards, so."
+            },
+            {
+              "row_id": "B020",
+              "start": 32.6,
+              "end": 48.21,
+              "speaker": "P06",
+              "clean_text": "Now you know, some people, some, , it's like my, my, my, my grandfather's still writing letters. It's just something, some things that you just, you s- and you, no, no, no, I, I, I, I'll, I'll keep, no, I mean this is, this is kind of useless"
+            },
+            {
+              "row_id": "B013",
+              "start": 19.12,
+              "end": 28.54,
+              "speaker": "P07",
+              "clean_text": "But you can get, you can, you can get free, free Quickbooks, but you can get free Quickbooks and upload straight from your bank statement, and not have to do this any more. Hmm."
+            },
+            {
+              "row_id": "B024",
+              "start": 41.42,
+              "end": 48.08,
+              "speaker": "P08",
+              "clean_text": "You're the receipt guy, and that's"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SC008",
+      "answers": [
+        {
+          "id": "SC008-Q1",
+          "answer": "C",
+          "answer_index": 2,
+          "evidence": [
+            {
+              "row_id": "A006",
+              "start": 3.49,
+              "end": 10.95,
+              "speaker": "Serena",
+              "clean_text": "so um now we have to get somebody into uh redesign the outdoor and indoor pools."
+            }
+          ]
+        },
+        {
+          "id": "SC008-Q2",
+          "answer": "C",
+          "answer_index": 2,
+          "evidence": [
+            {
+              "row_id": "A006",
+              "start": 3.49,
+              "end": 10.95,
+              "speaker": "Serena",
+              "clean_text": "so um now we have to get somebody into uh redesign the outdoor and indoor pools."
+            },
+            {
+              "row_id": "A042",
+              "start": 47.29,
+              "end": 50.6,
+              "speaker": "Serena",
+              "clean_text": "children's playroom or something, just in case, yes."
+            },
+            {
+              "row_id": "A016",
+              "start": 18.4,
+              "end": 23.27,
+              "speaker": "Eric",
+              "clean_text": "I've got contacts to a contracting companies I can speak to them, see what they think about the uh pool."
+            },
+            {
+              "row_id": "A032",
+              "start": 35.45,
+              "end": 38.3,
+              "speaker": "Walter",
+              "clean_text": "Yeah but the thing is but then we are excluding families."
+            },
+            {
+              "row_id": "A045",
+              "start": 50.37,
+              "end": 54.46,
+              "speaker": "Sophie",
+              "clean_text": "I don't know I feel like maybe there should be more of like a classy adult hotel"
+            }
+          ]
+        },
+        {
+          "id": "SC008-Q3",
+          "answer": "C",
+          "answer_index": 2,
+          "evidence": [
+            {
+              "row_id": "A021",
+              "start": 24.18,
+              "end": 29.52,
+              "speaker": "Serena",
+              "clean_text": "And um this this boutique hotel is not gonna cater too much to children."
+            },
+            {
+              "row_id": "A032",
+              "start": 35.45,
+              "end": 38.3,
+              "speaker": "Walter",
+              "clean_text": "Yeah but the thing is but then we are excluding families."
+            }
+          ]
+        },
+        {
+          "id": "SC008-Q4",
+          "answer": "C",
+          "answer_index": 2,
+          "evidence": [
+            {
+              "row_id": "B003",
+              "start": 4.75,
+              "end": 18.91,
+              "speaker": "P06",
+              "clean_text": "She'll find a deal, she'll find incredibly, right, she'll find a way to but her mathematics is not so good, so she'll go and save two dollars here and then she'll go and have a three hundred dollar dinner, so, so sometimes they're not in parity."
+            }
+          ]
+        },
+        {
+          "id": "SC008-Q5",
+          "answer": "A",
+          "answer_index": 0,
+          "evidence": [
+            {
+              "row_id": "A030",
+              "start": 33.18,
+              "end": 35.64,
+              "speaker": "Bert",
+              "clean_text": "That was very overly enthusiastic."
+            },
+            {
+              "row_id": "A041",
+              "start": 46.11,
+              "end": 47.67,
+              "speaker": "Carly",
+              "clean_text": "Like accommodations."
+            },
+            {
+              "row_id": "A016",
+              "start": 18.4,
+              "end": 23.27,
+              "speaker": "Eric",
+              "clean_text": "I've got contacts to a contracting companies I can speak to them, see what they think about the uh pool."
+            },
+            {
+              "row_id": "A031",
+              "start": 34.09,
+              "end": 36.52,
+              "speaker": "Olivia",
+              "clean_text": "adult only is a great thought process."
+            },
+            {
+              "row_id": "A006",
+              "start": 3.49,
+              "end": 10.95,
+              "speaker": "Serena",
+              "clean_text": "so um now we have to get somebody into uh redesign the outdoor and indoor pools."
+            },
+            {
+              "row_id": "A027",
+              "start": 31.47,
+              "end": 34.96,
+              "speaker": "Sofia",
+              "clean_text": "Excellent, no, I really think we need to filtered it out, she's right."
+            },
+            {
+              "row_id": "A045",
+              "start": 50.37,
+              "end": 54.46,
+              "speaker": "Sophie",
+              "clean_text": "I don't know I feel like maybe there should be more of like a classy adult hotel"
+            },
+            {
+              "row_id": "A032",
+              "start": 35.45,
+              "end": 38.3,
+              "speaker": "Walter",
+              "clean_text": "Yeah but the thing is but then we are excluding families."
+            },
+            {
+              "row_id": "B013",
+              "start": 34.74,
+              "end": 44.84,
+              "speaker": "P05",
+              "clean_text": "Yeah. I'm like, \"You have to save a dollar here\" and he's like, \"You just got your nails done\" How is that comparable? Like, it's still saving an extra dollar in my pocket."
+            },
+            {
+              "row_id": "B010",
+              "start": 18.91,
+              "end": 36.79,
+              "speaker": "P06",
+              "clean_text": "Right, she still like, but I love the fact that she still looks for that two, three dollars so that's amazing. So sometimes we have the argument, where we're arguing about something at the grocery store, and she's like, \"Go that way\" and I'm like, \"No\" and I'm like, \"How much did you spend on your nails today for God's sake\" you know, no, no but I'm just saying that"
+            },
+            {
+              "row_id": "B025",
+              "start": 57.07,
+              "end": 57.67,
+              "speaker": "P07",
+              "clean_text": "Mm."
+            },
+            {
+              "row_id": "B018",
+              "start": 43.43,
+              "end": 57.65,
+              "speaker": "P08",
+              "clean_text": "But, and, this, this'll last for over a month, almost, so that's like, you know what I mean? Like, the daily expense is less. Yeah."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SC009",
+      "answers": [
+        {
+          "id": "SC009-Q1",
+          "answer": "B",
+          "answer_index": 1,
+          "evidence": [
+            {
+              "row_id": "A060",
+              "start": 54.55,
+              "end": 56.54,
+              "speaker": "Serena",
+              "clean_text": "Are the ticket prices gonna go up?"
+            }
+          ]
+        },
+        {
+          "id": "SC009-Q2",
+          "answer": "D",
+          "answer_index": 3,
+          "evidence": [
+            {
+              "row_id": "A009",
+              "start": 7.71,
+              "end": 12.07,
+              "speaker": "Bert",
+              "clean_text": "We We need a better screen system for to for people to figure out which train they need to go on to."
+            },
+            {
+              "row_id": "A017",
+              "start": 18.12,
+              "end": 23.42,
+              "speaker": "Bert",
+              "clean_text": "like smaller screens with the different places and you just click the city you wanna go to, and then it'll just tell you which platform."
+            },
+            {
+              "row_id": "A011",
+              "start": 10.84,
+              "end": 13.91,
+              "speaker": "Eric",
+              "clean_text": "Great, screen system. I'm thinking flat screen TV's?"
+            },
+            {
+              "row_id": "A028",
+              "start": 28.5,
+              "end": 30.94,
+              "speaker": "Serena",
+              "clean_text": "Oh, so having so having an app?"
+            },
+            {
+              "row_id": "A046",
+              "start": 42.79,
+              "end": 45.45,
+              "speaker": "Sofia",
+              "clean_text": "guidance yeah, user friendly guidance."
+            }
+          ]
+        },
+        {
+          "id": "SC009-Q3",
+          "answer": "C",
+          "answer_index": 2,
+          "evidence": [
+            {
+              "row_id": "A017",
+              "start": 18.12,
+              "end": 23.42,
+              "speaker": "Bert",
+              "clean_text": "like smaller screens with the different places and you just click the city you wanna go to, and then it'll just tell you which platform."
+            },
+            {
+              "row_id": "A022",
+              "start": 23.88,
+              "end": 29.27,
+              "speaker": "Bert",
+              "clean_text": "Yeah, so you don't have to wait for your destination to pop up on screen and then you have to go, Oh that one Oh it went away."
+            }
+          ]
+        },
+        {
+          "id": "SC009-Q4",
+          "answer": "A",
+          "answer_index": 0,
+          "evidence": [
+            {
+              "row_id": "B017",
+              "start": 26.09,
+              "end": 38.21,
+              "speaker": "P08",
+              "clean_text": "So, so we actually met online, and, uh. We actually did meet on Hot or Not, in, like, two thousand seven. Yes, in two thousand and seven."
+            },
+            {
+              "row_id": "B030",
+              "start": 42.99,
+              "end": 44.65,
+              "speaker": "P08",
+              "clean_text": "In two thousand and seven, we met."
+            }
+          ]
+        },
+        {
+          "id": "SC009-Q5",
+          "answer": "C",
+          "answer_index": 2,
+          "evidence": [
+            {
+              "row_id": "A033",
+              "start": 31.45,
+              "end": 38.93,
+              "speaker": "Bert",
+              "clean_text": "Everyone knows I'm talking about, you're like OK you like Albuquerque, oh it's switched, it's switched, I had to I need to follow the roads, it's obnoxious."
+            },
+            {
+              "row_id": "A045",
+              "start": 42.19,
+              "end": 44.16,
+              "speaker": "Carly",
+              "clean_text": "Like user friendly"
+            },
+            {
+              "row_id": "A043",
+              "start": 39.06,
+              "end": 42.97,
+              "speaker": "Eric",
+              "clean_text": "So how how would you call that destination helpers destination guidance?"
+            },
+            {
+              "row_id": "A036",
+              "start": 34.43,
+              "end": 35.46,
+              "speaker": "Olivia",
+              "clean_text": "Mmm."
+            },
+            {
+              "row_id": "A054",
+              "start": 48.28,
+              "end": 54.45,
+              "speaker": "Serena",
+              "clean_text": "Just uh a quick question for the community because we uh, you know, we rebuilding the whole train station."
+            },
+            {
+              "row_id": "A046",
+              "start": 42.79,
+              "end": 45.45,
+              "speaker": "Sofia",
+              "clean_text": "guidance yeah, user friendly guidance."
+            },
+            {
+              "row_id": "A037",
+              "start": 35.11,
+              "end": 36.96,
+              "speaker": "Sophie",
+              "clean_text": "That's actually a great idea."
+            },
+            {
+              "row_id": "A026",
+              "start": 27.17,
+              "end": 28.86,
+              "speaker": "Walter",
+              "clean_text": "Ah, there's an idea."
+            },
+            {
+              "row_id": "B012",
+              "start": 17.3,
+              "end": 26.22,
+              "speaker": "P05",
+              "clean_text": "Okay. All right. Um, knives just in case. Thirteen minutes for that. We can put the salad on and the fruit."
+            },
+            {
+              "row_id": "B032",
+              "start": 44.81,
+              "end": 50.43,
+              "speaker": "P06",
+              "clean_text": "On Hot or Not. I thought Hot or Not was a mock site, because we used to make fun of Hot or Not when we were a kid."
+            },
+            {
+              "row_id": "B004",
+              "start": 1.83,
+              "end": 12.89,
+              "speaker": "P07",
+              "clean_text": "Tha- tha- that was actually the, the, my, um, my, my, Hot or N- my Hot or Not profile, um, uh, catch phrase. The, uh, uh, \"I'm, I'm, I'm a big fork.\""
+            },
+            {
+              "row_id": "B017",
+              "start": 26.09,
+              "end": 38.21,
+              "speaker": "P08",
+              "clean_text": "So, so we actually met online, and, uh. We actually did meet on Hot or Not, in, like, two thousand seven. Yes, in two thousand and seven."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SC010",
+      "answers": [
+        {
+          "id": "SC010-Q1",
+          "answer": "A",
+          "answer_index": 0,
+          "evidence": [
+            {
+              "row_id": "A025",
+              "start": 26.88,
+              "end": 33.05,
+              "speaker": "Bert",
+              "clean_text": "What about the rotating parking uh Ferris wheel thing, where your car goes in, it goes up and you can park like stacks of cars?"
+            }
+          ]
+        },
+        {
+          "id": "SC010-Q2",
+          "answer": "A",
+          "answer_index": 0,
+          "evidence": [
+            {
+              "row_id": "A025",
+              "start": 26.88,
+              "end": 33.05,
+              "speaker": "Bert",
+              "clean_text": "What about the rotating parking uh Ferris wheel thing, where your car goes in, it goes up and you can park like stacks of cars?"
+            },
+            {
+              "row_id": "A048",
+              "start": 51.28,
+              "end": 54.68,
+              "speaker": "Bert",
+              "clean_text": "Yeah, I was thinking we've a piano just sitting in the waiting area."
+            },
+            {
+              "row_id": "A008",
+              "start": 10.02,
+              "end": 17.31,
+              "speaker": "Carly",
+              "clean_text": "Um I think we should have like a few different parking levels and also may be make it like friendly for people that"
+            },
+            {
+              "row_id": "A020",
+              "start": 23.72,
+              "end": 25.95,
+              "speaker": "Sophie",
+              "clean_text": "Maybe there could be like a a bike box."
+            },
+            {
+              "row_id": "A045",
+              "start": 49.94,
+              "end": 53.43,
+              "speaker": "Eric",
+              "clean_text": "we can get fountains and make it a very nice lobby."
+            }
+          ]
+        },
+        {
+          "id": "SC010-Q3",
+          "answer": "A",
+          "answer_index": 0,
+          "evidence": [
+            {
+              "row_id": "A025",
+              "start": 26.88,
+              "end": 33.05,
+              "speaker": "Bert",
+              "clean_text": "What about the rotating parking uh Ferris wheel thing, where your car goes in, it goes up and you can park like stacks of cars?"
+            },
+            {
+              "row_id": "A031",
+              "start": 33.53,
+              "end": 35.96,
+              "speaker": "Sofia",
+              "clean_text": "I think that's a good idea. That could save a lot of space."
+            }
+          ]
+        },
+        {
+          "id": "SC010-Q4",
+          "answer": "C",
+          "answer_index": 2,
+          "evidence": [
+            {
+              "row_id": "B023",
+              "start": 43.48,
+              "end": 51.52,
+              "speaker": "P05",
+              "clean_text": "Uh, are you almost done with those? Okay. Um, I can s- can't sit down, I'm waiting on the pie. Actually, it might be done."
+            },
+            {
+              "row_id": "B030",
+              "start": 52.06,
+              "end": 55.64,
+              "speaker": "P05",
+              "clean_text": "It says when it starts bubbling and is golden. It's getting golden."
+            }
+          ]
+        },
+        {
+          "id": "SC010-Q5",
+          "answer": "D",
+          "answer_index": 3,
+          "evidence": [
+            {
+              "row_id": "A025",
+              "start": 26.88,
+              "end": 33.05,
+              "speaker": "Bert",
+              "clean_text": "What about the rotating parking uh Ferris wheel thing, where your car goes in, it goes up and you can park like stacks of cars?"
+            },
+            {
+              "row_id": "A008",
+              "start": 10.02,
+              "end": 17.31,
+              "speaker": "Carly",
+              "clean_text": "Um I think we should have like a few different parking levels and also may be make it like friendly for people that"
+            },
+            {
+              "row_id": "A034",
+              "start": 34.88,
+              "end": 40.46,
+              "speaker": "Eric",
+              "clean_text": "I've seen them. I've seen them. I think it's I think it's also feasible for this because we already have the space for the underground parking."
+            },
+            {
+              "row_id": "A004",
+              "start": 4.57,
+              "end": 7.54,
+              "speaker": "Olivia",
+              "clean_text": "Carley what do you think about the protocols with regards to the"
+            },
+            {
+              "row_id": "A013",
+              "start": 21.37,
+              "end": 23.84,
+              "speaker": "Serena",
+              "clean_text": "Oh, biking biking it's good."
+            },
+            {
+              "row_id": "A040",
+              "start": 40.56,
+              "end": 45.79,
+              "speaker": "Sofia",
+              "clean_text": "I think we should focus more on yeah the the actual train station itself instead of investing more in the cause."
+            },
+            {
+              "row_id": "A020",
+              "start": 23.72,
+              "end": 25.95,
+              "speaker": "Sophie",
+              "clean_text": "Maybe there could be like a a bike box."
+            },
+            {
+              "row_id": "A023",
+              "start": 25.49,
+              "end": 26.09,
+              "speaker": "Walter",
+              "clean_text": "Mmm."
+            },
+            {
+              "row_id": "B023",
+              "start": 43.48,
+              "end": 51.52,
+              "speaker": "P05",
+              "clean_text": "Uh, are you almost done with those? Okay. Um, I can s- can't sit down, I'm waiting on the pie. Actually, it might be done."
+            },
+            {
+              "row_id": "B006",
+              "start": 8.63,
+              "end": 13.51,
+              "speaker": "P06",
+              "clean_text": "I don't even remember the beginning of this story. Woah, like, GIAC, okay, good."
+            },
+            {
+              "row_id": "B015",
+              "start": 33.61,
+              "end": 44.41,
+              "speaker": "P07",
+              "clean_text": "This is either, this is either, this is either a porn thing or a drugs thing, and I, I draw the line at, I draw the line at porn, so."
+            },
+            {
+              "row_id": "B031",
+              "start": 54.39,
+              "end": 59.07,
+              "speaker": "P08",
+              "clean_text": "Mmm. That looks good. Yeah, probably another, like, five minutes."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

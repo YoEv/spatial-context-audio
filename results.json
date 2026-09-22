@@ -1,0 +1,47 @@
+{
+  "benchmark": "spatial-context-v1",
+  "updated_at": "2026-09-22T03:30:47.430211+00:00",
+  "models": [
+    {
+      "id": "gpt-live-1",
+      "name": "GPT-Live 1",
+      "kind": "流式音频理解 · 输入适配待核验"
+    },
+    {
+      "id": "google/gemini-3.8-flash",
+      "name": "Gemini 3.8 Flash",
+      "kind": "直接音频问答"
+    },
+    {
+      "id": "Qwen/Qwen3-Omni-30B-A3B-Instruct",
+      "name": "Qwen3-Omni Instruct",
+      "kind": "开放权重 · 直接音频问答"
+    },
+    {
+      "id": "moonshotai/Kimi-Audio-7B-Instruct",
+      "name": "Kimi-Audio Instruct",
+      "kind": "开放权重 · 直接音频问答"
+    },
+    {
+      "id": "kyutai/moshiko-pytorch-bf16",
+      "name": "Moshi",
+      "kind": "流式模型 · 选择题适配待核验"
+    },
+    {
+      "id": "FireRedTeam/FireRedAudio",
+      "name": "FireRedAudio",
+      "kind": "开放权重 · 音频理解"
+    },
+    {
+      "id": "PleasedPenguin/A2R-30B-A3B",
+      "name": "A2R",
+      "kind": "开放权重 · 音频推理"
+    },
+    {
+      "id": "meta/muse-voice-transcribe-1.0",
+      "name": "Muse Voice Transcribe",
+      "kind": "转录基线 · 需接问答器"
+    }
+  ],
+  "runs": []
+}
