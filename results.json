@@ -1,6 +1,6 @@
 {
   "benchmark": "spatial-context-v1",
-  "updated_at": "2026-09-22T04:53:07.354584+00:00",
+  "updated_at": "2026-09-22T04:57:12.266694+00:00",
   "models": [
     {
       "id": "gpt-live-1",
@@ -2607,6 +2607,846 @@
       ]
     },
     {
+      "run_id": "20260922-kimi-single-paired-v2-SC001-colocated",
+      "model_id": "moonshotai/Kimi-Audio-7B-Instruct",
+      "sample_id": "SC001",
+      "condition": "colocated",
+      "status": "completed",
+      "created_at": "2026-09-22T04:52:30.289144+00:00",
+      "channel_handling": "downmixed_mono",
+      "latency_seconds": 1.939332889392972,
+      "questions": [
+        {
+          "id": "SC001-Q1",
+          "prediction": "A",
+          "gold": "B",
+          "correct": false
+        },
+        {
+          "id": "SC001-Q2",
+          "prediction": "A",
+          "gold": "A",
+          "correct": true
+        },
+        {
+          "id": "SC001-Q3",
+          "prediction": "B",
+          "gold": "B",
+          "correct": true
+        },
+        {
+          "id": "SC001-Q4",
+          "prediction": "D",
+          "gold": "A",
+          "correct": false
+        },
+        {
+          "id": "SC001-Q5",
+          "prediction": "D",
+          "gold": "D",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "run_id": "20260922-kimi-single-paired-v2-SC001-spatial",
+      "model_id": "moonshotai/Kimi-Audio-7B-Instruct",
+      "sample_id": "SC001",
+      "condition": "spatial",
+      "status": "completed",
+      "created_at": "2026-09-22T04:52:28.229666+00:00",
+      "channel_handling": "downmixed_mono",
+      "latency_seconds": 2.803289962001145,
+      "questions": [
+        {
+          "id": "SC001-Q1",
+          "prediction": "A",
+          "gold": "B",
+          "correct": false
+        },
+        {
+          "id": "SC001-Q2",
+          "prediction": "A",
+          "gold": "A",
+          "correct": true
+        },
+        {
+          "id": "SC001-Q3",
+          "prediction": "B",
+          "gold": "B",
+          "correct": true
+        },
+        {
+          "id": "SC001-Q4",
+          "prediction": "D",
+          "gold": "A",
+          "correct": false
+        },
+        {
+          "id": "SC001-Q5",
+          "prediction": "D",
+          "gold": "D",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "run_id": "20260922-kimi-single-paired-v2-SC002-colocated",
+      "model_id": "moonshotai/Kimi-Audio-7B-Instruct",
+      "sample_id": "SC002",
+      "condition": "colocated",
+      "status": "completed",
+      "created_at": "2026-09-22T04:52:32.157402+00:00",
+      "channel_handling": "downmixed_mono",
+      "latency_seconds": 1.744254231452942,
+      "questions": [
+        {
+          "id": "SC002-Q1",
+          "prediction": "C",
+          "gold": "D",
+          "correct": false
+        },
+        {
+          "id": "SC002-Q2",
+          "prediction": "A",
+          "gold": "A",
+          "correct": true
+        },
+        {
+          "id": "SC002-Q3",
+          "prediction": "C",
+          "gold": "C",
+          "correct": true
+        },
+        {
+          "id": "SC002-Q4",
+          "prediction": "D",
+          "gold": "D",
+          "correct": true
+        },
+        {
+          "id": "SC002-Q5",
+          "prediction": "A",
+          "gold": "B",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "run_id": "20260922-kimi-single-paired-v2-SC002-spatial",
+      "model_id": "moonshotai/Kimi-Audio-7B-Instruct",
+      "sample_id": "SC002",
+      "condition": "spatial",
+      "status": "completed",
+      "created_at": "2026-09-22T04:52:34.020426+00:00",
+      "channel_handling": "downmixed_mono",
+      "latency_seconds": 1.7323018768802285,
+      "questions": [
+        {
+          "id": "SC002-Q1",
+          "prediction": "C",
+          "gold": "D",
+          "correct": false
+        },
+        {
+          "id": "SC002-Q2",
+          "prediction": "A",
+          "gold": "A",
+          "correct": true
+        },
+        {
+          "id": "SC002-Q3",
+          "prediction": "C",
+          "gold": "C",
+          "correct": true
+        },
+        {
+          "id": "SC002-Q4",
+          "prediction": "D",
+          "gold": "D",
+          "correct": true
+        },
+        {
+          "id": "SC002-Q5",
+          "prediction": "A",
+          "gold": "B",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "run_id": "20260922-kimi-single-paired-v2-SC003-colocated",
+      "model_id": "moonshotai/Kimi-Audio-7B-Instruct",
+      "sample_id": "SC003",
+      "condition": "colocated",
+      "status": "completed",
+      "created_at": "2026-09-22T04:52:38.049629+00:00",
+      "channel_handling": "downmixed_mono",
+      "latency_seconds": 1.8661453230306506,
+      "questions": [
+        {
+          "id": "SC003-Q1",
+          "prediction": "D",
+          "gold": "B",
+          "correct": false
+        },
+        {
+          "id": "SC003-Q2",
+          "prediction": "D",
+          "gold": "D",
+          "correct": true
+        },
+        {
+          "id": "SC003-Q3",
+          "prediction": "C",
+          "gold": "C",
+          "correct": true
+        },
+        {
+          "id": "SC003-Q4",
+          "prediction": "D",
+          "gold": "D",
+          "correct": true
+        },
+        {
+          "id": "SC003-Q5",
+          "prediction": "D",
+          "gold": "D",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "run_id": "20260922-kimi-single-paired-v2-SC003-spatial",
+      "model_id": "moonshotai/Kimi-Audio-7B-Instruct",
+      "sample_id": "SC003",
+      "condition": "spatial",
+      "status": "completed",
+      "created_at": "2026-09-22T04:52:36.053617+00:00",
+      "channel_handling": "downmixed_mono",
+      "latency_seconds": 1.9065311569720507,
+      "questions": [
+        {
+          "id": "SC003-Q1",
+          "prediction": "D",
+          "gold": "B",
+          "correct": false
+        },
+        {
+          "id": "SC003-Q2",
+          "prediction": "D",
+          "gold": "D",
+          "correct": true
+        },
+        {
+          "id": "SC003-Q3",
+          "prediction": "C",
+          "gold": "C",
+          "correct": true
+        },
+        {
+          "id": "SC003-Q4",
+          "prediction": "D",
+          "gold": "D",
+          "correct": true
+        },
+        {
+          "id": "SC003-Q5",
+          "prediction": "D",
+          "gold": "D",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "run_id": "20260922-kimi-single-paired-v2-SC004-colocated",
+      "model_id": "moonshotai/Kimi-Audio-7B-Instruct",
+      "sample_id": "SC004",
+      "condition": "colocated",
+      "status": "completed",
+      "created_at": "2026-09-22T04:52:40.009538+00:00",
+      "channel_handling": "downmixed_mono",
+      "latency_seconds": 1.82942049857229,
+      "questions": [
+        {
+          "id": "SC004-Q1",
+          "prediction": "D",
+          "gold": "A",
+          "correct": false
+        },
+        {
+          "id": "SC004-Q2",
+          "prediction": null,
+          "gold": "D",
+          "correct": null
+        },
+        {
+          "id": "SC004-Q3",
+          "prediction": "A",
+          "gold": "A",
+          "correct": true
+        },
+        {
+          "id": "SC004-Q4",
+          "prediction": "A",
+          "gold": "A",
+          "correct": true
+        },
+        {
+          "id": "SC004-Q5",
+          "prediction": "D",
+          "gold": "D",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "run_id": "20260922-kimi-single-paired-v2-SC004-spatial",
+      "model_id": "moonshotai/Kimi-Audio-7B-Instruct",
+      "sample_id": "SC004",
+      "condition": "spatial",
+      "status": "completed",
+      "created_at": "2026-09-22T04:52:41.939206+00:00",
+      "channel_handling": "downmixed_mono",
+      "latency_seconds": 1.770277764648199,
+      "questions": [
+        {
+          "id": "SC004-Q1",
+          "prediction": "D",
+          "gold": "A",
+          "correct": false
+        },
+        {
+          "id": "SC004-Q2",
+          "prediction": "B",
+          "gold": "D",
+          "correct": false
+        },
+        {
+          "id": "SC004-Q3",
+          "prediction": "A",
+          "gold": "A",
+          "correct": true
+        },
+        {
+          "id": "SC004-Q4",
+          "prediction": "A",
+          "gold": "A",
+          "correct": true
+        },
+        {
+          "id": "SC004-Q5",
+          "prediction": "D",
+          "gold": "D",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "run_id": "20260922-kimi-single-paired-v2-SC005-colocated",
+      "model_id": "moonshotai/Kimi-Audio-7B-Instruct",
+      "sample_id": "SC005",
+      "condition": "colocated",
+      "status": "completed",
+      "created_at": "2026-09-22T04:52:46.376877+00:00",
+      "channel_handling": "downmixed_mono",
+      "latency_seconds": 1.6680629821494222,
+      "questions": [
+        {
+          "id": "SC005-Q1",
+          "prediction": "D",
+          "gold": "C",
+          "correct": false
+        },
+        {
+          "id": "SC005-Q2",
+          "prediction": "B",
+          "gold": "A",
+          "correct": false
+        },
+        {
+          "id": "SC005-Q3",
+          "prediction": "A",
+          "gold": "A",
+          "correct": true
+        },
+        {
+          "id": "SC005-Q4",
+          "prediction": "B",
+          "gold": "B",
+          "correct": true
+        },
+        {
+          "id": "SC005-Q5",
+          "prediction": "B",
+          "gold": "B",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "run_id": "20260922-kimi-single-paired-v2-SC005-spatial",
+      "model_id": "moonshotai/Kimi-Audio-7B-Instruct",
+      "sample_id": "SC005",
+      "condition": "spatial",
+      "status": "completed",
+      "created_at": "2026-09-22T04:52:44.250607+00:00",
+      "channel_handling": "downmixed_mono",
+      "latency_seconds": 2.4606613758951426,
+      "questions": [
+        {
+          "id": "SC005-Q1",
+          "prediction": "A",
+          "gold": "C",
+          "correct": false
+        },
+        {
+          "id": "SC005-Q2",
+          "prediction": "A",
+          "gold": "A",
+          "correct": true
+        },
+        {
+          "id": "SC005-Q3",
+          "prediction": "A",
+          "gold": "A",
+          "correct": true
+        },
+        {
+          "id": "SC005-Q4",
+          "prediction": "B",
+          "gold": "B",
+          "correct": true
+        },
+        {
+          "id": "SC005-Q5",
+          "prediction": "B",
+          "gold": "B",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "run_id": "20260922-kimi-single-paired-v2-SC006-colocated",
+      "model_id": "moonshotai/Kimi-Audio-7B-Instruct",
+      "sample_id": "SC006",
+      "condition": "colocated",
+      "status": "completed",
+      "created_at": "2026-09-22T04:52:48.221304+00:00",
+      "channel_handling": "downmixed_mono",
+      "latency_seconds": 1.7038776185363531,
+      "questions": [
+        {
+          "id": "SC006-Q1",
+          "prediction": "D",
+          "gold": "C",
+          "correct": false
+        },
+        {
+          "id": "SC006-Q2",
+          "prediction": "B",
+          "gold": "B",
+          "correct": true
+        },
+        {
+          "id": "SC006-Q3",
+          "prediction": "C",
+          "gold": "C",
+          "correct": true
+        },
+        {
+          "id": "SC006-Q4",
+          "prediction": "D",
+          "gold": "B",
+          "correct": false
+        },
+        {
+          "id": "SC006-Q5",
+          "prediction": "D",
+          "gold": "D",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "run_id": "20260922-kimi-single-paired-v2-SC006-spatial",
+      "model_id": "moonshotai/Kimi-Audio-7B-Instruct",
+      "sample_id": "SC006",
+      "condition": "spatial",
+      "status": "completed",
+      "created_at": "2026-09-22T04:52:50.094076+00:00",
+      "channel_handling": "downmixed_mono",
+      "latency_seconds": 1.7212455049157143,
+      "questions": [
+        {
+          "id": "SC006-Q1",
+          "prediction": "D",
+          "gold": "C",
+          "correct": false
+        },
+        {
+          "id": "SC006-Q2",
+          "prediction": "B",
+          "gold": "B",
+          "correct": true
+        },
+        {
+          "id": "SC006-Q3",
+          "prediction": "C",
+          "gold": "C",
+          "correct": true
+        },
+        {
+          "id": "SC006-Q4",
+          "prediction": "D",
+          "gold": "B",
+          "correct": false
+        },
+        {
+          "id": "SC006-Q5",
+          "prediction": "D",
+          "gold": "D",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "run_id": "20260922-kimi-single-paired-v2-SC007-colocated",
+      "model_id": "moonshotai/Kimi-Audio-7B-Instruct",
+      "sample_id": "SC007",
+      "condition": "colocated",
+      "status": "completed",
+      "created_at": "2026-09-22T04:52:53.859806+00:00",
+      "channel_handling": "downmixed_mono",
+      "latency_seconds": 1.7268327781930566,
+      "questions": [
+        {
+          "id": "SC007-Q1",
+          "prediction": "C",
+          "gold": "D",
+          "correct": false
+        },
+        {
+          "id": "SC007-Q2",
+          "prediction": "C",
+          "gold": "B",
+          "correct": false
+        },
+        {
+          "id": "SC007-Q3",
+          "prediction": "B",
+          "gold": "B",
+          "correct": true
+        },
+        {
+          "id": "SC007-Q4",
+          "prediction": "B",
+          "gold": "B",
+          "correct": true
+        },
+        {
+          "id": "SC007-Q5",
+          "prediction": "A",
+          "gold": "B",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "run_id": "20260922-kimi-single-paired-v2-SC007-spatial",
+      "model_id": "moonshotai/Kimi-Audio-7B-Instruct",
+      "sample_id": "SC007",
+      "condition": "spatial",
+      "status": "completed",
+      "created_at": "2026-09-22T04:52:51.975438+00:00",
+      "channel_handling": "downmixed_mono",
+      "latency_seconds": 1.7204790767282248,
+      "questions": [
+        {
+          "id": "SC007-Q1",
+          "prediction": "C",
+          "gold": "D",
+          "correct": false
+        },
+        {
+          "id": "SC007-Q2",
+          "prediction": "C",
+          "gold": "B",
+          "correct": false
+        },
+        {
+          "id": "SC007-Q3",
+          "prediction": "B",
+          "gold": "B",
+          "correct": true
+        },
+        {
+          "id": "SC007-Q4",
+          "prediction": "B",
+          "gold": "B",
+          "correct": true
+        },
+        {
+          "id": "SC007-Q5",
+          "prediction": "A",
+          "gold": "B",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "run_id": "20260922-kimi-single-paired-v2-SC008-colocated",
+      "model_id": "moonshotai/Kimi-Audio-7B-Instruct",
+      "sample_id": "SC008",
+      "condition": "colocated",
+      "status": "completed",
+      "created_at": "2026-09-22T04:52:55.746239+00:00",
+      "channel_handling": "downmixed_mono",
+      "latency_seconds": 1.7179250931367278,
+      "questions": [
+        {
+          "id": "SC008-Q1",
+          "prediction": "D",
+          "gold": "C",
+          "correct": false
+        },
+        {
+          "id": "SC008-Q2",
+          "prediction": "B",
+          "gold": "C",
+          "correct": false
+        },
+        {
+          "id": "SC008-Q3",
+          "prediction": "C",
+          "gold": "C",
+          "correct": true
+        },
+        {
+          "id": "SC008-Q4",
+          "prediction": "C",
+          "gold": "C",
+          "correct": true
+        },
+        {
+          "id": "SC008-Q5",
+          "prediction": "A",
+          "gold": "A",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "run_id": "20260922-kimi-single-paired-v2-SC008-spatial",
+      "model_id": "moonshotai/Kimi-Audio-7B-Instruct",
+      "sample_id": "SC008",
+      "condition": "spatial",
+      "status": "completed",
+      "created_at": "2026-09-22T04:52:57.641022+00:00",
+      "channel_handling": "downmixed_mono",
+      "latency_seconds": 1.7226381925866008,
+      "questions": [
+        {
+          "id": "SC008-Q1",
+          "prediction": "D",
+          "gold": "C",
+          "correct": false
+        },
+        {
+          "id": "SC008-Q2",
+          "prediction": "B",
+          "gold": "C",
+          "correct": false
+        },
+        {
+          "id": "SC008-Q3",
+          "prediction": "C",
+          "gold": "C",
+          "correct": true
+        },
+        {
+          "id": "SC008-Q4",
+          "prediction": "C",
+          "gold": "C",
+          "correct": true
+        },
+        {
+          "id": "SC008-Q5",
+          "prediction": "A",
+          "gold": "A",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "run_id": "20260922-kimi-single-paired-v2-SC009-colocated",
+      "model_id": "moonshotai/Kimi-Audio-7B-Instruct",
+      "sample_id": "SC009",
+      "condition": "colocated",
+      "status": "completed",
+      "created_at": "2026-09-22T04:53:01.731135+00:00",
+      "channel_handling": "downmixed_mono",
+      "latency_seconds": 2.0031025484204292,
+      "questions": [
+        {
+          "id": "SC009-Q1",
+          "prediction": "C",
+          "gold": "B",
+          "correct": false
+        },
+        {
+          "id": "SC009-Q2",
+          "prediction": "D",
+          "gold": "D",
+          "correct": true
+        },
+        {
+          "id": "SC009-Q3",
+          "prediction": "C",
+          "gold": "C",
+          "correct": true
+        },
+        {
+          "id": "SC009-Q4",
+          "prediction": "D",
+          "gold": "A",
+          "correct": false
+        },
+        {
+          "id": "SC009-Q5",
+          "prediction": "D",
+          "gold": "C",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "run_id": "20260922-kimi-single-paired-v2-SC009-spatial",
+      "model_id": "moonshotai/Kimi-Audio-7B-Instruct",
+      "sample_id": "SC009",
+      "condition": "spatial",
+      "status": "completed",
+      "created_at": "2026-09-22T04:52:59.538832+00:00",
+      "channel_handling": "downmixed_mono",
+      "latency_seconds": 1.7264312636107206,
+      "questions": [
+        {
+          "id": "SC009-Q1",
+          "prediction": "C",
+          "gold": "B",
+          "correct": false
+        },
+        {
+          "id": "SC009-Q2",
+          "prediction": "D",
+          "gold": "D",
+          "correct": true
+        },
+        {
+          "id": "SC009-Q3",
+          "prediction": "C",
+          "gold": "C",
+          "correct": true
+        },
+        {
+          "id": "SC009-Q4",
+          "prediction": "D",
+          "gold": "A",
+          "correct": false
+        },
+        {
+          "id": "SC009-Q5",
+          "prediction": "D",
+          "gold": "C",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "run_id": "20260922-kimi-single-paired-v2-SC010-colocated",
+      "model_id": "moonshotai/Kimi-Audio-7B-Instruct",
+      "sample_id": "SC010",
+      "condition": "colocated",
+      "status": "completed",
+      "created_at": "2026-09-22T04:53:03.648615+00:00",
+      "channel_handling": "downmixed_mono",
+      "latency_seconds": 1.7409774819388986,
+      "questions": [
+        {
+          "id": "SC010-Q1",
+          "prediction": "D",
+          "gold": "A",
+          "correct": false
+        },
+        {
+          "id": "SC010-Q2",
+          "prediction": "A",
+          "gold": "A",
+          "correct": true
+        },
+        {
+          "id": "SC010-Q3",
+          "prediction": "A",
+          "gold": "A",
+          "correct": true
+        },
+        {
+          "id": "SC010-Q4",
+          "prediction": "D",
+          "gold": "C",
+          "correct": false
+        },
+        {
+          "id": "SC010-Q5",
+          "prediction": "A",
+          "gold": "D",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "run_id": "20260922-kimi-single-paired-v2-SC010-spatial",
+      "model_id": "moonshotai/Kimi-Audio-7B-Instruct",
+      "sample_id": "SC010",
+      "condition": "spatial",
+      "status": "completed",
+      "created_at": "2026-09-22T04:53:05.673340+00:00",
+      "channel_handling": "downmixed_mono",
+      "latency_seconds": 1.8476168736815453,
+      "questions": [
+        {
+          "id": "SC010-Q1",
+          "prediction": "D",
+          "gold": "A",
+          "correct": false
+        },
+        {
+          "id": "SC010-Q2",
+          "prediction": "D",
+          "gold": "A",
+          "correct": false
+        },
+        {
+          "id": "SC010-Q3",
+          "prediction": "A",
+          "gold": "A",
+          "correct": true
+        },
+        {
+          "id": "SC010-Q4",
+          "prediction": "D",
+          "gold": "C",
+          "correct": false
+        },
+        {
+          "id": "SC010-Q5",
+          "prediction": "A",
+          "gold": "D",
+          "correct": false
+        }
+      ]
+    },
+    {
       "run_id": "20260922-qwen3-omni-paired-v1-SC001-colocated",
       "model_id": "Qwen/Qwen3-Omni-30B-A3B-Instruct",
       "sample_id": "SC001",
@@ -3513,8 +4353,8 @@
     {
       "model_id": "moonshotai/Kimi-Audio-7B-Instruct",
       "questions_per_call": 1,
-      "inference_calls": null,
-      "prompt_note": "5 题试跑未遵从 JSON 格式；拟改独立单题调用，尚未完成。"
+      "inference_calls": 100,
+      "prompt_note": "每次独立回答1题，共100次。另保留五题JSON格式失败pilot；该pilot不计入本轮得分。"
     },
     {
       "model_id": "kyutai/moshiko-pytorch-bf16",
