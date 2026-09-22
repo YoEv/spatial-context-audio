@@ -1,6 +1,6 @@
 {
   "benchmark": "spatial-context-v1",
-  "updated_at": "2026-09-22T04:50:58.264564+00:00",
+  "updated_at": "2026-09-22T04:53:07.354584+00:00",
   "models": [
     {
       "id": "gpt-live-1",
@@ -44,6 +44,846 @@
     }
   ],
   "runs": [
+    {
+      "run_id": "20260922-firered-paired-v1-SC001-colocated",
+      "model_id": "FireRedTeam/FireRedAudio",
+      "sample_id": "SC001",
+      "condition": "colocated",
+      "status": "completed",
+      "created_at": "2026-09-22T04:49:24.993105+00:00",
+      "channel_handling": "downmixed_mono",
+      "latency_seconds": 4.062752223573625,
+      "questions": [
+        {
+          "id": "SC001-Q1",
+          "prediction": "B",
+          "gold": "B",
+          "correct": true
+        },
+        {
+          "id": "SC001-Q2",
+          "prediction": "A",
+          "gold": "A",
+          "correct": true
+        },
+        {
+          "id": "SC001-Q3",
+          "prediction": "B",
+          "gold": "B",
+          "correct": true
+        },
+        {
+          "id": "SC001-Q4",
+          "prediction": "D",
+          "gold": "A",
+          "correct": false
+        },
+        {
+          "id": "SC001-Q5",
+          "prediction": "D",
+          "gold": "D",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "run_id": "20260922-firered-paired-v1-SC001-spatial",
+      "model_id": "FireRedTeam/FireRedAudio",
+      "sample_id": "SC001",
+      "condition": "spatial",
+      "status": "completed",
+      "created_at": "2026-09-22T04:47:56.854304+00:00",
+      "channel_handling": "downmixed_mono",
+      "latency_seconds": 4.195562195964158,
+      "questions": [
+        {
+          "id": "SC001-Q1",
+          "prediction": "B",
+          "gold": "B",
+          "correct": true
+        },
+        {
+          "id": "SC001-Q2",
+          "prediction": "A",
+          "gold": "A",
+          "correct": true
+        },
+        {
+          "id": "SC001-Q3",
+          "prediction": "B",
+          "gold": "B",
+          "correct": true
+        },
+        {
+          "id": "SC001-Q4",
+          "prediction": "D",
+          "gold": "A",
+          "correct": false
+        },
+        {
+          "id": "SC001-Q5",
+          "prediction": "D",
+          "gold": "D",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "run_id": "20260922-firered-paired-v1-SC002-colocated",
+      "model_id": "FireRedTeam/FireRedAudio",
+      "sample_id": "SC002",
+      "condition": "colocated",
+      "status": "completed",
+      "created_at": "2026-09-22T04:49:29.056902+00:00",
+      "channel_handling": "downmixed_mono",
+      "latency_seconds": 3.1655259942635894,
+      "questions": [
+        {
+          "id": "SC002-Q1",
+          "prediction": "D",
+          "gold": "D",
+          "correct": true
+        },
+        {
+          "id": "SC002-Q2",
+          "prediction": "A",
+          "gold": "A",
+          "correct": true
+        },
+        {
+          "id": "SC002-Q3",
+          "prediction": "C",
+          "gold": "C",
+          "correct": true
+        },
+        {
+          "id": "SC002-Q4",
+          "prediction": "C",
+          "gold": "D",
+          "correct": false
+        },
+        {
+          "id": "SC002-Q5",
+          "prediction": "A",
+          "gold": "B",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "run_id": "20260922-firered-paired-v1-SC002-spatial",
+      "model_id": "FireRedTeam/FireRedAudio",
+      "sample_id": "SC002",
+      "condition": "spatial",
+      "status": "completed",
+      "created_at": "2026-09-22T04:49:32.223762+00:00",
+      "channel_handling": "downmixed_mono",
+      "latency_seconds": 3.109309840016067,
+      "questions": [
+        {
+          "id": "SC002-Q1",
+          "prediction": "C",
+          "gold": "D",
+          "correct": false
+        },
+        {
+          "id": "SC002-Q2",
+          "prediction": "A",
+          "gold": "A",
+          "correct": true
+        },
+        {
+          "id": "SC002-Q3",
+          "prediction": "C",
+          "gold": "C",
+          "correct": true
+        },
+        {
+          "id": "SC002-Q4",
+          "prediction": "C",
+          "gold": "D",
+          "correct": false
+        },
+        {
+          "id": "SC002-Q5",
+          "prediction": "A",
+          "gold": "B",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "run_id": "20260922-firered-paired-v1-SC003-colocated",
+      "model_id": "FireRedTeam/FireRedAudio",
+      "sample_id": "SC003",
+      "condition": "colocated",
+      "status": "completed",
+      "created_at": "2026-09-22T04:49:38.424868+00:00",
+      "channel_handling": "downmixed_mono",
+      "latency_seconds": 3.062402936629951,
+      "questions": [
+        {
+          "id": "SC003-Q1",
+          "prediction": "B",
+          "gold": "B",
+          "correct": true
+        },
+        {
+          "id": "SC003-Q2",
+          "prediction": "D",
+          "gold": "D",
+          "correct": true
+        },
+        {
+          "id": "SC003-Q3",
+          "prediction": "C",
+          "gold": "C",
+          "correct": true
+        },
+        {
+          "id": "SC003-Q4",
+          "prediction": "A",
+          "gold": "D",
+          "correct": false
+        },
+        {
+          "id": "SC003-Q5",
+          "prediction": "D",
+          "gold": "D",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "run_id": "20260922-firered-paired-v1-SC003-spatial",
+      "model_id": "FireRedTeam/FireRedAudio",
+      "sample_id": "SC003",
+      "condition": "spatial",
+      "status": "completed",
+      "created_at": "2026-09-22T04:49:35.334107+00:00",
+      "channel_handling": "downmixed_mono",
+      "latency_seconds": 3.0887655103579164,
+      "questions": [
+        {
+          "id": "SC003-Q1",
+          "prediction": "B",
+          "gold": "B",
+          "correct": true
+        },
+        {
+          "id": "SC003-Q2",
+          "prediction": "D",
+          "gold": "D",
+          "correct": true
+        },
+        {
+          "id": "SC003-Q3",
+          "prediction": "C",
+          "gold": "C",
+          "correct": true
+        },
+        {
+          "id": "SC003-Q4",
+          "prediction": "A",
+          "gold": "D",
+          "correct": false
+        },
+        {
+          "id": "SC003-Q5",
+          "prediction": "D",
+          "gold": "D",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "run_id": "20260922-firered-paired-v1-SC004-colocated",
+      "model_id": "FireRedTeam/FireRedAudio",
+      "sample_id": "SC004",
+      "condition": "colocated",
+      "status": "completed",
+      "created_at": "2026-09-22T04:49:41.488309+00:00",
+      "channel_handling": "downmixed_mono",
+      "latency_seconds": 3.0230886414647102,
+      "questions": [
+        {
+          "id": "SC004-Q1",
+          "prediction": "A",
+          "gold": "A",
+          "correct": true
+        },
+        {
+          "id": "SC004-Q2",
+          "prediction": "A",
+          "gold": "D",
+          "correct": false
+        },
+        {
+          "id": "SC004-Q3",
+          "prediction": "A",
+          "gold": "A",
+          "correct": true
+        },
+        {
+          "id": "SC004-Q4",
+          "prediction": "A",
+          "gold": "A",
+          "correct": true
+        },
+        {
+          "id": "SC004-Q5",
+          "prediction": "D",
+          "gold": "D",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "run_id": "20260922-firered-paired-v1-SC004-spatial",
+      "model_id": "FireRedTeam/FireRedAudio",
+      "sample_id": "SC004",
+      "condition": "spatial",
+      "status": "completed",
+      "created_at": "2026-09-22T04:49:44.512532+00:00",
+      "channel_handling": "downmixed_mono",
+      "latency_seconds": 3.096243060193956,
+      "questions": [
+        {
+          "id": "SC004-Q1",
+          "prediction": "A",
+          "gold": "A",
+          "correct": true
+        },
+        {
+          "id": "SC004-Q2",
+          "prediction": "A",
+          "gold": "D",
+          "correct": false
+        },
+        {
+          "id": "SC004-Q3",
+          "prediction": "A",
+          "gold": "A",
+          "correct": true
+        },
+        {
+          "id": "SC004-Q4",
+          "prediction": "A",
+          "gold": "A",
+          "correct": true
+        },
+        {
+          "id": "SC004-Q5",
+          "prediction": "D",
+          "gold": "D",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "run_id": "20260922-firered-paired-v1-SC005-colocated",
+      "model_id": "FireRedTeam/FireRedAudio",
+      "sample_id": "SC005",
+      "condition": "colocated",
+      "status": "completed",
+      "created_at": "2026-09-22T04:49:50.665060+00:00",
+      "channel_handling": "downmixed_mono",
+      "latency_seconds": 3.0498467227444053,
+      "questions": [
+        {
+          "id": "SC005-Q1",
+          "prediction": "C",
+          "gold": "C",
+          "correct": true
+        },
+        {
+          "id": "SC005-Q2",
+          "prediction": "A",
+          "gold": "A",
+          "correct": true
+        },
+        {
+          "id": "SC005-Q3",
+          "prediction": "A",
+          "gold": "A",
+          "correct": true
+        },
+        {
+          "id": "SC005-Q4",
+          "prediction": "B",
+          "gold": "B",
+          "correct": true
+        },
+        {
+          "id": "SC005-Q5",
+          "prediction": "B",
+          "gold": "B",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "run_id": "20260922-firered-paired-v1-SC005-spatial",
+      "model_id": "FireRedTeam/FireRedAudio",
+      "sample_id": "SC005",
+      "condition": "spatial",
+      "status": "completed",
+      "created_at": "2026-09-22T04:49:47.609821+00:00",
+      "channel_handling": "downmixed_mono",
+      "latency_seconds": 3.054262073710561,
+      "questions": [
+        {
+          "id": "SC005-Q1",
+          "prediction": "C",
+          "gold": "C",
+          "correct": true
+        },
+        {
+          "id": "SC005-Q2",
+          "prediction": "A",
+          "gold": "A",
+          "correct": true
+        },
+        {
+          "id": "SC005-Q3",
+          "prediction": "A",
+          "gold": "A",
+          "correct": true
+        },
+        {
+          "id": "SC005-Q4",
+          "prediction": "B",
+          "gold": "B",
+          "correct": true
+        },
+        {
+          "id": "SC005-Q5",
+          "prediction": "B",
+          "gold": "B",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "run_id": "20260922-firered-paired-v1-SC006-colocated",
+      "model_id": "FireRedTeam/FireRedAudio",
+      "sample_id": "SC006",
+      "condition": "colocated",
+      "status": "completed",
+      "created_at": "2026-09-22T04:49:53.715881+00:00",
+      "channel_handling": "downmixed_mono",
+      "latency_seconds": 3.0879116486757994,
+      "questions": [
+        {
+          "id": "SC006-Q1",
+          "prediction": "C",
+          "gold": "C",
+          "correct": true
+        },
+        {
+          "id": "SC006-Q2",
+          "prediction": "B",
+          "gold": "B",
+          "correct": true
+        },
+        {
+          "id": "SC006-Q3",
+          "prediction": "C",
+          "gold": "C",
+          "correct": true
+        },
+        {
+          "id": "SC006-Q4",
+          "prediction": "B",
+          "gold": "B",
+          "correct": true
+        },
+        {
+          "id": "SC006-Q5",
+          "prediction": "D",
+          "gold": "D",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "run_id": "20260922-firered-paired-v1-SC006-spatial",
+      "model_id": "FireRedTeam/FireRedAudio",
+      "sample_id": "SC006",
+      "condition": "spatial",
+      "status": "completed",
+      "created_at": "2026-09-22T04:49:56.804675+00:00",
+      "channel_handling": "downmixed_mono",
+      "latency_seconds": 3.0709937484934926,
+      "questions": [
+        {
+          "id": "SC006-Q1",
+          "prediction": "C",
+          "gold": "C",
+          "correct": true
+        },
+        {
+          "id": "SC006-Q2",
+          "prediction": "B",
+          "gold": "B",
+          "correct": true
+        },
+        {
+          "id": "SC006-Q3",
+          "prediction": "C",
+          "gold": "C",
+          "correct": true
+        },
+        {
+          "id": "SC006-Q4",
+          "prediction": "B",
+          "gold": "B",
+          "correct": true
+        },
+        {
+          "id": "SC006-Q5",
+          "prediction": "D",
+          "gold": "D",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "run_id": "20260922-firered-paired-v1-SC007-colocated",
+      "model_id": "FireRedTeam/FireRedAudio",
+      "sample_id": "SC007",
+      "condition": "colocated",
+      "status": "completed",
+      "created_at": "2026-09-22T04:50:02.937422+00:00",
+      "channel_handling": "downmixed_mono",
+      "latency_seconds": 3.0545074539259076,
+      "questions": [
+        {
+          "id": "SC007-Q1",
+          "prediction": "B",
+          "gold": "D",
+          "correct": false
+        },
+        {
+          "id": "SC007-Q2",
+          "prediction": "A",
+          "gold": "B",
+          "correct": false
+        },
+        {
+          "id": "SC007-Q3",
+          "prediction": "B",
+          "gold": "B",
+          "correct": true
+        },
+        {
+          "id": "SC007-Q4",
+          "prediction": "B",
+          "gold": "B",
+          "correct": true
+        },
+        {
+          "id": "SC007-Q5",
+          "prediction": "A",
+          "gold": "B",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "run_id": "20260922-firered-paired-v1-SC007-spatial",
+      "model_id": "FireRedTeam/FireRedAudio",
+      "sample_id": "SC007",
+      "condition": "spatial",
+      "status": "completed",
+      "created_at": "2026-09-22T04:49:59.876687+00:00",
+      "channel_handling": "downmixed_mono",
+      "latency_seconds": 3.0600042026489973,
+      "questions": [
+        {
+          "id": "SC007-Q1",
+          "prediction": "B",
+          "gold": "D",
+          "correct": false
+        },
+        {
+          "id": "SC007-Q2",
+          "prediction": "A",
+          "gold": "B",
+          "correct": false
+        },
+        {
+          "id": "SC007-Q3",
+          "prediction": "B",
+          "gold": "B",
+          "correct": true
+        },
+        {
+          "id": "SC007-Q4",
+          "prediction": "B",
+          "gold": "B",
+          "correct": true
+        },
+        {
+          "id": "SC007-Q5",
+          "prediction": "A",
+          "gold": "B",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "run_id": "20260922-firered-paired-v1-SC008-colocated",
+      "model_id": "FireRedTeam/FireRedAudio",
+      "sample_id": "SC008",
+      "condition": "colocated",
+      "status": "completed",
+      "created_at": "2026-09-22T04:50:05.992873+00:00",
+      "channel_handling": "downmixed_mono",
+      "latency_seconds": 3.073515930213034,
+      "questions": [
+        {
+          "id": "SC008-Q1",
+          "prediction": "C",
+          "gold": "C",
+          "correct": true
+        },
+        {
+          "id": "SC008-Q2",
+          "prediction": "A",
+          "gold": "C",
+          "correct": false
+        },
+        {
+          "id": "SC008-Q3",
+          "prediction": "C",
+          "gold": "C",
+          "correct": true
+        },
+        {
+          "id": "SC008-Q4",
+          "prediction": "C",
+          "gold": "C",
+          "correct": true
+        },
+        {
+          "id": "SC008-Q5",
+          "prediction": "A",
+          "gold": "A",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "run_id": "20260922-firered-paired-v1-SC008-spatial",
+      "model_id": "FireRedTeam/FireRedAudio",
+      "sample_id": "SC008",
+      "condition": "spatial",
+      "status": "completed",
+      "created_at": "2026-09-22T04:50:09.067366+00:00",
+      "channel_handling": "downmixed_mono",
+      "latency_seconds": 2.558553649112582,
+      "questions": [
+        {
+          "id": "SC008-Q1",
+          "prediction": "C",
+          "gold": "C",
+          "correct": true
+        },
+        {
+          "id": "SC008-Q2",
+          "prediction": "A",
+          "gold": "C",
+          "correct": false
+        },
+        {
+          "id": "SC008-Q3",
+          "prediction": "C",
+          "gold": "C",
+          "correct": true
+        },
+        {
+          "id": "SC008-Q4",
+          "prediction": "C",
+          "gold": "C",
+          "correct": true
+        },
+        {
+          "id": "SC008-Q5",
+          "prediction": "A",
+          "gold": "A",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "run_id": "20260922-firered-paired-v1-SC009-colocated",
+      "model_id": "FireRedTeam/FireRedAudio",
+      "sample_id": "SC009",
+      "condition": "colocated",
+      "status": "completed",
+      "created_at": "2026-09-22T04:50:14.693738+00:00",
+      "channel_handling": "downmixed_mono",
+      "latency_seconds": 3.047063773497939,
+      "questions": [
+        {
+          "id": "SC009-Q1",
+          "prediction": "B",
+          "gold": "B",
+          "correct": true
+        },
+        {
+          "id": "SC009-Q2",
+          "prediction": "D",
+          "gold": "D",
+          "correct": true
+        },
+        {
+          "id": "SC009-Q3",
+          "prediction": "C",
+          "gold": "C",
+          "correct": true
+        },
+        {
+          "id": "SC009-Q4",
+          "prediction": "C",
+          "gold": "A",
+          "correct": false
+        },
+        {
+          "id": "SC009-Q5",
+          "prediction": "C",
+          "gold": "C",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "run_id": "20260922-firered-paired-v1-SC009-spatial",
+      "model_id": "FireRedTeam/FireRedAudio",
+      "sample_id": "SC009",
+      "condition": "spatial",
+      "status": "completed",
+      "created_at": "2026-09-22T04:50:11.627088+00:00",
+      "channel_handling": "downmixed_mono",
+      "latency_seconds": 3.065705254673958,
+      "questions": [
+        {
+          "id": "SC009-Q1",
+          "prediction": "B",
+          "gold": "B",
+          "correct": true
+        },
+        {
+          "id": "SC009-Q2",
+          "prediction": "D",
+          "gold": "D",
+          "correct": true
+        },
+        {
+          "id": "SC009-Q3",
+          "prediction": "C",
+          "gold": "C",
+          "correct": true
+        },
+        {
+          "id": "SC009-Q4",
+          "prediction": "C",
+          "gold": "A",
+          "correct": false
+        },
+        {
+          "id": "SC009-Q5",
+          "prediction": "C",
+          "gold": "C",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "run_id": "20260922-firered-paired-v1-SC010-colocated",
+      "model_id": "FireRedTeam/FireRedAudio",
+      "sample_id": "SC010",
+      "condition": "colocated",
+      "status": "completed",
+      "created_at": "2026-09-22T04:50:17.741830+00:00",
+      "channel_handling": "downmixed_mono",
+      "latency_seconds": 3.085174910724163,
+      "questions": [
+        {
+          "id": "SC010-Q1",
+          "prediction": "A",
+          "gold": "A",
+          "correct": true
+        },
+        {
+          "id": "SC010-Q2",
+          "prediction": "A",
+          "gold": "A",
+          "correct": true
+        },
+        {
+          "id": "SC010-Q3",
+          "prediction": "A",
+          "gold": "A",
+          "correct": true
+        },
+        {
+          "id": "SC010-Q4",
+          "prediction": "C",
+          "gold": "C",
+          "correct": true
+        },
+        {
+          "id": "SC010-Q5",
+          "prediction": "D",
+          "gold": "D",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "run_id": "20260922-firered-paired-v1-SC010-spatial",
+      "model_id": "FireRedTeam/FireRedAudio",
+      "sample_id": "SC010",
+      "condition": "spatial",
+      "status": "completed",
+      "created_at": "2026-09-22T04:50:20.827954+00:00",
+      "channel_handling": "downmixed_mono",
+      "latency_seconds": 3.0643574129790068,
+      "questions": [
+        {
+          "id": "SC010-Q1",
+          "prediction": "A",
+          "gold": "A",
+          "correct": true
+        },
+        {
+          "id": "SC010-Q2",
+          "prediction": "A",
+          "gold": "A",
+          "correct": true
+        },
+        {
+          "id": "SC010-Q3",
+          "prediction": "A",
+          "gold": "A",
+          "correct": true
+        },
+        {
+          "id": "SC010-Q4",
+          "prediction": "C",
+          "gold": "C",
+          "correct": true
+        },
+        {
+          "id": "SC010-Q5",
+          "prediction": "D",
+          "gold": "D",
+          "correct": true
+        }
+      ]
+    },
     {
       "run_id": "20260922-gemini-3.8-flash-paired-v1-SC001-colocated",
       "model_id": "google/gemini-3.8-flash",
@@ -2681,6 +3521,12 @@
       "questions_per_call": null,
       "inference_calls": null,
       "prompt_note": "本次只验证原生流式响应，尚未适配本题集选择题。"
+    },
+    {
+      "model_id": "FireRedTeam/FireRedAudio",
+      "questions_per_call": 5,
+      "inference_calls": 20,
+      "prompt_note": "每段独立回答5题，共20次；官方采样配置，固定seed 0，关闭thinking。"
     }
   ]
 }
