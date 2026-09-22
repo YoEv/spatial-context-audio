@@ -1,6 +1,6 @@
 {
   "benchmark": "spatial-context-v1",
-  "updated_at": "2026-09-22T13:59:44.270986+00:00",
+  "updated_at": "2026-09-22T14:09:57.967216+00:00",
   "models": [
     {
       "id": "gpt-live-1",
@@ -5132,9 +5132,9 @@
       "model_id": "gpt-live-1",
       "sample_kind": "hear_voice_attribution",
       "duration_seconds": 106.0725625,
-      "status": "fail",
-      "summary": "首次会话正常关闭，但没有可解析答案且输出近乎静音；后续独立50题评测另见上表。",
-      "latency_seconds": 141.409
+      "status": "pass",
+      "summary": "重测链路通过：完整录音后追加结束语音，成功返回答案E（参考A，答错），会话正常关闭。首次失败保留历史记录。",
+      "latency_seconds": 147.78
     },
     {
       "model_id": "google/gemini-3.8-flash",
