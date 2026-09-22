@@ -1,6 +1,6 @@
 {
   "benchmark": "spatial-context-v1",
-  "updated_at": "2026-09-22T15:21:23.532131+00:00",
+  "updated_at": "2026-09-22T17:37:57.274212+00:00",
   "models": [
     {
       "id": "gpt-live-1",
@@ -40,7 +40,7 @@
     {
       "id": "meta/muse-voice-transcribe-1.0",
       "name": "Muse Voice Transcribe",
-      "kind": "转录基线 · 完整标注 WER，单独统计"
+      "kind": "转录已完成 · 完整标注 WER"
     }
   ],
   "runs": [
@@ -6866,11 +6866,11 @@
     },
     {
       "model_id": "meta/muse-voice-transcribe-1.0",
-      "sample_kind": "notsofar_transcription",
-      "duration_seconds": 45,
-      "status": "blocked",
-      "summary": "历史：45秒单样本因年龄门槛未请求。账户确认后，另行完成本题集20条60秒转录，见WER结果。",
-      "latency_seconds": null
+      "sample_kind": "spatial_transcription",
+      "duration_seconds": 60,
+      "status": "pass",
+      "summary": "SC001空间版60秒转录通过；后续两条件20条全部完成，按完整标注计算WER。未进行选择题作答。",
+      "latency_seconds": 12.84266504200059
     }
   ],
   "model_protocols": [
@@ -6926,6 +6926,8 @@
   "transcription_evaluation": {
     "model_id": "meta/muse-voice-transcribe-1.0",
     "metric": "diagnostic_serialized_WER",
+    "cost_usd": 0.06,
+    "audio_seconds": 1200,
     "conditions": {
       "spatial": {
         "completed": 10,
