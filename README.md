@@ -5,7 +5,7 @@
 Open index.html via a static HTTP server. All assets use relative URLs and work on GitHub Pages. Audio is 60-second stereo PCM WAV; no backend, account, API key or paid inference is required to listen.
 
 ## Models and results
-The results area only shows runs on spatial-context-v1. Older HEAR/NOTSOFAR connectivity tests do not count as results here. Empty means not run, not zero accuracy. Transcription-only models require a reader before they can answer MCQs. Channel handling must be recorded.
+The paired scoring table only shows runs on spatial-context-v1. A separate single-sample connectivity table shows sanitized HEAR/NOTSOFAR smoke summaries; these do not count toward the 50-question scores. Empty means not run, not zero accuracy. Transcription-only models require a reader before they can answer MCQs. Channel handling must be recorded.
 
 Add actual run JSON records conforming to result-schema.json to the private benchmark model-results directory on Beluga, rebuild the export, then deploy. The export checks waveform SHA256, model, question IDs and conditions, computes correctness from gold, and only exports allowlisted fields. Never publish credentials or raw provider responses.
 

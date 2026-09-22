@@ -1,6 +1,6 @@
 {
   "benchmark": "spatial-context-v1",
-  "updated_at": "2026-09-22T04:44:40.629592+00:00",
+  "updated_at": "2026-09-22T04:50:58.264564+00:00",
   "models": [
     {
       "id": "gpt-live-1",
@@ -2605,6 +2605,82 @@
           "correct": true
         }
       ]
+    }
+  ],
+  "smoke_runs": [
+    {
+      "model_id": "gpt-live-1",
+      "sample_kind": "hear_voice_attribution",
+      "duration_seconds": 106.0725625,
+      "status": "fail",
+      "summary": "会话已正常关闭，但没有返回可解析答案，输出音频近乎静音。",
+      "latency_seconds": 141.409
+    },
+    {
+      "model_id": "google/gemini-3.8-flash",
+      "sample_kind": "hear_voice_attribution",
+      "duration_seconds": 106.0725625,
+      "status": "pass",
+      "summary": "返回 A，与该单题参考答案一致。",
+      "latency_seconds": 4.233278957999573
+    },
+    {
+      "model_id": "Qwen/Qwen3-Omni-30B-A3B-Instruct",
+      "sample_kind": "hear_voice_attribution",
+      "duration_seconds": 106.0725625,
+      "status": "pass",
+      "summary": "完整输入与生成链路通过；返回 C，该单题答错。",
+      "latency_seconds": 4.2253774385899305
+    },
+    {
+      "model_id": "moonshotai/Kimi-Audio-7B-Instruct",
+      "sample_kind": "hear_voice_attribution",
+      "duration_seconds": 106.0725625,
+      "status": "pass",
+      "summary": "完整输入与生成链路通过；返回 D，该单题答错。",
+      "latency_seconds": 15.340695700608194
+    },
+    {
+      "model_id": "kyutai/moshiko-pytorch-bf16",
+      "sample_kind": "notsofar_native_stream",
+      "duration_seconds": 45.0,
+      "status": "pass",
+      "summary": "生成 45.12 秒非静音响应音频与文本；未评估转录或选择题准确率。",
+      "latency_seconds": 23.683405215851963
+    },
+    {
+      "model_id": "FireRedTeam/FireRedAudio",
+      "sample_kind": "hear_voice_attribution",
+      "duration_seconds": 106.0725625,
+      "status": "pass",
+      "summary": "完整推理通过；答案JSON为A，答对。缺结束标签，离线补充解析，无重新推理。",
+      "latency_seconds": 1.7704347185790539
+    }
+  ],
+  "model_protocols": [
+    {
+      "model_id": "google/gemini-3.8-flash",
+      "questions_per_call": 5,
+      "inference_calls": 21,
+      "prompt_note": "20次成功调用，每段独立回答5题；另有一次零输出503后重试，无按答案重试。"
+    },
+    {
+      "model_id": "Qwen/Qwen3-Omni-30B-A3B-Instruct",
+      "questions_per_call": 5,
+      "inference_calls": 20,
+      "prompt_note": "每段音频一次回答 5 题，双条件共 20 次调用。"
+    },
+    {
+      "model_id": "moonshotai/Kimi-Audio-7B-Instruct",
+      "questions_per_call": 1,
+      "inference_calls": null,
+      "prompt_note": "5 题试跑未遵从 JSON 格式；拟改独立单题调用，尚未完成。"
+    },
+    {
+      "model_id": "kyutai/moshiko-pytorch-bf16",
+      "questions_per_call": null,
+      "inference_calls": null,
+      "prompt_note": "本次只验证原生流式响应，尚未适配本题集选择题。"
     }
   ]
 }
