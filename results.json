@@ -1,6 +1,6 @@
 {
   "benchmark": "spatial-context-v1",
-  "updated_at": "2026-09-22T03:51:34.478787+00:00",
+  "updated_at": "2026-09-22T04:17:25.418561+00:00",
   "models": [
     {
       "id": "gpt-live-1",
@@ -923,6 +923,846 @@
           "prediction": "C",
           "gold": "D",
           "correct": false
+        }
+      ]
+    },
+    {
+      "run_id": "20260922-qwen3-omni-paired-v1-SC001-colocated",
+      "model_id": "Qwen/Qwen3-Omni-30B-A3B-Instruct",
+      "sample_id": "SC001",
+      "condition": "colocated",
+      "status": "completed",
+      "created_at": "2026-09-22T04:01:35.314742+00:00",
+      "channel_handling": "downmixed_mono",
+      "latency_seconds": 13.385646402835846,
+      "questions": [
+        {
+          "id": "SC001-Q1",
+          "prediction": "B",
+          "gold": "B",
+          "correct": true
+        },
+        {
+          "id": "SC001-Q2",
+          "prediction": "A",
+          "gold": "A",
+          "correct": true
+        },
+        {
+          "id": "SC001-Q3",
+          "prediction": "B",
+          "gold": "B",
+          "correct": true
+        },
+        {
+          "id": "SC001-Q4",
+          "prediction": "D",
+          "gold": "A",
+          "correct": false
+        },
+        {
+          "id": "SC001-Q5",
+          "prediction": "D",
+          "gold": "D",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "run_id": "20260922-qwen3-omni-paired-v1-SC001-spatial",
+      "model_id": "Qwen/Qwen3-Omni-30B-A3B-Instruct",
+      "sample_id": "SC001",
+      "condition": "spatial",
+      "status": "completed",
+      "created_at": "2026-09-22T04:00:37.949164+00:00",
+      "channel_handling": "downmixed_mono",
+      "latency_seconds": 13.794916379265487,
+      "questions": [
+        {
+          "id": "SC001-Q1",
+          "prediction": "B",
+          "gold": "B",
+          "correct": true
+        },
+        {
+          "id": "SC001-Q2",
+          "prediction": "A",
+          "gold": "A",
+          "correct": true
+        },
+        {
+          "id": "SC001-Q3",
+          "prediction": "B",
+          "gold": "B",
+          "correct": true
+        },
+        {
+          "id": "SC001-Q4",
+          "prediction": "D",
+          "gold": "A",
+          "correct": false
+        },
+        {
+          "id": "SC001-Q5",
+          "prediction": "D",
+          "gold": "D",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "run_id": "20260922-qwen3-omni-paired-v1-SC002-colocated",
+      "model_id": "Qwen/Qwen3-Omni-30B-A3B-Instruct",
+      "sample_id": "SC002",
+      "condition": "colocated",
+      "status": "completed",
+      "created_at": "2026-09-22T04:01:48.701682+00:00",
+      "channel_handling": "downmixed_mono",
+      "latency_seconds": 12.884668932296336,
+      "questions": [
+        {
+          "id": "SC002-Q1",
+          "prediction": "C",
+          "gold": "D",
+          "correct": false
+        },
+        {
+          "id": "SC002-Q2",
+          "prediction": "A",
+          "gold": "A",
+          "correct": true
+        },
+        {
+          "id": "SC002-Q3",
+          "prediction": "C",
+          "gold": "C",
+          "correct": true
+        },
+        {
+          "id": "SC002-Q4",
+          "prediction": "C",
+          "gold": "D",
+          "correct": false
+        },
+        {
+          "id": "SC002-Q5",
+          "prediction": "B",
+          "gold": "B",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "run_id": "20260922-qwen3-omni-paired-v1-SC002-spatial",
+      "model_id": "Qwen/Qwen3-Omni-30B-A3B-Instruct",
+      "sample_id": "SC002",
+      "condition": "spatial",
+      "status": "completed",
+      "created_at": "2026-09-22T04:02:01.587437+00:00",
+      "channel_handling": "downmixed_mono",
+      "latency_seconds": 12.785854710265994,
+      "questions": [
+        {
+          "id": "SC002-Q1",
+          "prediction": "C",
+          "gold": "D",
+          "correct": false
+        },
+        {
+          "id": "SC002-Q2",
+          "prediction": "A",
+          "gold": "A",
+          "correct": true
+        },
+        {
+          "id": "SC002-Q3",
+          "prediction": "C",
+          "gold": "C",
+          "correct": true
+        },
+        {
+          "id": "SC002-Q4",
+          "prediction": "C",
+          "gold": "D",
+          "correct": false
+        },
+        {
+          "id": "SC002-Q5",
+          "prediction": "B",
+          "gold": "B",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "run_id": "20260922-qwen3-omni-paired-v1-SC003-colocated",
+      "model_id": "Qwen/Qwen3-Omni-30B-A3B-Instruct",
+      "sample_id": "SC003",
+      "condition": "colocated",
+      "status": "completed",
+      "created_at": "2026-09-22T04:02:27.305738+00:00",
+      "channel_handling": "downmixed_mono",
+      "latency_seconds": 12.836108312010765,
+      "questions": [
+        {
+          "id": "SC003-Q1",
+          "prediction": "C",
+          "gold": "B",
+          "correct": false
+        },
+        {
+          "id": "SC003-Q2",
+          "prediction": "C",
+          "gold": "D",
+          "correct": false
+        },
+        {
+          "id": "SC003-Q3",
+          "prediction": "C",
+          "gold": "C",
+          "correct": true
+        },
+        {
+          "id": "SC003-Q4",
+          "prediction": "A",
+          "gold": "D",
+          "correct": false
+        },
+        {
+          "id": "SC003-Q5",
+          "prediction": "D",
+          "gold": "D",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "run_id": "20260922-qwen3-omni-paired-v1-SC003-spatial",
+      "model_id": "Qwen/Qwen3-Omni-30B-A3B-Instruct",
+      "sample_id": "SC003",
+      "condition": "spatial",
+      "status": "completed",
+      "created_at": "2026-09-22T04:02:14.374273+00:00",
+      "channel_handling": "downmixed_mono",
+      "latency_seconds": 12.930186200886965,
+      "questions": [
+        {
+          "id": "SC003-Q1",
+          "prediction": "C",
+          "gold": "B",
+          "correct": false
+        },
+        {
+          "id": "SC003-Q2",
+          "prediction": "C",
+          "gold": "D",
+          "correct": false
+        },
+        {
+          "id": "SC003-Q3",
+          "prediction": "C",
+          "gold": "C",
+          "correct": true
+        },
+        {
+          "id": "SC003-Q4",
+          "prediction": "A",
+          "gold": "D",
+          "correct": false
+        },
+        {
+          "id": "SC003-Q5",
+          "prediction": "D",
+          "gold": "D",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "run_id": "20260922-qwen3-omni-paired-v1-SC004-colocated",
+      "model_id": "Qwen/Qwen3-Omni-30B-A3B-Instruct",
+      "sample_id": "SC004",
+      "condition": "colocated",
+      "status": "completed",
+      "created_at": "2026-09-22T04:02:40.142806+00:00",
+      "channel_handling": "downmixed_mono",
+      "latency_seconds": 12.738759327679873,
+      "questions": [
+        {
+          "id": "SC004-Q1",
+          "prediction": "D",
+          "gold": "A",
+          "correct": false
+        },
+        {
+          "id": "SC004-Q2",
+          "prediction": "D",
+          "gold": "D",
+          "correct": true
+        },
+        {
+          "id": "SC004-Q3",
+          "prediction": "A",
+          "gold": "A",
+          "correct": true
+        },
+        {
+          "id": "SC004-Q4",
+          "prediction": "D",
+          "gold": "A",
+          "correct": false
+        },
+        {
+          "id": "SC004-Q5",
+          "prediction": "D",
+          "gold": "D",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "run_id": "20260922-qwen3-omni-paired-v1-SC004-spatial",
+      "model_id": "Qwen/Qwen3-Omni-30B-A3B-Instruct",
+      "sample_id": "SC004",
+      "condition": "spatial",
+      "status": "completed",
+      "created_at": "2026-09-22T04:02:52.882824+00:00",
+      "channel_handling": "downmixed_mono",
+      "latency_seconds": 12.919115482829511,
+      "questions": [
+        {
+          "id": "SC004-Q1",
+          "prediction": "D",
+          "gold": "A",
+          "correct": false
+        },
+        {
+          "id": "SC004-Q2",
+          "prediction": "B",
+          "gold": "D",
+          "correct": false
+        },
+        {
+          "id": "SC004-Q3",
+          "prediction": "A",
+          "gold": "A",
+          "correct": true
+        },
+        {
+          "id": "SC004-Q4",
+          "prediction": "D",
+          "gold": "A",
+          "correct": false
+        },
+        {
+          "id": "SC004-Q5",
+          "prediction": "D",
+          "gold": "D",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "run_id": "20260922-qwen3-omni-paired-v1-SC005-colocated",
+      "model_id": "Qwen/Qwen3-Omni-30B-A3B-Instruct",
+      "sample_id": "SC005",
+      "condition": "colocated",
+      "status": "completed",
+      "created_at": "2026-09-22T04:03:18.573705+00:00",
+      "channel_handling": "downmixed_mono",
+      "latency_seconds": 12.778287063352764,
+      "questions": [
+        {
+          "id": "SC005-Q1",
+          "prediction": "C",
+          "gold": "C",
+          "correct": true
+        },
+        {
+          "id": "SC005-Q2",
+          "prediction": "A",
+          "gold": "A",
+          "correct": true
+        },
+        {
+          "id": "SC005-Q3",
+          "prediction": "A",
+          "gold": "A",
+          "correct": true
+        },
+        {
+          "id": "SC005-Q4",
+          "prediction": "B",
+          "gold": "B",
+          "correct": true
+        },
+        {
+          "id": "SC005-Q5",
+          "prediction": "B",
+          "gold": "B",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "run_id": "20260922-qwen3-omni-paired-v1-SC005-spatial",
+      "model_id": "Qwen/Qwen3-Omni-30B-A3B-Instruct",
+      "sample_id": "SC005",
+      "condition": "spatial",
+      "status": "completed",
+      "created_at": "2026-09-22T04:03:05.802900+00:00",
+      "channel_handling": "downmixed_mono",
+      "latency_seconds": 12.769836379215121,
+      "questions": [
+        {
+          "id": "SC005-Q1",
+          "prediction": "C",
+          "gold": "C",
+          "correct": true
+        },
+        {
+          "id": "SC005-Q2",
+          "prediction": "A",
+          "gold": "A",
+          "correct": true
+        },
+        {
+          "id": "SC005-Q3",
+          "prediction": "A",
+          "gold": "A",
+          "correct": true
+        },
+        {
+          "id": "SC005-Q4",
+          "prediction": "B",
+          "gold": "B",
+          "correct": true
+        },
+        {
+          "id": "SC005-Q5",
+          "prediction": "B",
+          "gold": "B",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "run_id": "20260922-qwen3-omni-paired-v1-SC006-colocated",
+      "model_id": "Qwen/Qwen3-Omni-30B-A3B-Instruct",
+      "sample_id": "SC006",
+      "condition": "colocated",
+      "status": "completed",
+      "created_at": "2026-09-22T04:03:31.353007+00:00",
+      "channel_handling": "downmixed_mono",
+      "latency_seconds": 12.743584735319018,
+      "questions": [
+        {
+          "id": "SC006-Q1",
+          "prediction": "D",
+          "gold": "C",
+          "correct": false
+        },
+        {
+          "id": "SC006-Q2",
+          "prediction": "B",
+          "gold": "B",
+          "correct": true
+        },
+        {
+          "id": "SC006-Q3",
+          "prediction": "C",
+          "gold": "C",
+          "correct": true
+        },
+        {
+          "id": "SC006-Q4",
+          "prediction": "B",
+          "gold": "B",
+          "correct": true
+        },
+        {
+          "id": "SC006-Q5",
+          "prediction": "D",
+          "gold": "D",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "run_id": "20260922-qwen3-omni-paired-v1-SC006-spatial",
+      "model_id": "Qwen/Qwen3-Omni-30B-A3B-Instruct",
+      "sample_id": "SC006",
+      "condition": "spatial",
+      "status": "completed",
+      "created_at": "2026-09-22T04:03:44.097816+00:00",
+      "channel_handling": "downmixed_mono",
+      "latency_seconds": 12.67077753227204,
+      "questions": [
+        {
+          "id": "SC006-Q1",
+          "prediction": "D",
+          "gold": "C",
+          "correct": false
+        },
+        {
+          "id": "SC006-Q2",
+          "prediction": "B",
+          "gold": "B",
+          "correct": true
+        },
+        {
+          "id": "SC006-Q3",
+          "prediction": "C",
+          "gold": "C",
+          "correct": true
+        },
+        {
+          "id": "SC006-Q4",
+          "prediction": "B",
+          "gold": "B",
+          "correct": true
+        },
+        {
+          "id": "SC006-Q5",
+          "prediction": "D",
+          "gold": "D",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "run_id": "20260922-qwen3-omni-paired-v1-SC007-colocated",
+      "model_id": "Qwen/Qwen3-Omni-30B-A3B-Instruct",
+      "sample_id": "SC007",
+      "condition": "colocated",
+      "status": "completed",
+      "created_at": "2026-09-22T04:04:09.492931+00:00",
+      "channel_handling": "downmixed_mono",
+      "latency_seconds": 12.620285090990365,
+      "questions": [
+        {
+          "id": "SC007-Q1",
+          "prediction": "C",
+          "gold": "D",
+          "correct": false
+        },
+        {
+          "id": "SC007-Q2",
+          "prediction": "B",
+          "gold": "B",
+          "correct": true
+        },
+        {
+          "id": "SC007-Q3",
+          "prediction": "B",
+          "gold": "B",
+          "correct": true
+        },
+        {
+          "id": "SC007-Q4",
+          "prediction": "B",
+          "gold": "B",
+          "correct": true
+        },
+        {
+          "id": "SC007-Q5",
+          "prediction": "C",
+          "gold": "B",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "run_id": "20260922-qwen3-omni-paired-v1-SC007-spatial",
+      "model_id": "Qwen/Qwen3-Omni-30B-A3B-Instruct",
+      "sample_id": "SC007",
+      "condition": "spatial",
+      "status": "completed",
+      "created_at": "2026-09-22T04:03:56.769602+00:00",
+      "channel_handling": "downmixed_mono",
+      "latency_seconds": 12.722323548980057,
+      "questions": [
+        {
+          "id": "SC007-Q1",
+          "prediction": "C",
+          "gold": "D",
+          "correct": false
+        },
+        {
+          "id": "SC007-Q2",
+          "prediction": "C",
+          "gold": "B",
+          "correct": false
+        },
+        {
+          "id": "SC007-Q3",
+          "prediction": "B",
+          "gold": "B",
+          "correct": true
+        },
+        {
+          "id": "SC007-Q4",
+          "prediction": "B",
+          "gold": "B",
+          "correct": true
+        },
+        {
+          "id": "SC007-Q5",
+          "prediction": "C",
+          "gold": "B",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "run_id": "20260922-qwen3-omni-paired-v1-SC008-colocated",
+      "model_id": "Qwen/Qwen3-Omni-30B-A3B-Instruct",
+      "sample_id": "SC008",
+      "condition": "colocated",
+      "status": "completed",
+      "created_at": "2026-09-22T04:04:22.114202+00:00",
+      "channel_handling": "downmixed_mono",
+      "latency_seconds": 12.67835097014904,
+      "questions": [
+        {
+          "id": "SC008-Q1",
+          "prediction": "B",
+          "gold": "C",
+          "correct": false
+        },
+        {
+          "id": "SC008-Q2",
+          "prediction": "B",
+          "gold": "C",
+          "correct": false
+        },
+        {
+          "id": "SC008-Q3",
+          "prediction": "C",
+          "gold": "C",
+          "correct": true
+        },
+        {
+          "id": "SC008-Q4",
+          "prediction": "C",
+          "gold": "C",
+          "correct": true
+        },
+        {
+          "id": "SC008-Q5",
+          "prediction": "A",
+          "gold": "A",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "run_id": "20260922-qwen3-omni-paired-v1-SC008-spatial",
+      "model_id": "Qwen/Qwen3-Omni-30B-A3B-Instruct",
+      "sample_id": "SC008",
+      "condition": "spatial",
+      "status": "completed",
+      "created_at": "2026-09-22T04:04:34.793496+00:00",
+      "channel_handling": "downmixed_mono",
+      "latency_seconds": 12.554332287050784,
+      "questions": [
+        {
+          "id": "SC008-Q1",
+          "prediction": "D",
+          "gold": "C",
+          "correct": false
+        },
+        {
+          "id": "SC008-Q2",
+          "prediction": "B",
+          "gold": "C",
+          "correct": false
+        },
+        {
+          "id": "SC008-Q3",
+          "prediction": "C",
+          "gold": "C",
+          "correct": true
+        },
+        {
+          "id": "SC008-Q4",
+          "prediction": "C",
+          "gold": "C",
+          "correct": true
+        },
+        {
+          "id": "SC008-Q5",
+          "prediction": "A",
+          "gold": "A",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "run_id": "20260922-qwen3-omni-paired-v1-SC009-colocated",
+      "model_id": "Qwen/Qwen3-Omni-30B-A3B-Instruct",
+      "sample_id": "SC009",
+      "condition": "colocated",
+      "status": "completed",
+      "created_at": "2026-09-22T04:05:00.035431+00:00",
+      "channel_handling": "downmixed_mono",
+      "latency_seconds": 12.74535810481757,
+      "questions": [
+        {
+          "id": "SC009-Q1",
+          "prediction": "B",
+          "gold": "B",
+          "correct": true
+        },
+        {
+          "id": "SC009-Q2",
+          "prediction": "D",
+          "gold": "D",
+          "correct": true
+        },
+        {
+          "id": "SC009-Q3",
+          "prediction": "C",
+          "gold": "C",
+          "correct": true
+        },
+        {
+          "id": "SC009-Q4",
+          "prediction": "C",
+          "gold": "A",
+          "correct": false
+        },
+        {
+          "id": "SC009-Q5",
+          "prediction": "C",
+          "gold": "C",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "run_id": "20260922-qwen3-omni-paired-v1-SC009-spatial",
+      "model_id": "Qwen/Qwen3-Omni-30B-A3B-Instruct",
+      "sample_id": "SC009",
+      "condition": "spatial",
+      "status": "completed",
+      "created_at": "2026-09-22T04:04:47.348802+00:00",
+      "channel_handling": "downmixed_mono",
+      "latency_seconds": 12.68561490997672,
+      "questions": [
+        {
+          "id": "SC009-Q1",
+          "prediction": "D",
+          "gold": "B",
+          "correct": false
+        },
+        {
+          "id": "SC009-Q2",
+          "prediction": "D",
+          "gold": "D",
+          "correct": true
+        },
+        {
+          "id": "SC009-Q3",
+          "prediction": "C",
+          "gold": "C",
+          "correct": true
+        },
+        {
+          "id": "SC009-Q4",
+          "prediction": "C",
+          "gold": "A",
+          "correct": false
+        },
+        {
+          "id": "SC009-Q5",
+          "prediction": "C",
+          "gold": "C",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "run_id": "20260922-qwen3-omni-paired-v1-SC010-colocated",
+      "model_id": "Qwen/Qwen3-Omni-30B-A3B-Instruct",
+      "sample_id": "SC010",
+      "condition": "colocated",
+      "status": "completed",
+      "created_at": "2026-09-22T04:05:12.781880+00:00",
+      "channel_handling": "downmixed_mono",
+      "latency_seconds": 12.634569848887622,
+      "questions": [
+        {
+          "id": "SC010-Q1",
+          "prediction": "D",
+          "gold": "A",
+          "correct": false
+        },
+        {
+          "id": "SC010-Q2",
+          "prediction": "A",
+          "gold": "A",
+          "correct": true
+        },
+        {
+          "id": "SC010-Q3",
+          "prediction": "A",
+          "gold": "A",
+          "correct": true
+        },
+        {
+          "id": "SC010-Q4",
+          "prediction": "C",
+          "gold": "C",
+          "correct": true
+        },
+        {
+          "id": "SC010-Q5",
+          "prediction": "D",
+          "gold": "D",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "run_id": "20260922-qwen3-omni-paired-v1-SC010-spatial",
+      "model_id": "Qwen/Qwen3-Omni-30B-A3B-Instruct",
+      "sample_id": "SC010",
+      "condition": "spatial",
+      "status": "completed",
+      "created_at": "2026-09-22T04:05:25.417407+00:00",
+      "channel_handling": "downmixed_mono",
+      "latency_seconds": 12.661814875900745,
+      "questions": [
+        {
+          "id": "SC010-Q1",
+          "prediction": "D",
+          "gold": "A",
+          "correct": false
+        },
+        {
+          "id": "SC010-Q2",
+          "prediction": "A",
+          "gold": "A",
+          "correct": true
+        },
+        {
+          "id": "SC010-Q3",
+          "prediction": "A",
+          "gold": "A",
+          "correct": true
+        },
+        {
+          "id": "SC010-Q4",
+          "prediction": "C",
+          "gold": "C",
+          "correct": true
+        },
+        {
+          "id": "SC010-Q5",
+          "prediction": "D",
+          "gold": "D",
+          "correct": true
         }
       ]
     }
