@@ -1,6 +1,6 @@
 {
   "benchmark": "spatial-context-v1",
-  "updated_at": "2026-09-22T05:01:20.594637+00:00",
+  "updated_at": "2026-09-22T05:04:56.490187+00:00",
   "models": [
     {
       "id": "gpt-live-1",
@@ -44,6 +44,846 @@
     }
   ],
   "runs": [
+    {
+      "run_id": "20260922-a2r-paired-v1-SC001-colocated",
+      "model_id": "PleasedPenguin/A2R-30B-A3B",
+      "sample_id": "SC001",
+      "condition": "colocated",
+      "status": "completed",
+      "created_at": "2026-09-22T04:58:44.902013+00:00",
+      "channel_handling": "downmixed_mono",
+      "latency_seconds": 13.884432087652385,
+      "questions": [
+        {
+          "id": "SC001-Q1",
+          "prediction": "B",
+          "gold": "B",
+          "correct": true
+        },
+        {
+          "id": "SC001-Q2",
+          "prediction": "A",
+          "gold": "A",
+          "correct": true
+        },
+        {
+          "id": "SC001-Q3",
+          "prediction": "B",
+          "gold": "B",
+          "correct": true
+        },
+        {
+          "id": "SC001-Q4",
+          "prediction": "D",
+          "gold": "A",
+          "correct": false
+        },
+        {
+          "id": "SC001-Q5",
+          "prediction": "D",
+          "gold": "D",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "run_id": "20260922-a2r-paired-v1-SC001-spatial",
+      "model_id": "PleasedPenguin/A2R-30B-A3B",
+      "sample_id": "SC001",
+      "condition": "spatial",
+      "status": "completed",
+      "created_at": "2026-09-22T04:57:43.692400+00:00",
+      "channel_handling": "downmixed_mono",
+      "latency_seconds": 13.61484431475401,
+      "questions": [
+        {
+          "id": "SC001-Q1",
+          "prediction": "B",
+          "gold": "B",
+          "correct": true
+        },
+        {
+          "id": "SC001-Q2",
+          "prediction": "A",
+          "gold": "A",
+          "correct": true
+        },
+        {
+          "id": "SC001-Q3",
+          "prediction": "B",
+          "gold": "B",
+          "correct": true
+        },
+        {
+          "id": "SC001-Q4",
+          "prediction": "D",
+          "gold": "A",
+          "correct": false
+        },
+        {
+          "id": "SC001-Q5",
+          "prediction": "D",
+          "gold": "D",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "run_id": "20260922-a2r-paired-v1-SC002-colocated",
+      "model_id": "PleasedPenguin/A2R-30B-A3B",
+      "sample_id": "SC002",
+      "condition": "colocated",
+      "status": "completed",
+      "created_at": "2026-09-22T04:58:58.787764+00:00",
+      "channel_handling": "downmixed_mono",
+      "latency_seconds": 13.270972657948732,
+      "questions": [
+        {
+          "id": "SC002-Q1",
+          "prediction": "C",
+          "gold": "D",
+          "correct": false
+        },
+        {
+          "id": "SC002-Q2",
+          "prediction": "A",
+          "gold": "A",
+          "correct": true
+        },
+        {
+          "id": "SC002-Q3",
+          "prediction": "C",
+          "gold": "C",
+          "correct": true
+        },
+        {
+          "id": "SC002-Q4",
+          "prediction": "D",
+          "gold": "D",
+          "correct": true
+        },
+        {
+          "id": "SC002-Q5",
+          "prediction": "A",
+          "gold": "B",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "run_id": "20260922-a2r-paired-v1-SC002-spatial",
+      "model_id": "PleasedPenguin/A2R-30B-A3B",
+      "sample_id": "SC002",
+      "condition": "spatial",
+      "status": "completed",
+      "created_at": "2026-09-22T04:59:12.060006+00:00",
+      "channel_handling": "downmixed_mono",
+      "latency_seconds": 13.609271071851254,
+      "questions": [
+        {
+          "id": "SC002-Q1",
+          "prediction": "C",
+          "gold": "D",
+          "correct": false
+        },
+        {
+          "id": "SC002-Q2",
+          "prediction": "A",
+          "gold": "A",
+          "correct": true
+        },
+        {
+          "id": "SC002-Q3",
+          "prediction": "C",
+          "gold": "C",
+          "correct": true
+        },
+        {
+          "id": "SC002-Q4",
+          "prediction": "D",
+          "gold": "D",
+          "correct": true
+        },
+        {
+          "id": "SC002-Q5",
+          "prediction": "A",
+          "gold": "B",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "run_id": "20260922-a2r-paired-v1-SC003-colocated",
+      "model_id": "PleasedPenguin/A2R-30B-A3B",
+      "sample_id": "SC003",
+      "condition": "colocated",
+      "status": "completed",
+      "created_at": "2026-09-22T04:59:38.866146+00:00",
+      "channel_handling": "downmixed_mono",
+      "latency_seconds": 13.230190707370639,
+      "questions": [
+        {
+          "id": "SC003-Q1",
+          "prediction": "C",
+          "gold": "B",
+          "correct": false
+        },
+        {
+          "id": "SC003-Q2",
+          "prediction": "C",
+          "gold": "D",
+          "correct": false
+        },
+        {
+          "id": "SC003-Q3",
+          "prediction": "C",
+          "gold": "C",
+          "correct": true
+        },
+        {
+          "id": "SC003-Q4",
+          "prediction": "A",
+          "gold": "D",
+          "correct": false
+        },
+        {
+          "id": "SC003-Q5",
+          "prediction": "D",
+          "gold": "D",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "run_id": "20260922-a2r-paired-v1-SC003-spatial",
+      "model_id": "PleasedPenguin/A2R-30B-A3B",
+      "sample_id": "SC003",
+      "condition": "spatial",
+      "status": "completed",
+      "created_at": "2026-09-22T04:59:25.670516+00:00",
+      "channel_handling": "downmixed_mono",
+      "latency_seconds": 13.193921837955713,
+      "questions": [
+        {
+          "id": "SC003-Q1",
+          "prediction": "C",
+          "gold": "B",
+          "correct": false
+        },
+        {
+          "id": "SC003-Q2",
+          "prediction": "C",
+          "gold": "D",
+          "correct": false
+        },
+        {
+          "id": "SC003-Q3",
+          "prediction": "C",
+          "gold": "C",
+          "correct": true
+        },
+        {
+          "id": "SC003-Q4",
+          "prediction": "A",
+          "gold": "D",
+          "correct": false
+        },
+        {
+          "id": "SC003-Q5",
+          "prediction": "D",
+          "gold": "D",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "run_id": "20260922-a2r-paired-v1-SC004-colocated",
+      "model_id": "PleasedPenguin/A2R-30B-A3B",
+      "sample_id": "SC004",
+      "condition": "colocated",
+      "status": "completed",
+      "created_at": "2026-09-22T04:59:52.097591+00:00",
+      "channel_handling": "downmixed_mono",
+      "latency_seconds": 12.883170955814421,
+      "questions": [
+        {
+          "id": "SC004-Q1",
+          "prediction": "D",
+          "gold": "A",
+          "correct": false
+        },
+        {
+          "id": "SC004-Q2",
+          "prediction": "A",
+          "gold": "D",
+          "correct": false
+        },
+        {
+          "id": "SC004-Q3",
+          "prediction": "A",
+          "gold": "A",
+          "correct": true
+        },
+        {
+          "id": "SC004-Q4",
+          "prediction": "D",
+          "gold": "A",
+          "correct": false
+        },
+        {
+          "id": "SC004-Q5",
+          "prediction": "D",
+          "gold": "D",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "run_id": "20260922-a2r-paired-v1-SC004-spatial",
+      "model_id": "PleasedPenguin/A2R-30B-A3B",
+      "sample_id": "SC004",
+      "condition": "spatial",
+      "status": "completed",
+      "created_at": "2026-09-22T05:00:04.982061+00:00",
+      "channel_handling": "downmixed_mono",
+      "latency_seconds": 13.294719083234668,
+      "questions": [
+        {
+          "id": "SC004-Q1",
+          "prediction": "D",
+          "gold": "A",
+          "correct": false
+        },
+        {
+          "id": "SC004-Q2",
+          "prediction": "A",
+          "gold": "D",
+          "correct": false
+        },
+        {
+          "id": "SC004-Q3",
+          "prediction": "A",
+          "gold": "A",
+          "correct": true
+        },
+        {
+          "id": "SC004-Q4",
+          "prediction": "D",
+          "gold": "A",
+          "correct": false
+        },
+        {
+          "id": "SC004-Q5",
+          "prediction": "D",
+          "gold": "D",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "run_id": "20260922-a2r-paired-v1-SC005-colocated",
+      "model_id": "PleasedPenguin/A2R-30B-A3B",
+      "sample_id": "SC005",
+      "condition": "colocated",
+      "status": "completed",
+      "created_at": "2026-09-22T05:00:31.241558+00:00",
+      "channel_handling": "downmixed_mono",
+      "latency_seconds": 13.05139329470694,
+      "questions": [
+        {
+          "id": "SC005-Q1",
+          "prediction": "C",
+          "gold": "C",
+          "correct": true
+        },
+        {
+          "id": "SC005-Q2",
+          "prediction": "A",
+          "gold": "A",
+          "correct": true
+        },
+        {
+          "id": "SC005-Q3",
+          "prediction": "A",
+          "gold": "A",
+          "correct": true
+        },
+        {
+          "id": "SC005-Q4",
+          "prediction": "B",
+          "gold": "B",
+          "correct": true
+        },
+        {
+          "id": "SC005-Q5",
+          "prediction": "A",
+          "gold": "B",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "run_id": "20260922-a2r-paired-v1-SC005-spatial",
+      "model_id": "PleasedPenguin/A2R-30B-A3B",
+      "sample_id": "SC005",
+      "condition": "spatial",
+      "status": "completed",
+      "created_at": "2026-09-22T05:00:18.277756+00:00",
+      "channel_handling": "downmixed_mono",
+      "latency_seconds": 12.962641592137516,
+      "questions": [
+        {
+          "id": "SC005-Q1",
+          "prediction": "C",
+          "gold": "C",
+          "correct": true
+        },
+        {
+          "id": "SC005-Q2",
+          "prediction": "A",
+          "gold": "A",
+          "correct": true
+        },
+        {
+          "id": "SC005-Q3",
+          "prediction": "A",
+          "gold": "A",
+          "correct": true
+        },
+        {
+          "id": "SC005-Q4",
+          "prediction": "B",
+          "gold": "B",
+          "correct": true
+        },
+        {
+          "id": "SC005-Q5",
+          "prediction": "A",
+          "gold": "B",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "run_id": "20260922-a2r-paired-v1-SC006-colocated",
+      "model_id": "PleasedPenguin/A2R-30B-A3B",
+      "sample_id": "SC006",
+      "condition": "colocated",
+      "status": "completed",
+      "created_at": "2026-09-22T05:00:44.294201+00:00",
+      "channel_handling": "downmixed_mono",
+      "latency_seconds": 12.754468315280974,
+      "questions": [
+        {
+          "id": "SC006-Q1",
+          "prediction": "D",
+          "gold": "C",
+          "correct": false
+        },
+        {
+          "id": "SC006-Q2",
+          "prediction": "B",
+          "gold": "B",
+          "correct": true
+        },
+        {
+          "id": "SC006-Q3",
+          "prediction": "C",
+          "gold": "C",
+          "correct": true
+        },
+        {
+          "id": "SC006-Q4",
+          "prediction": "B",
+          "gold": "B",
+          "correct": true
+        },
+        {
+          "id": "SC006-Q5",
+          "prediction": "D",
+          "gold": "D",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "run_id": "20260922-a2r-paired-v1-SC006-spatial",
+      "model_id": "PleasedPenguin/A2R-30B-A3B",
+      "sample_id": "SC006",
+      "condition": "spatial",
+      "status": "completed",
+      "created_at": "2026-09-22T05:00:57.049916+00:00",
+      "channel_handling": "downmixed_mono",
+      "latency_seconds": 12.812531585805118,
+      "questions": [
+        {
+          "id": "SC006-Q1",
+          "prediction": "D",
+          "gold": "C",
+          "correct": false
+        },
+        {
+          "id": "SC006-Q2",
+          "prediction": "B",
+          "gold": "B",
+          "correct": true
+        },
+        {
+          "id": "SC006-Q3",
+          "prediction": "C",
+          "gold": "C",
+          "correct": true
+        },
+        {
+          "id": "SC006-Q4",
+          "prediction": "B",
+          "gold": "B",
+          "correct": true
+        },
+        {
+          "id": "SC006-Q5",
+          "prediction": "D",
+          "gold": "D",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "run_id": "20260922-a2r-paired-v1-SC007-colocated",
+      "model_id": "PleasedPenguin/A2R-30B-A3B",
+      "sample_id": "SC007",
+      "condition": "colocated",
+      "status": "completed",
+      "created_at": "2026-09-22T05:01:22.705112+00:00",
+      "channel_handling": "downmixed_mono",
+      "latency_seconds": 12.943305014632642,
+      "questions": [
+        {
+          "id": "SC007-Q1",
+          "prediction": "D",
+          "gold": "D",
+          "correct": true
+        },
+        {
+          "id": "SC007-Q2",
+          "prediction": "B",
+          "gold": "B",
+          "correct": true
+        },
+        {
+          "id": "SC007-Q3",
+          "prediction": "B",
+          "gold": "B",
+          "correct": true
+        },
+        {
+          "id": "SC007-Q4",
+          "prediction": "B",
+          "gold": "B",
+          "correct": true
+        },
+        {
+          "id": "SC007-Q5",
+          "prediction": "B",
+          "gold": "B",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "run_id": "20260922-a2r-paired-v1-SC007-spatial",
+      "model_id": "PleasedPenguin/A2R-30B-A3B",
+      "sample_id": "SC007",
+      "condition": "spatial",
+      "status": "completed",
+      "created_at": "2026-09-22T05:01:09.863482+00:00",
+      "channel_handling": "downmixed_mono",
+      "latency_seconds": 12.840483801439404,
+      "questions": [
+        {
+          "id": "SC007-Q1",
+          "prediction": "D",
+          "gold": "D",
+          "correct": true
+        },
+        {
+          "id": "SC007-Q2",
+          "prediction": "B",
+          "gold": "B",
+          "correct": true
+        },
+        {
+          "id": "SC007-Q3",
+          "prediction": "B",
+          "gold": "B",
+          "correct": true
+        },
+        {
+          "id": "SC007-Q4",
+          "prediction": "B",
+          "gold": "B",
+          "correct": true
+        },
+        {
+          "id": "SC007-Q5",
+          "prediction": "C",
+          "gold": "B",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "run_id": "20260922-a2r-paired-v1-SC008-colocated",
+      "model_id": "PleasedPenguin/A2R-30B-A3B",
+      "sample_id": "SC008",
+      "condition": "colocated",
+      "status": "completed",
+      "created_at": "2026-09-22T05:01:35.649389+00:00",
+      "channel_handling": "downmixed_mono",
+      "latency_seconds": 13.186038102954626,
+      "questions": [
+        {
+          "id": "SC008-Q1",
+          "prediction": "B",
+          "gold": "C",
+          "correct": false
+        },
+        {
+          "id": "SC008-Q2",
+          "prediction": "D",
+          "gold": "C",
+          "correct": false
+        },
+        {
+          "id": "SC008-Q3",
+          "prediction": "C",
+          "gold": "C",
+          "correct": true
+        },
+        {
+          "id": "SC008-Q4",
+          "prediction": "C",
+          "gold": "C",
+          "correct": true
+        },
+        {
+          "id": "SC008-Q5",
+          "prediction": "A",
+          "gold": "A",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "run_id": "20260922-a2r-paired-v1-SC008-spatial",
+      "model_id": "PleasedPenguin/A2R-30B-A3B",
+      "sample_id": "SC008",
+      "condition": "spatial",
+      "status": "completed",
+      "created_at": "2026-09-22T05:01:48.836651+00:00",
+      "channel_handling": "downmixed_mono",
+      "latency_seconds": 12.880853516049683,
+      "questions": [
+        {
+          "id": "SC008-Q1",
+          "prediction": "B",
+          "gold": "C",
+          "correct": false
+        },
+        {
+          "id": "SC008-Q2",
+          "prediction": "D",
+          "gold": "C",
+          "correct": false
+        },
+        {
+          "id": "SC008-Q3",
+          "prediction": "C",
+          "gold": "C",
+          "correct": true
+        },
+        {
+          "id": "SC008-Q4",
+          "prediction": "C",
+          "gold": "C",
+          "correct": true
+        },
+        {
+          "id": "SC008-Q5",
+          "prediction": "A",
+          "gold": "A",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "run_id": "20260922-a2r-paired-v1-SC009-colocated",
+      "model_id": "PleasedPenguin/A2R-30B-A3B",
+      "sample_id": "SC009",
+      "condition": "colocated",
+      "status": "completed",
+      "created_at": "2026-09-22T05:02:14.805950+00:00",
+      "channel_handling": "downmixed_mono",
+      "latency_seconds": 13.341939283534884,
+      "questions": [
+        {
+          "id": "SC009-Q1",
+          "prediction": "D",
+          "gold": "B",
+          "correct": false
+        },
+        {
+          "id": "SC009-Q2",
+          "prediction": "D",
+          "gold": "D",
+          "correct": true
+        },
+        {
+          "id": "SC009-Q3",
+          "prediction": "C",
+          "gold": "C",
+          "correct": true
+        },
+        {
+          "id": "SC009-Q4",
+          "prediction": "C",
+          "gold": "A",
+          "correct": false
+        },
+        {
+          "id": "SC009-Q5",
+          "prediction": "C",
+          "gold": "C",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "run_id": "20260922-a2r-paired-v1-SC009-spatial",
+      "model_id": "PleasedPenguin/A2R-30B-A3B",
+      "sample_id": "SC009",
+      "condition": "spatial",
+      "status": "completed",
+      "created_at": "2026-09-22T05:02:01.718546+00:00",
+      "channel_handling": "downmixed_mono",
+      "latency_seconds": 13.086158256046474,
+      "questions": [
+        {
+          "id": "SC009-Q1",
+          "prediction": "B",
+          "gold": "B",
+          "correct": true
+        },
+        {
+          "id": "SC009-Q2",
+          "prediction": "D",
+          "gold": "D",
+          "correct": true
+        },
+        {
+          "id": "SC009-Q3",
+          "prediction": "C",
+          "gold": "C",
+          "correct": true
+        },
+        {
+          "id": "SC009-Q4",
+          "prediction": "C",
+          "gold": "A",
+          "correct": false
+        },
+        {
+          "id": "SC009-Q5",
+          "prediction": "C",
+          "gold": "C",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "run_id": "20260922-a2r-paired-v1-SC010-colocated",
+      "model_id": "PleasedPenguin/A2R-30B-A3B",
+      "sample_id": "SC010",
+      "condition": "colocated",
+      "status": "completed",
+      "created_at": "2026-09-22T05:02:28.149143+00:00",
+      "channel_handling": "downmixed_mono",
+      "latency_seconds": 12.958081268705428,
+      "questions": [
+        {
+          "id": "SC010-Q1",
+          "prediction": "D",
+          "gold": "A",
+          "correct": false
+        },
+        {
+          "id": "SC010-Q2",
+          "prediction": "A",
+          "gold": "A",
+          "correct": true
+        },
+        {
+          "id": "SC010-Q3",
+          "prediction": "A",
+          "gold": "A",
+          "correct": true
+        },
+        {
+          "id": "SC010-Q4",
+          "prediction": "C",
+          "gold": "C",
+          "correct": true
+        },
+        {
+          "id": "SC010-Q5",
+          "prediction": "D",
+          "gold": "D",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "run_id": "20260922-a2r-paired-v1-SC010-spatial",
+      "model_id": "PleasedPenguin/A2R-30B-A3B",
+      "sample_id": "SC010",
+      "condition": "spatial",
+      "status": "completed",
+      "created_at": "2026-09-22T05:02:41.108340+00:00",
+      "channel_handling": "downmixed_mono",
+      "latency_seconds": 12.657977313734591,
+      "questions": [
+        {
+          "id": "SC010-Q1",
+          "prediction": "D",
+          "gold": "A",
+          "correct": false
+        },
+        {
+          "id": "SC010-Q2",
+          "prediction": "A",
+          "gold": "A",
+          "correct": true
+        },
+        {
+          "id": "SC010-Q3",
+          "prediction": "A",
+          "gold": "A",
+          "correct": true
+        },
+        {
+          "id": "SC010-Q4",
+          "prediction": "C",
+          "gold": "C",
+          "correct": true
+        },
+        {
+          "id": "SC010-Q5",
+          "prediction": "A",
+          "gold": "D",
+          "correct": false
+        }
+      ]
+    },
     {
       "run_id": "20260922-firered-paired-v1-SC001-colocated",
       "model_id": "FireRedTeam/FireRedAudio",
@@ -4389,6 +5229,12 @@
       "questions_per_call": 5,
       "inference_calls": 20,
       "prompt_note": "每段独立回答5题，共20次；官方采样配置，固定seed 0，关闭thinking。"
+    },
+    {
+      "model_id": "PleasedPenguin/A2R-30B-A3B",
+      "questions_per_call": 5,
+      "inference_calls": 20,
+      "prompt_note": "每段独立回答5题，共20次；贪心解码、最多2048 token的简短问答配置，不是论文长推理协议。"
     },
     {
       "model_id": "meta/muse-voice-transcribe-1.0",
