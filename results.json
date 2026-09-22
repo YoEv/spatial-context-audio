@@ -1,11 +1,11 @@
 {
   "benchmark": "spatial-context-v1",
-  "updated_at": "2026-09-22T04:17:25.418561+00:00",
+  "updated_at": "2026-09-22T04:44:40.629592+00:00",
   "models": [
     {
       "id": "gpt-live-1",
       "name": "GPT-Live 1",
-      "kind": "流式音频理解 · 输入适配待核验"
+      "kind": "流式音频理解 · 单声道 · 85/100 答题"
     },
     {
       "id": "google/gemini-3.8-flash",
@@ -921,6 +921,846 @@
         {
           "id": "SC010-Q5",
           "prediction": "C",
+          "gold": "D",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "run_id": "20260922-gpt-live-paired-v1-SC001-colocated",
+      "model_id": "gpt-live-1",
+      "sample_id": "SC001",
+      "condition": "colocated",
+      "status": "completed",
+      "created_at": "2026-09-22T04:30:11.300952+00:00",
+      "channel_handling": "downmixed_mono",
+      "latency_seconds": 105.00744612500057,
+      "questions": [
+        {
+          "id": "SC001-Q1",
+          "prediction": "B",
+          "gold": "B",
+          "correct": true
+        },
+        {
+          "id": "SC001-Q2",
+          "prediction": "C",
+          "gold": "A",
+          "correct": false
+        },
+        {
+          "id": "SC001-Q3",
+          "prediction": "A",
+          "gold": "B",
+          "correct": false
+        },
+        {
+          "id": "SC001-Q4",
+          "prediction": "D",
+          "gold": "A",
+          "correct": false
+        },
+        {
+          "id": "SC001-Q5",
+          "prediction": "B",
+          "gold": "D",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "run_id": "20260922-gpt-live-paired-v1-SC001-spatial",
+      "model_id": "gpt-live-1",
+      "sample_id": "SC001",
+      "condition": "spatial",
+      "status": "completed",
+      "created_at": "2026-09-22T04:28:04.661028+00:00",
+      "channel_handling": "downmixed_mono",
+      "latency_seconds": 105.54574804100048,
+      "questions": [
+        {
+          "id": "SC001-Q1",
+          "prediction": "C",
+          "gold": "B",
+          "correct": false
+        },
+        {
+          "id": "SC001-Q2",
+          "prediction": "C",
+          "gold": "A",
+          "correct": false
+        },
+        {
+          "id": "SC001-Q3",
+          "prediction": "C",
+          "gold": "B",
+          "correct": false
+        },
+        {
+          "id": "SC001-Q4",
+          "prediction": "D",
+          "gold": "A",
+          "correct": false
+        },
+        {
+          "id": "SC001-Q5",
+          "prediction": "D",
+          "gold": "D",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "run_id": "20260922-gpt-live-paired-v1-SC002-colocated",
+      "model_id": "gpt-live-1",
+      "sample_id": "SC002",
+      "condition": "colocated",
+      "status": "completed",
+      "created_at": "2026-09-22T04:30:13.211046+00:00",
+      "channel_handling": "downmixed_mono",
+      "latency_seconds": 105.0019243329989,
+      "questions": [
+        {
+          "id": "SC002-Q1",
+          "prediction": "C",
+          "gold": "D",
+          "correct": false
+        },
+        {
+          "id": "SC002-Q2",
+          "prediction": "B",
+          "gold": "A",
+          "correct": false
+        },
+        {
+          "id": "SC002-Q3",
+          "prediction": "C",
+          "gold": "C",
+          "correct": true
+        },
+        {
+          "id": "SC002-Q4",
+          "prediction": "A",
+          "gold": "D",
+          "correct": false
+        },
+        {
+          "id": "SC002-Q5",
+          "prediction": "A",
+          "gold": "B",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "run_id": "20260922-gpt-live-paired-v1-SC002-spatial",
+      "model_id": "gpt-live-1",
+      "sample_id": "SC002",
+      "condition": "spatial",
+      "status": "completed",
+      "created_at": "2026-09-22T04:30:10.005796+00:00",
+      "channel_handling": "downmixed_mono",
+      "latency_seconds": 105.29588341699855,
+      "questions": [
+        {
+          "id": "SC002-Q1",
+          "prediction": "C",
+          "gold": "D",
+          "correct": false
+        },
+        {
+          "id": "SC002-Q2",
+          "prediction": "C",
+          "gold": "A",
+          "correct": false
+        },
+        {
+          "id": "SC002-Q3",
+          "prediction": "C",
+          "gold": "C",
+          "correct": true
+        },
+        {
+          "id": "SC002-Q4",
+          "prediction": "A",
+          "gold": "D",
+          "correct": false
+        },
+        {
+          "id": "SC002-Q5",
+          "prediction": "B",
+          "gold": "B",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "run_id": "20260922-gpt-live-paired-v1-SC003-colocated",
+      "model_id": "gpt-live-1",
+      "sample_id": "SC003",
+      "condition": "colocated",
+      "status": "completed",
+      "created_at": "2026-09-22T04:32:06.739134+00:00",
+      "channel_handling": "downmixed_mono",
+      "latency_seconds": 105.07760445900203,
+      "questions": [
+        {
+          "id": "SC003-Q1",
+          "prediction": "B",
+          "gold": "B",
+          "correct": true
+        },
+        {
+          "id": "SC003-Q2",
+          "prediction": "A",
+          "gold": "D",
+          "correct": false
+        },
+        {
+          "id": "SC003-Q3",
+          "prediction": "D",
+          "gold": "C",
+          "correct": false
+        },
+        {
+          "id": "SC003-Q4",
+          "prediction": "C",
+          "gold": "D",
+          "correct": false
+        },
+        {
+          "id": "SC003-Q5",
+          "prediction": "A",
+          "gold": "D",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "run_id": "20260922-gpt-live-paired-v1-SC003-spatial",
+      "model_id": "gpt-live-1",
+      "sample_id": "SC003",
+      "condition": "spatial",
+      "status": "completed",
+      "created_at": "2026-09-22T04:30:12.813270+00:00",
+      "channel_handling": "downmixed_mono",
+      "latency_seconds": 105.11237537499983,
+      "questions": [
+        {
+          "id": "SC003-Q1",
+          "prediction": "C",
+          "gold": "B",
+          "correct": false
+        },
+        {
+          "id": "SC003-Q2",
+          "prediction": "A",
+          "gold": "D",
+          "correct": false
+        },
+        {
+          "id": "SC003-Q3",
+          "prediction": "B",
+          "gold": "C",
+          "correct": false
+        },
+        {
+          "id": "SC003-Q4",
+          "prediction": "D",
+          "gold": "D",
+          "correct": true
+        },
+        {
+          "id": "SC003-Q5",
+          "prediction": "C",
+          "gold": "D",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "run_id": "20260922-gpt-live-paired-v1-SC004-colocated",
+      "model_id": "gpt-live-1",
+      "sample_id": "SC004",
+      "condition": "colocated",
+      "status": "completed",
+      "created_at": "2026-09-22T04:32:05.412539+00:00",
+      "channel_handling": "downmixed_mono",
+      "latency_seconds": 105.04682762499942,
+      "questions": [
+        {
+          "id": "SC004-Q1",
+          "prediction": "C",
+          "gold": "A",
+          "correct": false
+        },
+        {
+          "id": "SC004-Q2",
+          "prediction": "A",
+          "gold": "D",
+          "correct": false
+        },
+        {
+          "id": "SC004-Q3",
+          "prediction": "A",
+          "gold": "A",
+          "correct": true
+        },
+        {
+          "id": "SC004-Q4",
+          "prediction": "A",
+          "gold": "A",
+          "correct": true
+        },
+        {
+          "id": "SC004-Q5",
+          "prediction": "D",
+          "gold": "D",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "run_id": "20260922-gpt-live-paired-v1-SC004-spatial",
+      "model_id": "gpt-live-1",
+      "sample_id": "SC004",
+      "condition": "spatial",
+      "status": "completed",
+      "created_at": "2026-09-22T04:32:08.092447+00:00",
+      "channel_handling": "downmixed_mono",
+      "latency_seconds": 105.02042299999812,
+      "questions": [
+        {
+          "id": "SC004-Q1",
+          "prediction": "C",
+          "gold": "A",
+          "correct": false
+        },
+        {
+          "id": "SC004-Q2",
+          "prediction": "B",
+          "gold": "D",
+          "correct": false
+        },
+        {
+          "id": "SC004-Q3",
+          "prediction": "C",
+          "gold": "A",
+          "correct": false
+        },
+        {
+          "id": "SC004-Q4",
+          "prediction": "D",
+          "gold": "A",
+          "correct": false
+        },
+        {
+          "id": "SC004-Q5",
+          "prediction": "A",
+          "gold": "D",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "run_id": "20260922-gpt-live-paired-v1-SC005-colocated",
+      "model_id": "gpt-live-1",
+      "sample_id": "SC005",
+      "condition": "colocated",
+      "status": "completed",
+      "created_at": "2026-09-22T04:34:00.731087+00:00",
+      "channel_handling": "downmixed_mono",
+      "latency_seconds": 105.58177579200128,
+      "questions": [
+        {
+          "id": "SC005-Q1",
+          "prediction": "A",
+          "gold": "C",
+          "correct": false
+        },
+        {
+          "id": "SC005-Q2",
+          "prediction": "C",
+          "gold": "A",
+          "correct": false
+        },
+        {
+          "id": "SC005-Q3",
+          "prediction": "B",
+          "gold": "A",
+          "correct": false
+        },
+        {
+          "id": "SC005-Q4",
+          "prediction": "D",
+          "gold": "B",
+          "correct": false
+        },
+        {
+          "id": "SC005-Q5",
+          "prediction": "A",
+          "gold": "B",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "run_id": "20260922-gpt-live-paired-v1-SC005-spatial",
+      "model_id": "gpt-live-1",
+      "sample_id": "SC005",
+      "condition": "spatial",
+      "status": "completed",
+      "created_at": "2026-09-22T04:32:04.698657+00:00",
+      "channel_handling": "downmixed_mono",
+      "latency_seconds": 105.08527458400204,
+      "questions": [
+        {
+          "id": "SC005-Q1",
+          "prediction": "D",
+          "gold": "C",
+          "correct": false
+        },
+        {
+          "id": "SC005-Q2",
+          "prediction": "B",
+          "gold": "A",
+          "correct": false
+        },
+        {
+          "id": "SC005-Q3",
+          "prediction": "A",
+          "gold": "A",
+          "correct": true
+        },
+        {
+          "id": "SC005-Q4",
+          "prediction": "B",
+          "gold": "B",
+          "correct": true
+        },
+        {
+          "id": "SC005-Q5",
+          "prediction": "C",
+          "gold": "B",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "run_id": "20260922-gpt-live-paired-v1-SC006-colocated",
+      "model_id": "gpt-live-1",
+      "sample_id": "SC006",
+      "condition": "colocated",
+      "status": "completed",
+      "created_at": "2026-09-22T04:34:03.250148+00:00",
+      "channel_handling": "downmixed_mono",
+      "latency_seconds": 105.02825079100148,
+      "questions": [
+        {
+          "id": "SC006-Q1",
+          "prediction": "B",
+          "gold": "C",
+          "correct": false
+        },
+        {
+          "id": "SC006-Q2",
+          "prediction": "C",
+          "gold": "B",
+          "correct": false
+        },
+        {
+          "id": "SC006-Q3",
+          "prediction": "B",
+          "gold": "C",
+          "correct": false
+        },
+        {
+          "id": "SC006-Q4",
+          "prediction": "C",
+          "gold": "B",
+          "correct": false
+        },
+        {
+          "id": "SC006-Q5",
+          "prediction": "A",
+          "gold": "D",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "run_id": "20260922-gpt-live-paired-v1-SC006-spatial",
+      "model_id": "gpt-live-1",
+      "sample_id": "SC006",
+      "condition": "spatial",
+      "status": "completed",
+      "created_at": "2026-09-22T04:34:01.860413+00:00",
+      "channel_handling": "downmixed_mono",
+      "latency_seconds": 105.1542261249997,
+      "questions": [
+        {
+          "id": "SC006-Q1",
+          "prediction": "A",
+          "gold": "C",
+          "correct": false
+        },
+        {
+          "id": "SC006-Q2",
+          "prediction": "C",
+          "gold": "B",
+          "correct": false
+        },
+        {
+          "id": "SC006-Q3",
+          "prediction": "C",
+          "gold": "C",
+          "correct": true
+        },
+        {
+          "id": "SC006-Q4",
+          "prediction": "B",
+          "gold": "B",
+          "correct": true
+        },
+        {
+          "id": "SC006-Q5",
+          "prediction": "A",
+          "gold": "D",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "run_id": "20260922-gpt-live-paired-v1-SC007-colocated",
+      "model_id": "gpt-live-1",
+      "sample_id": "SC007",
+      "condition": "colocated",
+      "status": "completed",
+      "created_at": "2026-09-22T04:35:57.949893+00:00",
+      "channel_handling": "downmixed_mono",
+      "latency_seconds": 105.03591454100024,
+      "questions": [
+        {
+          "id": "SC007-Q1",
+          "prediction": null,
+          "gold": "D",
+          "correct": null
+        },
+        {
+          "id": "SC007-Q2",
+          "prediction": null,
+          "gold": "B",
+          "correct": null
+        },
+        {
+          "id": "SC007-Q3",
+          "prediction": null,
+          "gold": "B",
+          "correct": null
+        },
+        {
+          "id": "SC007-Q4",
+          "prediction": null,
+          "gold": "B",
+          "correct": null
+        },
+        {
+          "id": "SC007-Q5",
+          "prediction": null,
+          "gold": "B",
+          "correct": null
+        }
+      ]
+    },
+    {
+      "run_id": "20260922-gpt-live-paired-v1-SC007-spatial",
+      "model_id": "gpt-live-1",
+      "sample_id": "SC007",
+      "condition": "spatial",
+      "status": "completed",
+      "created_at": "2026-09-22T04:34:00.865132+00:00",
+      "channel_handling": "downmixed_mono",
+      "latency_seconds": 105.2011868749978,
+      "questions": [
+        {
+          "id": "SC007-Q1",
+          "prediction": "C",
+          "gold": "D",
+          "correct": false
+        },
+        {
+          "id": "SC007-Q2",
+          "prediction": "B",
+          "gold": "B",
+          "correct": true
+        },
+        {
+          "id": "SC007-Q3",
+          "prediction": "A",
+          "gold": "B",
+          "correct": false
+        },
+        {
+          "id": "SC007-Q4",
+          "prediction": "B",
+          "gold": "B",
+          "correct": true
+        },
+        {
+          "id": "SC007-Q5",
+          "prediction": "C",
+          "gold": "B",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "run_id": "20260922-gpt-live-paired-v1-SC008-colocated",
+      "model_id": "gpt-live-1",
+      "sample_id": "SC008",
+      "condition": "colocated",
+      "status": "completed",
+      "created_at": "2026-09-22T04:35:58.476842+00:00",
+      "channel_handling": "downmixed_mono",
+      "latency_seconds": 105.00478279199888,
+      "questions": [
+        {
+          "id": "SC008-Q1",
+          "prediction": "A",
+          "gold": "C",
+          "correct": false
+        },
+        {
+          "id": "SC008-Q2",
+          "prediction": "B",
+          "gold": "C",
+          "correct": false
+        },
+        {
+          "id": "SC008-Q3",
+          "prediction": "C",
+          "gold": "C",
+          "correct": true
+        },
+        {
+          "id": "SC008-Q4",
+          "prediction": "D",
+          "gold": "C",
+          "correct": false
+        },
+        {
+          "id": "SC008-Q5",
+          "prediction": "A",
+          "gold": "A",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "run_id": "20260922-gpt-live-paired-v1-SC008-spatial",
+      "model_id": "gpt-live-1",
+      "sample_id": "SC008",
+      "condition": "spatial",
+      "status": "completed",
+      "created_at": "2026-09-22T04:35:51.446149+00:00",
+      "channel_handling": "downmixed_mono",
+      "latency_seconds": 105.09925766699962,
+      "questions": [
+        {
+          "id": "SC008-Q1",
+          "prediction": null,
+          "gold": "C",
+          "correct": null
+        },
+        {
+          "id": "SC008-Q2",
+          "prediction": null,
+          "gold": "C",
+          "correct": null
+        },
+        {
+          "id": "SC008-Q3",
+          "prediction": null,
+          "gold": "C",
+          "correct": null
+        },
+        {
+          "id": "SC008-Q4",
+          "prediction": null,
+          "gold": "C",
+          "correct": null
+        },
+        {
+          "id": "SC008-Q5",
+          "prediction": null,
+          "gold": "A",
+          "correct": null
+        }
+      ]
+    },
+    {
+      "run_id": "20260922-gpt-live-paired-v1-SC009-colocated",
+      "model_id": "gpt-live-1",
+      "sample_id": "SC009",
+      "condition": "colocated",
+      "status": "completed",
+      "created_at": "2026-09-22T04:39:09.896626+00:00",
+      "channel_handling": "downmixed_mono",
+      "latency_seconds": 105.42248825000206,
+      "questions": [
+        {
+          "id": "SC009-Q1",
+          "prediction": "C",
+          "gold": "B",
+          "correct": false
+        },
+        {
+          "id": "SC009-Q2",
+          "prediction": "C",
+          "gold": "D",
+          "correct": false
+        },
+        {
+          "id": "SC009-Q3",
+          "prediction": "C",
+          "gold": "C",
+          "correct": true
+        },
+        {
+          "id": "SC009-Q4",
+          "prediction": "C",
+          "gold": "A",
+          "correct": false
+        },
+        {
+          "id": "SC009-Q5",
+          "prediction": "C",
+          "gold": "C",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "run_id": "20260922-gpt-live-paired-v1-SC009-spatial",
+      "model_id": "gpt-live-1",
+      "sample_id": "SC009",
+      "condition": "spatial",
+      "status": "completed",
+      "created_at": "2026-09-22T04:35:57.735662+00:00",
+      "channel_handling": "downmixed_mono",
+      "latency_seconds": 105.10592362500029,
+      "questions": [
+        {
+          "id": "SC009-Q1",
+          "prediction": "D",
+          "gold": "B",
+          "correct": false
+        },
+        {
+          "id": "SC009-Q2",
+          "prediction": "A",
+          "gold": "D",
+          "correct": false
+        },
+        {
+          "id": "SC009-Q3",
+          "prediction": "B",
+          "gold": "C",
+          "correct": false
+        },
+        {
+          "id": "SC009-Q4",
+          "prediction": "C",
+          "gold": "A",
+          "correct": false
+        },
+        {
+          "id": "SC009-Q5",
+          "prediction": "B",
+          "gold": "C",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "run_id": "20260922-gpt-live-paired-v1-SC010-colocated",
+      "model_id": "gpt-live-1",
+      "sample_id": "SC010",
+      "condition": "colocated",
+      "status": "completed",
+      "created_at": "2026-09-22T04:39:10.017217+00:00",
+      "channel_handling": "downmixed_mono",
+      "latency_seconds": 105.36053870900287,
+      "questions": [
+        {
+          "id": "SC010-Q1",
+          "prediction": null,
+          "gold": "A",
+          "correct": null
+        },
+        {
+          "id": "SC010-Q2",
+          "prediction": null,
+          "gold": "A",
+          "correct": null
+        },
+        {
+          "id": "SC010-Q3",
+          "prediction": null,
+          "gold": "A",
+          "correct": null
+        },
+        {
+          "id": "SC010-Q4",
+          "prediction": null,
+          "gold": "C",
+          "correct": null
+        },
+        {
+          "id": "SC010-Q5",
+          "prediction": null,
+          "gold": "D",
+          "correct": null
+        }
+      ]
+    },
+    {
+      "run_id": "20260922-gpt-live-paired-v1-SC010-spatial",
+      "model_id": "gpt-live-1",
+      "sample_id": "SC010",
+      "condition": "spatial",
+      "status": "completed",
+      "created_at": "2026-09-22T04:39:10.618332+00:00",
+      "channel_handling": "downmixed_mono",
+      "latency_seconds": 105.05924395900001,
+      "questions": [
+        {
+          "id": "SC010-Q1",
+          "prediction": "C",
+          "gold": "A",
+          "correct": false
+        },
+        {
+          "id": "SC010-Q2",
+          "prediction": "B",
+          "gold": "A",
+          "correct": false
+        },
+        {
+          "id": "SC010-Q3",
+          "prediction": "B",
+          "gold": "A",
+          "correct": false
+        },
+        {
+          "id": "SC010-Q4",
+          "prediction": "A",
+          "gold": "C",
+          "correct": false
+        },
+        {
+          "id": "SC010-Q5",
+          "prediction": "A",
           "gold": "D",
           "correct": false
         }
