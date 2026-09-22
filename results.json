@@ -1,6 +1,6 @@
 {
   "benchmark": "spatial-context-v1",
-  "updated_at": "2026-09-22T04:57:12.266694+00:00",
+  "updated_at": "2026-09-22T05:01:20.594637+00:00",
   "models": [
     {
       "id": "gpt-live-1",
@@ -4293,7 +4293,7 @@
       "sample_kind": "hear_voice_attribution",
       "duration_seconds": 106.0725625,
       "status": "fail",
-      "summary": "会话已正常关闭，但没有返回可解析答案，输出音频近乎静音。",
+      "summary": "首次会话正常关闭，但没有可解析答案且输出近乎静音；后续独立50题评测另见上表。",
       "latency_seconds": 141.409
     },
     {
@@ -4335,9 +4335,31 @@
       "status": "pass",
       "summary": "完整推理通过；答案JSON为A，答对。缺结束标签，离线补充解析，无重新推理。",
       "latency_seconds": 1.7704347185790539
+    },
+    {
+      "model_id": "PleasedPenguin/A2R-30B-A3B",
+      "sample_kind": "hear_voice_attribution",
+      "duration_seconds": 106.0725625,
+      "status": "pass",
+      "summary": "完整输入与推理通过，返回A并答对。2048 token简短提示，不是论文长推理协议。",
+      "latency_seconds": 4.261234630830586
+    },
+    {
+      "model_id": "meta/muse-voice-transcribe-1.0",
+      "sample_kind": "notsofar_transcription",
+      "duration_seconds": 45,
+      "status": "blocked",
+      "summary": "账户要求本人完成年龄确认；本轮45秒样本尚未请求，转录能力未测。",
+      "latency_seconds": null
     }
   ],
   "model_protocols": [
+    {
+      "model_id": "gpt-live-1",
+      "questions_per_call": 5,
+      "inference_calls": 20,
+      "prompt_note": "后续独立评测：完整输入后追加音频结束提问；20会话，85个有效答案。早于问题结束的输出排除。"
+    },
     {
       "model_id": "google/gemini-3.8-flash",
       "questions_per_call": 5,
@@ -4367,6 +4389,12 @@
       "questions_per_call": 5,
       "inference_calls": 20,
       "prompt_note": "每段独立回答5题，共20次；官方采样配置，固定seed 0，关闭thinking。"
+    },
+    {
+      "model_id": "meta/muse-voice-transcribe-1.0",
+      "questions_per_call": null,
+      "inference_calls": 0,
+      "prompt_note": "专用转录器，未接QA reader；未运行本题集选择题。账户年龄确认未完成，本轮45秒转录未请求。"
     }
   ]
 }
