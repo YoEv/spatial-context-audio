@@ -1,6 +1,6 @@
 {
   "benchmark": "spatial-context-v1",
-  "updated_at": "2026-09-22T05:04:56.490187+00:00",
+  "updated_at": "2026-09-22T13:59:44.270986+00:00",
   "models": [
     {
       "id": "gpt-live-1",
@@ -40,7 +40,7 @@
     {
       "id": "meta/muse-voice-transcribe-1.0",
       "name": "Muse Voice Transcribe",
-      "kind": "转录基线 · 需接问答器"
+      "kind": "转录基线 · 完整标注 WER，单独统计"
     }
   ],
   "runs": [
@@ -5189,7 +5189,7 @@
       "sample_kind": "notsofar_transcription",
       "duration_seconds": 45,
       "status": "blocked",
-      "summary": "账户要求本人完成年龄确认；本轮45秒样本尚未请求，转录能力未测。",
+      "summary": "历史：45秒单样本因年龄门槛未请求。账户确认后，另行完成本题集20条60秒转录，见WER结果。",
       "latency_seconds": null
     }
   ],
@@ -5239,8 +5239,377 @@
     {
       "model_id": "meta/muse-voice-transcribe-1.0",
       "questions_per_call": null,
-      "inference_calls": 0,
-      "prompt_note": "专用转录器，未接QA reader；未运行本题集选择题。账户年龄确认未完成，本轮45秒转录未请求。"
+      "inference_calls": 20,
+      "prompt_note": "20条60秒音频，仅转录并计算完整标注WER，不接问答器。账号确认后的20次请求均成功，另保留此前1次403。"
     }
-  ]
+  ],
+  "transcription_evaluation": {
+    "model_id": "meta/muse-voice-transcribe-1.0",
+    "metric": "diagnostic_serialized_WER",
+    "conditions": {
+      "spatial": {
+        "completed": 10,
+        "reference_words": 6026,
+        "hypothesis_words": 900,
+        "substitutions": 76,
+        "deletions": 5132,
+        "insertions": 6,
+        "errors": 5214,
+        "wer": 0.865250580816462
+      },
+      "colocated": {
+        "completed": 10,
+        "reference_words": 6026,
+        "hypothesis_words": 912,
+        "substitutions": 83,
+        "deletions": 5120,
+        "insertions": 6,
+        "errors": 5209,
+        "wer": 0.8644208430136077
+      }
+    },
+    "runs": [
+      {
+        "sample_id": "SC001",
+        "condition": "colocated",
+        "status": "completed",
+        "channel_handling": "downmixed_mono",
+        "latency_seconds": 11.647236832999624,
+        "metrics": {
+          "reference_words": 478,
+          "hypothesis_words": 165,
+          "substitutions": 16,
+          "deletions": 316,
+          "insertions": 3,
+          "errors": 335,
+          "wer": 0.700836820083682
+        },
+        "boundary_uncertain_reference_words": 44
+      },
+      {
+        "sample_id": "SC001",
+        "condition": "spatial",
+        "status": "completed",
+        "channel_handling": "downmixed_mono",
+        "latency_seconds": 12.84266504200059,
+        "metrics": {
+          "reference_words": 478,
+          "hypothesis_words": 168,
+          "substitutions": 17,
+          "deletions": 313,
+          "insertions": 3,
+          "errors": 333,
+          "wer": 0.696652719665272
+        },
+        "boundary_uncertain_reference_words": 44
+      },
+      {
+        "sample_id": "SC002",
+        "condition": "colocated",
+        "status": "completed",
+        "channel_handling": "downmixed_mono",
+        "latency_seconds": 11.20410887500475,
+        "metrics": {
+          "reference_words": 593,
+          "hypothesis_words": 116,
+          "substitutions": 14,
+          "deletions": 478,
+          "insertions": 1,
+          "errors": 493,
+          "wer": 0.8313659359190556
+        },
+        "boundary_uncertain_reference_words": 73
+      },
+      {
+        "sample_id": "SC002",
+        "condition": "spatial",
+        "status": "completed",
+        "channel_handling": "downmixed_mono",
+        "latency_seconds": 11.52633379100007,
+        "metrics": {
+          "reference_words": 593,
+          "hypothesis_words": 108,
+          "substitutions": 10,
+          "deletions": 486,
+          "insertions": 1,
+          "errors": 497,
+          "wer": 0.8381112984822934
+        },
+        "boundary_uncertain_reference_words": 73
+      },
+      {
+        "sample_id": "SC003",
+        "condition": "colocated",
+        "status": "completed",
+        "channel_handling": "downmixed_mono",
+        "latency_seconds": 11.832628459000262,
+        "metrics": {
+          "reference_words": 703,
+          "hypothesis_words": 120,
+          "substitutions": 13,
+          "deletions": 583,
+          "insertions": 0,
+          "errors": 596,
+          "wer": 0.8477951635846372
+        },
+        "boundary_uncertain_reference_words": 146
+      },
+      {
+        "sample_id": "SC003",
+        "condition": "spatial",
+        "status": "completed",
+        "channel_handling": "downmixed_mono",
+        "latency_seconds": 11.465618792004534,
+        "metrics": {
+          "reference_words": 703,
+          "hypothesis_words": 113,
+          "substitutions": 7,
+          "deletions": 590,
+          "insertions": 0,
+          "errors": 597,
+          "wer": 0.8492176386913229
+        },
+        "boundary_uncertain_reference_words": 146
+      },
+      {
+        "sample_id": "SC004",
+        "condition": "colocated",
+        "status": "completed",
+        "channel_handling": "downmixed_mono",
+        "latency_seconds": 10.770488750000368,
+        "metrics": {
+          "reference_words": 650,
+          "hypothesis_words": 85,
+          "substitutions": 4,
+          "deletions": 565,
+          "insertions": 0,
+          "errors": 569,
+          "wer": 0.8753846153846154
+        },
+        "boundary_uncertain_reference_words": 144
+      },
+      {
+        "sample_id": "SC004",
+        "condition": "spatial",
+        "status": "completed",
+        "channel_handling": "downmixed_mono",
+        "latency_seconds": 11.301586416993814,
+        "metrics": {
+          "reference_words": 650,
+          "hypothesis_words": 78,
+          "substitutions": 5,
+          "deletions": 572,
+          "insertions": 0,
+          "errors": 577,
+          "wer": 0.8876923076923077
+        },
+        "boundary_uncertain_reference_words": 144
+      },
+      {
+        "sample_id": "SC005",
+        "condition": "colocated",
+        "status": "completed",
+        "channel_handling": "downmixed_mono",
+        "latency_seconds": 10.50633779099735,
+        "metrics": {
+          "reference_words": 711,
+          "hypothesis_words": 66,
+          "substitutions": 7,
+          "deletions": 645,
+          "insertions": 0,
+          "errors": 652,
+          "wer": 0.9170182841068917
+        },
+        "boundary_uncertain_reference_words": 95
+      },
+      {
+        "sample_id": "SC005",
+        "condition": "spatial",
+        "status": "completed",
+        "channel_handling": "downmixed_mono",
+        "latency_seconds": 11.153787458999432,
+        "metrics": {
+          "reference_words": 711,
+          "hypothesis_words": 63,
+          "substitutions": 6,
+          "deletions": 648,
+          "insertions": 0,
+          "errors": 654,
+          "wer": 0.919831223628692
+        },
+        "boundary_uncertain_reference_words": 95
+      },
+      {
+        "sample_id": "SC006",
+        "condition": "colocated",
+        "status": "completed",
+        "channel_handling": "downmixed_mono",
+        "latency_seconds": 12.062528624999686,
+        "metrics": {
+          "reference_words": 469,
+          "hypothesis_words": 102,
+          "substitutions": 5,
+          "deletions": 367,
+          "insertions": 0,
+          "errors": 372,
+          "wer": 0.7931769722814499
+        },
+        "boundary_uncertain_reference_words": 29
+      },
+      {
+        "sample_id": "SC006",
+        "condition": "spatial",
+        "status": "completed",
+        "channel_handling": "downmixed_mono",
+        "latency_seconds": 11.650330208001833,
+        "metrics": {
+          "reference_words": 469,
+          "hypothesis_words": 100,
+          "substitutions": 7,
+          "deletions": 369,
+          "insertions": 0,
+          "errors": 376,
+          "wer": 0.8017057569296375
+        },
+        "boundary_uncertain_reference_words": 29
+      },
+      {
+        "sample_id": "SC007",
+        "condition": "colocated",
+        "status": "completed",
+        "channel_handling": "downmixed_mono",
+        "latency_seconds": 10.000587875001656,
+        "metrics": {
+          "reference_words": 615,
+          "hypothesis_words": 26,
+          "substitutions": 1,
+          "deletions": 589,
+          "insertions": 0,
+          "errors": 590,
+          "wer": 0.959349593495935
+        },
+        "boundary_uncertain_reference_words": 119
+      },
+      {
+        "sample_id": "SC007",
+        "condition": "spatial",
+        "status": "completed",
+        "channel_handling": "downmixed_mono",
+        "latency_seconds": 9.764889125006448,
+        "metrics": {
+          "reference_words": 615,
+          "hypothesis_words": 30,
+          "substitutions": 3,
+          "deletions": 585,
+          "insertions": 0,
+          "errors": 588,
+          "wer": 0.9560975609756097
+        },
+        "boundary_uncertain_reference_words": 119
+      },
+      {
+        "sample_id": "SC008",
+        "condition": "colocated",
+        "status": "completed",
+        "channel_handling": "downmixed_mono",
+        "latency_seconds": 9.431500375001633,
+        "metrics": {
+          "reference_words": 596,
+          "hypothesis_words": 29,
+          "substitutions": 4,
+          "deletions": 567,
+          "insertions": 0,
+          "errors": 571,
+          "wer": 0.9580536912751678
+        },
+        "boundary_uncertain_reference_words": 101
+      },
+      {
+        "sample_id": "SC008",
+        "condition": "spatial",
+        "status": "completed",
+        "channel_handling": "downmixed_mono",
+        "latency_seconds": 10.83946987499803,
+        "metrics": {
+          "reference_words": 596,
+          "hypothesis_words": 37,
+          "substitutions": 3,
+          "deletions": 559,
+          "insertions": 0,
+          "errors": 562,
+          "wer": 0.9429530201342282
+        },
+        "boundary_uncertain_reference_words": 101
+      },
+      {
+        "sample_id": "SC009",
+        "condition": "colocated",
+        "status": "completed",
+        "channel_handling": "downmixed_mono",
+        "latency_seconds": 10.74834075000399,
+        "metrics": {
+          "reference_words": 664,
+          "hypothesis_words": 91,
+          "substitutions": 11,
+          "deletions": 574,
+          "insertions": 1,
+          "errors": 586,
+          "wer": 0.8825301204819277
+        },
+        "boundary_uncertain_reference_words": 68
+      },
+      {
+        "sample_id": "SC009",
+        "condition": "spatial",
+        "status": "completed",
+        "channel_handling": "downmixed_mono",
+        "latency_seconds": 10.467616292000457,
+        "metrics": {
+          "reference_words": 664,
+          "hypothesis_words": 94,
+          "substitutions": 10,
+          "deletions": 571,
+          "insertions": 1,
+          "errors": 582,
+          "wer": 0.8765060240963856
+        },
+        "boundary_uncertain_reference_words": 68
+      },
+      {
+        "sample_id": "SC010",
+        "condition": "colocated",
+        "status": "completed",
+        "channel_handling": "downmixed_mono",
+        "latency_seconds": 10.867389166000066,
+        "metrics": {
+          "reference_words": 547,
+          "hypothesis_words": 112,
+          "substitutions": 8,
+          "deletions": 436,
+          "insertions": 1,
+          "errors": 445,
+          "wer": 0.8135283363802559
+        },
+        "boundary_uncertain_reference_words": 28
+      },
+      {
+        "sample_id": "SC010",
+        "condition": "spatial",
+        "status": "completed",
+        "channel_handling": "downmixed_mono",
+        "latency_seconds": 11.188304374998552,
+        "metrics": {
+          "reference_words": 547,
+          "hypothesis_words": 109,
+          "substitutions": 8,
+          "deletions": 439,
+          "insertions": 1,
+          "errors": 448,
+          "wer": 0.8190127970749543
+        },
+        "boundary_uncertain_reference_words": 28
+      }
+    ],
+    "note": "完整原始标注，非选择题证据摘录。单声道输入，未接问答器。WER越低越好；CHiME边界句未做词级裁剪，重叠话语按句起点串联，分数包含边界和排序误差。"
+  }
 }
