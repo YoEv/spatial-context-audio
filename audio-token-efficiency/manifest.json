@@ -1,0 +1,86 @@
+{
+  "ATTRIBUTION.md": {
+    "bytes": 1250,
+    "sha256": "e4d0b1e41e012eca0b971798dc8868a58ef99a7118843063fe18d385c2a04a5f"
+  },
+  "LICENSE-Speech-Commands.txt": {
+    "bytes": 18651,
+    "sha256": "fd3a263fe19ed8faa9068b43abaebafc02c77897b0c6fc09abc04bb592e5f16e"
+  },
+  "app.js": {
+    "bytes": 18663,
+    "sha256": "15f9350a92a08a6f8d372af2fc31cb9a3d3933d76d4120d82b345e58aad198c9"
+  },
+  "audio/test-00000/mix.wav": {
+    "bytes": 121644,
+    "sha256": "8b0ea52e71fe0f860138b3d04769fed2b3f26e791d079a7d468e1c9e3cbef8b1"
+  },
+  "audio/test-00000/source-A.wav": {
+    "bytes": 121644,
+    "sha256": "ff06a6f3e80ab4e91d64dd21c93192a9c6580641737a2be81a3fb5632d02d9ee"
+  },
+  "audio/test-00000/source-B.wav": {
+    "bytes": 121644,
+    "sha256": "0a5340e65d770977c4624d1f0adda450dc0b401183a80e0fa07eaab02284cfd4"
+  },
+  "audio/test-00000/walkthrough-A-B-mix.wav": {
+    "bytes": 416044,
+    "sha256": "9e73de903544b069b1b2ca11dd36e46c9b6ce6c8de9a775ce2e996fadbac24d8"
+  },
+  "audio/test-00005/mix.wav": {
+    "bytes": 121644,
+    "sha256": "c124db4d5c30c243bfe2dfe12c5e7d82aefda716f966082df65edaf59d1b5f25"
+  },
+  "audio/test-00005/source-A.wav": {
+    "bytes": 121644,
+    "sha256": "200070dc9358b318a71f0efcf0186f63e856f7fbc979b324087f4eea032e6cd7"
+  },
+  "audio/test-00005/source-B.wav": {
+    "bytes": 121644,
+    "sha256": "65f0fce8d7667a1ee8cc23d3375f73eb61667beb28968533349473c32a24f24c"
+  },
+  "audio/test-00005/walkthrough-A-B-mix.wav": {
+    "bytes": 416044,
+    "sha256": "8c871916de098bea6ee4843e4f8aa67f2e52ce283451150e5565a08e1635e763"
+  },
+  "audio/test-00009/mix.wav": {
+    "bytes": 121644,
+    "sha256": "35fc46cb7fcc18f10a448ee11f190112a57616521937f8d86176434591a0a2de"
+  },
+  "audio/test-00009/source-A.wav": {
+    "bytes": 121644,
+    "sha256": "202bec636130abed8be5bd371dd66c04d8e1b8ad5ebd786ccb9144ddbbbeec0f"
+  },
+  "audio/test-00009/source-B.wav": {
+    "bytes": 121644,
+    "sha256": "2c867f010852cf694fecddfef32ce0efa8f6620fe79d437bc35e6cca9ebda897"
+  },
+  "audio/test-00009/walkthrough-A-B-mix.wav": {
+    "bytes": 416044,
+    "sha256": "a56c303eea028548e6eadd7f9966f51bd38bd2abbb345daa569e0478d096d4dc"
+  },
+  "compression-curves.svg": {
+    "bytes": 156647,
+    "sha256": "f396a2ab9cd9f99fc2767746acb617d40995456d976c052f88549813a2cf5ebb"
+  },
+  "curves.csv": {
+    "bytes": 8935,
+    "sha256": "2a04cf02a96adf7ae5de02147ea533290d7a13cf83b3b57d0b04e3b3295f9ab6"
+  },
+  "data.js": {
+    "bytes": 272220,
+    "sha256": "10a9d290bac8ec2eed6f421f078781856c5b2267f63b91ba395c5324a0dbe4aa"
+  },
+  "data.json": {
+    "bytes": 272197,
+    "sha256": "b842891465c82baeaf10031bed2c96d9100b0c3419a681e224f78f7cacfcf0bc"
+  },
+  "index.html": {
+    "bytes": 25748,
+    "sha256": "a6458b66d4752f7b3a4c2e06a799da19731ce670ae9c67da3ab3a854c5f2c926"
+  },
+  "style.css": {
+    "bytes": 16096,
+    "sha256": "ca13afae537f176a5d1eb9c341e570bed74c0cc8a5b8c16b37ec0d0a33f76cc3"
+  }
+}
