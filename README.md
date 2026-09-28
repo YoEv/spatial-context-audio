@@ -2,7 +2,7 @@
 
 10 spatialized pairs of multi-party conversations, 50 multiple-choice questions, and a model smoke-test results view.
 
-Open index.html via a static HTTP server. All assets use relative URLs and work on GitHub Pages. Audio is 60-second stereo PCM WAV; no backend, account, API key or paid inference is required to listen.
+Open index.html via a static HTTP server. All assets use relative URLs and work on GitHub Pages. Audio is 60-second stereo: original two-context PCM WAV and lossless FLAC for isolated A/B and three/four contexts; no backend, account, API key or paid inference is required to listen.
 
 ## Models and results
 The paired scoring table only shows runs on spatial-context-v1. A separate single-sample connectivity table shows sanitized HEAR/NOTSOFAR smoke summaries; these do not count toward the 50-question scores. Empty means not run, not zero accuracy. Transcription-only models require a reader before they can answer MCQs. Channel handling must be recorded.
@@ -23,4 +23,4 @@ Attribution, source licenses and adaptation details: [ATTRIBUTION.md](ATTRIBUTIO
 
 ## Fixed-question 1–4 context ladder
 
-The result page compares the same 50 scoring units across four context levels, then shows uniform scenario summaries and a filterable question board. Levels 3/4 add one/two LibriSpeech single-narrator interference tracks while retaining the original A/B sources and gold. Q5 requires both A/B integer counts to match. Original 1/2-context results and historical records are preserved. Technical failures remain in the denominator; GPT-Live session behavior and Muse full-reference WER are shown separately. Question links open the original two-context listening samples. Only numerical results are published; full reference and model transcripts remain private.
+The result page compares the same 50 scoring units across four context levels, then shows uniform scenario summaries and a filterable question board. Levels 3/4 add one/two LibriSpeech single-narrator interference tracks while retaining the original A/B sources and gold. Q5 requires both A/B integer counts to match. Original 1/2-context results and historical records are preserved. Technical failures remain in the denominator; GPT-Live session behavior and Muse full-reference WER are shown separately. Question links open the corresponding context level. The listening page keeps the same five questions and two-player layout, with a selector for isolated A, isolated B, A+B, three and four contexts. For single context, Q1–3 use A, Q4 uses B, and Q5 requires both. listening-audio.json records all 100 files and exact decoded PCM hashes. Only numerical results are published; full reference and model transcripts remain private.

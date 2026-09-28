@@ -1,0 +1,2136 @@
+{
+  "version": "context-ladder-listening-v1",
+  "encoding": "Added FLAC files decode to exactly the evaluation WAV PCM; no resampling, gain changes or lossy compression.",
+  "samples": [
+    {
+      "id": "SC001",
+      "variants": {
+        "dual": {
+          "context_count": 2,
+          "contexts": [
+            "A",
+            "B"
+          ],
+          "audio": {
+            "spatial": {
+              "file": "audio/SC001_spatial.wav",
+              "format": "WAV",
+              "source_wav_sha256": "9f7055491c69ad272f6f91262d2f75ef4ba835eea9adfa33e7488814d8bce600",
+              "azimuth_deg": {
+                "A": 45,
+                "B": -45
+              },
+              "duration_seconds": 60,
+              "sample_rate": 48000,
+              "channels": 2,
+              "bits_per_sample": 16,
+              "sha256": "9f7055491c69ad272f6f91262d2f75ef4ba835eea9adfa33e7488814d8bce600",
+              "pcm_sha256": "e71328255236151523c94c125ae9de76943cc510b22996c5c8b0ea65e4a5f1d9",
+              "bytes": 11520044
+            },
+            "colocated": {
+              "file": "audio/SC001_colocated.wav",
+              "format": "WAV",
+              "source_wav_sha256": "b9c4b9fbfc6cb304a470e57b3b191a40dacb2bf95f67064d956f5662ef397a7f",
+              "azimuth_deg": {
+                "A": 0,
+                "B": 0
+              },
+              "duration_seconds": 60,
+              "sample_rate": 48000,
+              "channels": 2,
+              "bits_per_sample": 16,
+              "sha256": "b9c4b9fbfc6cb304a470e57b3b191a40dacb2bf95f67064d956f5662ef397a7f",
+              "pcm_sha256": "09b4f3efc42e9cacc57725c998469db58b10ffdd325342980e4db743dd2f0df8",
+              "bytes": 11520044
+            }
+          }
+        },
+        "singleA": {
+          "context_count": 1,
+          "contexts": [
+            "A"
+          ],
+          "audio": {
+            "spatial": {
+              "file": "audio/SC001_spatial_only_A.flac",
+              "format": "FLAC",
+              "source_wav_sha256": "338266eb8106a576bda08cb181ef381cce10e86a303ecf1011b6ee06419c7214",
+              "azimuth_deg": {
+                "A": 45
+              },
+              "duration_seconds": 60,
+              "sample_rate": 48000,
+              "channels": 2,
+              "bits_per_sample": 16,
+              "sha256": "6c3a5684367b13ebec3b7e7539d814b81e5a7caf5c56dd827b30a7862b075cad",
+              "pcm_sha256": "d56d263e2416468db939679ad272d4f68f30ac5bdbe7d7e783ff6449690461d9",
+              "bytes": 2504600
+            },
+            "colocated": {
+              "file": "audio/SC001_colocated_only_A.flac",
+              "format": "FLAC",
+              "source_wav_sha256": "4cbf096800ce00fe22a9ca787df3890be893c590a392085037d21e9e25a44419",
+              "azimuth_deg": {
+                "A": 0
+              },
+              "duration_seconds": 60,
+              "sample_rate": 48000,
+              "channels": 2,
+              "bits_per_sample": 16,
+              "sha256": "087f1b7568e5da0d5e8afe3d34144c0307c336e1154e3e241d906ce7472a1e40",
+              "pcm_sha256": "76197524676e0247f7749c60e4903ab0f91d1b1a09f9bc9265d3b46d3aba28dc",
+              "bytes": 1261987
+            }
+          }
+        },
+        "singleB": {
+          "context_count": 1,
+          "contexts": [
+            "B"
+          ],
+          "audio": {
+            "spatial": {
+              "file": "audio/SC001_spatial_only_B.flac",
+              "format": "FLAC",
+              "source_wav_sha256": "7a6df57a7838181e7e1f747b681ebbe32a140cd256b77bdbeec8301935ed7645",
+              "azimuth_deg": {
+                "B": -45
+              },
+              "duration_seconds": 60,
+              "sample_rate": 48000,
+              "channels": 2,
+              "bits_per_sample": 16,
+              "sha256": "b562cd5c5d28ad1a89250a1ae7d74f3c0d5a2f34a2a583269d5ad0358d5743c5",
+              "pcm_sha256": "2e1b8be27b1bc006184d0a39145a5895e4c3acdcfd4f96dcfc6ffa6b7c8b8fc5",
+              "bytes": 2819089
+            },
+            "colocated": {
+              "file": "audio/SC001_colocated_only_B.flac",
+              "format": "FLAC",
+              "source_wav_sha256": "a4b49ff3a9e2f665ca59bb536389acbb046860bc5480f51acfde0d1c7099b469",
+              "azimuth_deg": {
+                "B": 0
+              },
+              "duration_seconds": 60,
+              "sample_rate": 48000,
+              "channels": 2,
+              "bits_per_sample": 16,
+              "sha256": "8ba7dae73477aecdd9cd4e68a9ead2d02153b205be7df17f1fd6c7518d3bf580",
+              "pcm_sha256": "3e40fb2e6539fd570b647a20aa1f973892244e4f0b8f5a43da50a9f6f2809d7e",
+              "bytes": 1411442
+            }
+          }
+        },
+        "triple": {
+          "context_count": 3,
+          "contexts": [
+            "A",
+            "B",
+            "C"
+          ],
+          "audio": {
+            "spatial": {
+              "file": "audio/SC001_spatial_triple.flac",
+              "format": "FLAC",
+              "source_wav_sha256": "4c4e2995b5b3f0b3e524412b962fe296b207f7933ecccbc942121f137c150e0a",
+              "azimuth_deg": {
+                "A": 45,
+                "B": -45,
+                "C": 100
+              },
+              "duration_seconds": 60,
+              "sample_rate": 48000,
+              "channels": 2,
+              "bits_per_sample": 16,
+              "sha256": "0b0ac7e82e7239879e83480df38c8ce0176a25d32287535f04f6a570fa5a6e39",
+              "pcm_sha256": "32792f957eb2c9899a6b549df14abdc70d5bc94891cc8ca73b425c10ebf88368",
+              "bytes": 3194715
+            },
+            "colocated": {
+              "file": "audio/SC001_colocated_triple.flac",
+              "format": "FLAC",
+              "source_wav_sha256": "391feb8abd3aad613e39f6c4286d53e360a87a9ba07b581aa2bf0f09a7fecf27",
+              "azimuth_deg": {
+                "A": 0,
+                "B": 0,
+                "C": 0
+              },
+              "duration_seconds": 60,
+              "sample_rate": 48000,
+              "channels": 2,
+              "bits_per_sample": 16,
+              "sha256": "940625a53a196737c873c32582d9978c492fb9516bc6886f583869c93b639167",
+              "pcm_sha256": "931e50f83933683171186ff50661b1b9921f767b928db137c9afd3fbefc1b7cf",
+              "bytes": 1548590
+            }
+          }
+        },
+        "quadruple": {
+          "context_count": 4,
+          "contexts": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "audio": {
+            "spatial": {
+              "file": "audio/SC001_spatial_quadruple.flac",
+              "format": "FLAC",
+              "source_wav_sha256": "e028b9004148609981231570ec7e35055f41ff9db6dfa7cf862ba35d32a5cd9a",
+              "azimuth_deg": {
+                "A": 45,
+                "B": -45,
+                "C": 100,
+                "D": -100
+              },
+              "duration_seconds": 60,
+              "sample_rate": 48000,
+              "channels": 2,
+              "bits_per_sample": 16,
+              "sha256": "f389ee55fa61a4202fbadd870022def444916cf2a7d7dc6dfe0c6bb43d3eee2c",
+              "pcm_sha256": "71029c5cb6afd787f4bb75aa38deb123c5edd5e643b60ecca41606bca3b6e6ff",
+              "bytes": 3278810
+            },
+            "colocated": {
+              "file": "audio/SC001_colocated_quadruple.flac",
+              "format": "FLAC",
+              "source_wav_sha256": "09eca453d060a20bc852e2b165862c9aa167d023218c45231337593c66175942",
+              "azimuth_deg": {
+                "A": 0,
+                "B": 0,
+                "C": 0,
+                "D": 0
+              },
+              "duration_seconds": 60,
+              "sample_rate": 48000,
+              "channels": 2,
+              "bits_per_sample": 16,
+              "sha256": "8cb7941873669511bfd31f9a1100e71d3d7c60a55cd95e67729d576a97056ca6",
+              "pcm_sha256": "6016cfa54903b812097abd738b639a29237e1f9854c6af07383dc20ee67efdd7",
+              "bytes": 1577905
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "SC002",
+      "variants": {
+        "dual": {
+          "context_count": 2,
+          "contexts": [
+            "A",
+            "B"
+          ],
+          "audio": {
+            "spatial": {
+              "file": "audio/SC002_spatial.wav",
+              "format": "WAV",
+              "source_wav_sha256": "3cf566ee5ec9d726f63bca166c2ecbd0a5071e0d5c754a88ca9e9c30181bb922",
+              "azimuth_deg": {
+                "A": -60,
+                "B": 60
+              },
+              "duration_seconds": 60,
+              "sample_rate": 48000,
+              "channels": 2,
+              "bits_per_sample": 16,
+              "sha256": "3cf566ee5ec9d726f63bca166c2ecbd0a5071e0d5c754a88ca9e9c30181bb922",
+              "pcm_sha256": "c58535e21ccb6e2d2ee063a7bdb308958e018421de1edb8bd61041eac18072a8",
+              "bytes": 11520044
+            },
+            "colocated": {
+              "file": "audio/SC002_colocated.wav",
+              "format": "WAV",
+              "source_wav_sha256": "4cd00ab393db2c026af3bc44e6e8c20a6d7c72141aa91c536dcd8c0def139060",
+              "azimuth_deg": {
+                "A": 0,
+                "B": 0
+              },
+              "duration_seconds": 60,
+              "sample_rate": 48000,
+              "channels": 2,
+              "bits_per_sample": 16,
+              "sha256": "4cd00ab393db2c026af3bc44e6e8c20a6d7c72141aa91c536dcd8c0def139060",
+              "pcm_sha256": "b786f5279a5f4c43932ea424804b19bf9a7151478d6b370272f5275fe79a9539",
+              "bytes": 11520044
+            }
+          }
+        },
+        "singleA": {
+          "context_count": 1,
+          "contexts": [
+            "A"
+          ],
+          "audio": {
+            "spatial": {
+              "file": "audio/SC002_spatial_only_A.flac",
+              "format": "FLAC",
+              "source_wav_sha256": "5aec25635be85ccb19f32db7d9b899c27aa9c3bf2c2a970c4387bb3adfe9fa85",
+              "azimuth_deg": {
+                "A": -60
+              },
+              "duration_seconds": 60,
+              "sample_rate": 48000,
+              "channels": 2,
+              "bits_per_sample": 16,
+              "sha256": "6d3b9be53ebe4a78958d8e8a74b4783105f31eda2095f98569c9ccfa6cb86ebe",
+              "pcm_sha256": "5274e3b2a5c6822d1ddd37f1fb272d977e57fc87027d25f073f833a00fe6848d",
+              "bytes": 2512152
+            },
+            "colocated": {
+              "file": "audio/SC002_colocated_only_A.flac",
+              "format": "FLAC",
+              "source_wav_sha256": "a63d7e17b297e1e185db8b362a4628c467bfabcbbea5720910746cbd56581ac2",
+              "azimuth_deg": {
+                "A": 0
+              },
+              "duration_seconds": 60,
+              "sample_rate": 48000,
+              "channels": 2,
+              "bits_per_sample": 16,
+              "sha256": "71cbfc5615a5a6895ec4597fd14443b4c241f02949e07616ee5387dc0d9b50ef",
+              "pcm_sha256": "8dfe165b5bc8b1ea0acf3764dc89e76a99c36394299ef905e35b3becb30e0e55",
+              "bytes": 1284651
+            }
+          }
+        },
+        "singleB": {
+          "context_count": 1,
+          "contexts": [
+            "B"
+          ],
+          "audio": {
+            "spatial": {
+              "file": "audio/SC002_spatial_only_B.flac",
+              "format": "FLAC",
+              "source_wav_sha256": "0a10cbecdc9b86bfd1fff4e453a660c4a3061acd233294db8c83ef5cf532d478",
+              "azimuth_deg": {
+                "B": 60
+              },
+              "duration_seconds": 60,
+              "sample_rate": 48000,
+              "channels": 2,
+              "bits_per_sample": 16,
+              "sha256": "98405911c0c8504d6d9f352fe6fd8432b31297cadc921088ebb02a0a6daf2b98",
+              "pcm_sha256": "7a69f9191044d28da79351d088f04264523b6777e1af8e37299b218fda1f246d",
+              "bytes": 2796014
+            },
+            "colocated": {
+              "file": "audio/SC002_colocated_only_B.flac",
+              "format": "FLAC",
+              "source_wav_sha256": "e8ba82b75fd10c83399f3a79befb42c55ec4410da1363e7677d704ac9239a53b",
+              "azimuth_deg": {
+                "B": 0
+              },
+              "duration_seconds": 60,
+              "sample_rate": 48000,
+              "channels": 2,
+              "bits_per_sample": 16,
+              "sha256": "34341db7590c3df323fee3ef0f5d79e428eed7e1391c42504c013e8a06ef4666",
+              "pcm_sha256": "b878f6f77d8aa01bb01255f1b572ac19e8d84bb2f161897287bfa8361db7bf69",
+              "bytes": 1425967
+            }
+          }
+        },
+        "triple": {
+          "context_count": 3,
+          "contexts": [
+            "A",
+            "B",
+            "D"
+          ],
+          "audio": {
+            "spatial": {
+              "file": "audio/SC002_spatial_triple.flac",
+              "format": "FLAC",
+              "source_wav_sha256": "f969ae69ab14d6ccba5a7160ef8a102e217878695bb55812abe0759e1de22e90",
+              "azimuth_deg": {
+                "A": -60,
+                "B": 60,
+                "D": 100
+              },
+              "duration_seconds": 60,
+              "sample_rate": 48000,
+              "channels": 2,
+              "bits_per_sample": 16,
+              "sha256": "1f732f7168aee7f2573fdceb5f600e3656e8679c24f859b5bb03284183f204e6",
+              "pcm_sha256": "a5886e79967da58119d3b7817470894a5a5d92bffc8f13a00b859a65011e04d1",
+              "bytes": 3230492
+            },
+            "colocated": {
+              "file": "audio/SC002_colocated_triple.flac",
+              "format": "FLAC",
+              "source_wav_sha256": "84c674e7b78cb5fe40f9fdb3da8c492cca0e3545861a4a7dc51e89f6339fc5c2",
+              "azimuth_deg": {
+                "A": 0,
+                "B": 0,
+                "D": 0
+              },
+              "duration_seconds": 60,
+              "sample_rate": 48000,
+              "channels": 2,
+              "bits_per_sample": 16,
+              "sha256": "c661cd37959578c093fa57cc01dd7ae611551125f788b970ff42c3b5385cc595",
+              "pcm_sha256": "9393e643f97104bdf52053f213a397fa9476166102f833562ff57866868545d2",
+              "bytes": 1593148
+            }
+          }
+        },
+        "quadruple": {
+          "context_count": 4,
+          "contexts": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "audio": {
+            "spatial": {
+              "file": "audio/SC002_spatial_quadruple.flac",
+              "format": "FLAC",
+              "source_wav_sha256": "c432b373b9d7f38a83356a0ab29a4d21b833e6899b7aca5453739827a6ea967f",
+              "azimuth_deg": {
+                "A": -60,
+                "B": 60,
+                "C": -100,
+                "D": 100
+              },
+              "duration_seconds": 60,
+              "sample_rate": 48000,
+              "channels": 2,
+              "bits_per_sample": 16,
+              "sha256": "f2d9784922a99bcadb4a7b43082de040e5b3ce1b1e94b75e5a34165bbc15e668",
+              "pcm_sha256": "0f13e76898270e25e547ce167e05209803da062e05d1bf205eaf9064d951f8f7",
+              "bytes": 3313559
+            },
+            "colocated": {
+              "file": "audio/SC002_colocated_quadruple.flac",
+              "format": "FLAC",
+              "source_wav_sha256": "eee3402e35ebb1dcbb1e9bd0c75f23bafd9f976310cd8078916261dff32bbf16",
+              "azimuth_deg": {
+                "A": 0,
+                "B": 0,
+                "C": 0,
+                "D": 0
+              },
+              "duration_seconds": 60,
+              "sample_rate": 48000,
+              "channels": 2,
+              "bits_per_sample": 16,
+              "sha256": "31642a960afbd80d2e8d5c43f0529a53d6832fc7288e8216afb17483157643f0",
+              "pcm_sha256": "0d2e4dd0a9178625b593032a55fdba121d187af0fba883a6c451dbe8a85ab6ec",
+              "bytes": 1610739
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "SC003",
+      "variants": {
+        "dual": {
+          "context_count": 2,
+          "contexts": [
+            "A",
+            "B"
+          ],
+          "audio": {
+            "spatial": {
+              "file": "audio/SC003_spatial.wav",
+              "format": "WAV",
+              "source_wav_sha256": "0270e3bf978eb97f03438c36ebfb662c76a15cf85ae5acf9f5897f052b838c21",
+              "azimuth_deg": {
+                "A": 30,
+                "B": -30
+              },
+              "duration_seconds": 60,
+              "sample_rate": 48000,
+              "channels": 2,
+              "bits_per_sample": 16,
+              "sha256": "0270e3bf978eb97f03438c36ebfb662c76a15cf85ae5acf9f5897f052b838c21",
+              "pcm_sha256": "06f1074b725fef83575a04027adc0616cd4587d578c8d37883845113bdc2083e",
+              "bytes": 11520044
+            },
+            "colocated": {
+              "file": "audio/SC003_colocated.wav",
+              "format": "WAV",
+              "source_wav_sha256": "21a08c31a1214f1cbd2911121f9bc9389a5832045ad5400af6bffdaef225552d",
+              "azimuth_deg": {
+                "A": 0,
+                "B": 0
+              },
+              "duration_seconds": 60,
+              "sample_rate": 48000,
+              "channels": 2,
+              "bits_per_sample": 16,
+              "sha256": "21a08c31a1214f1cbd2911121f9bc9389a5832045ad5400af6bffdaef225552d",
+              "pcm_sha256": "eb18477c42e0d7289e5d4001803576f02ba98821d633c9b6d191855039b83578",
+              "bytes": 11520044
+            }
+          }
+        },
+        "singleA": {
+          "context_count": 1,
+          "contexts": [
+            "A"
+          ],
+          "audio": {
+            "spatial": {
+              "file": "audio/SC003_spatial_only_A.flac",
+              "format": "FLAC",
+              "source_wav_sha256": "027530b26d756058abe119196daa5cc6476101ddc1b8385f1cfe06718a5b045f",
+              "azimuth_deg": {
+                "A": 30
+              },
+              "duration_seconds": 60,
+              "sample_rate": 48000,
+              "channels": 2,
+              "bits_per_sample": 16,
+              "sha256": "eacb16625d4ce7bc385a31a88fad89fadab53dca04d49590bdb86173fa313c02",
+              "pcm_sha256": "6eb17029a8d32cdedc15e46c37e279e7891ccdb9b4a233f36512f893d101b315",
+              "bytes": 2690023
+            },
+            "colocated": {
+              "file": "audio/SC003_colocated_only_A.flac",
+              "format": "FLAC",
+              "source_wav_sha256": "ad2f119861b43e3eb3384417a55327c96a554ebe8877dab3110fcab6cfb0c047",
+              "azimuth_deg": {
+                "A": 0
+              },
+              "duration_seconds": 60,
+              "sample_rate": 48000,
+              "channels": 2,
+              "bits_per_sample": 16,
+              "sha256": "f0bb25710f3c76b2410107bd8cc69b811b1dab0b18a3768ed504488f66b49402",
+              "pcm_sha256": "e0d1538b319c46bcea23a42c4844e093a1da4911d4bd41b7f0a125990e480e6b",
+              "bytes": 1359674
+            }
+          }
+        },
+        "singleB": {
+          "context_count": 1,
+          "contexts": [
+            "B"
+          ],
+          "audio": {
+            "spatial": {
+              "file": "audio/SC003_spatial_only_B.flac",
+              "format": "FLAC",
+              "source_wav_sha256": "851e830c257dab4e658b414244f74fe7f9652605ba5bb20729b5c0ba6fe99baf",
+              "azimuth_deg": {
+                "B": -30
+              },
+              "duration_seconds": 60,
+              "sample_rate": 48000,
+              "channels": 2,
+              "bits_per_sample": 16,
+              "sha256": "6a4bed122feed9235271c0f74cd3b4672a03fa86e2bb0ed83d49d989e366f16f",
+              "pcm_sha256": "1e3cfd32e5ca758db29eaeac7470594da4122583f2fb27e7e49e0c4c4e3fc5fd",
+              "bytes": 2887867
+            },
+            "colocated": {
+              "file": "audio/SC003_colocated_only_B.flac",
+              "format": "FLAC",
+              "source_wav_sha256": "22f30d046daee71ecc1340e8261b19d75bce1daee13f0d2af819b060663b0f37",
+              "azimuth_deg": {
+                "B": 0
+              },
+              "duration_seconds": 60,
+              "sample_rate": 48000,
+              "channels": 2,
+              "bits_per_sample": 16,
+              "sha256": "1e4c3a696be00b40cc70f41c182e5c60b33ae33e5901a80462ea16f560c079e4",
+              "pcm_sha256": "c413191ddd608504ba1d4116712b27f9db629583eed17f53c9c70bbead7db580",
+              "bytes": 1465821
+            }
+          }
+        },
+        "triple": {
+          "context_count": 3,
+          "contexts": [
+            "A",
+            "B",
+            "C"
+          ],
+          "audio": {
+            "spatial": {
+              "file": "audio/SC003_spatial_triple.flac",
+              "format": "FLAC",
+              "source_wav_sha256": "f2f7b1501d84ecc138b895fb0a36f716f55dd94fe787f479157961d14fb40841",
+              "azimuth_deg": {
+                "A": 30,
+                "B": -30,
+                "C": 100
+              },
+              "duration_seconds": 60,
+              "sample_rate": 48000,
+              "channels": 2,
+              "bits_per_sample": 16,
+              "sha256": "93630df4f541804bfc09633e60a7b0d03408afbea0202c408d0635ab198f5e2f",
+              "pcm_sha256": "1775addde79fc199de408d118c64db2e0b29a0ee17b24afea7049daa2ea34b20",
+              "bytes": 3259572
+            },
+            "colocated": {
+              "file": "audio/SC003_colocated_triple.flac",
+              "format": "FLAC",
+              "source_wav_sha256": "0599009346a3213653ded5177b7ac4678e87ddb08502cad4d47eae369fbdcbbe",
+              "azimuth_deg": {
+                "A": 0,
+                "B": 0,
+                "C": 0
+              },
+              "duration_seconds": 60,
+              "sample_rate": 48000,
+              "channels": 2,
+              "bits_per_sample": 16,
+              "sha256": "5d13536c10ef8569884341bab640e3d76cc067a9d12340f167e9d52eb6d69cf3",
+              "pcm_sha256": "a90e13877fc1dccaa3626b8e62d79f139e4ecddaf9f864a2ba04591253d0dcd4",
+              "bytes": 1607216
+            }
+          }
+        },
+        "quadruple": {
+          "context_count": 4,
+          "contexts": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "audio": {
+            "spatial": {
+              "file": "audio/SC003_spatial_quadruple.flac",
+              "format": "FLAC",
+              "source_wav_sha256": "283ef462b797e79ef753b41aab142668f876c3aa04c3e35bfb347f3e96812345",
+              "azimuth_deg": {
+                "A": 30,
+                "B": -30,
+                "C": 100,
+                "D": -100
+              },
+              "duration_seconds": 60,
+              "sample_rate": 48000,
+              "channels": 2,
+              "bits_per_sample": 16,
+              "sha256": "5de0df12ed81df6bb245ed6deb20cce3559d2c468e81dd7193e48f88e045bba9",
+              "pcm_sha256": "5853f47fc1f2cb8baf55a62844dd0032d9d868818f29dcbee53cfa9814135212",
+              "bytes": 3383770
+            },
+            "colocated": {
+              "file": "audio/SC003_colocated_quadruple.flac",
+              "format": "FLAC",
+              "source_wav_sha256": "05c4af8c5e2fd3243a4d4265c80e7b176e93350a0a9ed9eb29933c24cbd54fc1",
+              "azimuth_deg": {
+                "A": 0,
+                "B": 0,
+                "C": 0,
+                "D": 0
+              },
+              "duration_seconds": 60,
+              "sample_rate": 48000,
+              "channels": 2,
+              "bits_per_sample": 16,
+              "sha256": "72a4aaa63932cd695f246e78446a9cf4a47062999c51c408ea5a0b223bded250",
+              "pcm_sha256": "6726d2103d1072282a41cf43c3f79a59b42e25e3525fbef264ea5079666b865e",
+              "bytes": 1649165
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "SC004",
+      "variants": {
+        "dual": {
+          "context_count": 2,
+          "contexts": [
+            "A",
+            "B"
+          ],
+          "audio": {
+            "spatial": {
+              "file": "audio/SC004_spatial.wav",
+              "format": "WAV",
+              "source_wav_sha256": "601343f805e44d28089027e2c03e5c5bc513734905e1b56e56197991a88fe799",
+              "azimuth_deg": {
+                "A": -45,
+                "B": 45
+              },
+              "duration_seconds": 60,
+              "sample_rate": 48000,
+              "channels": 2,
+              "bits_per_sample": 16,
+              "sha256": "601343f805e44d28089027e2c03e5c5bc513734905e1b56e56197991a88fe799",
+              "pcm_sha256": "f50d9826484a7038e06f3f4285417377784c1be7de6216d2e46f18ae2695f782",
+              "bytes": 11520044
+            },
+            "colocated": {
+              "file": "audio/SC004_colocated.wav",
+              "format": "WAV",
+              "source_wav_sha256": "d55c21c0b19e33071436539a1b8f2343f9325b998eba53ab8d2caedc0bc8d62d",
+              "azimuth_deg": {
+                "A": 0,
+                "B": 0
+              },
+              "duration_seconds": 60,
+              "sample_rate": 48000,
+              "channels": 2,
+              "bits_per_sample": 16,
+              "sha256": "d55c21c0b19e33071436539a1b8f2343f9325b998eba53ab8d2caedc0bc8d62d",
+              "pcm_sha256": "bda40b1ae6b061222e97d91841472bb1501748498628c794c564e1affc7106f4",
+              "bytes": 11520044
+            }
+          }
+        },
+        "singleA": {
+          "context_count": 1,
+          "contexts": [
+            "A"
+          ],
+          "audio": {
+            "spatial": {
+              "file": "audio/SC004_spatial_only_A.flac",
+              "format": "FLAC",
+              "source_wav_sha256": "e2d0d3ba07d111de9dc8566cb9b87488afee211039858c5dbc70130aff92b2dd",
+              "azimuth_deg": {
+                "A": -45
+              },
+              "duration_seconds": 60,
+              "sample_rate": 48000,
+              "channels": 2,
+              "bits_per_sample": 16,
+              "sha256": "74f4d815303a474d83c26d7b049fc152469b54be57f8fe2600af19ec74476c8a",
+              "pcm_sha256": "cce1c1609235f6038c0cb353c359944351718f197bfc9095530bc93601419ab6",
+              "bytes": 2628960
+            },
+            "colocated": {
+              "file": "audio/SC004_colocated_only_A.flac",
+              "format": "FLAC",
+              "source_wav_sha256": "8f965d3ade772b1933cab1579cbc08c5cd4dedf38715883f951f0a3331ad5c36",
+              "azimuth_deg": {
+                "A": 0
+              },
+              "duration_seconds": 60,
+              "sample_rate": 48000,
+              "channels": 2,
+              "bits_per_sample": 16,
+              "sha256": "f92e8412a47fd12cdf9f9ed64f260ce6defea707e117cea51c3892aefa134a55",
+              "pcm_sha256": "580a3a75c851b02c38e8d2b6ff6064c8d338ec5419c5cb37c313fe11f14d3827",
+              "bytes": 1334526
+            }
+          }
+        },
+        "singleB": {
+          "context_count": 1,
+          "contexts": [
+            "B"
+          ],
+          "audio": {
+            "spatial": {
+              "file": "audio/SC004_spatial_only_B.flac",
+              "format": "FLAC",
+              "source_wav_sha256": "7bd1ddd0866156ad7d3f2c9fb9054aa450f3b01d50789e2702ac8aa326e76732",
+              "azimuth_deg": {
+                "B": 45
+              },
+              "duration_seconds": 60,
+              "sample_rate": 48000,
+              "channels": 2,
+              "bits_per_sample": 16,
+              "sha256": "c807ddd73c0a25a90b8e650cdf29aafb0a2a4508e7a379d6dffdcfa1dde0697d",
+              "pcm_sha256": "f0e7b250c474daffbe60e268e797dfc6a5de7db2b8288a8954aabe0a4e72ec12",
+              "bytes": 2939207
+            },
+            "colocated": {
+              "file": "audio/SC004_colocated_only_B.flac",
+              "format": "FLAC",
+              "source_wav_sha256": "f1703ef6083757bc712d52ae373c8204002c1add36359fa77bc4a0eb94ae9be1",
+              "azimuth_deg": {
+                "B": 0
+              },
+              "duration_seconds": 60,
+              "sample_rate": 48000,
+              "channels": 2,
+              "bits_per_sample": 16,
+              "sha256": "1943e35d8fdbbcb2afea32500dab7c3921efb9f66f1f3a0aa99bd99bc417cbb7",
+              "pcm_sha256": "6ced0bbda6c5dfccde69a40274f801d96937fd69bb354fe4fb9646066088cb9e",
+              "bytes": 1481508
+            }
+          }
+        },
+        "triple": {
+          "context_count": 3,
+          "contexts": [
+            "A",
+            "B",
+            "D"
+          ],
+          "audio": {
+            "spatial": {
+              "file": "audio/SC004_spatial_triple.flac",
+              "format": "FLAC",
+              "source_wav_sha256": "a5a1675f75c8f306aad2309bfad14cf6e6e95e3a7de0c2ef8d49bb8e0d7788c9",
+              "azimuth_deg": {
+                "A": -45,
+                "B": 45,
+                "D": 100
+              },
+              "duration_seconds": 60,
+              "sample_rate": 48000,
+              "channels": 2,
+              "bits_per_sample": 16,
+              "sha256": "99fe952f1b07647116d9d550c4a70e4fe98f0fb03ba076b337b5423bc3f2638e",
+              "pcm_sha256": "b80d25b45ef2dd358e2f1be580e8b75f6caf3148aeadacac6bb237290bca09a2",
+              "bytes": 3336952
+            },
+            "colocated": {
+              "file": "audio/SC004_colocated_triple.flac",
+              "format": "FLAC",
+              "source_wav_sha256": "4bfe0cdfd71e5106fade8a09954f33fe85352d181e5add4ea9b5fc7a35c8b0a3",
+              "azimuth_deg": {
+                "A": 0,
+                "B": 0,
+                "D": 0
+              },
+              "duration_seconds": 60,
+              "sample_rate": 48000,
+              "channels": 2,
+              "bits_per_sample": 16,
+              "sha256": "f5d32eac62f7fa707a7406f04af21ac9033ce7354f46e1f645ade2702ac5575c",
+              "pcm_sha256": "467752f1c13894864325e2a4996b06a0e41737c7c8802ee081534341c6de593b",
+              "bytes": 1629251
+            }
+          }
+        },
+        "quadruple": {
+          "context_count": 4,
+          "contexts": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "audio": {
+            "spatial": {
+              "file": "audio/SC004_spatial_quadruple.flac",
+              "format": "FLAC",
+              "source_wav_sha256": "d92d9180fc64c715e3c058bd20998ebe88ac4b5581364a86849189f1c8a0ed9a",
+              "azimuth_deg": {
+                "A": -45,
+                "B": 45,
+                "C": -100,
+                "D": 100
+              },
+              "duration_seconds": 60,
+              "sample_rate": 48000,
+              "channels": 2,
+              "bits_per_sample": 16,
+              "sha256": "d662728c9b362898c3d5854b99764979429a48acc60a5f6374398d5c5d82e13b",
+              "pcm_sha256": "05a230a6531ae9c2cfdb289eb5ed6999ffc06777853abdedbf59f81067ff631a",
+              "bytes": 3414134
+            },
+            "colocated": {
+              "file": "audio/SC004_colocated_quadruple.flac",
+              "format": "FLAC",
+              "source_wav_sha256": "4209585a3fe6d8f3bab606680f6df234c7ff636fadb9e72fb8445c334f295381",
+              "azimuth_deg": {
+                "A": 0,
+                "B": 0,
+                "C": 0,
+                "D": 0
+              },
+              "duration_seconds": 60,
+              "sample_rate": 48000,
+              "channels": 2,
+              "bits_per_sample": 16,
+              "sha256": "04f99a6a128b8d7e093d86e0e4d75f98450c3fe63bfe18cc89c002b4ceae9b81",
+              "pcm_sha256": "667654b929ee3c88bd5d71a195ca1995da1fc1bf59ed1fcd9b56df678405dfd3",
+              "bytes": 1649963
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "SC005",
+      "variants": {
+        "dual": {
+          "context_count": 2,
+          "contexts": [
+            "A",
+            "B"
+          ],
+          "audio": {
+            "spatial": {
+              "file": "audio/SC005_spatial.wav",
+              "format": "WAV",
+              "source_wav_sha256": "3f01126c410da5dfde329811325d8de65ed85787e80ef4167cef782c1cf7c53f",
+              "azimuth_deg": {
+                "A": 60,
+                "B": -60
+              },
+              "duration_seconds": 60,
+              "sample_rate": 48000,
+              "channels": 2,
+              "bits_per_sample": 16,
+              "sha256": "3f01126c410da5dfde329811325d8de65ed85787e80ef4167cef782c1cf7c53f",
+              "pcm_sha256": "7e02d11574af25f61b8ed49bcbd7e3fc03c8e2eae1a3723421e53eebc64baaf4",
+              "bytes": 11520044
+            },
+            "colocated": {
+              "file": "audio/SC005_colocated.wav",
+              "format": "WAV",
+              "source_wav_sha256": "775d0262e11db0ff49d8708f7a7852190d67e428a554cb8ca618773343c51a6a",
+              "azimuth_deg": {
+                "A": 0,
+                "B": 0
+              },
+              "duration_seconds": 60,
+              "sample_rate": 48000,
+              "channels": 2,
+              "bits_per_sample": 16,
+              "sha256": "775d0262e11db0ff49d8708f7a7852190d67e428a554cb8ca618773343c51a6a",
+              "pcm_sha256": "813338029652455a08036a9ecaa6b7ac7fbf7e5c326028b12c55b868638ac8b2",
+              "bytes": 11520044
+            }
+          }
+        },
+        "singleA": {
+          "context_count": 1,
+          "contexts": [
+            "A"
+          ],
+          "audio": {
+            "spatial": {
+              "file": "audio/SC005_spatial_only_A.flac",
+              "format": "FLAC",
+              "source_wav_sha256": "c0bb98403ae967eb620e4db8d1d028e00aa5afd9ff5ef581278cfaf2edc70c02",
+              "azimuth_deg": {
+                "A": 60
+              },
+              "duration_seconds": 60,
+              "sample_rate": 48000,
+              "channels": 2,
+              "bits_per_sample": 16,
+              "sha256": "4da25d7d0388026fa710a66b253566e79796abe7e057767ff7178bd7b6b1603c",
+              "pcm_sha256": "b6775eb0661b3981015ea1e95580b5c11fb1b7a06fb5a88c93b04a9692750df2",
+              "bytes": 2541286
+            },
+            "colocated": {
+              "file": "audio/SC005_colocated_only_A.flac",
+              "format": "FLAC",
+              "source_wav_sha256": "4d70e38b7e96e97128a771ebcb9cc6a5d0e3d9d99eb1932d2491d4a2139d58e1",
+              "azimuth_deg": {
+                "A": 0
+              },
+              "duration_seconds": 60,
+              "sample_rate": 48000,
+              "channels": 2,
+              "bits_per_sample": 16,
+              "sha256": "65dc0779a7029038968a79cf5837f6ab343b21f66047b2d8d5e11c6377adb2b6",
+              "pcm_sha256": "c00403337b0715647fad0084a5f843f4eae94470e0ab644d6dd2aa3a4dca7e3a",
+              "bytes": 1311032
+            }
+          }
+        },
+        "singleB": {
+          "context_count": 1,
+          "contexts": [
+            "B"
+          ],
+          "audio": {
+            "spatial": {
+              "file": "audio/SC005_spatial_only_B.flac",
+              "format": "FLAC",
+              "source_wav_sha256": "560b86bcff08cc75033c2cb0750a5f04258cbae7bbcf566c05cc8daf582b39d1",
+              "azimuth_deg": {
+                "B": -60
+              },
+              "duration_seconds": 60,
+              "sample_rate": 48000,
+              "channels": 2,
+              "bits_per_sample": 16,
+              "sha256": "d22777aa3afa96b80f9ac0230a826dfb6e1b80f741882d94fb32ca7bba2d33c8",
+              "pcm_sha256": "bff18bac3e54bf78d7ad61521bb424be4aeefb1d0a44883d6ed150f54886fe2e",
+              "bytes": 2910913
+            },
+            "colocated": {
+              "file": "audio/SC005_colocated_only_B.flac",
+              "format": "FLAC",
+              "source_wav_sha256": "d066eda4d392a4d8800ceb69d27429bdcdee222c92f2b034f5858750cfc17ecc",
+              "azimuth_deg": {
+                "B": 0
+              },
+              "duration_seconds": 60,
+              "sample_rate": 48000,
+              "channels": 2,
+              "bits_per_sample": 16,
+              "sha256": "d394d803cfd726f571e661922b8f1f62a1cf75d03958dc2791a9d595ffebb056",
+              "pcm_sha256": "30883dbee87e95339323ebca5566bd7ca3a077521855fb8a7c8495b11f10b8ea",
+              "bytes": 1479179
+            }
+          }
+        },
+        "triple": {
+          "context_count": 3,
+          "contexts": [
+            "A",
+            "B",
+            "C"
+          ],
+          "audio": {
+            "spatial": {
+              "file": "audio/SC005_spatial_triple.flac",
+              "format": "FLAC",
+              "source_wav_sha256": "dc78b4d9f9ce3bb103752e9367492728ee65a2a931ccd3cc96b7ec97a3d869fc",
+              "azimuth_deg": {
+                "A": 60,
+                "B": -60,
+                "C": 100
+              },
+              "duration_seconds": 60,
+              "sample_rate": 48000,
+              "channels": 2,
+              "bits_per_sample": 16,
+              "sha256": "2b5ccbf631b17bb5fb792df7c4657e60d6631dbb0d538b7d5570c05c7a7171e6",
+              "pcm_sha256": "e0802243f076b4c6c032ec7289929a652e85d2eb91f1d3ef8f0abe859fbe0dd3",
+              "bytes": 3371527
+            },
+            "colocated": {
+              "file": "audio/SC005_colocated_triple.flac",
+              "format": "FLAC",
+              "source_wav_sha256": "e3a225f5c20458dac91d5a0e849f63bcd90466d2137c47565e849a9ff52bcc40",
+              "azimuth_deg": {
+                "A": 0,
+                "B": 0,
+                "C": 0
+              },
+              "duration_seconds": 60,
+              "sample_rate": 48000,
+              "channels": 2,
+              "bits_per_sample": 16,
+              "sha256": "ca4ba741512577a89d77f5b6f36e92450a9ecc3f9dbb5270134afa80aa3fe15a",
+              "pcm_sha256": "b5e31e85dba0ea3740bca783433893eeec71fb4cfc5a7e1f325f9a9a539d87bd",
+              "bytes": 1632043
+            }
+          }
+        },
+        "quadruple": {
+          "context_count": 4,
+          "contexts": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "audio": {
+            "spatial": {
+              "file": "audio/SC005_spatial_quadruple.flac",
+              "format": "FLAC",
+              "source_wav_sha256": "e694857045d4dee6308d4ea9281d0b063e82008333812d9b98a7072d6fa45e7a",
+              "azimuth_deg": {
+                "A": 60,
+                "B": -60,
+                "C": 100,
+                "D": -100
+              },
+              "duration_seconds": 60,
+              "sample_rate": 48000,
+              "channels": 2,
+              "bits_per_sample": 16,
+              "sha256": "c5a4a260e3f25455fb281a37e6ac3dae30d5d3a98ef7905eddabda20054a7358",
+              "pcm_sha256": "f4747a10cb9c8dc43a84a7e3dc28c0d332c2f0287be661e083a553a3c02127de",
+              "bytes": 3436924
+            },
+            "colocated": {
+              "file": "audio/SC005_colocated_quadruple.flac",
+              "format": "FLAC",
+              "source_wav_sha256": "a750a56f923639859874903933a2b9f0741f41400030d8c189ecde921d1f6864",
+              "azimuth_deg": {
+                "A": 0,
+                "B": 0,
+                "C": 0,
+                "D": 0
+              },
+              "duration_seconds": 60,
+              "sample_rate": 48000,
+              "channels": 2,
+              "bits_per_sample": 16,
+              "sha256": "d643e26226e86fe3482dec31109b19341c2f0639406662cacc9b1d1745c668df",
+              "pcm_sha256": "252bfe26b323d97812c517debc15af3e85623e9c293e537b9e44fc07fe9524ee",
+              "bytes": 1658668
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "SC006",
+      "variants": {
+        "dual": {
+          "context_count": 2,
+          "contexts": [
+            "A",
+            "B"
+          ],
+          "audio": {
+            "spatial": {
+              "file": "audio/SC006_spatial.wav",
+              "format": "WAV",
+              "source_wav_sha256": "9eaff05f186d0c2d22098b45f8102fc4e18cd274b5087af58a4d84f344517198",
+              "azimuth_deg": {
+                "A": -30,
+                "B": 30
+              },
+              "duration_seconds": 60,
+              "sample_rate": 48000,
+              "channels": 2,
+              "bits_per_sample": 16,
+              "sha256": "9eaff05f186d0c2d22098b45f8102fc4e18cd274b5087af58a4d84f344517198",
+              "pcm_sha256": "b795b480fa79e54ec85e554b28fe9458318a12022a2ce42b9602da6332a72ee8",
+              "bytes": 11520044
+            },
+            "colocated": {
+              "file": "audio/SC006_colocated.wav",
+              "format": "WAV",
+              "source_wav_sha256": "422ed37bea249ce020bc6bca9c2d2e207f07c8831aa209f154683624cb826bab",
+              "azimuth_deg": {
+                "A": 0,
+                "B": 0
+              },
+              "duration_seconds": 60,
+              "sample_rate": 48000,
+              "channels": 2,
+              "bits_per_sample": 16,
+              "sha256": "422ed37bea249ce020bc6bca9c2d2e207f07c8831aa209f154683624cb826bab",
+              "pcm_sha256": "e09097a249850cd8b3b9c863cd2c8322604afc0c4073d680916cc7d77387fd81",
+              "bytes": 11520044
+            }
+          }
+        },
+        "singleA": {
+          "context_count": 1,
+          "contexts": [
+            "A"
+          ],
+          "audio": {
+            "spatial": {
+              "file": "audio/SC006_spatial_only_A.flac",
+              "format": "FLAC",
+              "source_wav_sha256": "2a824750976192215fe1eaee91c7dbf90c06d0ddf849c07a594afe09b78d3fc1",
+              "azimuth_deg": {
+                "A": -30
+              },
+              "duration_seconds": 60,
+              "sample_rate": 48000,
+              "channels": 2,
+              "bits_per_sample": 16,
+              "sha256": "4375f787cec00178f2bd92d5c4b2ba176e122bcef861321b669ed10c019a85c5",
+              "pcm_sha256": "2adac2e54180c6a016d92e210d5b2214c6d9b7a898fc60eec7455f698e2b8c5e",
+              "bytes": 2591139
+            },
+            "colocated": {
+              "file": "audio/SC006_colocated_only_A.flac",
+              "format": "FLAC",
+              "source_wav_sha256": "fa885e6881f5de7e60f9c7014f5d65537a26f6cb64c1a24dcf9104860226297f",
+              "azimuth_deg": {
+                "A": 0
+              },
+              "duration_seconds": 60,
+              "sample_rate": 48000,
+              "channels": 2,
+              "bits_per_sample": 16,
+              "sha256": "d02ae35180ca3ff1d09c6b25d707f66c8b1a1a1d25bb6e9838f118a3609a6916",
+              "pcm_sha256": "e9839f6869f5d5db7384d40fc198776b6d9bad9a5d70be1717748877bb96ee35",
+              "bytes": 1313376
+            }
+          }
+        },
+        "singleB": {
+          "context_count": 1,
+          "contexts": [
+            "B"
+          ],
+          "audio": {
+            "spatial": {
+              "file": "audio/SC006_spatial_only_B.flac",
+              "format": "FLAC",
+              "source_wav_sha256": "80d811bfeca3eb2806faf92ddeffa680abae1910d28b7e025311b34eb916bcef",
+              "azimuth_deg": {
+                "B": 30
+              },
+              "duration_seconds": 60,
+              "sample_rate": 48000,
+              "channels": 2,
+              "bits_per_sample": 16,
+              "sha256": "4ae5ba850de3afc5d9b0f19a8f0b5ddbab109f55dbcc72e6ef78cd3df58b27f6",
+              "pcm_sha256": "d7b42db06e51e88e1c52d20b86972c68b3f47b8b06551372a88eb8f3dddee10d",
+              "bytes": 2762217
+            },
+            "colocated": {
+              "file": "audio/SC006_colocated_only_B.flac",
+              "format": "FLAC",
+              "source_wav_sha256": "e8353dd137bb22a9742f0b410c5cc7ad66d03af4d441c17e8257954b7f32c14e",
+              "azimuth_deg": {
+                "B": 0
+              },
+              "duration_seconds": 60,
+              "sample_rate": 48000,
+              "channels": 2,
+              "bits_per_sample": 16,
+              "sha256": "1001ed5897ef478a6c426f139046bc1d940a5987613b70d18cf30cae988785bf",
+              "pcm_sha256": "1fd07c1a71982d877289f394a6a153220a1dabb160c7b4e5485fe5ab1ea146be",
+              "bytes": 1411459
+            }
+          }
+        },
+        "triple": {
+          "context_count": 3,
+          "contexts": [
+            "A",
+            "B",
+            "D"
+          ],
+          "audio": {
+            "spatial": {
+              "file": "audio/SC006_spatial_triple.flac",
+              "format": "FLAC",
+              "source_wav_sha256": "4adb2b94e60bd5c112bb616c2364fecef4315d34829155d20d62a0288f3448fe",
+              "azimuth_deg": {
+                "A": -30,
+                "B": 30,
+                "D": 100
+              },
+              "duration_seconds": 60,
+              "sample_rate": 48000,
+              "channels": 2,
+              "bits_per_sample": 16,
+              "sha256": "c50ba95f5a356a61ccd679b5a8c8f7f64b2d5114b401f512b699105716422687",
+              "pcm_sha256": "ae56c9adbae3852ce3b207181066b2501605c01192f13bdc92730169c1871c1f",
+              "bytes": 3194076
+            },
+            "colocated": {
+              "file": "audio/SC006_colocated_triple.flac",
+              "format": "FLAC",
+              "source_wav_sha256": "b0d38102e78edfe26887de61e3f26392d86d8e9ed6b0f3a6c6e4f6a03c15f2de",
+              "azimuth_deg": {
+                "A": 0,
+                "B": 0,
+                "D": 0
+              },
+              "duration_seconds": 60,
+              "sample_rate": 48000,
+              "channels": 2,
+              "bits_per_sample": 16,
+              "sha256": "cbd116017c1f2131fd4baa1e71625ed62971c12260db4b7d3ba5b8e0eb9e99df",
+              "pcm_sha256": "9f668a3427d9703296b40ea0a5882b8c152126d3393784fa04fd1abd725eaa77",
+              "bytes": 1572009
+            }
+          }
+        },
+        "quadruple": {
+          "context_count": 4,
+          "contexts": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "audio": {
+            "spatial": {
+              "file": "audio/SC006_spatial_quadruple.flac",
+              "format": "FLAC",
+              "source_wav_sha256": "b238a0ad434b1130014f620a8c89a4b7209c2bffa4f4a668c278751728aba750",
+              "azimuth_deg": {
+                "A": -30,
+                "B": 30,
+                "C": -100,
+                "D": 100
+              },
+              "duration_seconds": 60,
+              "sample_rate": 48000,
+              "channels": 2,
+              "bits_per_sample": 16,
+              "sha256": "ed4a0a8431c16451bb333d1c82412edefa1c0701d8fc4a72cefb7d38e9e95e94",
+              "pcm_sha256": "c780b3aa78807d9aeb239d67fc4c8a1c22abc1f84fdf5e4e992f832b13fb6555",
+              "bytes": 3322919
+            },
+            "colocated": {
+              "file": "audio/SC006_colocated_quadruple.flac",
+              "format": "FLAC",
+              "source_wav_sha256": "385c269f95c6caf6cd217cefb6e6ab6a4b27c556012f3f13bcad06d2361b6e53",
+              "azimuth_deg": {
+                "A": 0,
+                "B": 0,
+                "C": 0,
+                "D": 0
+              },
+              "duration_seconds": 60,
+              "sample_rate": 48000,
+              "channels": 2,
+              "bits_per_sample": 16,
+              "sha256": "834e0d3e13893cf2ebcff72fd6ae7bb8617e1ff2f8a4b87cf814d625d2a628c7",
+              "pcm_sha256": "f5a0528a793984f564485eeee9e4d94f224fc6a0ff5980ddeef8c552386fd6ba",
+              "bytes": 1610931
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "SC007",
+      "variants": {
+        "dual": {
+          "context_count": 2,
+          "contexts": [
+            "A",
+            "B"
+          ],
+          "audio": {
+            "spatial": {
+              "file": "audio/SC007_spatial.wav",
+              "format": "WAV",
+              "source_wav_sha256": "11ff98c1a4e48d1a2ac755c7301e036b05e25330850328a37ebd20a2b5cc6e21",
+              "azimuth_deg": {
+                "A": 45,
+                "B": -45
+              },
+              "duration_seconds": 60,
+              "sample_rate": 48000,
+              "channels": 2,
+              "bits_per_sample": 16,
+              "sha256": "11ff98c1a4e48d1a2ac755c7301e036b05e25330850328a37ebd20a2b5cc6e21",
+              "pcm_sha256": "16ba35b7de9acd6ccc1d1e45b567a9b51eb2819973a18ea35526ec5a671e3924",
+              "bytes": 11520044
+            },
+            "colocated": {
+              "file": "audio/SC007_colocated.wav",
+              "format": "WAV",
+              "source_wav_sha256": "ea0bff84c51565ce8391a624d0e275ad2a0935b20104a5bd709d7e3364399e64",
+              "azimuth_deg": {
+                "A": 0,
+                "B": 0
+              },
+              "duration_seconds": 60,
+              "sample_rate": 48000,
+              "channels": 2,
+              "bits_per_sample": 16,
+              "sha256": "ea0bff84c51565ce8391a624d0e275ad2a0935b20104a5bd709d7e3364399e64",
+              "pcm_sha256": "e7b96f842f3f95552c06ac76003c180ffb5e3634edd9d5975e67639e486c57cf",
+              "bytes": 11520044
+            }
+          }
+        },
+        "singleA": {
+          "context_count": 1,
+          "contexts": [
+            "A"
+          ],
+          "audio": {
+            "spatial": {
+              "file": "audio/SC007_spatial_only_A.flac",
+              "format": "FLAC",
+              "source_wav_sha256": "81911400a64da6c967c8c0e0f0ab1c11780bf872912d1cda0731ed0322658e65",
+              "azimuth_deg": {
+                "A": 45
+              },
+              "duration_seconds": 60,
+              "sample_rate": 48000,
+              "channels": 2,
+              "bits_per_sample": 16,
+              "sha256": "c40a04ce8b5388a445e77b4616d7be05b6cfd79b3be88c3dd47dd05f938edc71",
+              "pcm_sha256": "764fcb2b9cec917a1ca78a804893233e285b672de47b0765eb09b86364fb90dc",
+              "bytes": 2615710
+            },
+            "colocated": {
+              "file": "audio/SC007_colocated_only_A.flac",
+              "format": "FLAC",
+              "source_wav_sha256": "5eae0761c210b660576e11267a1765a90f6cf80890b53218269fd7d79208421c",
+              "azimuth_deg": {
+                "A": 0
+              },
+              "duration_seconds": 60,
+              "sample_rate": 48000,
+              "channels": 2,
+              "bits_per_sample": 16,
+              "sha256": "1ec8fd59da3ead0b86b560e637c8bdb98852f6d8c90680c06d5d9b195980f9bc",
+              "pcm_sha256": "c33e2903002fe6adb3434f42f17f2ab10e8061ab2af3f0d68ba7a48ec052c35d",
+              "bytes": 1321086
+            }
+          }
+        },
+        "singleB": {
+          "context_count": 1,
+          "contexts": [
+            "B"
+          ],
+          "audio": {
+            "spatial": {
+              "file": "audio/SC007_spatial_only_B.flac",
+              "format": "FLAC",
+              "source_wav_sha256": "14e911d9721df2e16a7d80f3409f6f7b5f798bef9cd4ccd04c757c39546a1a20",
+              "azimuth_deg": {
+                "B": -45
+              },
+              "duration_seconds": 60,
+              "sample_rate": 48000,
+              "channels": 2,
+              "bits_per_sample": 16,
+              "sha256": "60734300a62e01e6645dae5b0a7f8e318a67f6e2b8c50a8017159aef4927bc0d",
+              "pcm_sha256": "ee5bc467d153a27f72beead8f0e06399167552fc786a73b8b4b8ddd7353729fe",
+              "bytes": 2776872
+            },
+            "colocated": {
+              "file": "audio/SC007_colocated_only_B.flac",
+              "format": "FLAC",
+              "source_wav_sha256": "46901f5c91f67ffe8448726b8f8f3278cc8b672604650b04b4d3b9ad50a22aac",
+              "azimuth_deg": {
+                "B": 0
+              },
+              "duration_seconds": 60,
+              "sample_rate": 48000,
+              "channels": 2,
+              "bits_per_sample": 16,
+              "sha256": "58f27055d869f2ab15c0cb25f2ab39fbd0239cd158e9b90bdbe7af8bc9e4fabc",
+              "pcm_sha256": "d20629db9cbaaf51fea67478fe503752bd20681cdaa06bdf5fadff3e6deda9f7",
+              "bytes": 1392481
+            }
+          }
+        },
+        "triple": {
+          "context_count": 3,
+          "contexts": [
+            "A",
+            "B",
+            "C"
+          ],
+          "audio": {
+            "spatial": {
+              "file": "audio/SC007_spatial_triple.flac",
+              "format": "FLAC",
+              "source_wav_sha256": "fedb2e87033263067302e18a5f9ee4a409b3a6fc5fd8dae8b3d2015ca69ec34a",
+              "azimuth_deg": {
+                "A": 45,
+                "B": -45,
+                "C": 100
+              },
+              "duration_seconds": 60,
+              "sample_rate": 48000,
+              "channels": 2,
+              "bits_per_sample": 16,
+              "sha256": "aa43858109791baeac073fc442ccf82f58c42e4d5ea6633df85c157e55265e04",
+              "pcm_sha256": "498fcf91ff43ee4e0d251610653f4f76eb45638a07d9feea2885e363c936a173",
+              "bytes": 3307294
+            },
+            "colocated": {
+              "file": "audio/SC007_colocated_triple.flac",
+              "format": "FLAC",
+              "source_wav_sha256": "f13928d36151be72502264ee1a59fe78f1a57ea77accc7e9876b2d3798617595",
+              "azimuth_deg": {
+                "A": 0,
+                "B": 0,
+                "C": 0
+              },
+              "duration_seconds": 60,
+              "sample_rate": 48000,
+              "channels": 2,
+              "bits_per_sample": 16,
+              "sha256": "384593f3d0fd3aaa60214dd44d3b1d99de180fc8d905c1b9f5a9033652c031be",
+              "pcm_sha256": "423613ffc661d525ad41bd5ee3668cdc7210c33e25fe27ee1c8352da7887a216",
+              "bytes": 1596943
+            }
+          }
+        },
+        "quadruple": {
+          "context_count": 4,
+          "contexts": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "audio": {
+            "spatial": {
+              "file": "audio/SC007_spatial_quadruple.flac",
+              "format": "FLAC",
+              "source_wav_sha256": "00c23025d0255d4fa97181cf80c8714d44250dcbe917e004c8464fb6e45294f7",
+              "azimuth_deg": {
+                "A": 45,
+                "B": -45,
+                "C": 100,
+                "D": -100
+              },
+              "duration_seconds": 60,
+              "sample_rate": 48000,
+              "channels": 2,
+              "bits_per_sample": 16,
+              "sha256": "bd3354df58276ee866a60a2732a793592d555b670d5e5967fe9d63586f20a663",
+              "pcm_sha256": "024e362a6b5047f39759f60e01948158f267acf4b77e134d54c77491fef62d6b",
+              "bytes": 3452495
+            },
+            "colocated": {
+              "file": "audio/SC007_colocated_quadruple.flac",
+              "format": "FLAC",
+              "source_wav_sha256": "147693670b9127b78374c024a975e3bd31cc85db30f63ddfb91eb6bcaa9216c0",
+              "azimuth_deg": {
+                "A": 0,
+                "B": 0,
+                "C": 0,
+                "D": 0
+              },
+              "duration_seconds": 60,
+              "sample_rate": 48000,
+              "channels": 2,
+              "bits_per_sample": 16,
+              "sha256": "26d36ebeeff87317d43100687ea0b2791d7440b93b8ea5cbaffc615c4c8d60b6",
+              "pcm_sha256": "6ae00a07fccbd9a9fb3a3387b9c30590b328f82cb2d85b66119002166a12f1b1",
+              "bytes": 1654355
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "SC008",
+      "variants": {
+        "dual": {
+          "context_count": 2,
+          "contexts": [
+            "A",
+            "B"
+          ],
+          "audio": {
+            "spatial": {
+              "file": "audio/SC008_spatial.wav",
+              "format": "WAV",
+              "source_wav_sha256": "28710971569b763679789ac6d3ab550a2f85e0628566fe8fece62e12cd831a28",
+              "azimuth_deg": {
+                "A": -60,
+                "B": 60
+              },
+              "duration_seconds": 60,
+              "sample_rate": 48000,
+              "channels": 2,
+              "bits_per_sample": 16,
+              "sha256": "28710971569b763679789ac6d3ab550a2f85e0628566fe8fece62e12cd831a28",
+              "pcm_sha256": "07adec94b1d7bcab9c5d209d9f716923447d88503cc3ae4bf65b03b001bda144",
+              "bytes": 11520044
+            },
+            "colocated": {
+              "file": "audio/SC008_colocated.wav",
+              "format": "WAV",
+              "source_wav_sha256": "29f330960dd6b28988be8bc0841cc2e2ba7f01a809f9dc928000111c55d6b9c0",
+              "azimuth_deg": {
+                "A": 0,
+                "B": 0
+              },
+              "duration_seconds": 60,
+              "sample_rate": 48000,
+              "channels": 2,
+              "bits_per_sample": 16,
+              "sha256": "29f330960dd6b28988be8bc0841cc2e2ba7f01a809f9dc928000111c55d6b9c0",
+              "pcm_sha256": "c0810ed164560eb0b2b9dfc8e0c9f0699e5ab25742e22aca4accbe238e9ef48a",
+              "bytes": 11520044
+            }
+          }
+        },
+        "singleA": {
+          "context_count": 1,
+          "contexts": [
+            "A"
+          ],
+          "audio": {
+            "spatial": {
+              "file": "audio/SC008_spatial_only_A.flac",
+              "format": "FLAC",
+              "source_wav_sha256": "53124d0851c2af7b2c1a9d393b3150d85e3e7fa3824d8365cd0ded5e3b0ca29e",
+              "azimuth_deg": {
+                "A": -60
+              },
+              "duration_seconds": 60,
+              "sample_rate": 48000,
+              "channels": 2,
+              "bits_per_sample": 16,
+              "sha256": "d688af584831422717fc74d537b6f1f89855b30a3edf97456ab53f223f180ee4",
+              "pcm_sha256": "1be9d11decb55d24890f6f6644404c7aea0ef854ab1ad5b4dca5bc8834dd7f78",
+              "bytes": 2656091
+            },
+            "colocated": {
+              "file": "audio/SC008_colocated_only_A.flac",
+              "format": "FLAC",
+              "source_wav_sha256": "012c696824a35dcfa2a7a36597c01e0d4edf0659f23b25c4221c894a169853a8",
+              "azimuth_deg": {
+                "A": 0
+              },
+              "duration_seconds": 60,
+              "sample_rate": 48000,
+              "channels": 2,
+              "bits_per_sample": 16,
+              "sha256": "706575668cc415d8c330b113d4e9fd77ca4f34ea811a7f0b44fba885623f053c",
+              "pcm_sha256": "7491eba4848d76b497c832ea7e94ec30623cc8bf12512970541a745c4a0a72ba",
+              "bytes": 1356835
+            }
+          }
+        },
+        "singleB": {
+          "context_count": 1,
+          "contexts": [
+            "B"
+          ],
+          "audio": {
+            "spatial": {
+              "file": "audio/SC008_spatial_only_B.flac",
+              "format": "FLAC",
+              "source_wav_sha256": "d8c8968150f37aa9908b5a23234032daaf0b52b504854049842cb91c04d8c6c0",
+              "azimuth_deg": {
+                "B": 60
+              },
+              "duration_seconds": 60,
+              "sample_rate": 48000,
+              "channels": 2,
+              "bits_per_sample": 16,
+              "sha256": "b053de427ab11d3e9891fffa782c1995b1de78bb6e4eea74a7c11dc86f10be75",
+              "pcm_sha256": "0094936cf61c7411432c1f28f55bcaf20e0b5642f762bb7619a3f2df5be464fd",
+              "bytes": 2812088
+            },
+            "colocated": {
+              "file": "audio/SC008_colocated_only_B.flac",
+              "format": "FLAC",
+              "source_wav_sha256": "d7654e81165c543ff0ba106331633f1b18f0275a9607bb9e145a63efd6645f0e",
+              "azimuth_deg": {
+                "B": 0
+              },
+              "duration_seconds": 60,
+              "sample_rate": 48000,
+              "channels": 2,
+              "bits_per_sample": 16,
+              "sha256": "bfaabe2b948a06d46ff81698229e22ebb08d1e5e7b2082d3c77cf95ab855095f",
+              "pcm_sha256": "392700cd881a771f151a78a714059ffcbe184eb31d5a2e2c50e4d218d06eb0b4",
+              "bytes": 1434436
+            }
+          }
+        },
+        "triple": {
+          "context_count": 3,
+          "contexts": [
+            "A",
+            "B",
+            "D"
+          ],
+          "audio": {
+            "spatial": {
+              "file": "audio/SC008_spatial_triple.flac",
+              "format": "FLAC",
+              "source_wav_sha256": "2ddb1016119ef0c7b2c7b5ab0bb2e11b95d5bcdd51a8b2eb63adb46b6d7f5acb",
+              "azimuth_deg": {
+                "A": -60,
+                "B": 60,
+                "D": 100
+              },
+              "duration_seconds": 60,
+              "sample_rate": 48000,
+              "channels": 2,
+              "bits_per_sample": 16,
+              "sha256": "d17b796f9d4cd636205849feac4c284f82149bf38c5a1f8e47148fd1a6db3da2",
+              "pcm_sha256": "73cfa01e45a3f1664237cd1629d5f2b322a901cee4dc738b5e6966fb9a3bc009",
+              "bytes": 3310680
+            },
+            "colocated": {
+              "file": "audio/SC008_colocated_triple.flac",
+              "format": "FLAC",
+              "source_wav_sha256": "bf5fd658c7f146020636f1618315c4a3f475cd11232567c23a0f3f7c8c290b03",
+              "azimuth_deg": {
+                "A": 0,
+                "B": 0,
+                "D": 0
+              },
+              "duration_seconds": 60,
+              "sample_rate": 48000,
+              "channels": 2,
+              "bits_per_sample": 16,
+              "sha256": "dd7be9ac0658780287347b127e9b7c6028b2b3324e0d2377d03ab6b3b14295e5",
+              "pcm_sha256": "2adb9ca684b371aa3c1f4706ef4c27cc95c5507060478daa09fb3b5d67f211cf",
+              "bytes": 1626010
+            }
+          }
+        },
+        "quadruple": {
+          "context_count": 4,
+          "contexts": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "audio": {
+            "spatial": {
+              "file": "audio/SC008_spatial_quadruple.flac",
+              "format": "FLAC",
+              "source_wav_sha256": "410dfb7a41e8664490067fcb31f64881ccac7abc489a65472e306ba2bd30026b",
+              "azimuth_deg": {
+                "A": -60,
+                "B": 60,
+                "C": -100,
+                "D": 100
+              },
+              "duration_seconds": 60,
+              "sample_rate": 48000,
+              "channels": 2,
+              "bits_per_sample": 16,
+              "sha256": "bac25bcc30e4624a5e4641d217f8c18db0b6d934ee5ff491c46a9f7393093545",
+              "pcm_sha256": "d213eeccf62b20b0ec14edf2e1650a45c50f2c36c414c8665ae0404e6b50ba26",
+              "bytes": 3394535
+            },
+            "colocated": {
+              "file": "audio/SC008_colocated_quadruple.flac",
+              "format": "FLAC",
+              "source_wav_sha256": "c377e30398a0ab38dc87731f53eb3ccca28078676e7fc961f13bf4bf555c28a7",
+              "azimuth_deg": {
+                "A": 0,
+                "B": 0,
+                "C": 0,
+                "D": 0
+              },
+              "duration_seconds": 60,
+              "sample_rate": 48000,
+              "channels": 2,
+              "bits_per_sample": 16,
+              "sha256": "97c286c6c8fdbbb97d55f82b403fcd5f8d3426172ed9a8b3f1d04f874c59e595",
+              "pcm_sha256": "11cc0e2b4cb21f91cdf14586f24e125522c1e0922ae779a1b42a0cf9b9497641",
+              "bytes": 1652047
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "SC009",
+      "variants": {
+        "dual": {
+          "context_count": 2,
+          "contexts": [
+            "A",
+            "B"
+          ],
+          "audio": {
+            "spatial": {
+              "file": "audio/SC009_spatial.wav",
+              "format": "WAV",
+              "source_wav_sha256": "bcd34130dfbfa2ef81a24b5cbbc8527e641abfb673f4af2aadb943f5194e25d7",
+              "azimuth_deg": {
+                "A": 30,
+                "B": -30
+              },
+              "duration_seconds": 60,
+              "sample_rate": 48000,
+              "channels": 2,
+              "bits_per_sample": 16,
+              "sha256": "bcd34130dfbfa2ef81a24b5cbbc8527e641abfb673f4af2aadb943f5194e25d7",
+              "pcm_sha256": "e221d1f85c2929f33127c02a88b42a84f6402ea2e85419eae16f47bdc2993988",
+              "bytes": 11520044
+            },
+            "colocated": {
+              "file": "audio/SC009_colocated.wav",
+              "format": "WAV",
+              "source_wav_sha256": "078d369a6144936f1f6207053d1b9956aca14e86ea04a1237831dc33c2318cee",
+              "azimuth_deg": {
+                "A": 0,
+                "B": 0
+              },
+              "duration_seconds": 60,
+              "sample_rate": 48000,
+              "channels": 2,
+              "bits_per_sample": 16,
+              "sha256": "078d369a6144936f1f6207053d1b9956aca14e86ea04a1237831dc33c2318cee",
+              "pcm_sha256": "a814a3108423ed205363c10d498c2388f4c4864334cf4dfdeb5ba7d5e90c441d",
+              "bytes": 11520044
+            }
+          }
+        },
+        "singleA": {
+          "context_count": 1,
+          "contexts": [
+            "A"
+          ],
+          "audio": {
+            "spatial": {
+              "file": "audio/SC009_spatial_only_A.flac",
+              "format": "FLAC",
+              "source_wav_sha256": "aae5f3654f5617fca3857a665bad39515661db812e4b7972894005861d6ee461",
+              "azimuth_deg": {
+                "A": 30
+              },
+              "duration_seconds": 60,
+              "sample_rate": 48000,
+              "channels": 2,
+              "bits_per_sample": 16,
+              "sha256": "5e795c40cddb07f646da2eefa3380c5c2190b89e4a93a6ab473a0c494b820d78",
+              "pcm_sha256": "43ab8aaf6514a0fc760e0c78bd60000c7dc35d0b055c6b402af2467a1f479d90",
+              "bytes": 2903225
+            },
+            "colocated": {
+              "file": "audio/SC009_colocated_only_A.flac",
+              "format": "FLAC",
+              "source_wav_sha256": "e886f2130c29289714472046b8b00c2ca5ce730b0d504b365d12c51ca091ba83",
+              "azimuth_deg": {
+                "A": 0
+              },
+              "duration_seconds": 60,
+              "sample_rate": 48000,
+              "channels": 2,
+              "bits_per_sample": 16,
+              "sha256": "3a9144c8d52f403a3bd49c47806144fe79df9c5a9dd92fd363205c3e3c8da37f",
+              "pcm_sha256": "39e6046719691e74b817c67703bcb7f8a1d77aa8d1f2b94e2bb3b41615347ed8",
+              "bytes": 1462574
+            }
+          }
+        },
+        "singleB": {
+          "context_count": 1,
+          "contexts": [
+            "B"
+          ],
+          "audio": {
+            "spatial": {
+              "file": "audio/SC009_spatial_only_B.flac",
+              "format": "FLAC",
+              "source_wav_sha256": "39b669ac8ac999d15d3bbf59ca819e74b52a63005d7d9f0c2962e9e2a43b75b6",
+              "azimuth_deg": {
+                "B": -30
+              },
+              "duration_seconds": 60,
+              "sample_rate": 48000,
+              "channels": 2,
+              "bits_per_sample": 16,
+              "sha256": "695024ee682b9afd8b72516600a616b0892963dd80d6edaf63ed999a17789ee0",
+              "pcm_sha256": "825636825a0d16c93b80eb199baf6d7d62e5758ba80d41b89621ffdbbeae1081",
+              "bytes": 2921229
+            },
+            "colocated": {
+              "file": "audio/SC009_colocated_only_B.flac",
+              "format": "FLAC",
+              "source_wav_sha256": "9b4804fa8971c1a767dfafedb032ade61bedbb830fa4e1bb79499872490a07df",
+              "azimuth_deg": {
+                "B": 0
+              },
+              "duration_seconds": 60,
+              "sample_rate": 48000,
+              "channels": 2,
+              "bits_per_sample": 16,
+              "sha256": "728afad0c6b7fc30d169c365ec4593e77f0e59578a2238cd81d1c2ed1ce54b20",
+              "pcm_sha256": "951c05916ace04e03a5d5871a3704af19d58824ff31d427878d6995d4c1685ec",
+              "bytes": 1484997
+            }
+          }
+        },
+        "triple": {
+          "context_count": 3,
+          "contexts": [
+            "A",
+            "B",
+            "C"
+          ],
+          "audio": {
+            "spatial": {
+              "file": "audio/SC009_spatial_triple.flac",
+              "format": "FLAC",
+              "source_wav_sha256": "863671d17f598affe230794ed6b2a406f50256642b6480bd904586f1ae29500e",
+              "azimuth_deg": {
+                "A": 30,
+                "B": -30,
+                "C": 100
+              },
+              "duration_seconds": 60,
+              "sample_rate": 48000,
+              "channels": 2,
+              "bits_per_sample": 16,
+              "sha256": "d649d182dbc2e0402ba320c466c3965510c6b922e1b24b44cf25bddabf2bdfc5",
+              "pcm_sha256": "7830a871df020e936ebae27d18d07698f93f16d08ac53fee3c23fd08df259f04",
+              "bytes": 3455761
+            },
+            "colocated": {
+              "file": "audio/SC009_colocated_triple.flac",
+              "format": "FLAC",
+              "source_wav_sha256": "869fcab2a21f7813694aa34ce6f879e034411a56089d898de660851f36e8a904",
+              "azimuth_deg": {
+                "A": 0,
+                "B": 0,
+                "C": 0
+              },
+              "duration_seconds": 60,
+              "sample_rate": 48000,
+              "channels": 2,
+              "bits_per_sample": 16,
+              "sha256": "5c7a03a22b387133da521765712851e029594b310feb5d7d45cfa584707821ac",
+              "pcm_sha256": "7942a7cbcba9f2a6823390866c43cd93dfabdcf44cb62b496999b1263f89b9f4",
+              "bytes": 1693602
+            }
+          }
+        },
+        "quadruple": {
+          "context_count": 4,
+          "contexts": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "audio": {
+            "spatial": {
+              "file": "audio/SC009_spatial_quadruple.flac",
+              "format": "FLAC",
+              "source_wav_sha256": "6c7f4504fa6fb0a73f63f7b7724d322eeab9381dd4dfd26c67afc3ba85e01338",
+              "azimuth_deg": {
+                "A": 30,
+                "B": -30,
+                "C": 100,
+                "D": -100
+              },
+              "duration_seconds": 60,
+              "sample_rate": 48000,
+              "channels": 2,
+              "bits_per_sample": 16,
+              "sha256": "4d6b214d90c14e68a36a4d23f725f8b1eb8d927c0d84da7002722c2a84a9d873",
+              "pcm_sha256": "c27a5b2c0ea2946c383d2a9b2386a1c205a53f7e1f3034bbf0c94a308b4ee9da",
+              "bytes": 3574137
+            },
+            "colocated": {
+              "file": "audio/SC009_colocated_quadruple.flac",
+              "format": "FLAC",
+              "source_wav_sha256": "3d9695ff97aec6b0ce57253459d4c9f67131bafee1a00065e88d6cc94bbcdbd2",
+              "azimuth_deg": {
+                "A": 0,
+                "B": 0,
+                "C": 0,
+                "D": 0
+              },
+              "duration_seconds": 60,
+              "sample_rate": 48000,
+              "channels": 2,
+              "bits_per_sample": 16,
+              "sha256": "5d70773d77bea89b8b6d9c0a15b9e5bfa62cc31a64f7d0e2edbf5148670dcb9a",
+              "pcm_sha256": "df0634b9b898ce66ee1542aed9570c3856bb3c5fae522ef171837a2c04aef8cd",
+              "bytes": 1729641
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "SC010",
+      "variants": {
+        "dual": {
+          "context_count": 2,
+          "contexts": [
+            "A",
+            "B"
+          ],
+          "audio": {
+            "spatial": {
+              "file": "audio/SC010_spatial.wav",
+              "format": "WAV",
+              "source_wav_sha256": "d24560edd7823b0acc5affd26f1723e28ec35b5be94da690491bb1f97df360e2",
+              "azimuth_deg": {
+                "A": -45,
+                "B": 45
+              },
+              "duration_seconds": 60,
+              "sample_rate": 48000,
+              "channels": 2,
+              "bits_per_sample": 16,
+              "sha256": "d24560edd7823b0acc5affd26f1723e28ec35b5be94da690491bb1f97df360e2",
+              "pcm_sha256": "ed5c3b3ab3cc3223a7417976d469dbca64a2ed7d61967335700ed9abe52dca73",
+              "bytes": 11520044
+            },
+            "colocated": {
+              "file": "audio/SC010_colocated.wav",
+              "format": "WAV",
+              "source_wav_sha256": "c30d0f47dcc553081198ad9bbaa3c57496b5531623de96c046f13c7f1d4f63b7",
+              "azimuth_deg": {
+                "A": 0,
+                "B": 0
+              },
+              "duration_seconds": 60,
+              "sample_rate": 48000,
+              "channels": 2,
+              "bits_per_sample": 16,
+              "sha256": "c30d0f47dcc553081198ad9bbaa3c57496b5531623de96c046f13c7f1d4f63b7",
+              "pcm_sha256": "798338d67d466176c06d9ae728b0d73c64caa5c0f8aaba63c4b6623da4c62f67",
+              "bytes": 11520044
+            }
+          }
+        },
+        "singleA": {
+          "context_count": 1,
+          "contexts": [
+            "A"
+          ],
+          "audio": {
+            "spatial": {
+              "file": "audio/SC010_spatial_only_A.flac",
+              "format": "FLAC",
+              "source_wav_sha256": "7479d622a038c7baaa481b98e4be521eb8c0d1e2cdc5a59f92989c0d2b370062",
+              "azimuth_deg": {
+                "A": -45
+              },
+              "duration_seconds": 60,
+              "sample_rate": 48000,
+              "channels": 2,
+              "bits_per_sample": 16,
+              "sha256": "1f134a5d5d6c4958622657f5457e5fed35baeeaca598dc748c3b31fb36adced8",
+              "pcm_sha256": "e7fa4f0133436e440d7083e75ab99744b4b98c3b5e5e5e9a22045aefb7befcba",
+              "bytes": 2784575
+            },
+            "colocated": {
+              "file": "audio/SC010_colocated_only_A.flac",
+              "format": "FLAC",
+              "source_wav_sha256": "ece0d553fa32058b01a7c291199f85d698572164ac606aee6291df0903b651a2",
+              "azimuth_deg": {
+                "A": 0
+              },
+              "duration_seconds": 60,
+              "sample_rate": 48000,
+              "channels": 2,
+              "bits_per_sample": 16,
+              "sha256": "4cd21b6c2c1ff729891aa9c761bbededabd418f6b2f59a0c261bb4e5de291757",
+              "pcm_sha256": "adc9b126c4bd4d612f5f407f415616453a7e3e9113139c6364e0bc6e5ee39a8b",
+              "bytes": 1417393
+            }
+          }
+        },
+        "singleB": {
+          "context_count": 1,
+          "contexts": [
+            "B"
+          ],
+          "audio": {
+            "spatial": {
+              "file": "audio/SC010_spatial_only_B.flac",
+              "format": "FLAC",
+              "source_wav_sha256": "b03e76ad8de79a364013c84ebd4f2621f73c1485fbf305e7357b93545aeb04c5",
+              "azimuth_deg": {
+                "B": 45
+              },
+              "duration_seconds": 60,
+              "sample_rate": 48000,
+              "channels": 2,
+              "bits_per_sample": 16,
+              "sha256": "c1d4ba4070dd20ead0811cc74fdc53d2dbfba65de6fd6a2d3cd318e8b5112b33",
+              "pcm_sha256": "717078deb16ac26fddeb2d23d4eef90e1c0f5dbb02a7c0ce4c56a011a1b25078",
+              "bytes": 2528843
+            },
+            "colocated": {
+              "file": "audio/SC010_colocated_only_B.flac",
+              "format": "FLAC",
+              "source_wav_sha256": "bdf7b4f025e0e807afb54656773a51f72386ce79540e6aba793e1cb0d6eac2ff",
+              "azimuth_deg": {
+                "B": 0
+              },
+              "duration_seconds": 60,
+              "sample_rate": 48000,
+              "channels": 2,
+              "bits_per_sample": 16,
+              "sha256": "275b2ec209835b60c9fc89ece9e5726bf2c76ce3ffc4621e82158ae508492983",
+              "pcm_sha256": "2d5f590bf009d79b46933c1a9153593a6d2dda40d5193a2b9fae50c52f8095da",
+              "bytes": 1280385
+            }
+          }
+        },
+        "triple": {
+          "context_count": 3,
+          "contexts": [
+            "A",
+            "B",
+            "D"
+          ],
+          "audio": {
+            "spatial": {
+              "file": "audio/SC010_spatial_triple.flac",
+              "format": "FLAC",
+              "source_wav_sha256": "534f628c926a27e79dadf0af7708e24af752e701ccf46b2432a73efa0cc42414",
+              "azimuth_deg": {
+                "A": -45,
+                "B": 45,
+                "D": 100
+              },
+              "duration_seconds": 60,
+              "sample_rate": 48000,
+              "channels": 2,
+              "bits_per_sample": 16,
+              "sha256": "2c0f081a6ae08db28dab02c8d6a390e8b67922443dbc3fd0ed7ca7703e8b0561",
+              "pcm_sha256": "3a632a857fb12abd6c0e9347af552e3326734143fb4e8c10d7913bd34ba52392",
+              "bytes": 3369813
+            },
+            "colocated": {
+              "file": "audio/SC010_colocated_triple.flac",
+              "format": "FLAC",
+              "source_wav_sha256": "7361412f8b08e727df2ba0b53054fa7cc45f3ba89b4fec82a66745f9265f9cbd",
+              "azimuth_deg": {
+                "A": 0,
+                "B": 0,
+                "D": 0
+              },
+              "duration_seconds": 60,
+              "sample_rate": 48000,
+              "channels": 2,
+              "bits_per_sample": 16,
+              "sha256": "6ccd1210cdf5c8cece6b585c940b385b12f4e3e8d1b9be53b83bdcf8f0a51d57",
+              "pcm_sha256": "65ace6fa65513333f0a3be063561343ec622a161946d9db64d3da5c65130af33",
+              "bytes": 1638701
+            }
+          }
+        },
+        "quadruple": {
+          "context_count": 4,
+          "contexts": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "audio": {
+            "spatial": {
+              "file": "audio/SC010_spatial_quadruple.flac",
+              "format": "FLAC",
+              "source_wav_sha256": "9886993baa754cf8ca54590863474bd6e176ee10254dabc0003bb84d05013297",
+              "azimuth_deg": {
+                "A": -45,
+                "B": 45,
+                "C": -100,
+                "D": 100
+              },
+              "duration_seconds": 60,
+              "sample_rate": 48000,
+              "channels": 2,
+              "bits_per_sample": 16,
+              "sha256": "90aa9cd3fac2cbf2ce1340bde1266b9b9124ee028756fc5b51aa8a93a63a7e9d",
+              "pcm_sha256": "16571e91156e7e1840d960b363d19527cb14be185ddb73c2dd267be516c35efc",
+              "bytes": 3501690
+            },
+            "colocated": {
+              "file": "audio/SC010_colocated_quadruple.flac",
+              "format": "FLAC",
+              "source_wav_sha256": "3ac6cb92338d5cf43ac74fd0875fbc26ac70d50f4963d57e870b7760e4155e2d",
+              "azimuth_deg": {
+                "A": 0,
+                "B": 0,
+                "C": 0,
+                "D": 0
+              },
+              "duration_seconds": 60,
+              "sample_rate": 48000,
+              "channels": 2,
+              "bits_per_sample": 16,
+              "sha256": "c54f6ffe53d0801f3fe9c00b2e21dafc2d3994dcd863ee2e0a37dfcbcd0e93d7",
+              "pcm_sha256": "0bc528f837ed8513f44a9c6d9d60bd4037ef3f67bb5d2552eac24cef5117ac05",
+              "bytes": 1685231
+            }
+          }
+        }
+      }
+    }
+  ]
+}
