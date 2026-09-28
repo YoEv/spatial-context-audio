@@ -60,6 +60,7 @@
     <p class="intro">看懂三个积木就够了：<strong>卷积</strong>提取局部声音模式；<strong>Transformer／LSTM</strong>结合时间上下文；<strong>量化器</strong>把连续向量换成码本编号。它们怎样组合、按什么目标训练，会影响留下什么信息。</p>
     <div class="model-tabs" id="architecture-tabs" role="group" aria-label="选择编码器架构"></div><article id="architecture-card" class="card architecture-card" aria-live="polite"></article>
     <div class="callout">这些流程说明各模型的高层结构。彩色的“本轮取出”指出实验入口；大语言模型、波形生成器和完整 Inkling 模型都没有在本轮运行。固定版本 Qwen/A2R 的音频编码器525个张量逐值相同，因此只计一组权重。</div>
+    <details class="method-details"><summary>补充：EncSep / GEncSep 是什么架构？</summary><p>这是启发 B1/B2 的多说话人识别框架。高层主线是：<strong>混音 → 共享编码器 → 隐藏特征分源 → 文字解码器</strong>。原论文用 LSTM 与各来源的线性分支，把联合特征变成多路表示，并用各路转写施加 CTC 监督。</p><p>EncSep 主要借这些辅助分支改善训练；GEncSep 再把分开的表示拼接起来，供注意力解码器读取。它们分离的是编码特征，不必生成干净波形。本轮采用冻结编码器、较小的来源分支和六数字监督，只借鉴思路，没有复现原论文的完整 ASR 系统，也不把它们计作新的 tokenizer 权重。</p><p><a href="https://arxiv.org/html/2409.00815v3#S3" target="_blank" rel="noopener">EncSep / GEncSep 原论文 §3 ↗</a></p></details>
   </section>
 
   <section id="wavlm" class="section">
