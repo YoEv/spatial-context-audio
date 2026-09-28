@@ -9,6 +9,13 @@ The paired scoring table only shows runs on spatial-context-v1. A separate singl
 
 Add actual run JSON records conforming to result-schema.json to the private benchmark model-results directory on Beluga, rebuild the export, then deploy. The export checks waveform SHA256, model, question IDs and conditions, computes correctness from gold, and only exports allowlisted fields. Never publish credentials or raw provider responses.
 
+The single-context ablation is a separate matched experiment. Its numeric-only
+import is private benchmark/single-context-results.json and is validated by
+single_context_export.py during rebuilds. Each arm retains 50 scored questions;
+the two separate speaker-count answers must both match for the original Q5 point.
+The paired dual-context baseline is rerun using the same question grouping and
+response format. Historical MCQ scores remain unchanged.
+
 ## Dataset
 4 NOTSOFAR meetings and CHiME-6 S02; windows are not independent sessions. Group-level sound sources, no individual seating. Human headphone review is still pending. These are diagnostic examples, not official benchmark scores.
 
