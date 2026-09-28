@@ -4,7 +4,7 @@
   const $ = id => document.getElementById(id);
   const modes = ['B0', 'B1', 'B2'];
   const order = ['qwen', 'fire', 'wavlm_mid', 'wavlm', 'encodec', 'speech'];
-  const names = {qwen:'AuT · Qwen / A2R', fire:'FireRed', wavlm_mid:'WavLM · 第6层', wavlm:'WavLM · 第12层', encodec:'EnCodec · Q8', speech:'SpeechTokenizer · Q8', encodec_low:'EnCodec · Q2', speech_low:'SpeechTokenizer · Q1'};
+  const names = {qwen:'AuT · Qwen / A2R', fire:'FireRed', wavlm_mid:'WavLM · 第6层', wavlm:'WavLM · 第12层', encodec:'EnCodec · 8级量化', speech:'SpeechTokenizer · 8级量化', encodec_low:'EnCodec · 2级量化', speech_low:'SpeechTokenizer · 1级量化'};
   const pct = n => (100 * n).toFixed(2) + '%';
   const group = (tag, mode, budget, kind) => data.groups.find(r => r.encoder === tag && r.mode === mode && r.budget === budget && (!kind || r.kind === kind));
   let metric = 'digit_accuracy';
@@ -19,13 +19,13 @@
     $('metric-heading').textContent = label + '（%）';
     modes.forEach(mode => {
       $('chart-'+mode).src = `bars-${metric}-${mode}.svg`;
-      $('chart-'+mode).alt = `${mode}：各编码器在16、8、4位置的${label}；准确值见完整数值表`;
+      $('chart-'+mode).alt = `${mode}：各编码器在16、8、4个向量的${label}；准确值见完整数值表`;
     });
     $('figure-download').href = `bars-${metric}.svg`;
     $('figure-png').href = `bars-${metric}.png`;
     const table = $('results-table');
-    table.querySelector('caption').textContent = `${label} · 三个种子均值`;
-    table.querySelector('thead').innerHTML = '<tr><th rowspan="2">表示</th>' + modes.map(mode=>`<th colspan="3">${mode}</th>`).join('') + '</tr><tr>' + modes.map(()=>[16,8,4].map(m=>`<th>${m}位置</th>`).join('')).join('') + '</tr>';
+    table.querySelector('caption').textContent = `${label} · 三次训练均值`;
+    table.querySelector('thead').innerHTML = '<tr><th rowspan="2">表示</th>' + modes.map(mode=>`<th colspan="3">${mode}</th>`).join('') + '</tr><tr>' + modes.map(()=>[16,8,4].map(m=>`<th>${m}向量</th>`).join('')).join('') + '</tr>';
     table.querySelector('tbody').innerHTML = order.map(tag=>`<tr><th>${names[tag]}</th>${modes.map(mode=>[16,8,4].map(m=>`<td>${pct(group(tag,mode,m).metrics_mean[metric])}</td>`).join('')).join('')}</tr>`).join('') + '<tr class="text-control"><th>BPE＋学习压缩（公共基准）</th>' + modes.map(()=>[16,8,4].map(m=>{const r=data.text_controls.find(r=>r.budget===m);return `<td>${r ? pct(r.metrics_mean[metric]) : '未测'}</td>`;}).join('')).join('') + '</tr>';
     updateSeeds();
   }
@@ -43,12 +43,14 @@
   function showExample(changeAudio) {
     const e = data.examples.find(r=>r.id===$('example-select').value);
     if(changeAudio) [['audio-mix','mix'],['audio-a','source-A'],['audio-b','source-B'],['audio-walk','walkthrough-A-B-mix']].forEach(([id,name])=>{$(id).pause();$(id).src=`audio/${e.id}/${name}.wav`;});
-    const prediction=e.predictions[$('example-model').value+'/'+$('example-mode').value];
+    const tag=$('example-model').value, mode=$('example-mode').value;
+    const budget=$('example-budget').value, seed=$('example-seed').value;
+    const prediction=e.predictions_by_run[`${tag}/${mode}/M${budget}/seed${seed}`];
     const correct=prediction.reduce((n,v,i)=>n+Number(v===e.gold[i]),0);
-    $('example-answer').innerHTML=`<div class="answers"><div><div class="answer-label">正确答案</div>${digits(e.gold)}</div><div><div class="answer-label">实际预测</div>${digits(prediction,e.gold)}</div></div><p class="scoreline">正确 ${correct}/6；六项全对：${correct===6?'是':'否'}</p>`;
+    $('example-answer').innerHTML=`<p class="example-config">${names[tag]} · ${mode} · ${budget}个向量 · 第${Number(seed)+1}次训练</p><div class="answers"><div><div class="answer-label">正确答案</div>${digits(e.gold)}</div><div><div class="answer-label">实际预测</div>${digits(prediction,e.gold)}</div></div><p class="scoreline">正确 ${correct}/6；六项全对：${correct===6?'是':'否'}</p>`;
   }
   $('example-select').addEventListener('change',()=>showExample(true));
-  ['example-model','example-mode'].forEach(id=>$(id).addEventListener('change',()=>showExample(false)));
+  ['example-model','example-mode','example-budget','example-seed'].forEach(id=>$(id).addEventListener('change',()=>showExample(false)));
   document.querySelectorAll('audio').forEach(a=>a.addEventListener('play',()=>document.querySelectorAll('audio').forEach(other=>{if(other!==a)other.pause();})));
   showExample(true);
 })();

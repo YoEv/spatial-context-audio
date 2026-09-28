@@ -2,7 +2,7 @@
 <html lang="zh-CN">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="双context条件下，音频编码器在不同压缩预算上的内容恢复准确率，与BPE文字基准比较。">
+<meta name="description" content="双context条件下，音频编码器在不同压缩长度上的内容恢复准确率，与BPE文字基准比较。">
 <title>双 Context 音频表示压缩实验</title>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Ccircle cx='20' cy='20' r='15' fill='%23275474'/%3E%3C/svg%3E">
 <link rel="stylesheet" href="style.css"><script src="data.js" defer></script><script src="app.js" defer></script>
@@ -13,43 +13,43 @@
 <main>
 <header id="overview" class="report-header">
 <h1>双 Context 音频表示压缩实验</h1>
-<p class="abstract">比较不同音频编码器在两路内容混合、不同压缩预算下的数字恢复准确率，并与 BPE 文字输入及其学习压缩基准对照。每条样本含两人各三个数字；压缩后按来源与顺序恢复全部六项。</p>
+<p class="abstract">比较不同音频编码器在两路内容混合、不同压缩长度下的数字恢复准确率，并与 BPE 文字输入及其学习压缩基准对照。每条样本含两人各三个数字；压缩后按来源与顺序恢复全部六项。</p>
 <nav aria-label="报告目录"><a href="#results">主要结果</a><a href="#pipeline">实验方法</a><a href="#architectures">编码器架构</a><a href="#task">音频样本</a><a href="#evidence">数据</a></nav>
 </header>
 
 <section id="results">
 <div class="section-title"><h2>1. 主要结果</h2><div class="metric-switch" role="group" aria-label="选择评价指标"><button data-metric="digit_accuracy" aria-pressed="true">逐数字准确率</button><button data-metric="all_labeled_correct" aria-pressed="false">六项全对率</button></div></div>
-<p class="result-summary">两路合计压到 <strong>4 个位置</strong>时，AuT＋B2 的逐数字准确率为 <strong>97.21%</strong>，六项全对率为 <strong>88.54%</strong>；文字学习压缩基准的两项指标均为 <strong>100%</strong>。本实验尚未显示音频相对文字的压缩优势。</p>
+<p class="result-summary">两路合计压到 <strong>4 个向量</strong>时，AuT＋B2 的逐数字准确率为 <strong>97.21%</strong>，六项全对率为 <strong>88.54%</strong>；文字学习压缩基准的两项指标均为 <strong>100%</strong>。本实验尚未显示音频相对文字的压缩优势。</p>
 <figure class="main-figure">
-<div class="figure-head"><span id="metric-heading">逐数字准确率（%）</span><div class="legend"><span><i class="budget16"></i>16 位置</span><span><i class="budget8"></i>8 位置</span><span><i class="budget4"></i>4 位置</span></div></div>
+<div class="figure-head"><span id="metric-heading">逐数字准确率（%）</span><div class="legend"><span><i class="budget16"></i>16 向量</span><span><i class="budget8"></i>8 向量</span><span><i class="budget4"></i>4 向量</span></div></div>
 <div class="bar-panels">
-<div><h3>B0 <span>联合压缩</span></h3><img id="chart-B0" src="bars-digit_accuracy-B0.svg" alt="B0联合压缩：各编码器在16、8、4位置的逐数字准确率"></div>
-<div><h3>B1 <span>辅助分源监督</span></h3><img id="chart-B1" src="bars-digit_accuracy-B1.svg" alt="B1辅助分源监督：各编码器在16、8、4位置的逐数字准确率"></div>
-<div><h3>B2 <span>保留分源特征</span></h3><img id="chart-B2" src="bars-digit_accuracy-B2.svg" alt="B2保留分源特征：各编码器在16、8、4位置的逐数字准确率"></div>
+<div><h3>B0 <span>联合压缩</span></h3><img id="chart-B0" src="bars-digit_accuracy-B0.svg" alt="B0联合压缩：各编码器在16、8、4个向量的逐数字准确率"></div>
+<div><h3>B1 <span>辅助分源监督</span></h3><img id="chart-B1" src="bars-digit_accuracy-B1.svg" alt="B1辅助分源监督：各编码器在16、8、4个向量的逐数字准确率"></div>
+<div><h3>B2 <span>保留分源分支</span></h3><img id="chart-B2" src="bars-digit_accuracy-B2.svg" alt="B2保留分源分支：各编码器在16、8、4个向量的逐数字准确率"></div>
 </div>
-<figcaption>图1｜1,024 条测试样本，三个训练种子的均值；误差线为种子标准差。各图共用 0–100% 横轴与相同模型顺序。文字行是同一组 B0 基准的重复展示，16 位置未测。“位置”均指两路合计的 128 维连续向量。</figcaption>
+<figcaption>图1｜1,024 条测试样本，三次独立训练的均值；误差线为三次训练之间的标准差。各图共用 0–100% 横轴与相同模型顺序。文字行是同一组 B0 基准的重复展示，16 向量未测。向量数均为两路合计，每个连续向量128维。</figcaption>
 </figure>
-<div class="result-notes"><p><strong>编码器差异：</strong>AuT＋B2 在三个预算下均保持较高准确率；WavLM 对层选择与种子敏感；两种 codec 的六项全对率较低。</p><p><strong>压缩口径：</strong>原文字为 11 个 BPE token。16／8／4 位置分别为其 145.45%／72.73%／36.36%；这是位置数对比，不是文件字节压缩率。</p></div>
-<details><summary>完整数值与逐种子结果</summary><div class="table-wrap"><table id="results-table"><caption>三个种子均值（%）</caption><thead></thead><tbody></tbody></table></div><p class="small">逐数字准确率按六个带来源的位置计分；六项全对率要求整条样本全部正确。每个编码器、方案和预算分别训练，曲线不必单调。</p><div class="filters"><label>方案 <select id="seed-mode"><option>B0</option><option>B1</option><option selected>B2</option></select></label><label>位置预算 <select id="seed-budget"><option>16</option><option>8</option><option selected>4</option></select></label></div><div class="table-wrap"><table id="seeds-table"><thead><tr><th>表示</th><th>seed 0</th><th>seed 1</th><th>seed 2</th></tr></thead><tbody></tbody></table></div></details>
-<details><summary>补充对照：mel / dMel 与 codec 码本数</summary><p class="small">表内为“逐数字准确率／六项全对率”，均为三种子均值。mel / dMel 仅测 B0；码本数控制原生离散码率，与最终位置预算独立。</p><div class="table-wrap"><table id="mel-table"><thead><tr><th>B0 前端</th><th>16 位置</th><th>8 位置</th><th>4 位置</th></tr></thead><tbody></tbody></table></div><div class="table-wrap"><table id="codec-table"><thead><tr><th>Codec</th><th>原生码率</th><th>B0 · 8位置</th><th>B2 · 8位置</th></tr></thead><tbody></tbody></table></div></details>
+<div class="result-notes"><p><strong>编码器差异：</strong>AuT＋B2 在三种压缩长度下均保持较高准确率；WavLM 对层选择与训练随机性敏感；两种 codec 的六项全对率较低。</p><p><strong>压缩口径：</strong>原文字为 11 个 BPE token。16／8／4 向量分别为其 145.45%／72.73%／36.36%；这是位置数对比，不是文件字节压缩率。</p></div>
+<details><summary>完整数值与各次训练结果</summary><div class="table-wrap"><table id="results-table"><caption>三次训练均值（%）</caption><thead></thead><tbody></tbody></table></div><p class="small">逐数字准确率按六个带来源的位置计分；六项全对率要求整条样本全部正确。每个编码器、方案和压缩长度分别训练，曲线不必单调。</p><div class="filters"><label>方案 <select id="seed-mode"><option>B0</option><option>B1</option><option selected>B2</option></select></label><label>保留向量数 <select id="seed-budget"><option>16</option><option>8</option><option selected>4</option></select></label></div><div class="table-wrap"><table id="seeds-table"><thead><tr><th>表示</th><th>第1次（初值0）</th><th>第2次（初值1）</th><th>第3次（初值2）</th></tr></thead><tbody></tbody></table></div></details>
+<details><summary>补充对照：mel / dMel 与 codec 量化级数</summary><p class="small">表内为“逐数字准确率／六项全对率”，均为三次训练均值。mel / dMel 仅测 B0；量化级数控制原生离散码率，与最终保留向量数独立。</p><div class="table-wrap"><table id="mel-table"><thead><tr><th>B0 前端</th><th>16 向量</th><th>8 向量</th><th>4 向量</th></tr></thead><tbody></tbody></table></div><div class="table-wrap"><table id="codec-table"><thead><tr><th>Codec</th><th>原生码率</th><th>B0 · 8向量</th><th>B2 · 8向量</th></tr></thead><tbody></tbody></table></div></details>
 </section>
 
 <section id="pipeline">
 <h2>2. 实验方法</h2>
-<p>音频路径使用冻结的预训练编码器，训练其后的特征适配、压缩和读取模块。文字路径将已知正确、带来源的转写分成 11 个 BPE token，经可训练嵌入后使用相同类型的压缩与读取结构。</p>
-<div class="protocol"><div><span>数据</span><strong>两路 × 三个数字</strong><small>Speech Commands v0.02，3.8秒混音</small></div><div><span>数据划分</span><strong>4,096 / 512 / 1,024</strong><small>训练 / 验证 / 测试；说话人不交叉</small></div><div><span>压缩预算</span><strong>16 / 8 / 4 位置</strong><small>两路合计，每位置128维</small></div><div><span>训练</span><strong>每配置 3 个种子</strong><small>验证集选检查点，统一测试评分</small></div></div>
-<div class="pipeline" aria-label="音频路径的共同结构"><div class="frozen"><b>音频编码器</b><small>冻结；输出时间帧特征</small></div><span>→</span><div><b>特征适配</b><small>投影至128维＋2层Transformer</small></div><span>→</span><div><b>注意力压缩</b><small>可学习查询聚合为 M 个向量</small></div><span>→</span><div><b>数字读取器</b><small>2层Transformer＋六个分类输出</small></div></div>
-<p class="small">压缩器用 M 个可学习查询对输入特征做交叉注意力，输出 M×128 表示；读取器用六个查询分别预测 A1、A2、A3、B1、B2、B3。M 表示最终位置数，压缩前的编码器帧数因模型而异。</p>
+<p>冻结预训练音频编码器，训练其后的线性映射、时序建模、压缩与数字读取模块。文字对照将正确且带来源标记的转写分成 11 个 BPE token，经可训练嵌入后使用 B0 结构。</p>
+<div class="protocol"><div><span>数据</span><strong>两路 × 三个数字</strong><small>Speech Commands v0.02，3.8秒混音</small></div><div><span>数据划分</span><strong>4,096 / 512 / 1,024</strong><small>训练 / 验证 / 测试；说话人不交叉</small></div><div><span>压缩后向量数</span><strong>16 / 8 / 4</strong><small>两路合计，每个向量128维</small></div><div><span>重复训练</span><strong>每配置独立训练 3 次</strong><small>数据相同，改变随机初始化等随机过程</small></div></div>
+<div class="pipeline" aria-label="B0 音频路径；B1与B2的差异见下方"><div class="frozen"><b>音频编码器</b><small>冻结；输出 T 帧、每帧 d 维</small></div><span>→</span><div><b>映射与联合建模</b><small>逐帧映射至128维＋2层Transformer</small></div><span>→</span><div><b>注意力压缩</b><small>聚合为 M 个128维向量</small></div><span>→</span><div><b>六数字读取器</b><small>2层Transformer＋六个数字分类</small></div></div>
+<p class="small">逐帧归一化、线性映射只统一特征维度，不减少帧数；加入时间位置编码后，Transformer 联合处理各帧。压缩器再用 M 个可学习查询汇总这些特征，将序列长度从 T 缩至 M；读取器分别输出 A1、A2、A3、B1、B2、B3。每个 M 单独训练，并非截取较长表示的前 M 项。</p>
 <h3>三种训练与推理方案</h3>
 <div class="methods-grid">
 <article class="method"><h4>B0 · 联合压缩</h4><div class="method-flow"><div>共享特征</div><span>↓</span><div>压缩为 M 个向量</div><span>↓</span><div>六数字读取器</div></div><p><strong>训练：</strong>仅使用六数字主任务交叉熵。</p><p><strong>推理：</strong>保留整条主路径。</p></article>
-<article class="method"><h4>B1 · 辅助分源监督</h4><div class="method-flow"><div>共享特征</div><span>↓ 并行分支</span><div class="training-branches"><div><b>主路径</b><br>压缩为M个向量<br>↓<br>六数字读取器</div><div class="aux"><b>仅训练</b><br>两路特征变换<br>↓<br>A、B各三个数字</div></div></div><p><strong>训练：</strong>主任务损失＋0.5×分源辅助损失；辅助梯度更新共享特征。</p><p><strong>推理：</strong>删除辅助支路，与 B0 结构相同。</p></article>
-<article class="method"><h4>B2 · 保留分源特征</h4><div class="method-flow"><div>共享特征</div><span>↓</span><div class="branches"><span>A 特征变换</span><span>B 特征变换</span></div><span>↓ 加来源嵌入，沿时间拼接</span><div>两路合计压为 M 个向量 → 六数字读取器</div></div><p><strong>训练：</strong>同 B1 的主任务与分源辅助损失。</p><p><strong>推理：</strong>保留两路特征变换，删除辅助数字预测头。</p></article>
+<article class="method"><h4>B1 · 辅助分源监督</h4><div class="method-flow"><div>共享特征</div><span>↓ 并行计算</span><div class="training-branches"><div><b>主路径</b><br>压缩为M个向量<br>↓<br>六数字读取器</div><div class="aux"><b>训练用辅助路径</b><br>两个分源分支<br>↓<br>辅助三数字读取器</div></div></div><p><strong>训练：</strong>两个分支分别用 A、B 的三个数字监督；总损失为主任务损失＋0.5×辅助损失。</p><p><strong>测试：</strong>只运行主路径。两个分支和辅助读取器不参与计算，辅助监督对共享参数的训练作用已保留。</p></article>
+<article class="method"><h4>B2 · 保留分源分支</h4><div class="method-flow"><div>共享特征</div><span>↓ 同时输入两个独立网络</span><div class="branches"><span>分支1<br>由 A 标签监督</span><span>分支2<br>由 B 标签监督</span></div><span>↓ 加分支身份向量，拼接为 2T 帧</span><div>两路合计压为 M 个向量 → 六数字读取器</div></div><p><strong>训练：</strong>分支接受与 B1 相同的辅助监督；分支输出同时进入主路径，总损失同 B1。</p><p><strong>测试：</strong>保留两个分支及身份向量，再压缩、读取。只移除辅助三数字读取器，最终六数字读取器保留。</p></article>
 </div>
-<p class="small">两路特征变换各由两层全连接网络构成，处理同一份共享特征；不生成分离波形。B2 增加了推理参数，尚未进行容量匹配对照。B1/B2 借鉴 <a href="https://arxiv.org/html/2409.00815v3#S3">EncSep / GEncSep</a> 的特征分离与多源监督思路，未复现其完整语音识别系统。</p>
-<div class="scope-note"><strong>停顿与语义压缩。</strong> 音频前端按时间取帧，停顿也进入表示；文字不包含对应时长。本轮学习的是编码器后、针对六数字任务的压缩，原编码器保持冻结。最终位置数固定后，加快语速不会自动减少 M；缩短音频可能降低前端开销，也可能改变识别难度。本轮未做去停顿或语速对照，尚不能将任务相关压缩等同于通用语义压缩。</div>
-<details id="compression"><summary>BPE 对照与压缩计量</summary><p>BPE 按训练语料中的合并规则，把文字切成词表片段并记录编号，可逆恢复原文字。本轮进一步对编号的嵌入做学习压缩。图中的文字结果指“BPE＋学习压缩”，并非BPE本身将11个编号变成4个编号。</p><p>未学习压缩的11个文字位置在单种子对照中两项指标均为100%。文字已获得正确内容与来源；音频还承担识别与混叠处理，因此这里是任务级基准。</p><p class="formula">位置保留比例 = M / 11；连续载荷 = M × 128 × 32 bit；离散码载荷 = 帧数 × 码本数 × log₂(词表大小) bit。</p><p>4个float32向量为2 KiB，11个uint32 BPE编号为44字节，均不含共享模型或词表。本实验未测完整语言模型的成本。</p></details>
-<details><summary>训练配置与范围</summary><p>AdamW，学习率5×10⁻⁴，batch 64，最多40轮；共享模块与读取器宽度128，注意力4头。录音文件、说话人与完整六数字组合在划分间隔离。A首项先起播，B首项晚0.6秒，后两项同时起播；有效发声重叠中位数约31.9%。</p><p>五组独立编码器权重，WavLM比较两个层；Qwen/A2R固定版本的525个音频塔张量逐值相同，合并报告。全部新增训练结束后统一评分；该测试集在较早实验已被查看，结果属于探索性比较。</p></details>
+<p class="small">每个分支由两层全连接网络构成，均接收同一份混音特征。训练时，同一个辅助三数字读取器分别读取两个分支，按对应来源评分；它与最终六数字读取器是两个模块。“分源”指监督目标，不表示已验证声音或特征被完全分离。B2 的压缩输入为 2T 帧，输出仍是两路合计 M 个向量；其推理参数更多，尚未做容量匹配对照。方案借鉴 <a href="https://arxiv.org/html/2409.00815v3#S3">EncSep / GEncSep</a>，未复现其完整识别系统。</p>
+<div class="scope-note"><strong>停顿与语义压缩。</strong> 音频前端按时间取帧，停顿也进入表示；文字不包含对应时长。本轮学习的是编码器后、针对六数字任务的压缩，原编码器保持冻结。最终向量数固定后，加快语速不会自动减少 M；缩短音频可能降低前端开销，也可能改变识别难度。本轮未做去停顿或语速对照，尚不能将任务相关压缩等同于通用语义压缩。</div>
+<details id="compression"><summary>BPE 对照与压缩计量</summary><p>BPE 按训练语料中的合并规则，把文字切成词表片段并记录编号，可逆恢复原文字。本轮进一步对编号的嵌入做学习压缩。图中的文字结果指“BPE＋学习压缩”，并非BPE本身将11个编号变成4个编号。</p><p>未学习压缩的11个文字位置在单次训练对照中两项指标均为100%。文字已获得正确内容与来源；音频还承担识别与混叠处理，因此这里是任务级基准。</p><p class="formula">位置保留比例 = M / 11；连续载荷 = M × 128 × 32 bit；离散码载荷 = 帧数 × 码本数 × log₂(词表大小) bit。</p><p>4个128维float32向量为2 KiB，11个uint32 BPE编号为44字节，均不含共享模型或词表。本实验未测完整语言模型的成本。</p></details>
+<details><summary>训练配置与范围</summary><p>AdamW，学习率5×10⁻⁴，batch 64，最多40轮；共享模块与读取器宽度128，注意力4头。每种配置使用随机数初值0、1、2重复训练，改变参数初始化、批次顺序与训练中的随机失活，数据划分不变；每次按验证集选检查点，再在同一测试集评分。图中报告三次训练的均值与标准差。</p><p>录音文件、说话人与完整六数字组合在划分间隔离。A首项先起播，B首项晚0.6秒，后两项同时起播；有效发声重叠中位数约31.9%。五组独立编码器权重，WavLM比较两个层；Qwen/A2R固定版本的525个音频塔张量逐值相同，合并报告。全部新增训练结束后统一评分；该测试集在较早实验已被查看，结果属于探索性比较。</p></details>
 </section>
 
 <section id="architectures">
@@ -59,24 +59,24 @@
 <tr><th>FireRed</th><td>log-mel → 一维卷积 → Transformer<small>Whisper-large-v3初始化；原模型后接adapter与语言模型</small></td><td>语音识别与音频理解</td><td>adapter前，190×1280<small>连续特征</small></td></tr>
 <tr><th>AuT<br><small>Qwen / A2R</small></th><td>mel → 二维卷积降采样 → 窗口Transformer → 输出投影</td><td>理解导向；注意力前缩短序列</td><td>输出投影后，49×2048<small>连续特征</small></td></tr>
 <tr><th>WavLM Base+</th><td>波形 → 7层一维卷积 → 12层Transformer</td><td>自监督语音表示，兼顾内容与说话人特征</td><td>第6或12层，189×768<small>连续特征</small></td></tr>
-<tr><th>EnCodec</th><td>波形 → 一维卷积 → LSTM → 残差向量量化</td><td>有限码率下的声音重建</td><td>Q8 / Q2码本查表求和，285×128<small>原生为离散码</small></td></tr>
-<tr><th>SpeechTokenizer</th><td>波形 → 一维卷积 → 双向LSTM → 残差向量量化</td><td>兼顾语义与声学；教师特征监督第一码本</td><td>Q8 / Q1码本查表求和，190×1024<small>原生为离散码</small></td></tr>
+<tr><th>EnCodec</th><td>波形 → 一维卷积 → LSTM → 残差向量量化</td><td>有限码率下的声音重建</td><td>8级／2级量化，查表求和为285×128<small>每帧8个／2个离散编号</small></td></tr>
+<tr><th>SpeechTokenizer</th><td>波形 → 一维卷积 → 双向LSTM → 残差向量量化</td><td>兼顾语义与声学；教师特征监督第一级码本</td><td>8级／1级量化，查表求和为190×1024<small>每帧8个／1个离散编号</small></td></tr>
 <tr><th>log-mel</th><td>波形 → 短时频谱 → mel滤波 → 对数幅值</td><td>无预训练网络的频谱基准</td><td>20 / 40 Hz，80频带<small>连续值</small></td></tr>
 <tr><th>dMel前端</th><td>log-mel → 每个频谱格子的幅值分为16档</td><td>可控的时间分辨率与幅值精度</td><td>20 / 40 Hz，映回档位中心<small>未运行完整Inkling模型</small></td></tr>
 </tbody></table></div>
-<p class="small">形状为该3.8秒输入的“时间帧×特征维度”。码本数Q控制每帧的残差量化层数，不对应说话人数；codec读取时不运行波形解码器。dMel的20 Hz指前端帧率。</p>
+<p class="small">形状为3.8秒输入的“时间帧×特征维度”。两种 codec 每级码本都有1,024个候选向量：第一级近似原特征，后续各级近似前面留下的残差。每帧记录各级编号，查表后相加恢复一个特征向量，再输入本实验的压缩器；不运行波形解码器。原记法 Q8／Q2 指8级／2级量化，不是8位／2位精度，也不是最终保留的8个／2个向量。主图均使用8级；低级数对照仅测 B0、B2 的8向量配置。dMel的20 Hz指前端帧率。</p>
 <p class="references">架构来源：<a href="https://arxiv.org/html/2608.24168#S2.SS2.SSS1">FireRed</a> · <a href="https://arxiv.org/html/2509.17765v1#S2.SS2">AuT</a> · <a href="https://arxiv.org/html/2110.13900v2#S4">WavLM</a> · <a href="https://github.com/facebookresearch/encodec/blob/main/encodec/modules/seanet.py">EnCodec</a> · <a href="https://arxiv.org/html/2308.16692v2#S3">SpeechTokenizer</a> · <a href="https://arxiv.org/html/2407.15835v2">dMel</a> · <a href="https://github.com/openai/whisper/blob/main/whisper/model.py">Whisper卷积结构</a></p>
-<details id="wavlm"><summary>WavLM 层选择依据</summary><p>第12层为常规末层输出，第6层为预设中间诊断点。保留原生帧时，第6／12层的验证逐数字准确率为88.02%／76.40%，据此在新增测试评分前追加第6层的完整预算实验。</p><p>两层输出形状相同，选层不减少位置数。第6层B2在4位置的测试均值为80.84%，种子范围73.70%–89.49%；未扫描全部层，不能据此认定第6层最优。</p></details>
+<details id="wavlm"><summary>WavLM 层选择依据</summary><p>第12层为常规末层输出，第6层为预设中间诊断点。保留原生帧时，第6／12层的验证逐数字准确率为88.02%／76.40%，据此在新增测试评分前追加第6层的完整压缩长度实验。</p><p>两层输出形状相同，选层不减少位置数。第6层B2在4向量的测试均值为80.84%，三次训练范围73.70%–89.49%；未扫描全部层，不能据此认定第6层最优。</p></details>
 </section>
 
 <section id="task">
 <h2>4. 音频样本与预测</h2>
-<div class="filters"><label>样本 <select id="example-select"><option value="test-00009">test-00009 · 来源对调</option><option value="test-00000">test-00000 · 完整恢复</option><option value="test-00005">test-00005 · 部分错误</option></select></label><label>编码器 <select id="example-model"></select></label><label>方案 <select id="example-mode"><option value="B0">B0</option><option value="B2">B2</option></select></label></div>
+<div class="filters"><label>样本 <select id="example-select"><option value="test-00009">test-00009 · A249 / B586</option><option value="test-00000">test-00000 · A853 / B513</option><option value="test-00005">test-00005 · A620 / B648</option></select></label><label>编码器 <select id="example-model"></select></label><label>方案 <select id="example-mode"><option>B0</option><option>B1</option><option>B2</option></select></label><label>保留向量数 <select id="example-budget"><option>4</option><option selected>8</option><option>16</option></select></label><label>重复训练 <select id="example-seed"><option value="0">第1次（随机数初值0）</option><option value="1">第2次（随机数初值1）</option><option value="2">第3次（随机数初值2）</option></select></label></div>
 <div class="example-grid"><div><label for="audio-mix">输入混音</label><audio id="audio-mix" controls preload="metadata"></audio><details><summary>独立来源与串联试听</summary><label for="audio-a">来源 A</label><audio id="audio-a" controls preload="none"></audio><label for="audio-b">来源 B</label><audio id="audio-b" controls preload="none"></audio><label for="audio-walk">A → B → 混音</label><audio id="audio-walk" controls preload="none"></audio></details></div><div id="example-answer" aria-live="polite"></div></div>
-<p class="small">固定8位置、seed 0。三个样本按FireRed结果选取用于示例；总体结果使用完整测试集。独立来源试听未作为混音读取器的额外输入。</p>
+<p class="small">每条样本提供6种编码器表示 × B0／B1／B2 × 4／8／16个向量 × 3次训练，共162组已保存的预测。切换配置仅改变预测，同一样本的输入音频不变。三个样本最初按FireRed结果选取，不能代替完整测试集统计；独立来源试听未作为混音读取器的额外输入。</p>
 </section>
 <section id="next"><h2>5. 结论范围</h2><p>结果支持继续研究理解型编码器与多源监督的组合，但仅覆盖两路、短序列、有限数字词表。后续应在自然语言、多来源与未知问题下，比较相同质量所需的位置数及端到端成本，并加入“分别编码后合并压缩”的预算匹配对照。</p></section>
-<section id="evidence"><h2>6. 数据与复核</h2><div class="downloads"><a href="curves.csv">完整结果 CSV</a><a href="data.json">逐种子与诊断 JSON</a><a id="figure-download" href="bars-digit_accuracy.svg">总图 SVG</a><a id="figure-png" href="bars-digit_accuracy.png">总图 PNG</a><a href="manifest.json">文件校验</a></div><p class="small">174个压缩张量重放与4个离散码文件解包均逐值一致。完整特征及检查点保留在研究环境；网页展示既有实验结果，不执行模型。录音来自 Speech Commands v0.02，<a href="ATTRIBUTION.md">署名与许可</a>。</p></section>
+<section id="evidence"><h2>6. 数据与复核</h2><div class="downloads"><a href="curves.csv">完整结果 CSV</a><a href="data.json">完整预测与诊断 JSON</a><a id="figure-download" href="bars-digit_accuracy.svg">总图 SVG</a><a id="figure-png" href="bars-digit_accuracy.png">总图 PNG</a><a href="manifest.json">文件校验</a></div><p class="small">174个压缩张量重放与4个离散码文件解包均逐值一致。完整特征及检查点保留在研究环境；网页展示既有实验结果，不执行模型。录音来自 Speech Commands v0.02，<a href="ATTRIBUTION.md">署名与许可</a>。</p></section>
 <footer>Context Room · 双来源表示压缩 · 2026-09-28</footer>
 </main>
 <noscript><p>结果总图可直接阅读；切换指标与样本需要JavaScript。完整数值见 <a href="curves.csv">CSV</a>。</p></noscript>
