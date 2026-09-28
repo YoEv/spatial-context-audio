@@ -28,3 +28,7 @@ Rendering engine: FFmpeg sofalizer / libmysofa.
 Source recordings have been excerpted, mixed with an independent conversation, level-matched, and spatialized using HRTFs. Original room acoustics remain; no new room reverberation is added. We added Chinese multiple-choice questions and evidence annotations.
 Derived audio and the original contributions in this site are shared under CC BY-SA 4.0. Upstream materials retain their own licenses and attribution. No endorsement by upstream authors is implied.
 Source session IDs, offsets and SHA256 hashes are in provenance.json.
+
+## Added interference contexts C/D
+
+LibriSpeech test-clean, OpenSLR 12 (https://www.openslr.org/12), Vassil Panayotov, Guoguo Chen, Daniel Povey, Sanjeev Khudanpur. CC BY 4.0. Complete same-chapter utterances concatenated in original order and padded to 60 seconds; HRTF rendered and added to the unchanged A/B sources. C/D are single-narrator contexts. Full references and model transcripts are not exported.

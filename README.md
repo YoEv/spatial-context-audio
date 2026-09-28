@@ -20,3 +20,7 @@ response format. Historical MCQ scores remain unchanged.
 4 NOTSOFAR meetings and CHiME-6 S02; windows are not independent sessions. Group-level sound sources, no individual seating. Human headphone review is still pending. These are diagnostic examples, not official benchmark scores.
 
 Attribution, source licenses and adaptation details: [ATTRIBUTION.md](ATTRIBUTION.md). Audio and original site contributions: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+
+## Fixed-question 1–4 context ladder
+
+The result page compares the same 50 scoring units across four context levels, then shows uniform scenario summaries and a filterable question board. Levels 3/4 add one/two LibriSpeech single-narrator interference tracks while retaining the original A/B sources and gold. Q5 requires both A/B integer counts to match. Original 1/2-context results and historical records are preserved. Technical failures remain in the denominator; GPT-Live session behavior and Muse full-reference WER are shown separately. Question links open the original two-context listening samples. Only numerical results are published; full reference and model transcripts remain private.
