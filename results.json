@@ -1,6 +1,6 @@
 {
   "benchmark": "spatial-context-v1",
-  "updated_at": "2026-09-28T14:30:53.700936+00:00",
+  "updated_at": "2026-09-28T14:41:29.162201+00:00",
   "models": [
     {
       "id": "gpt-live-1",
@@ -7302,7 +7302,7 @@
       "original_mix_pcm_exact": 20,
       "single_context_wavs": 40
     },
-    "note": "单context只移除另一来源对话，保留目标声源原增益、方位与完整60秒时间轴。每臂仍计50题：Q1–Q3归会议组A，Q4归晚餐组B；Q5拆成A、B两个人数子问，两个都答对才得1分。每个模型的单／双context使用相同问题提示；Kimi与Moshi逐题独立调用，其余模型按来源分组回答，双context已按新协议重跑，不能直接与旧版四选一Q5总分作因果比较。 当前已完成5个QA模型；其余模型仍在运行，完成后补入。",
+    "note": "单context只移除另一来源对话，保留目标声源原增益、方位与完整60秒时间轴。每臂仍计50题：Q1–Q3归会议组A，Q4归晚餐组B；Q5拆成A、B两个人数子问，两个都答对才得1分。每个模型的单／双context使用相同问题提示；Kimi与Moshi逐题独立调用，其余模型按来源分组回答，双context已按新协议重跑，不能直接与旧版四选一Q5总分作因果比较。 GPT-Live受OpenAI余额不足阻挡，部分结果不进入完整配对比较。 当前完整完成5个QA模型；其余仍待完成，核验后补入。",
     "models": [
       {
         "model_id": "google/gemini-3.8-flash",
@@ -19093,6 +19093,3496 @@
           "inference_calls": 80,
           "format": "grouped"
         }
+      },
+      {
+        "model_id": "gpt-live-1",
+        "status": "partial",
+        "channel_handling": "ffmpeg_mono16k",
+        "groups": [
+          {
+            "condition": "spatial",
+            "arm": "dual",
+            "correct": 1,
+            "total": 50,
+            "completed_calls": 14,
+            "planned_calls": 20,
+            "valid_subanswers": 11,
+            "planned_subanswers": 60,
+            "rows": [
+              {
+                "id": "SC001-Q1",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC001-Q1": null
+                },
+                "subanswer_correct": {
+                  "SC001-Q1": false
+                }
+              },
+              {
+                "id": "SC001-Q2",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC001-Q2": null
+                },
+                "subanswer_correct": {
+                  "SC001-Q2": false
+                }
+              },
+              {
+                "id": "SC001-Q3",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC001-Q3": null
+                },
+                "subanswer_correct": {
+                  "SC001-Q3": false
+                }
+              },
+              {
+                "id": "SC001-Q4",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC001-Q4": null
+                },
+                "subanswer_correct": {
+                  "SC001-Q4": false
+                }
+              },
+              {
+                "id": "SC001-Q5",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC001-Q5-A": null,
+                  "SC001-Q5-B": null
+                },
+                "subanswer_correct": {
+                  "SC001-Q5-A": false,
+                  "SC001-Q5-B": false
+                }
+              },
+              {
+                "id": "SC002-Q1",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC002-Q1": null
+                },
+                "subanswer_correct": {
+                  "SC002-Q1": false
+                }
+              },
+              {
+                "id": "SC002-Q2",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC002-Q2": null
+                },
+                "subanswer_correct": {
+                  "SC002-Q2": false
+                }
+              },
+              {
+                "id": "SC002-Q3",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC002-Q3": null
+                },
+                "subanswer_correct": {
+                  "SC002-Q3": false
+                }
+              },
+              {
+                "id": "SC002-Q4",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC002-Q4": null
+                },
+                "subanswer_correct": {
+                  "SC002-Q4": false
+                }
+              },
+              {
+                "id": "SC002-Q5",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC002-Q5-A": null,
+                  "SC002-Q5-B": null
+                },
+                "subanswer_correct": {
+                  "SC002-Q5-A": false,
+                  "SC002-Q5-B": false
+                }
+              },
+              {
+                "id": "SC003-Q1",
+                "correct": false,
+                "answered_all": true,
+                "subanswers": {
+                  "SC003-Q1": "A"
+                },
+                "subanswer_correct": {
+                  "SC003-Q1": false
+                }
+              },
+              {
+                "id": "SC003-Q2",
+                "correct": false,
+                "answered_all": true,
+                "subanswers": {
+                  "SC003-Q2": "C"
+                },
+                "subanswer_correct": {
+                  "SC003-Q2": false
+                }
+              },
+              {
+                "id": "SC003-Q3",
+                "correct": false,
+                "answered_all": true,
+                "subanswers": {
+                  "SC003-Q3": "A"
+                },
+                "subanswer_correct": {
+                  "SC003-Q3": false
+                }
+              },
+              {
+                "id": "SC003-Q4",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC003-Q4": null
+                },
+                "subanswer_correct": {
+                  "SC003-Q4": false
+                }
+              },
+              {
+                "id": "SC003-Q5",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC003-Q5-A": 4,
+                  "SC003-Q5-B": null
+                },
+                "subanswer_correct": {
+                  "SC003-Q5-A": false,
+                  "SC003-Q5-B": false
+                }
+              },
+              {
+                "id": "SC004-Q1",
+                "correct": false,
+                "answered_all": true,
+                "subanswers": {
+                  "SC004-Q1": "C"
+                },
+                "subanswer_correct": {
+                  "SC004-Q1": false
+                }
+              },
+              {
+                "id": "SC004-Q2",
+                "correct": false,
+                "answered_all": true,
+                "subanswers": {
+                  "SC004-Q2": "A"
+                },
+                "subanswer_correct": {
+                  "SC004-Q2": false
+                }
+              },
+              {
+                "id": "SC004-Q3",
+                "correct": true,
+                "answered_all": true,
+                "subanswers": {
+                  "SC004-Q3": "A"
+                },
+                "subanswer_correct": {
+                  "SC004-Q3": true
+                }
+              },
+              {
+                "id": "SC004-Q4",
+                "correct": false,
+                "answered_all": true,
+                "subanswers": {
+                  "SC004-Q4": "C"
+                },
+                "subanswer_correct": {
+                  "SC004-Q4": false
+                }
+              },
+              {
+                "id": "SC004-Q5",
+                "correct": false,
+                "answered_all": true,
+                "subanswers": {
+                  "SC004-Q5-A": 3,
+                  "SC004-Q5-B": 4
+                },
+                "subanswer_correct": {
+                  "SC004-Q5-A": false,
+                  "SC004-Q5-B": true
+                }
+              },
+              {
+                "id": "SC005-Q1",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC005-Q1": null
+                },
+                "subanswer_correct": {
+                  "SC005-Q1": false
+                }
+              },
+              {
+                "id": "SC005-Q2",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC005-Q2": null
+                },
+                "subanswer_correct": {
+                  "SC005-Q2": false
+                }
+              },
+              {
+                "id": "SC005-Q3",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC005-Q3": null
+                },
+                "subanswer_correct": {
+                  "SC005-Q3": false
+                }
+              },
+              {
+                "id": "SC005-Q4",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC005-Q4": null
+                },
+                "subanswer_correct": {
+                  "SC005-Q4": false
+                }
+              },
+              {
+                "id": "SC005-Q5",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC005-Q5-A": null,
+                  "SC005-Q5-B": null
+                },
+                "subanswer_correct": {
+                  "SC005-Q5-A": false,
+                  "SC005-Q5-B": false
+                }
+              },
+              {
+                "id": "SC006-Q1",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC006-Q1": null
+                },
+                "subanswer_correct": {
+                  "SC006-Q1": false
+                }
+              },
+              {
+                "id": "SC006-Q2",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC006-Q2": null
+                },
+                "subanswer_correct": {
+                  "SC006-Q2": false
+                }
+              },
+              {
+                "id": "SC006-Q3",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC006-Q3": null
+                },
+                "subanswer_correct": {
+                  "SC006-Q3": false
+                }
+              },
+              {
+                "id": "SC006-Q4",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC006-Q4": null
+                },
+                "subanswer_correct": {
+                  "SC006-Q4": false
+                }
+              },
+              {
+                "id": "SC006-Q5",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC006-Q5-A": null,
+                  "SC006-Q5-B": null
+                },
+                "subanswer_correct": {
+                  "SC006-Q5-A": false,
+                  "SC006-Q5-B": false
+                }
+              },
+              {
+                "id": "SC007-Q1",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC007-Q1": null
+                },
+                "subanswer_correct": {
+                  "SC007-Q1": false
+                }
+              },
+              {
+                "id": "SC007-Q2",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC007-Q2": null
+                },
+                "subanswer_correct": {
+                  "SC007-Q2": false
+                }
+              },
+              {
+                "id": "SC007-Q3",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC007-Q3": null
+                },
+                "subanswer_correct": {
+                  "SC007-Q3": false
+                }
+              },
+              {
+                "id": "SC007-Q4",
+                "correct": false,
+                "answered_all": true,
+                "subanswers": {
+                  "SC007-Q4": "A"
+                },
+                "subanswer_correct": {
+                  "SC007-Q4": false
+                }
+              },
+              {
+                "id": "SC007-Q5",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC007-Q5-A": null,
+                  "SC007-Q5-B": null
+                },
+                "subanswer_correct": {
+                  "SC007-Q5-A": false,
+                  "SC007-Q5-B": false
+                }
+              },
+              {
+                "id": "SC008-Q1",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC008-Q1": null
+                },
+                "subanswer_correct": {
+                  "SC008-Q1": false
+                }
+              },
+              {
+                "id": "SC008-Q2",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC008-Q2": null
+                },
+                "subanswer_correct": {
+                  "SC008-Q2": false
+                }
+              },
+              {
+                "id": "SC008-Q3",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC008-Q3": null
+                },
+                "subanswer_correct": {
+                  "SC008-Q3": false
+                }
+              },
+              {
+                "id": "SC008-Q4",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC008-Q4": null
+                },
+                "subanswer_correct": {
+                  "SC008-Q4": false
+                }
+              },
+              {
+                "id": "SC008-Q5",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC008-Q5-A": null,
+                  "SC008-Q5-B": null
+                },
+                "subanswer_correct": {
+                  "SC008-Q5-A": false,
+                  "SC008-Q5-B": false
+                }
+              },
+              {
+                "id": "SC009-Q1",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC009-Q1": null
+                },
+                "subanswer_correct": {
+                  "SC009-Q1": false
+                }
+              },
+              {
+                "id": "SC009-Q2",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC009-Q2": null
+                },
+                "subanswer_correct": {
+                  "SC009-Q2": false
+                }
+              },
+              {
+                "id": "SC009-Q3",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC009-Q3": null
+                },
+                "subanswer_correct": {
+                  "SC009-Q3": false
+                }
+              },
+              {
+                "id": "SC009-Q4",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC009-Q4": null
+                },
+                "subanswer_correct": {
+                  "SC009-Q4": false
+                }
+              },
+              {
+                "id": "SC009-Q5",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC009-Q5-A": null,
+                  "SC009-Q5-B": null
+                },
+                "subanswer_correct": {
+                  "SC009-Q5-A": false,
+                  "SC009-Q5-B": false
+                }
+              },
+              {
+                "id": "SC010-Q1",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC010-Q1": null
+                },
+                "subanswer_correct": {
+                  "SC010-Q1": false
+                }
+              },
+              {
+                "id": "SC010-Q2",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC010-Q2": null
+                },
+                "subanswer_correct": {
+                  "SC010-Q2": false
+                }
+              },
+              {
+                "id": "SC010-Q3",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC010-Q3": null
+                },
+                "subanswer_correct": {
+                  "SC010-Q3": false
+                }
+              },
+              {
+                "id": "SC010-Q4",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC010-Q4": null
+                },
+                "subanswer_correct": {
+                  "SC010-Q4": false
+                }
+              },
+              {
+                "id": "SC010-Q5",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC010-Q5-A": null,
+                  "SC010-Q5-B": null
+                },
+                "subanswer_correct": {
+                  "SC010-Q5-A": false,
+                  "SC010-Q5-B": false
+                }
+              }
+            ]
+          },
+          {
+            "condition": "spatial",
+            "arm": "single",
+            "correct": 1,
+            "total": 50,
+            "completed_calls": 14,
+            "planned_calls": 20,
+            "valid_subanswers": 6,
+            "planned_subanswers": 60,
+            "rows": [
+              {
+                "id": "SC001-Q1",
+                "correct": false,
+                "answered_all": true,
+                "subanswers": {
+                  "SC001-Q1": "C"
+                },
+                "subanswer_correct": {
+                  "SC001-Q1": false
+                }
+              },
+              {
+                "id": "SC001-Q2",
+                "correct": false,
+                "answered_all": true,
+                "subanswers": {
+                  "SC001-Q2": "B"
+                },
+                "subanswer_correct": {
+                  "SC001-Q2": false
+                }
+              },
+              {
+                "id": "SC001-Q3",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC001-Q3": null
+                },
+                "subanswer_correct": {
+                  "SC001-Q3": false
+                }
+              },
+              {
+                "id": "SC001-Q4",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC001-Q4": null
+                },
+                "subanswer_correct": {
+                  "SC001-Q4": false
+                }
+              },
+              {
+                "id": "SC001-Q5",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC001-Q5-A": null,
+                  "SC001-Q5-B": null
+                },
+                "subanswer_correct": {
+                  "SC001-Q5-A": false,
+                  "SC001-Q5-B": false
+                }
+              },
+              {
+                "id": "SC002-Q1",
+                "correct": false,
+                "answered_all": true,
+                "subanswers": {
+                  "SC002-Q1": "C"
+                },
+                "subanswer_correct": {
+                  "SC002-Q1": false
+                }
+              },
+              {
+                "id": "SC002-Q2",
+                "correct": false,
+                "answered_all": true,
+                "subanswers": {
+                  "SC002-Q2": "B"
+                },
+                "subanswer_correct": {
+                  "SC002-Q2": false
+                }
+              },
+              {
+                "id": "SC002-Q3",
+                "correct": true,
+                "answered_all": true,
+                "subanswers": {
+                  "SC002-Q3": "C"
+                },
+                "subanswer_correct": {
+                  "SC002-Q3": true
+                }
+              },
+              {
+                "id": "SC002-Q4",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC002-Q4": null
+                },
+                "subanswer_correct": {
+                  "SC002-Q4": false
+                }
+              },
+              {
+                "id": "SC002-Q5",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC002-Q5-A": 2,
+                  "SC002-Q5-B": null
+                },
+                "subanswer_correct": {
+                  "SC002-Q5-A": false,
+                  "SC002-Q5-B": false
+                }
+              },
+              {
+                "id": "SC003-Q1",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC003-Q1": null
+                },
+                "subanswer_correct": {
+                  "SC003-Q1": false
+                }
+              },
+              {
+                "id": "SC003-Q2",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC003-Q2": null
+                },
+                "subanswer_correct": {
+                  "SC003-Q2": false
+                }
+              },
+              {
+                "id": "SC003-Q3",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC003-Q3": null
+                },
+                "subanswer_correct": {
+                  "SC003-Q3": false
+                }
+              },
+              {
+                "id": "SC003-Q4",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC003-Q4": null
+                },
+                "subanswer_correct": {
+                  "SC003-Q4": false
+                }
+              },
+              {
+                "id": "SC003-Q5",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC003-Q5-A": null,
+                  "SC003-Q5-B": null
+                },
+                "subanswer_correct": {
+                  "SC003-Q5-A": false,
+                  "SC003-Q5-B": false
+                }
+              },
+              {
+                "id": "SC004-Q1",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC004-Q1": null
+                },
+                "subanswer_correct": {
+                  "SC004-Q1": false
+                }
+              },
+              {
+                "id": "SC004-Q2",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC004-Q2": null
+                },
+                "subanswer_correct": {
+                  "SC004-Q2": false
+                }
+              },
+              {
+                "id": "SC004-Q3",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC004-Q3": null
+                },
+                "subanswer_correct": {
+                  "SC004-Q3": false
+                }
+              },
+              {
+                "id": "SC004-Q4",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC004-Q4": null
+                },
+                "subanswer_correct": {
+                  "SC004-Q4": false
+                }
+              },
+              {
+                "id": "SC004-Q5",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC004-Q5-A": null,
+                  "SC004-Q5-B": null
+                },
+                "subanswer_correct": {
+                  "SC004-Q5-A": false,
+                  "SC004-Q5-B": false
+                }
+              },
+              {
+                "id": "SC005-Q1",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC005-Q1": null
+                },
+                "subanswer_correct": {
+                  "SC005-Q1": false
+                }
+              },
+              {
+                "id": "SC005-Q2",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC005-Q2": null
+                },
+                "subanswer_correct": {
+                  "SC005-Q2": false
+                }
+              },
+              {
+                "id": "SC005-Q3",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC005-Q3": null
+                },
+                "subanswer_correct": {
+                  "SC005-Q3": false
+                }
+              },
+              {
+                "id": "SC005-Q4",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC005-Q4": null
+                },
+                "subanswer_correct": {
+                  "SC005-Q4": false
+                }
+              },
+              {
+                "id": "SC005-Q5",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC005-Q5-A": null,
+                  "SC005-Q5-B": null
+                },
+                "subanswer_correct": {
+                  "SC005-Q5-A": false,
+                  "SC005-Q5-B": false
+                }
+              },
+              {
+                "id": "SC006-Q1",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC006-Q1": null
+                },
+                "subanswer_correct": {
+                  "SC006-Q1": false
+                }
+              },
+              {
+                "id": "SC006-Q2",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC006-Q2": null
+                },
+                "subanswer_correct": {
+                  "SC006-Q2": false
+                }
+              },
+              {
+                "id": "SC006-Q3",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC006-Q3": null
+                },
+                "subanswer_correct": {
+                  "SC006-Q3": false
+                }
+              },
+              {
+                "id": "SC006-Q4",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC006-Q4": null
+                },
+                "subanswer_correct": {
+                  "SC006-Q4": false
+                }
+              },
+              {
+                "id": "SC006-Q5",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC006-Q5-A": null,
+                  "SC006-Q5-B": null
+                },
+                "subanswer_correct": {
+                  "SC006-Q5-A": false,
+                  "SC006-Q5-B": false
+                }
+              },
+              {
+                "id": "SC007-Q1",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC007-Q1": null
+                },
+                "subanswer_correct": {
+                  "SC007-Q1": false
+                }
+              },
+              {
+                "id": "SC007-Q2",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC007-Q2": null
+                },
+                "subanswer_correct": {
+                  "SC007-Q2": false
+                }
+              },
+              {
+                "id": "SC007-Q3",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC007-Q3": null
+                },
+                "subanswer_correct": {
+                  "SC007-Q3": false
+                }
+              },
+              {
+                "id": "SC007-Q4",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC007-Q4": null
+                },
+                "subanswer_correct": {
+                  "SC007-Q4": false
+                }
+              },
+              {
+                "id": "SC007-Q5",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC007-Q5-A": null,
+                  "SC007-Q5-B": null
+                },
+                "subanswer_correct": {
+                  "SC007-Q5-A": false,
+                  "SC007-Q5-B": false
+                }
+              },
+              {
+                "id": "SC008-Q1",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC008-Q1": null
+                },
+                "subanswer_correct": {
+                  "SC008-Q1": false
+                }
+              },
+              {
+                "id": "SC008-Q2",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC008-Q2": null
+                },
+                "subanswer_correct": {
+                  "SC008-Q2": false
+                }
+              },
+              {
+                "id": "SC008-Q3",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC008-Q3": null
+                },
+                "subanswer_correct": {
+                  "SC008-Q3": false
+                }
+              },
+              {
+                "id": "SC008-Q4",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC008-Q4": null
+                },
+                "subanswer_correct": {
+                  "SC008-Q4": false
+                }
+              },
+              {
+                "id": "SC008-Q5",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC008-Q5-A": null,
+                  "SC008-Q5-B": null
+                },
+                "subanswer_correct": {
+                  "SC008-Q5-A": false,
+                  "SC008-Q5-B": false
+                }
+              },
+              {
+                "id": "SC009-Q1",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC009-Q1": null
+                },
+                "subanswer_correct": {
+                  "SC009-Q1": false
+                }
+              },
+              {
+                "id": "SC009-Q2",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC009-Q2": null
+                },
+                "subanswer_correct": {
+                  "SC009-Q2": false
+                }
+              },
+              {
+                "id": "SC009-Q3",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC009-Q3": null
+                },
+                "subanswer_correct": {
+                  "SC009-Q3": false
+                }
+              },
+              {
+                "id": "SC009-Q4",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC009-Q4": null
+                },
+                "subanswer_correct": {
+                  "SC009-Q4": false
+                }
+              },
+              {
+                "id": "SC009-Q5",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC009-Q5-A": null,
+                  "SC009-Q5-B": null
+                },
+                "subanswer_correct": {
+                  "SC009-Q5-A": false,
+                  "SC009-Q5-B": false
+                }
+              },
+              {
+                "id": "SC010-Q1",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC010-Q1": null
+                },
+                "subanswer_correct": {
+                  "SC010-Q1": false
+                }
+              },
+              {
+                "id": "SC010-Q2",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC010-Q2": null
+                },
+                "subanswer_correct": {
+                  "SC010-Q2": false
+                }
+              },
+              {
+                "id": "SC010-Q3",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC010-Q3": null
+                },
+                "subanswer_correct": {
+                  "SC010-Q3": false
+                }
+              },
+              {
+                "id": "SC010-Q4",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC010-Q4": null
+                },
+                "subanswer_correct": {
+                  "SC010-Q4": false
+                }
+              },
+              {
+                "id": "SC010-Q5",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC010-Q5-A": null,
+                  "SC010-Q5-B": null
+                },
+                "subanswer_correct": {
+                  "SC010-Q5-A": false,
+                  "SC010-Q5-B": false
+                }
+              }
+            ]
+          },
+          {
+            "condition": "colocated",
+            "arm": "dual",
+            "correct": 3,
+            "total": 50,
+            "completed_calls": 14,
+            "planned_calls": 20,
+            "valid_subanswers": 15,
+            "planned_subanswers": 60,
+            "rows": [
+              {
+                "id": "SC001-Q1",
+                "correct": true,
+                "answered_all": true,
+                "subanswers": {
+                  "SC001-Q1": "B"
+                },
+                "subanswer_correct": {
+                  "SC001-Q1": true
+                }
+              },
+              {
+                "id": "SC001-Q2",
+                "correct": false,
+                "answered_all": true,
+                "subanswers": {
+                  "SC001-Q2": "C"
+                },
+                "subanswer_correct": {
+                  "SC001-Q2": false
+                }
+              },
+              {
+                "id": "SC001-Q3",
+                "correct": false,
+                "answered_all": true,
+                "subanswers": {
+                  "SC001-Q3": "A"
+                },
+                "subanswer_correct": {
+                  "SC001-Q3": false
+                }
+              },
+              {
+                "id": "SC001-Q4",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC001-Q4": null
+                },
+                "subanswer_correct": {
+                  "SC001-Q4": false
+                }
+              },
+              {
+                "id": "SC001-Q5",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC001-Q5-A": null,
+                  "SC001-Q5-B": null
+                },
+                "subanswer_correct": {
+                  "SC001-Q5-A": false,
+                  "SC001-Q5-B": false
+                }
+              },
+              {
+                "id": "SC002-Q1",
+                "correct": false,
+                "answered_all": true,
+                "subanswers": {
+                  "SC002-Q1": "B"
+                },
+                "subanswer_correct": {
+                  "SC002-Q1": false
+                }
+              },
+              {
+                "id": "SC002-Q2",
+                "correct": true,
+                "answered_all": true,
+                "subanswers": {
+                  "SC002-Q2": "A"
+                },
+                "subanswer_correct": {
+                  "SC002-Q2": true
+                }
+              },
+              {
+                "id": "SC002-Q3",
+                "correct": true,
+                "answered_all": true,
+                "subanswers": {
+                  "SC002-Q3": "C"
+                },
+                "subanswer_correct": {
+                  "SC002-Q3": true
+                }
+              },
+              {
+                "id": "SC002-Q4",
+                "correct": false,
+                "answered_all": true,
+                "subanswers": {
+                  "SC002-Q4": "C"
+                },
+                "subanswer_correct": {
+                  "SC002-Q4": false
+                }
+              },
+              {
+                "id": "SC002-Q5",
+                "correct": false,
+                "answered_all": true,
+                "subanswers": {
+                  "SC002-Q5-A": 4,
+                  "SC002-Q5-B": 2
+                },
+                "subanswer_correct": {
+                  "SC002-Q5-A": false,
+                  "SC002-Q5-B": false
+                }
+              },
+              {
+                "id": "SC003-Q1",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC003-Q1": null
+                },
+                "subanswer_correct": {
+                  "SC003-Q1": false
+                }
+              },
+              {
+                "id": "SC003-Q2",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC003-Q2": null
+                },
+                "subanswer_correct": {
+                  "SC003-Q2": false
+                }
+              },
+              {
+                "id": "SC003-Q3",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC003-Q3": null
+                },
+                "subanswer_correct": {
+                  "SC003-Q3": false
+                }
+              },
+              {
+                "id": "SC003-Q4",
+                "correct": false,
+                "answered_all": true,
+                "subanswers": {
+                  "SC003-Q4": "C"
+                },
+                "subanswer_correct": {
+                  "SC003-Q4": false
+                }
+              },
+              {
+                "id": "SC003-Q5",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC003-Q5-A": null,
+                  "SC003-Q5-B": 2
+                },
+                "subanswer_correct": {
+                  "SC003-Q5-A": false,
+                  "SC003-Q5-B": false
+                }
+              },
+              {
+                "id": "SC004-Q1",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC004-Q1": null
+                },
+                "subanswer_correct": {
+                  "SC004-Q1": false
+                }
+              },
+              {
+                "id": "SC004-Q2",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC004-Q2": null
+                },
+                "subanswer_correct": {
+                  "SC004-Q2": false
+                }
+              },
+              {
+                "id": "SC004-Q3",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC004-Q3": null
+                },
+                "subanswer_correct": {
+                  "SC004-Q3": false
+                }
+              },
+              {
+                "id": "SC004-Q4",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC004-Q4": null
+                },
+                "subanswer_correct": {
+                  "SC004-Q4": false
+                }
+              },
+              {
+                "id": "SC004-Q5",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC004-Q5-A": null,
+                  "SC004-Q5-B": null
+                },
+                "subanswer_correct": {
+                  "SC004-Q5-A": false,
+                  "SC004-Q5-B": false
+                }
+              },
+              {
+                "id": "SC005-Q1",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC005-Q1": null
+                },
+                "subanswer_correct": {
+                  "SC005-Q1": false
+                }
+              },
+              {
+                "id": "SC005-Q2",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC005-Q2": null
+                },
+                "subanswer_correct": {
+                  "SC005-Q2": false
+                }
+              },
+              {
+                "id": "SC005-Q3",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC005-Q3": null
+                },
+                "subanswer_correct": {
+                  "SC005-Q3": false
+                }
+              },
+              {
+                "id": "SC005-Q4",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC005-Q4": null
+                },
+                "subanswer_correct": {
+                  "SC005-Q4": false
+                }
+              },
+              {
+                "id": "SC005-Q5",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC005-Q5-A": null,
+                  "SC005-Q5-B": null
+                },
+                "subanswer_correct": {
+                  "SC005-Q5-A": false,
+                  "SC005-Q5-B": false
+                }
+              },
+              {
+                "id": "SC006-Q1",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC006-Q1": null
+                },
+                "subanswer_correct": {
+                  "SC006-Q1": false
+                }
+              },
+              {
+                "id": "SC006-Q2",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC006-Q2": null
+                },
+                "subanswer_correct": {
+                  "SC006-Q2": false
+                }
+              },
+              {
+                "id": "SC006-Q3",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC006-Q3": null
+                },
+                "subanswer_correct": {
+                  "SC006-Q3": false
+                }
+              },
+              {
+                "id": "SC006-Q4",
+                "correct": false,
+                "answered_all": true,
+                "subanswers": {
+                  "SC006-Q4": "A"
+                },
+                "subanswer_correct": {
+                  "SC006-Q4": false
+                }
+              },
+              {
+                "id": "SC006-Q5",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC006-Q5-A": null,
+                  "SC006-Q5-B": 3
+                },
+                "subanswer_correct": {
+                  "SC006-Q5-A": false,
+                  "SC006-Q5-B": false
+                }
+              },
+              {
+                "id": "SC007-Q1",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC007-Q1": null
+                },
+                "subanswer_correct": {
+                  "SC007-Q1": false
+                }
+              },
+              {
+                "id": "SC007-Q2",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC007-Q2": null
+                },
+                "subanswer_correct": {
+                  "SC007-Q2": false
+                }
+              },
+              {
+                "id": "SC007-Q3",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC007-Q3": null
+                },
+                "subanswer_correct": {
+                  "SC007-Q3": false
+                }
+              },
+              {
+                "id": "SC007-Q4",
+                "correct": false,
+                "answered_all": true,
+                "subanswers": {
+                  "SC007-Q4": "A"
+                },
+                "subanswer_correct": {
+                  "SC007-Q4": false
+                }
+              },
+              {
+                "id": "SC007-Q5",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC007-Q5-A": null,
+                  "SC007-Q5-B": 3
+                },
+                "subanswer_correct": {
+                  "SC007-Q5-A": false,
+                  "SC007-Q5-B": false
+                }
+              },
+              {
+                "id": "SC008-Q1",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC008-Q1": null
+                },
+                "subanswer_correct": {
+                  "SC008-Q1": false
+                }
+              },
+              {
+                "id": "SC008-Q2",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC008-Q2": null
+                },
+                "subanswer_correct": {
+                  "SC008-Q2": false
+                }
+              },
+              {
+                "id": "SC008-Q3",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC008-Q3": null
+                },
+                "subanswer_correct": {
+                  "SC008-Q3": false
+                }
+              },
+              {
+                "id": "SC008-Q4",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC008-Q4": null
+                },
+                "subanswer_correct": {
+                  "SC008-Q4": false
+                }
+              },
+              {
+                "id": "SC008-Q5",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC008-Q5-A": null,
+                  "SC008-Q5-B": null
+                },
+                "subanswer_correct": {
+                  "SC008-Q5-A": false,
+                  "SC008-Q5-B": false
+                }
+              },
+              {
+                "id": "SC009-Q1",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC009-Q1": null
+                },
+                "subanswer_correct": {
+                  "SC009-Q1": false
+                }
+              },
+              {
+                "id": "SC009-Q2",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC009-Q2": null
+                },
+                "subanswer_correct": {
+                  "SC009-Q2": false
+                }
+              },
+              {
+                "id": "SC009-Q3",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC009-Q3": null
+                },
+                "subanswer_correct": {
+                  "SC009-Q3": false
+                }
+              },
+              {
+                "id": "SC009-Q4",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC009-Q4": null
+                },
+                "subanswer_correct": {
+                  "SC009-Q4": false
+                }
+              },
+              {
+                "id": "SC009-Q5",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC009-Q5-A": null,
+                  "SC009-Q5-B": null
+                },
+                "subanswer_correct": {
+                  "SC009-Q5-A": false,
+                  "SC009-Q5-B": false
+                }
+              },
+              {
+                "id": "SC010-Q1",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC010-Q1": null
+                },
+                "subanswer_correct": {
+                  "SC010-Q1": false
+                }
+              },
+              {
+                "id": "SC010-Q2",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC010-Q2": null
+                },
+                "subanswer_correct": {
+                  "SC010-Q2": false
+                }
+              },
+              {
+                "id": "SC010-Q3",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC010-Q3": null
+                },
+                "subanswer_correct": {
+                  "SC010-Q3": false
+                }
+              },
+              {
+                "id": "SC010-Q4",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC010-Q4": null
+                },
+                "subanswer_correct": {
+                  "SC010-Q4": false
+                }
+              },
+              {
+                "id": "SC010-Q5",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC010-Q5-A": null,
+                  "SC010-Q5-B": null
+                },
+                "subanswer_correct": {
+                  "SC010-Q5-A": false,
+                  "SC010-Q5-B": false
+                }
+              }
+            ]
+          },
+          {
+            "condition": "colocated",
+            "arm": "single",
+            "correct": 1,
+            "total": 50,
+            "completed_calls": 15,
+            "planned_calls": 20,
+            "valid_subanswers": 3,
+            "planned_subanswers": 60,
+            "rows": [
+              {
+                "id": "SC001-Q1",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC001-Q1": null
+                },
+                "subanswer_correct": {
+                  "SC001-Q1": false
+                }
+              },
+              {
+                "id": "SC001-Q2",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC001-Q2": null
+                },
+                "subanswer_correct": {
+                  "SC001-Q2": false
+                }
+              },
+              {
+                "id": "SC001-Q3",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC001-Q3": null
+                },
+                "subanswer_correct": {
+                  "SC001-Q3": false
+                }
+              },
+              {
+                "id": "SC001-Q4",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC001-Q4": null
+                },
+                "subanswer_correct": {
+                  "SC001-Q4": false
+                }
+              },
+              {
+                "id": "SC001-Q5",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC001-Q5-A": null,
+                  "SC001-Q5-B": null
+                },
+                "subanswer_correct": {
+                  "SC001-Q5-A": false,
+                  "SC001-Q5-B": false
+                }
+              },
+              {
+                "id": "SC002-Q1",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC002-Q1": null
+                },
+                "subanswer_correct": {
+                  "SC002-Q1": false
+                }
+              },
+              {
+                "id": "SC002-Q2",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC002-Q2": null
+                },
+                "subanswer_correct": {
+                  "SC002-Q2": false
+                }
+              },
+              {
+                "id": "SC002-Q3",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC002-Q3": null
+                },
+                "subanswer_correct": {
+                  "SC002-Q3": false
+                }
+              },
+              {
+                "id": "SC002-Q4",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC002-Q4": null
+                },
+                "subanswer_correct": {
+                  "SC002-Q4": false
+                }
+              },
+              {
+                "id": "SC002-Q5",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC002-Q5-A": null,
+                  "SC002-Q5-B": null
+                },
+                "subanswer_correct": {
+                  "SC002-Q5-A": false,
+                  "SC002-Q5-B": false
+                }
+              },
+              {
+                "id": "SC003-Q1",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC003-Q1": null
+                },
+                "subanswer_correct": {
+                  "SC003-Q1": false
+                }
+              },
+              {
+                "id": "SC003-Q2",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC003-Q2": null
+                },
+                "subanswer_correct": {
+                  "SC003-Q2": false
+                }
+              },
+              {
+                "id": "SC003-Q3",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC003-Q3": null
+                },
+                "subanswer_correct": {
+                  "SC003-Q3": false
+                }
+              },
+              {
+                "id": "SC003-Q4",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC003-Q4": null
+                },
+                "subanswer_correct": {
+                  "SC003-Q4": false
+                }
+              },
+              {
+                "id": "SC003-Q5",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC003-Q5-A": null,
+                  "SC003-Q5-B": null
+                },
+                "subanswer_correct": {
+                  "SC003-Q5-A": false,
+                  "SC003-Q5-B": false
+                }
+              },
+              {
+                "id": "SC004-Q1",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC004-Q1": null
+                },
+                "subanswer_correct": {
+                  "SC004-Q1": false
+                }
+              },
+              {
+                "id": "SC004-Q2",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC004-Q2": null
+                },
+                "subanswer_correct": {
+                  "SC004-Q2": false
+                }
+              },
+              {
+                "id": "SC004-Q3",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC004-Q3": null
+                },
+                "subanswer_correct": {
+                  "SC004-Q3": false
+                }
+              },
+              {
+                "id": "SC004-Q4",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC004-Q4": null
+                },
+                "subanswer_correct": {
+                  "SC004-Q4": false
+                }
+              },
+              {
+                "id": "SC004-Q5",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC004-Q5-A": null,
+                  "SC004-Q5-B": null
+                },
+                "subanswer_correct": {
+                  "SC004-Q5-A": false,
+                  "SC004-Q5-B": false
+                }
+              },
+              {
+                "id": "SC005-Q1",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC005-Q1": null
+                },
+                "subanswer_correct": {
+                  "SC005-Q1": false
+                }
+              },
+              {
+                "id": "SC005-Q2",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC005-Q2": null
+                },
+                "subanswer_correct": {
+                  "SC005-Q2": false
+                }
+              },
+              {
+                "id": "SC005-Q3",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC005-Q3": null
+                },
+                "subanswer_correct": {
+                  "SC005-Q3": false
+                }
+              },
+              {
+                "id": "SC005-Q4",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC005-Q4": null
+                },
+                "subanswer_correct": {
+                  "SC005-Q4": false
+                }
+              },
+              {
+                "id": "SC005-Q5",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC005-Q5-A": null,
+                  "SC005-Q5-B": null
+                },
+                "subanswer_correct": {
+                  "SC005-Q5-A": false,
+                  "SC005-Q5-B": false
+                }
+              },
+              {
+                "id": "SC006-Q1",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC006-Q1": null
+                },
+                "subanswer_correct": {
+                  "SC006-Q1": false
+                }
+              },
+              {
+                "id": "SC006-Q2",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC006-Q2": null
+                },
+                "subanswer_correct": {
+                  "SC006-Q2": false
+                }
+              },
+              {
+                "id": "SC006-Q3",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC006-Q3": null
+                },
+                "subanswer_correct": {
+                  "SC006-Q3": false
+                }
+              },
+              {
+                "id": "SC006-Q4",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC006-Q4": null
+                },
+                "subanswer_correct": {
+                  "SC006-Q4": false
+                }
+              },
+              {
+                "id": "SC006-Q5",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC006-Q5-A": null,
+                  "SC006-Q5-B": null
+                },
+                "subanswer_correct": {
+                  "SC006-Q5-A": false,
+                  "SC006-Q5-B": false
+                }
+              },
+              {
+                "id": "SC007-Q1",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC007-Q1": null
+                },
+                "subanswer_correct": {
+                  "SC007-Q1": false
+                }
+              },
+              {
+                "id": "SC007-Q2",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC007-Q2": null
+                },
+                "subanswer_correct": {
+                  "SC007-Q2": false
+                }
+              },
+              {
+                "id": "SC007-Q3",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC007-Q3": null
+                },
+                "subanswer_correct": {
+                  "SC007-Q3": false
+                }
+              },
+              {
+                "id": "SC007-Q4",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC007-Q4": null
+                },
+                "subanswer_correct": {
+                  "SC007-Q4": false
+                }
+              },
+              {
+                "id": "SC007-Q5",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC007-Q5-A": null,
+                  "SC007-Q5-B": null
+                },
+                "subanswer_correct": {
+                  "SC007-Q5-A": false,
+                  "SC007-Q5-B": false
+                }
+              },
+              {
+                "id": "SC008-Q1",
+                "correct": true,
+                "answered_all": true,
+                "subanswers": {
+                  "SC008-Q1": "C"
+                },
+                "subanswer_correct": {
+                  "SC008-Q1": true
+                }
+              },
+              {
+                "id": "SC008-Q2",
+                "correct": false,
+                "answered_all": true,
+                "subanswers": {
+                  "SC008-Q2": "A"
+                },
+                "subanswer_correct": {
+                  "SC008-Q2": false
+                }
+              },
+              {
+                "id": "SC008-Q3",
+                "correct": false,
+                "answered_all": true,
+                "subanswers": {
+                  "SC008-Q3": "D"
+                },
+                "subanswer_correct": {
+                  "SC008-Q3": false
+                }
+              },
+              {
+                "id": "SC008-Q4",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC008-Q4": null
+                },
+                "subanswer_correct": {
+                  "SC008-Q4": false
+                }
+              },
+              {
+                "id": "SC008-Q5",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC008-Q5-A": null,
+                  "SC008-Q5-B": null
+                },
+                "subanswer_correct": {
+                  "SC008-Q5-A": false,
+                  "SC008-Q5-B": false
+                }
+              },
+              {
+                "id": "SC009-Q1",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC009-Q1": null
+                },
+                "subanswer_correct": {
+                  "SC009-Q1": false
+                }
+              },
+              {
+                "id": "SC009-Q2",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC009-Q2": null
+                },
+                "subanswer_correct": {
+                  "SC009-Q2": false
+                }
+              },
+              {
+                "id": "SC009-Q3",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC009-Q3": null
+                },
+                "subanswer_correct": {
+                  "SC009-Q3": false
+                }
+              },
+              {
+                "id": "SC009-Q4",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC009-Q4": null
+                },
+                "subanswer_correct": {
+                  "SC009-Q4": false
+                }
+              },
+              {
+                "id": "SC009-Q5",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC009-Q5-A": null,
+                  "SC009-Q5-B": null
+                },
+                "subanswer_correct": {
+                  "SC009-Q5-A": false,
+                  "SC009-Q5-B": false
+                }
+              },
+              {
+                "id": "SC010-Q1",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC010-Q1": null
+                },
+                "subanswer_correct": {
+                  "SC010-Q1": false
+                }
+              },
+              {
+                "id": "SC010-Q2",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC010-Q2": null
+                },
+                "subanswer_correct": {
+                  "SC010-Q2": false
+                }
+              },
+              {
+                "id": "SC010-Q3",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC010-Q3": null
+                },
+                "subanswer_correct": {
+                  "SC010-Q3": false
+                }
+              },
+              {
+                "id": "SC010-Q4",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC010-Q4": null
+                },
+                "subanswer_correct": {
+                  "SC010-Q4": false
+                }
+              },
+              {
+                "id": "SC010-Q5",
+                "correct": false,
+                "answered_all": false,
+                "subanswers": {
+                  "SC010-Q5-A": null,
+                  "SC010-Q5-B": null
+                },
+                "subanswer_correct": {
+                  "SC010-Q5-A": false,
+                  "SC010-Q5-B": false
+                }
+              }
+            ]
+          }
+        ],
+        "pairs": [
+          {
+            "condition": "spatial",
+            "single_minus_dual": 0,
+            "both_correct": 0,
+            "single_only_correct": 1,
+            "dual_only_correct": 1,
+            "both_wrong": 48
+          },
+          {
+            "condition": "colocated",
+            "single_minus_dual": -2,
+            "both_correct": 0,
+            "single_only_correct": 1,
+            "dual_only_correct": 3,
+            "both_wrong": 46
+          }
+        ],
+        "protocol": {
+          "answers_per_call": 0,
+          "inference_calls": 80,
+          "format": "grouped"
+        },
+        "behavior": {
+          "calls": 80,
+          "completed": 57,
+          "calls_with_early_output": 29,
+          "calls_without_post_audio_output": 34,
+          "calls_with_valid_answers": 13,
+          "credit_blocked_calls": 23,
+          "cost_usd": 4.930833333333333,
+          "rows": [
+            {
+              "task_id": "SC001-colocated-A-dual",
+              "status": "completed",
+              "early_output": true,
+              "post_audio_output": true,
+              "early_transcript_characters": 13,
+              "post_audio_transcript_characters": 71,
+              "first_early_output_seconds": 24.501568417006638,
+              "first_post_audio_output_seconds": 72.25016637495719,
+              "valid_answers": 3,
+              "delegation_observed": false,
+              "backend_model_calls": 0,
+              "cost_usd": 0.08583333333333333
+            },
+            {
+              "task_id": "SC001-colocated-A-single",
+              "status": "completed",
+              "early_output": true,
+              "post_audio_output": false,
+              "early_transcript_characters": 16,
+              "post_audio_transcript_characters": 0,
+              "first_early_output_seconds": 26.46791220799787,
+              "first_post_audio_output_seconds": null,
+              "valid_answers": 0,
+              "delegation_observed": false,
+              "backend_model_calls": 0,
+              "cost_usd": 0.08583333333333333
+            },
+            {
+              "task_id": "SC001-colocated-B-dual",
+              "status": "completed",
+              "early_output": false,
+              "post_audio_output": false,
+              "early_transcript_characters": 0,
+              "post_audio_transcript_characters": 0,
+              "first_early_output_seconds": null,
+              "first_post_audio_output_seconds": null,
+              "valid_answers": 0,
+              "delegation_observed": false,
+              "backend_model_calls": 0,
+              "cost_usd": 0.08583333333333333
+            },
+            {
+              "task_id": "SC001-colocated-B-single",
+              "status": "completed",
+              "early_output": true,
+              "post_audio_output": false,
+              "early_transcript_characters": 46,
+              "post_audio_transcript_characters": 0,
+              "first_early_output_seconds": 24.949268832977396,
+              "first_post_audio_output_seconds": null,
+              "valid_answers": 0,
+              "delegation_observed": false,
+              "backend_model_calls": 0,
+              "cost_usd": 0.08583333333333333
+            },
+            {
+              "task_id": "SC001-spatial-A-dual",
+              "status": "completed",
+              "early_output": false,
+              "post_audio_output": false,
+              "early_transcript_characters": 0,
+              "post_audio_transcript_characters": 0,
+              "first_early_output_seconds": null,
+              "first_post_audio_output_seconds": null,
+              "valid_answers": 0,
+              "delegation_observed": false,
+              "backend_model_calls": 0,
+              "cost_usd": 0.08583333333333333
+            },
+            {
+              "task_id": "SC001-spatial-A-single",
+              "status": "completed",
+              "early_output": true,
+              "post_audio_output": true,
+              "early_transcript_characters": 16,
+              "post_audio_transcript_characters": 46,
+              "first_early_output_seconds": 16.087041999970097,
+              "first_post_audio_output_seconds": 72.97819141601212,
+              "valid_answers": 2,
+              "delegation_observed": false,
+              "backend_model_calls": 0,
+              "cost_usd": 0.08583333333333333
+            },
+            {
+              "task_id": "SC001-spatial-B-dual",
+              "status": "completed",
+              "early_output": false,
+              "post_audio_output": false,
+              "early_transcript_characters": 0,
+              "post_audio_transcript_characters": 0,
+              "first_early_output_seconds": null,
+              "first_post_audio_output_seconds": null,
+              "valid_answers": 0,
+              "delegation_observed": false,
+              "backend_model_calls": 0,
+              "cost_usd": 0.08583333333333333
+            },
+            {
+              "task_id": "SC001-spatial-B-single",
+              "status": "completed",
+              "early_output": true,
+              "post_audio_output": true,
+              "early_transcript_characters": 71,
+              "post_audio_transcript_characters": 7,
+              "first_early_output_seconds": 32.92549383302685,
+              "first_post_audio_output_seconds": 70.39286262501264,
+              "valid_answers": 0,
+              "delegation_observed": false,
+              "backend_model_calls": 0,
+              "cost_usd": 0.08583333333333333
+            },
+            {
+              "task_id": "SC002-colocated-A-dual",
+              "status": "completed",
+              "early_output": false,
+              "post_audio_output": true,
+              "early_transcript_characters": 0,
+              "post_audio_transcript_characters": 95,
+              "first_early_output_seconds": null,
+              "first_post_audio_output_seconds": 71.10296141699655,
+              "valid_answers": 4,
+              "delegation_observed": false,
+              "backend_model_calls": 0,
+              "cost_usd": 0.08583333333333333
+            },
+            {
+              "task_id": "SC002-colocated-A-single",
+              "status": "completed",
+              "early_output": true,
+              "post_audio_output": true,
+              "early_transcript_characters": 8,
+              "post_audio_transcript_characters": 21,
+              "first_early_output_seconds": 13.461443084001075,
+              "first_post_audio_output_seconds": 73.46861291700043,
+              "valid_answers": 0,
+              "delegation_observed": false,
+              "backend_model_calls": 0,
+              "cost_usd": 0.08583333333333333
+            },
+            {
+              "task_id": "SC002-colocated-B-dual",
+              "status": "completed",
+              "early_output": false,
+              "post_audio_output": true,
+              "early_transcript_characters": 0,
+              "post_audio_transcript_characters": 48,
+              "first_early_output_seconds": null,
+              "first_post_audio_output_seconds": 72.22786579205422,
+              "valid_answers": 2,
+              "delegation_observed": false,
+              "backend_model_calls": 0,
+              "cost_usd": 0.08583333333333333
+            },
+            {
+              "task_id": "SC002-colocated-B-single",
+              "status": "completed",
+              "early_output": false,
+              "post_audio_output": false,
+              "early_transcript_characters": 0,
+              "post_audio_transcript_characters": 0,
+              "first_early_output_seconds": null,
+              "first_post_audio_output_seconds": null,
+              "valid_answers": 0,
+              "delegation_observed": false,
+              "backend_model_calls": 0,
+              "cost_usd": 0.08583333333333333
+            },
+            {
+              "task_id": "SC002-spatial-A-dual",
+              "status": "completed",
+              "early_output": false,
+              "post_audio_output": false,
+              "early_transcript_characters": 0,
+              "post_audio_transcript_characters": 0,
+              "first_early_output_seconds": null,
+              "first_post_audio_output_seconds": null,
+              "valid_answers": 0,
+              "delegation_observed": false,
+              "backend_model_calls": 0,
+              "cost_usd": 0.08583333333333333
+            },
+            {
+              "task_id": "SC002-spatial-A-single",
+              "status": "completed",
+              "early_output": false,
+              "post_audio_output": true,
+              "early_transcript_characters": 0,
+              "post_audio_transcript_characters": 97,
+              "first_early_output_seconds": null,
+              "first_post_audio_output_seconds": 71.79363683296833,
+              "valid_answers": 4,
+              "delegation_observed": false,
+              "backend_model_calls": 0,
+              "cost_usd": 0.08583333333333333
+            },
+            {
+              "task_id": "SC002-spatial-B-dual",
+              "status": "completed",
+              "early_output": true,
+              "post_audio_output": false,
+              "early_transcript_characters": 8,
+              "post_audio_transcript_characters": 0,
+              "first_early_output_seconds": 42.08900312503101,
+              "first_post_audio_output_seconds": null,
+              "valid_answers": 0,
+              "delegation_observed": false,
+              "backend_model_calls": 0,
+              "cost_usd": 0.08583333333333333
+            },
+            {
+              "task_id": "SC002-spatial-B-single",
+              "status": "completed",
+              "early_output": false,
+              "post_audio_output": false,
+              "early_transcript_characters": 0,
+              "post_audio_transcript_characters": 0,
+              "first_early_output_seconds": null,
+              "first_post_audio_output_seconds": null,
+              "valid_answers": 0,
+              "delegation_observed": false,
+              "backend_model_calls": 0,
+              "cost_usd": 0.085
+            },
+            {
+              "task_id": "SC003-colocated-A-dual",
+              "status": "completed",
+              "early_output": true,
+              "post_audio_output": true,
+              "early_transcript_characters": 16,
+              "post_audio_transcript_characters": 95,
+              "first_early_output_seconds": 17.511995333014056,
+              "first_post_audio_output_seconds": 72.78630804101704,
+              "valid_answers": 0,
+              "delegation_observed": false,
+              "backend_model_calls": 0,
+              "cost_usd": 0.08583333333333333
+            },
+            {
+              "task_id": "SC003-colocated-A-single",
+              "status": "completed",
+              "early_output": true,
+              "post_audio_output": false,
+              "early_transcript_characters": 8,
+              "post_audio_transcript_characters": 0,
+              "first_early_output_seconds": 8.0563833329943,
+              "first_post_audio_output_seconds": null,
+              "valid_answers": 0,
+              "delegation_observed": false,
+              "backend_model_calls": 0,
+              "cost_usd": 0.08666666666666667
+            },
+            {
+              "task_id": "SC003-colocated-B-dual",
+              "status": "completed",
+              "early_output": true,
+              "post_audio_output": true,
+              "early_transcript_characters": 8,
+              "post_audio_transcript_characters": 48,
+              "first_early_output_seconds": 59.24098716699518,
+              "first_post_audio_output_seconds": 71.62456562498119,
+              "valid_answers": 2,
+              "delegation_observed": false,
+              "backend_model_calls": 0,
+              "cost_usd": 0.08583333333333333
+            },
+            {
+              "task_id": "SC003-colocated-B-single",
+              "status": "completed",
+              "early_output": true,
+              "post_audio_output": false,
+              "early_transcript_characters": 6,
+              "post_audio_transcript_characters": 0,
+              "first_early_output_seconds": 39.27929400000721,
+              "first_post_audio_output_seconds": null,
+              "valid_answers": 0,
+              "delegation_observed": false,
+              "backend_model_calls": 0,
+              "cost_usd": 0.08583333333333333
+            },
+            {
+              "task_id": "SC003-spatial-A-dual",
+              "status": "completed",
+              "early_output": false,
+              "post_audio_output": true,
+              "early_transcript_characters": 0,
+              "post_audio_transcript_characters": 95,
+              "first_early_output_seconds": null,
+              "first_post_audio_output_seconds": 70.76280354202027,
+              "valid_answers": 4,
+              "delegation_observed": false,
+              "backend_model_calls": 0,
+              "cost_usd": 0.08666666666666667
+            },
+            {
+              "task_id": "SC003-spatial-A-single",
+              "status": "completed",
+              "early_output": true,
+              "post_audio_output": true,
+              "early_transcript_characters": 13,
+              "post_audio_transcript_characters": 25,
+              "first_early_output_seconds": 28.692949416988995,
+              "first_post_audio_output_seconds": 70.99163674999727,
+              "valid_answers": 0,
+              "delegation_observed": false,
+              "backend_model_calls": 0,
+              "cost_usd": 0.08583333333333333
+            },
+            {
+              "task_id": "SC003-spatial-B-dual",
+              "status": "completed",
+              "early_output": true,
+              "post_audio_output": false,
+              "early_transcript_characters": 16,
+              "post_audio_transcript_characters": 0,
+              "first_early_output_seconds": 57.66184437501943,
+              "first_post_audio_output_seconds": null,
+              "valid_answers": 0,
+              "delegation_observed": false,
+              "backend_model_calls": 0,
+              "cost_usd": 0.08583333333333333
+            },
+            {
+              "task_id": "SC003-spatial-B-single",
+              "status": "completed",
+              "early_output": false,
+              "post_audio_output": false,
+              "early_transcript_characters": 0,
+              "post_audio_transcript_characters": 0,
+              "first_early_output_seconds": null,
+              "first_post_audio_output_seconds": null,
+              "valid_answers": 0,
+              "delegation_observed": false,
+              "backend_model_calls": 0,
+              "cost_usd": 0.08583333333333333
+            },
+            {
+              "task_id": "SC004-colocated-A-dual",
+              "status": "completed",
+              "early_output": false,
+              "post_audio_output": false,
+              "early_transcript_characters": 0,
+              "post_audio_transcript_characters": 0,
+              "first_early_output_seconds": null,
+              "first_post_audio_output_seconds": null,
+              "valid_answers": 0,
+              "delegation_observed": false,
+              "backend_model_calls": 0,
+              "cost_usd": 0.08583333333333333
+            },
+            {
+              "task_id": "SC004-colocated-A-single",
+              "status": "completed",
+              "early_output": false,
+              "post_audio_output": false,
+              "early_transcript_characters": 0,
+              "post_audio_transcript_characters": 0,
+              "first_early_output_seconds": null,
+              "first_post_audio_output_seconds": null,
+              "valid_answers": 0,
+              "delegation_observed": false,
+              "backend_model_calls": 0,
+              "cost_usd": 0.08583333333333333
+            },
+            {
+              "task_id": "SC004-colocated-B-dual",
+              "status": "completed",
+              "early_output": false,
+              "post_audio_output": false,
+              "early_transcript_characters": 0,
+              "post_audio_transcript_characters": 0,
+              "first_early_output_seconds": null,
+              "first_post_audio_output_seconds": null,
+              "valid_answers": 0,
+              "delegation_observed": false,
+              "backend_model_calls": 0,
+              "cost_usd": 0.08583333333333333
+            },
+            {
+              "task_id": "SC004-colocated-B-single",
+              "status": "completed",
+              "early_output": true,
+              "post_audio_output": false,
+              "early_transcript_characters": 8,
+              "post_audio_transcript_characters": 0,
+              "first_early_output_seconds": 24.44080312497681,
+              "first_post_audio_output_seconds": null,
+              "valid_answers": 0,
+              "delegation_observed": false,
+              "backend_model_calls": 0,
+              "cost_usd": 0.08666666666666667
+            },
+            {
+              "task_id": "SC004-spatial-A-dual",
+              "status": "completed",
+              "early_output": true,
+              "post_audio_output": true,
+              "early_transcript_characters": 14,
+              "post_audio_transcript_characters": 95,
+              "first_early_output_seconds": 15.311304334027227,
+              "first_post_audio_output_seconds": 71.44117062503938,
+              "valid_answers": 4,
+              "delegation_observed": false,
+              "backend_model_calls": 0,
+              "cost_usd": 0.08583333333333333
+            },
+            {
+              "task_id": "SC004-spatial-A-single",
+              "status": "completed",
+              "early_output": true,
+              "post_audio_output": false,
+              "early_transcript_characters": 12,
+              "post_audio_transcript_characters": 0,
+              "first_early_output_seconds": 16.14331704203505,
+              "first_post_audio_output_seconds": null,
+              "valid_answers": 0,
+              "delegation_observed": false,
+              "backend_model_calls": 0,
+              "cost_usd": 0.08583333333333333
+            },
+            {
+              "task_id": "SC004-spatial-B-dual",
+              "status": "completed",
+              "early_output": false,
+              "post_audio_output": true,
+              "early_transcript_characters": 0,
+              "post_audio_transcript_characters": 46,
+              "first_early_output_seconds": null,
+              "first_post_audio_output_seconds": 72.3229470839724,
+              "valid_answers": 2,
+              "delegation_observed": false,
+              "backend_model_calls": 0,
+              "cost_usd": 0.08583333333333333
+            },
+            {
+              "task_id": "SC004-spatial-B-single",
+              "status": "completed",
+              "early_output": false,
+              "post_audio_output": false,
+              "early_transcript_characters": 0,
+              "post_audio_transcript_characters": 0,
+              "first_early_output_seconds": null,
+              "first_post_audio_output_seconds": null,
+              "valid_answers": 0,
+              "delegation_observed": false,
+              "backend_model_calls": 0,
+              "cost_usd": 0.08666666666666667
+            },
+            {
+              "task_id": "SC005-colocated-A-dual",
+              "status": "completed",
+              "early_output": false,
+              "post_audio_output": false,
+              "early_transcript_characters": 0,
+              "post_audio_transcript_characters": 0,
+              "first_early_output_seconds": null,
+              "first_post_audio_output_seconds": null,
+              "valid_answers": 0,
+              "delegation_observed": false,
+              "backend_model_calls": 0,
+              "cost_usd": 0.08583333333333333
+            },
+            {
+              "task_id": "SC005-colocated-A-single",
+              "status": "completed",
+              "early_output": false,
+              "post_audio_output": true,
+              "early_transcript_characters": 0,
+              "post_audio_transcript_characters": 40,
+              "first_early_output_seconds": null,
+              "first_post_audio_output_seconds": 73.89720904099522,
+              "valid_answers": 0,
+              "delegation_observed": false,
+              "backend_model_calls": 0,
+              "cost_usd": 0.08583333333333333
+            },
+            {
+              "task_id": "SC005-colocated-B-dual",
+              "status": "completed",
+              "early_output": false,
+              "post_audio_output": false,
+              "early_transcript_characters": 0,
+              "post_audio_transcript_characters": 0,
+              "first_early_output_seconds": null,
+              "first_post_audio_output_seconds": null,
+              "valid_answers": 0,
+              "delegation_observed": false,
+              "backend_model_calls": 0,
+              "cost_usd": 0.08583333333333333
+            },
+            {
+              "task_id": "SC005-colocated-B-single",
+              "status": "completed",
+              "early_output": true,
+              "post_audio_output": false,
+              "early_transcript_characters": 8,
+              "post_audio_transcript_characters": 0,
+              "first_early_output_seconds": 5.060361084004398,
+              "first_post_audio_output_seconds": null,
+              "valid_answers": 0,
+              "delegation_observed": false,
+              "backend_model_calls": 0,
+              "cost_usd": 0.08583333333333333
+            },
+            {
+              "task_id": "SC005-spatial-A-dual",
+              "status": "completed",
+              "early_output": false,
+              "post_audio_output": false,
+              "early_transcript_characters": 0,
+              "post_audio_transcript_characters": 0,
+              "first_early_output_seconds": null,
+              "first_post_audio_output_seconds": null,
+              "valid_answers": 0,
+              "delegation_observed": false,
+              "backend_model_calls": 0,
+              "cost_usd": 0.08583333333333333
+            },
+            {
+              "task_id": "SC005-spatial-A-single",
+              "status": "completed",
+              "early_output": false,
+              "post_audio_output": true,
+              "early_transcript_characters": 0,
+              "post_audio_transcript_characters": 24,
+              "first_early_output_seconds": null,
+              "first_post_audio_output_seconds": 72.57583537499886,
+              "valid_answers": 0,
+              "delegation_observed": false,
+              "backend_model_calls": 0,
+              "cost_usd": 0.08666666666666667
+            },
+            {
+              "task_id": "SC005-spatial-B-dual",
+              "status": "completed",
+              "early_output": true,
+              "post_audio_output": false,
+              "early_transcript_characters": 8,
+              "post_audio_transcript_characters": 0,
+              "first_early_output_seconds": 7.1731629589921795,
+              "first_post_audio_output_seconds": null,
+              "valid_answers": 0,
+              "delegation_observed": false,
+              "backend_model_calls": 0,
+              "cost_usd": 0.08583333333333333
+            },
+            {
+              "task_id": "SC005-spatial-B-single",
+              "status": "completed",
+              "early_output": false,
+              "post_audio_output": false,
+              "early_transcript_characters": 0,
+              "post_audio_transcript_characters": 0,
+              "first_early_output_seconds": null,
+              "first_post_audio_output_seconds": null,
+              "valid_answers": 0,
+              "delegation_observed": false,
+              "backend_model_calls": 0,
+              "cost_usd": 0.08666666666666667
+            },
+            {
+              "task_id": "SC006-colocated-A-dual",
+              "status": "completed",
+              "early_output": true,
+              "post_audio_output": false,
+              "early_transcript_characters": 101,
+              "post_audio_transcript_characters": 0,
+              "first_early_output_seconds": 14.962683666031808,
+              "first_post_audio_output_seconds": null,
+              "valid_answers": 0,
+              "delegation_observed": false,
+              "backend_model_calls": 0,
+              "cost_usd": 0.0975
+            },
+            {
+              "task_id": "SC006-colocated-A-single",
+              "status": "completed",
+              "early_output": true,
+              "post_audio_output": false,
+              "early_transcript_characters": 16,
+              "post_audio_transcript_characters": 0,
+              "first_early_output_seconds": 4.504971624992322,
+              "first_post_audio_output_seconds": null,
+              "valid_answers": 0,
+              "delegation_observed": false,
+              "backend_model_calls": 0,
+              "cost_usd": 0.08583333333333333
+            },
+            {
+              "task_id": "SC006-colocated-B-dual",
+              "status": "completed",
+              "early_output": true,
+              "post_audio_output": true,
+              "early_transcript_characters": 23,
+              "post_audio_transcript_characters": 53,
+              "first_early_output_seconds": 60.70767249999335,
+              "first_post_audio_output_seconds": 61.83006925001973,
+              "valid_answers": 2,
+              "delegation_observed": false,
+              "backend_model_calls": 0,
+              "cost_usd": 0.09416666666666668
+            },
+            {
+              "task_id": "SC006-colocated-B-single",
+              "status": "completed",
+              "early_output": true,
+              "post_audio_output": true,
+              "early_transcript_characters": 48,
+              "post_audio_transcript_characters": 42,
+              "first_early_output_seconds": 55.393566375016235,
+              "first_post_audio_output_seconds": 71.5024068329949,
+              "valid_answers": 0,
+              "delegation_observed": false,
+              "backend_model_calls": 0,
+              "cost_usd": 0.09583333333333334
+            },
+            {
+              "task_id": "SC006-spatial-A-dual",
+              "status": "completed",
+              "early_output": true,
+              "post_audio_output": false,
+              "early_transcript_characters": 4,
+              "post_audio_transcript_characters": 0,
+              "first_early_output_seconds": 12.509736374951899,
+              "first_post_audio_output_seconds": null,
+              "valid_answers": 0,
+              "delegation_observed": false,
+              "backend_model_calls": 0,
+              "cost_usd": 0.08583333333333333
+            },
+            {
+              "task_id": "SC006-spatial-A-single",
+              "status": "completed",
+              "early_output": false,
+              "post_audio_output": false,
+              "early_transcript_characters": 0,
+              "post_audio_transcript_characters": 0,
+              "first_early_output_seconds": null,
+              "first_post_audio_output_seconds": null,
+              "valid_answers": 0,
+              "delegation_observed": false,
+              "backend_model_calls": 0,
+              "cost_usd": 0.08750000000000001
+            },
+            {
+              "task_id": "SC006-spatial-B-dual",
+              "status": "completed",
+              "early_output": false,
+              "post_audio_output": false,
+              "early_transcript_characters": 0,
+              "post_audio_transcript_characters": 0,
+              "first_early_output_seconds": null,
+              "first_post_audio_output_seconds": null,
+              "valid_answers": 0,
+              "delegation_observed": false,
+              "backend_model_calls": 0,
+              "cost_usd": 0.08583333333333333
+            },
+            {
+              "task_id": "SC006-spatial-B-single",
+              "status": "completed",
+              "early_output": true,
+              "post_audio_output": false,
+              "early_transcript_characters": 58,
+              "post_audio_transcript_characters": 0,
+              "first_early_output_seconds": 48.742490708013065,
+              "first_post_audio_output_seconds": null,
+              "valid_answers": 0,
+              "delegation_observed": false,
+              "backend_model_calls": 0,
+              "cost_usd": 0.08583333333333333
+            },
+            {
+              "task_id": "SC007-colocated-A-dual",
+              "status": "completed",
+              "early_output": true,
+              "post_audio_output": true,
+              "early_transcript_characters": 4,
+              "post_audio_transcript_characters": 81,
+              "first_early_output_seconds": 15.520065249991603,
+              "first_post_audio_output_seconds": 71.83221174997743,
+              "valid_answers": 0,
+              "delegation_observed": false,
+              "backend_model_calls": 0,
+              "cost_usd": 0.08583333333333333
+            },
+            {
+              "task_id": "SC007-colocated-A-single",
+              "status": "completed",
+              "early_output": false,
+              "post_audio_output": false,
+              "early_transcript_characters": 0,
+              "post_audio_transcript_characters": 0,
+              "first_early_output_seconds": null,
+              "first_post_audio_output_seconds": null,
+              "valid_answers": 0,
+              "delegation_observed": false,
+              "backend_model_calls": 0,
+              "cost_usd": 0.08666666666666667
+            },
+            {
+              "task_id": "SC007-colocated-B-dual",
+              "status": "completed",
+              "early_output": true,
+              "post_audio_output": true,
+              "early_transcript_characters": 12,
+              "post_audio_transcript_characters": 46,
+              "first_early_output_seconds": 14.399448916956317,
+              "first_post_audio_output_seconds": 71.59692954196362,
+              "valid_answers": 2,
+              "delegation_observed": false,
+              "backend_model_calls": 0,
+              "cost_usd": 0.08583333333333333
+            },
+            {
+              "task_id": "SC007-colocated-B-single",
+              "status": "completed",
+              "early_output": false,
+              "post_audio_output": false,
+              "early_transcript_characters": 0,
+              "post_audio_transcript_characters": 0,
+              "first_early_output_seconds": null,
+              "first_post_audio_output_seconds": null,
+              "valid_answers": 0,
+              "delegation_observed": false,
+              "backend_model_calls": 0,
+              "cost_usd": 0.08583333333333333
+            },
+            {
+              "task_id": "SC007-spatial-A-dual",
+              "status": "completed",
+              "early_output": true,
+              "post_audio_output": true,
+              "early_transcript_characters": 4,
+              "post_audio_transcript_characters": 40,
+              "first_early_output_seconds": 14.277090084040537,
+              "first_post_audio_output_seconds": 71.32715458399616,
+              "valid_answers": 0,
+              "delegation_observed": false,
+              "backend_model_calls": 0,
+              "cost_usd": 0.08666666666666667
+            },
+            {
+              "task_id": "SC007-spatial-A-single",
+              "status": "completed",
+              "early_output": true,
+              "post_audio_output": true,
+              "early_transcript_characters": 24,
+              "post_audio_transcript_characters": 20,
+              "first_early_output_seconds": 9.845587917021476,
+              "first_post_audio_output_seconds": 70.63530454202555,
+              "valid_answers": 0,
+              "delegation_observed": false,
+              "backend_model_calls": 0,
+              "cost_usd": 0.08666666666666667
+            },
+            {
+              "task_id": "SC007-spatial-B-dual",
+              "status": "completed",
+              "early_output": true,
+              "post_audio_output": true,
+              "early_transcript_characters": 8,
+              "post_audio_transcript_characters": 23,
+              "first_early_output_seconds": 6.037144000001717,
+              "first_post_audio_output_seconds": 71.57352420897223,
+              "valid_answers": 1,
+              "delegation_observed": false,
+              "backend_model_calls": 0,
+              "cost_usd": 0.08583333333333333
+            },
+            {
+              "task_id": "SC007-spatial-B-single",
+              "status": "completed",
+              "early_output": false,
+              "post_audio_output": false,
+              "early_transcript_characters": 0,
+              "post_audio_transcript_characters": 0,
+              "first_early_output_seconds": null,
+              "first_post_audio_output_seconds": null,
+              "valid_answers": 0,
+              "delegation_observed": false,
+              "backend_model_calls": 0,
+              "cost_usd": 0.08583333333333333
+            },
+            {
+              "task_id": "SC008-colocated-A-dual",
+              "status": "failed",
+              "early_output": false,
+              "post_audio_output": false,
+              "early_transcript_characters": 0,
+              "post_audio_transcript_characters": 0,
+              "first_early_output_seconds": null,
+              "first_post_audio_output_seconds": null,
+              "valid_answers": 0,
+              "delegation_observed": false,
+              "backend_model_calls": 0,
+              "cost_usd": null
+            },
+            {
+              "task_id": "SC008-colocated-A-single",
+              "status": "completed",
+              "early_output": false,
+              "post_audio_output": true,
+              "early_transcript_characters": 0,
+              "post_audio_transcript_characters": 71,
+              "first_early_output_seconds": null,
+              "first_post_audio_output_seconds": 71.30008650000673,
+              "valid_answers": 3,
+              "delegation_observed": false,
+              "backend_model_calls": 0,
+              "cost_usd": 0.08583333333333333
+            },
+            {
+              "task_id": "SC008-colocated-B-dual",
+              "status": "failed",
+              "early_output": false,
+              "post_audio_output": false,
+              "early_transcript_characters": 0,
+              "post_audio_transcript_characters": 0,
+              "first_early_output_seconds": null,
+              "first_post_audio_output_seconds": null,
+              "valid_answers": 0,
+              "delegation_observed": false,
+              "backend_model_calls": 0,
+              "cost_usd": null
+            },
+            {
+              "task_id": "SC008-colocated-B-single",
+              "status": "failed",
+              "early_output": false,
+              "post_audio_output": false,
+              "early_transcript_characters": 0,
+              "post_audio_transcript_characters": 0,
+              "first_early_output_seconds": null,
+              "first_post_audio_output_seconds": null,
+              "valid_answers": 0,
+              "delegation_observed": false,
+              "backend_model_calls": 0,
+              "cost_usd": null
+            },
+            {
+              "task_id": "SC008-spatial-A-dual",
+              "status": "failed",
+              "early_output": false,
+              "post_audio_output": false,
+              "early_transcript_characters": 0,
+              "post_audio_transcript_characters": 0,
+              "first_early_output_seconds": null,
+              "first_post_audio_output_seconds": null,
+              "valid_answers": 0,
+              "delegation_observed": false,
+              "backend_model_calls": 0,
+              "cost_usd": null
+            },
+            {
+              "task_id": "SC008-spatial-A-single",
+              "status": "failed",
+              "early_output": false,
+              "post_audio_output": false,
+              "early_transcript_characters": 0,
+              "post_audio_transcript_characters": 0,
+              "first_early_output_seconds": null,
+              "first_post_audio_output_seconds": null,
+              "valid_answers": 0,
+              "delegation_observed": false,
+              "backend_model_calls": 0,
+              "cost_usd": null
+            },
+            {
+              "task_id": "SC008-spatial-B-dual",
+              "status": "failed",
+              "early_output": false,
+              "post_audio_output": false,
+              "early_transcript_characters": 0,
+              "post_audio_transcript_characters": 0,
+              "first_early_output_seconds": null,
+              "first_post_audio_output_seconds": null,
+              "valid_answers": 0,
+              "delegation_observed": false,
+              "backend_model_calls": 0,
+              "cost_usd": null
+            },
+            {
+              "task_id": "SC008-spatial-B-single",
+              "status": "failed",
+              "early_output": false,
+              "post_audio_output": false,
+              "early_transcript_characters": 0,
+              "post_audio_transcript_characters": 0,
+              "first_early_output_seconds": null,
+              "first_post_audio_output_seconds": null,
+              "valid_answers": 0,
+              "delegation_observed": false,
+              "backend_model_calls": 0,
+              "cost_usd": null
+            },
+            {
+              "task_id": "SC009-colocated-A-dual",
+              "status": "failed",
+              "early_output": false,
+              "post_audio_output": false,
+              "early_transcript_characters": 0,
+              "post_audio_transcript_characters": 0,
+              "first_early_output_seconds": null,
+              "first_post_audio_output_seconds": null,
+              "valid_answers": 0,
+              "delegation_observed": false,
+              "backend_model_calls": 0,
+              "cost_usd": null
+            },
+            {
+              "task_id": "SC009-colocated-A-single",
+              "status": "failed",
+              "early_output": false,
+              "post_audio_output": false,
+              "early_transcript_characters": 0,
+              "post_audio_transcript_characters": 0,
+              "first_early_output_seconds": null,
+              "first_post_audio_output_seconds": null,
+              "valid_answers": 0,
+              "delegation_observed": false,
+              "backend_model_calls": 0,
+              "cost_usd": null
+            },
+            {
+              "task_id": "SC009-colocated-B-dual",
+              "status": "failed",
+              "early_output": false,
+              "post_audio_output": false,
+              "early_transcript_characters": 0,
+              "post_audio_transcript_characters": 0,
+              "first_early_output_seconds": null,
+              "first_post_audio_output_seconds": null,
+              "valid_answers": 0,
+              "delegation_observed": false,
+              "backend_model_calls": 0,
+              "cost_usd": null
+            },
+            {
+              "task_id": "SC009-colocated-B-single",
+              "status": "failed",
+              "early_output": false,
+              "post_audio_output": false,
+              "early_transcript_characters": 0,
+              "post_audio_transcript_characters": 0,
+              "first_early_output_seconds": null,
+              "first_post_audio_output_seconds": null,
+              "valid_answers": 0,
+              "delegation_observed": false,
+              "backend_model_calls": 0,
+              "cost_usd": null
+            },
+            {
+              "task_id": "SC009-spatial-A-dual",
+              "status": "failed",
+              "early_output": false,
+              "post_audio_output": false,
+              "early_transcript_characters": 0,
+              "post_audio_transcript_characters": 0,
+              "first_early_output_seconds": null,
+              "first_post_audio_output_seconds": null,
+              "valid_answers": 0,
+              "delegation_observed": false,
+              "backend_model_calls": 0,
+              "cost_usd": null
+            },
+            {
+              "task_id": "SC009-spatial-A-single",
+              "status": "failed",
+              "early_output": false,
+              "post_audio_output": false,
+              "early_transcript_characters": 0,
+              "post_audio_transcript_characters": 0,
+              "first_early_output_seconds": null,
+              "first_post_audio_output_seconds": null,
+              "valid_answers": 0,
+              "delegation_observed": false,
+              "backend_model_calls": 0,
+              "cost_usd": null
+            },
+            {
+              "task_id": "SC009-spatial-B-dual",
+              "status": "failed",
+              "early_output": false,
+              "post_audio_output": false,
+              "early_transcript_characters": 0,
+              "post_audio_transcript_characters": 0,
+              "first_early_output_seconds": null,
+              "first_post_audio_output_seconds": null,
+              "valid_answers": 0,
+              "delegation_observed": false,
+              "backend_model_calls": 0,
+              "cost_usd": null
+            },
+            {
+              "task_id": "SC009-spatial-B-single",
+              "status": "failed",
+              "early_output": false,
+              "post_audio_output": false,
+              "early_transcript_characters": 0,
+              "post_audio_transcript_characters": 0,
+              "first_early_output_seconds": null,
+              "first_post_audio_output_seconds": null,
+              "valid_answers": 0,
+              "delegation_observed": false,
+              "backend_model_calls": 0,
+              "cost_usd": null
+            },
+            {
+              "task_id": "SC010-colocated-A-dual",
+              "status": "failed",
+              "early_output": false,
+              "post_audio_output": false,
+              "early_transcript_characters": 0,
+              "post_audio_transcript_characters": 0,
+              "first_early_output_seconds": null,
+              "first_post_audio_output_seconds": null,
+              "valid_answers": 0,
+              "delegation_observed": false,
+              "backend_model_calls": 0,
+              "cost_usd": null
+            },
+            {
+              "task_id": "SC010-colocated-A-single",
+              "status": "failed",
+              "early_output": false,
+              "post_audio_output": false,
+              "early_transcript_characters": 0,
+              "post_audio_transcript_characters": 0,
+              "first_early_output_seconds": null,
+              "first_post_audio_output_seconds": null,
+              "valid_answers": 0,
+              "delegation_observed": false,
+              "backend_model_calls": 0,
+              "cost_usd": null
+            },
+            {
+              "task_id": "SC010-colocated-B-dual",
+              "status": "failed",
+              "early_output": false,
+              "post_audio_output": false,
+              "early_transcript_characters": 0,
+              "post_audio_transcript_characters": 0,
+              "first_early_output_seconds": null,
+              "first_post_audio_output_seconds": null,
+              "valid_answers": 0,
+              "delegation_observed": false,
+              "backend_model_calls": 0,
+              "cost_usd": null
+            },
+            {
+              "task_id": "SC010-colocated-B-single",
+              "status": "failed",
+              "early_output": false,
+              "post_audio_output": false,
+              "early_transcript_characters": 0,
+              "post_audio_transcript_characters": 0,
+              "first_early_output_seconds": null,
+              "first_post_audio_output_seconds": null,
+              "valid_answers": 0,
+              "delegation_observed": false,
+              "backend_model_calls": 0,
+              "cost_usd": null
+            },
+            {
+              "task_id": "SC010-spatial-A-dual",
+              "status": "failed",
+              "early_output": false,
+              "post_audio_output": false,
+              "early_transcript_characters": 0,
+              "post_audio_transcript_characters": 0,
+              "first_early_output_seconds": null,
+              "first_post_audio_output_seconds": null,
+              "valid_answers": 0,
+              "delegation_observed": false,
+              "backend_model_calls": 0,
+              "cost_usd": null
+            },
+            {
+              "task_id": "SC010-spatial-A-single",
+              "status": "failed",
+              "early_output": false,
+              "post_audio_output": false,
+              "early_transcript_characters": 0,
+              "post_audio_transcript_characters": 0,
+              "first_early_output_seconds": null,
+              "first_post_audio_output_seconds": null,
+              "valid_answers": 0,
+              "delegation_observed": false,
+              "backend_model_calls": 0,
+              "cost_usd": null
+            },
+            {
+              "task_id": "SC010-spatial-B-dual",
+              "status": "failed",
+              "early_output": false,
+              "post_audio_output": false,
+              "early_transcript_characters": 0,
+              "post_audio_transcript_characters": 0,
+              "first_early_output_seconds": null,
+              "first_post_audio_output_seconds": null,
+              "valid_answers": 0,
+              "delegation_observed": false,
+              "backend_model_calls": 0,
+              "cost_usd": null
+            },
+            {
+              "task_id": "SC010-spatial-B-single",
+              "status": "failed",
+              "early_output": false,
+              "post_audio_output": false,
+              "early_transcript_characters": 0,
+              "post_audio_transcript_characters": 0,
+              "first_early_output_seconds": null,
+              "first_post_audio_output_seconds": null,
+              "valid_answers": 0,
+              "delegation_observed": false,
+              "backend_model_calls": 0,
+              "cost_usd": null
+            }
+          ]
+        },
+        "block_reason": "OpenAI API credit_balance_exhausted; failed requests did not start audio sessions. Partial score is not a complete paired comparison."
       }
     ],
     "transcription": {
